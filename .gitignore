@@ -1,0 +1,35 @@
+# Data — never commit the raw Kaggle dump (~500MB)
+data/raw/
+data/twcs/
+*.csv
+!data/sample/*.csv
+!data/golden/*.csv
+!data/human_scoring/*.csv
+
+# Keep these (they make the repo reproducible)
+!data/sample/**
+!data/golden/**
+!data/human_scoring/**
+!cache/**
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+*.egg-info/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Secrets
+.env
+*.key
+
+# Qdrant embedded storage
+qdrant_storage/
+.qdrant/
+
+# OS
+.DS_Store
+Thumbs.db

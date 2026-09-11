@@ -1,0 +1,29 @@
+{
+ "n_paired": 0,
+ "pairs": [],
+ "human_n": 50,
+ "human_mean": 4.16,
+ "human_systems": {
+  "ours_llm": [
+   50,
+   4.16
+  ],
+  "b1_verbatim": [
+   20,
+   2.45
+  ],
+  "b0_canned": [
+   10,
+   2.7
+  ]
+ },
+ "llm_judge_real": [
+  {
+   "id": "amz-022",
+   "avg": 3.75,
+   "model": "gemini-3.1-flash-lite"
+  }
+ ],
+ "pilot_note": "A 16-pair pilot (Spearman +0.08 groundedness, kappa ~0) was measured against PRE-decontamination drafts; the corpus rebuild changed the evidence and drafts, invalidating those pairs. Superseded numbers are NOT quoted as results anywhere; they survive only in git history. Paired re-measurement blocked by free-tier quota (re-probed dead 2026-09-10).",
+ "verdict": "Reply quality rests on 50 human scores + deterministic checks on all 100. The LLM judge is implemented, blinded, and structured \u2014 but unvalidated at submission time. Claiming otherwise would be fabrication."
+}

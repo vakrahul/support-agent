@@ -1,0 +1,29 @@
+# ============================================================================
+# CORE — required for the headline eval to reproduce.
+# The eval harness deliberately depends only on pandas + numpy so that
+# `make eval` runs anywhere in seconds with no heavy install.
+# Metrics (macro-F1, confusion matrix, Cohen's kappa) are hand-implemented
+# in src/eval/metrics.py rather than pulled from sklearn. See DECISIONS.md.
+# ============================================================================
+pandas>=2.0
+numpy>=1.24
+pyarrow>=14.0          # parquet for the committed subsample
+matplotlib>=3.7        # EDA charts
+
+# ============================================================================
+# AGENT — needed to run the pipeline live (not needed for replay-mode eval).
+# ============================================================================
+google-generativeai>=0.8.0     # Gemini: generator + judge
+sentence-transformers>=2.7.0   # local embeddings (free, deterministic, no API)
+qdrant-client>=1.9.0           # vector store, runs EMBEDDED (no Docker needed)
+python-dotenv>=1.0.0
+
+# ============================================================================
+# OPTIONAL — the TF-IDF "simple baseline" only. Eval runs without it.
+# ============================================================================
+scikit-learn>=1.3.0
+
+# ============================================================================
+# DEV
+# ============================================================================
+pytest>=8.0

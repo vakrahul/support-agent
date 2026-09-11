@@ -1,0 +1,185 @@
+{
+  "_instructions": "Fill in proposed_name / definition for each cluster, MERGE clusters that should share one intent, and DELETE any that are noise. Then paste the result into INTENTS in src/config.py. Clusters are a proposal, not a taxonomy.",
+  "clusters": [
+    {
+      "cluster_id": 0,
+      "size": 1369,
+      "share": 0.2816872427983539,
+      "top_terms": [
+        "prime",
+        "membership",
+        "day",
+        "delivery",
+        "driver",
+        "paying",
+        "customers",
+        "deliveries",
+        "delayed",
+        "service",
+        "member",
+        "8pm"
+      ],
+      "examples": [
+        ". Just spoken to your team in a chat to discuss a Prime order of mine due yesterday that was not arriving until today. Without discussing it with me, they've scheduled a re-delivery which means it will be further delayed. Not happy with this service at all!",
+        "Pathetic..Again ur delivery is delayed and this tym it is not even half way mark. This is happening to ur Prime User. Can it be expedited. Wat has happnd to ur delivery service...goin bad to worst.. My Order Details below <URL>",
+        "Hey why is an item out for delivery today now being delayed until November 7th. What is going on with your prime service...",
+        "you have made a joke of delivery. Delayed for every order in the past 2 weeks, even after prime subscription",
+        "Disappointed that I ordered something through Prime, expected to receive today and now had email to say won't be here for up to two more days.",
+        "guys the prime delivery and customer care sucks. Since morning the package is on its way. Now it's late and won't be delivered before sunday. No one takes call on customer care, redirects to the website. Amazon prime welldone <URL>"
+      ],
+      "proposed_name": "",
+      "definition": "",
+      "notes": ""
+    },
+    {
+      "cluster_id": 1,
+      "size": 1245,
+      "share": 0.25617283950617287,
+      "top_terms": [
+        "refund",
+        "money",
+        "cashback",
+        "reply",
+        "return",
+        "account",
+        "bank",
+        "fraud",
+        "warranty",
+        "product",
+        "refunded",
+        "refunding"
+      ],
+      "examples": [
+        "Issue is still not resolve fully. When I contacted the seller for refund, he asked me to contact you. Pls refund the full amount ASAP",
+        "poor refund process. not yet received refund agnst ORDER # 406-8931651-4073110 after 20 days.",
+        "wtf ??? You sent Me THE WRONG ITEM AND 14 days later no refund ???HELLO ? NO WAY TO REACH YOU ON YOUR WEBSITE!",
+        "kindly go through all the screenshrt m sending. It hass been over 1mnth i have not got my refund 1/3. <URL>",
+        "I have send the details. Take your Imcomplete product return now. And Refund the money . No further order Amazon",
+        "I have already mailed my complaint for refund of 2 orders. Pls reply on prority."
+      ],
+      "proposed_name": "",
+      "definition": "",
+      "notes": ""
+    },
+    {
+      "cluster_id": 5,
+      "size": 1239,
+      "share": 0.25493827160493826,
+      "top_terms": [
+        "delivered",
+        "package",
+        "tracking",
+        "parcel",
+        "ups",
+        "shipped",
+        "carrier",
+        "packaging",
+        "courier",
+        "box",
+        "usps",
+        "attempted"
+      ],
+      "examples": [
+        "this is regarding my order# 171-5331733-1100309 which shows as delivered but in reality it's not delivered to me",
+        "I have placed an order which says delivered but I have never received the same.initially they have delayed delivery and then not even received a product..not expected from Amazon feeling like cheated order I'd 402-2538217-1550759",
+        "I am highly disappointed with Amazons service, my order# 404-4688706-1243534 was supposed to be delivered by yesterday as a gift to a friend and yet not delivered. Your customer support has been of no help in tracking my. Disappointed!",
+        ".The order status shows delivered and handed to the customer but haven't received my package yet. Please help.",
+        "Dear my order #407-7208892-2195534 is suppose to deliver by 31 Oct 2017... Still not received...",
+        "Order # 408-2291022-3989105 still no delivery for the same"
+      ],
+      "proposed_name": "",
+      "definition": "",
+      "notes": ""
+    },
+    {
+      "cluster_id": 2,
+      "size": 556,
+      "share": 0.11440329218106995,
+      "top_terms": [
+        "alexa",
+        "echo",
+        "app",
+        "dot",
+        "device",
+        "play",
+        "devices",
+        "fire",
+        "connect",
+        "shared",
+        "twitter",
+        "wifi"
+      ],
+      "examples": [
+        "I done before also .. u send me link i fill all details still u guyz cant reslove the issue. I m not even getting single call from amazon",
+        "I did. It didn’t work. Amazon forgot what made it great, its customer service. This is thrice in a year where Amazon profoundly disappointed. I lost my original Prime share benefits. I cannot own any Alexa device because it won’t link to my account & This gift card issue.",
+        "shared all my details at least thrice.. Still no call from amazon",
+        "Belated update: I called the support number late night the 12th and was told that people were working on my problem & to give it",
+        "How.may times I raised a request on Amazon and call u",
+        "Yes, i did. They asked me to raise it at .com . And i also did. But no solution. And again rs 720 deducted."
+      ],
+      "proposed_name": "",
+      "definition": "",
+      "notes": ""
+    },
+    {
+      "cluster_id": 3,
+      "size": 298,
+      "share": 0.06131687242798354,
+      "top_terms": [
+        "timeline",
+        "reorder",
+        "preordering",
+        "408",
+        "ebooks",
+        "mentioned",
+        "difference",
+        "period",
+        "provided",
+        "quickly",
+        "thank",
+        "details"
+      ],
+      "examples": [
+        "kindly solve my problem regarding order 2798736 asap ,, as i do not want to discuss here to spoil amazon’s reputation ...",
+        "Order # 407-2437836-0383554. When iAm talking customer they are dissconeect. The call..bulshit don't amazon online.customer care waste",
+        "Ordered on 2 December 2017 Order# 408-0166931-3046706 ADITYA KUMAR. I am loosing hopes on amazon.in its the 4th time facing the issue. good way to cheat customers without even delivering the product. kindly check & take a responsible step.",
+        "please check with the order number, 407-4882866-7738709. and see the status",
+        "please check with the order number, 407-4882866-7738709. and see the status",
+        "Sir i handed my order 9 but u r executive didn't help and suggest me leave Amazon app salute ur seller"
+      ],
+      "proposed_name": "",
+      "definition": "",
+      "notes": ""
+    },
+    {
+      "cluster_id": 4,
+      "size": 153,
+      "share": 0.03148148148148148,
+      "top_terms": [
+        "movies",
+        "diwali",
+        "set",
+        "multiple",
+        "gonna",
+        "ordered",
+        "well",
+        "add",
+        "many",
+        "less",
+        "those",
+        "per"
+      ],
+      "examples": [
+        "Just ordered 16 on Amazon, and they only sent 15 and they sent the wrong flavors. Never buying from a thrid party again",
+        "my order which was due today was not delivered... totally disappointed and unsatisfactory...very poor service",
+        "Why won’t let me make my order!!",
+        "Terribly disappointed with .Had ordered products on 7th Oct, not received them yet,. moreover not getting the right status as well despite being a regular shopper. Expecting a quick revert <URL>",
+        "Very bad 1 day late my order still not received #",
+        "three Hawaiian shellbra’s ordered from from three separate companies... all came up with excuses for not sending them! Not happy 😡😡😡"
+      ],
+      "proposed_name": "",
+      "definition": "",
+      "notes": ""
+    }
+  ]
+}

@@ -1,0 +1,6169 @@
+{
+ "sim_thr": 0.6,
+ "conf_thr": 0.7,
+ "systems": {
+  "B0_trivial": {
+   "runs": [
+    {
+     "id": "amz-135",
+     "intent": "other_unclear",
+     "score": 1.0,
+     "top3": [
+      "other_unclear"
+     ],
+     "max_sim": 0.549,
+     "agreement": 0.667,
+     "draft": "Sorry to hear about the trouble with your order. Please DM us your order number so we can look into this for you.",
+     "evidence_ids": [],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "ALWAYS_ESCALATE",
+     "reason": "trivial baseline escalates everything"
+    },
+    {
+     "id": "amz-128",
+     "intent": "other_unclear",
+     "score": 1.0,
+     "top3": [
+      "other_unclear"
+     ],
+     "max_sim": 0.397,
+     "agreement": 0.333,
+     "draft": "Sorry to hear about the trouble with your order. Please DM us your order number so we can look into this for you.",
+     "evidence_ids": [],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "ALWAYS_ESCALATE",
+     "reason": "trivial baseline escalates everything"
+    },
+    {
+     "id": "amz-042",
+     "intent": "other_unclear",
+     "score": 1.0,
+     "top3": [
+      "other_unclear"
+     ],
+     "max_sim": 0.581,
+     "agreement": 0.0,
+     "draft": "Sorry to hear about the trouble with your order. Please DM us your order number so we can look into this for you.",
+     "evidence_ids": [],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "ALWAYS_ESCALATE",
+     "reason": "trivial baseline escalates everything"
+    },
+    {
+     "id": "amz-141",
+     "intent": "other_unclear",
+     "score": 1.0,
+     "top3": [
+      "other_unclear"
+     ],
+     "max_sim": 0.734,
+     "agreement": 0.0,
+     "draft": "Sorry to hear about the trouble with your order. Please DM us your order number so we can look into this for you.",
+     "evidence_ids": [],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "ALWAYS_ESCALATE",
+     "reason": "trivial baseline escalates everything"
+    },
+    {
+     "id": "amz-121",
+     "intent": "other_unclear",
+     "score": 1.0,
+     "top3": [
+      "other_unclear"
+     ],
+     "max_sim": 0.669,
+     "agreement": 0.667,
+     "draft": "Sorry to hear about the trouble with your order. Please DM us your order number so we can look into this for you.",
+     "evidence_ids": [],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "ALWAYS_ESCALATE",
+     "reason": "trivial baseline escalates everything"
+    },
+    {
+     "id": "amz-066",
+     "intent": "other_unclear",
+     "score": 1.0,
+     "top3": [
+      "other_unclear"
+     ],
+     "max_sim": 0.527,
+     "agreement": 1.0,
+     "draft": "Sorry to hear about the trouble with your order. Please DM us your order number so we can look into this for you.",
+     "evidence_ids": [],
+     "grounding_passed": true,
+     "risk": "sue",
+     "decision": "human",
+     "reason_code": "ALWAYS_ESCALATE",
+     "reason": "trivial baseline escalates everything"
+    },
+    {
+     "id": "amz-047",
+     "intent": "other_unclear",
+     "score": 1.0,
+     "top3": [
+      "other_unclear"
+     ],
+     "max_sim": 0.604,
+     "agreement": 1.0,
+     "draft": "Sorry to hear about the trouble with your order. Please DM us your order number so we can look into this for you.",
+     "evidence_ids": [],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "ALWAYS_ESCALATE",
+     "reason": "trivial baseline escalates everything"
+    },
+    {
+     "id": "amz-027",
+     "intent": "other_unclear",
+     "score": 1.0,
+     "top3": [
+      "other_unclear"
+     ],
+     "max_sim": 0.606,
+     "agreement": 0.667,
+     "draft": "Sorry to hear about the trouble with your order. Please DM us your order number so we can look into this for you.",
+     "evidence_ids": [],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "ALWAYS_ESCALATE",
+     "reason": "trivial baseline escalates everything"
+    },
+    {
+     "id": "amz-050",
+     "intent": "other_unclear",
+     "score": 1.0,
+     "top3": [
+      "other_unclear"
+     ],
+     "max_sim": 0.602,
+     "agreement": 0.667,
+     "draft": "Sorry to hear about the trouble with your order. Please DM us your order number so we can look into this for you.",
+     "evidence_ids": [],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "ALWAYS_ESCALATE",
+     "reason": "trivial baseline escalates everything"
+    },
+    {
+     "id": "amz-031",
+     "intent": "other_unclear",
+     "score": 1.0,
+     "top3": [
+      "other_unclear"
+     ],
+     "max_sim": 0.452,
+     "agreement": 0.667,
+     "draft": "Sorry to hear about the trouble with your order. Please DM us your order number so we can look into this for you.",
+     "evidence_ids": [],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "ALWAYS_ESCALATE",
+     "reason": "trivial baseline escalates everything"
+    },
+    {
+     "id": "amz-061",
+     "intent": "other_unclear",
+     "score": 1.0,
+     "top3": [
+      "other_unclear"
+     ],
+     "max_sim": 0.606,
+     "agreement": 0.333,
+     "draft": "Sorry to hear about the trouble with your order. Please DM us your order number so we can look into this for you.",
+     "evidence_ids": [],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "ALWAYS_ESCALATE",
+     "reason": "trivial baseline escalates everything"
+    },
+    {
+     "id": "amz-069",
+     "intent": "other_unclear",
+     "score": 1.0,
+     "top3": [
+      "other_unclear"
+     ],
+     "max_sim": 0.624,
+     "agreement": 0.0,
+     "draft": "Sorry to hear about the trouble with your order. Please DM us your order number so we can look into this for you.",
+     "evidence_ids": [],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "ALWAYS_ESCALATE",
+     "reason": "trivial baseline escalates everything"
+    },
+    {
+     "id": "amz-126",
+     "intent": "other_unclear",
+     "score": 1.0,
+     "top3": [
+      "other_unclear"
+     ],
+     "max_sim": 0.627,
+     "agreement": 0.333,
+     "draft": "Sorry to hear about the trouble with your order. Please DM us your order number so we can look into this for you.",
+     "evidence_ids": [],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "ALWAYS_ESCALATE",
+     "reason": "trivial baseline escalates everything"
+    },
+    {
+     "id": "amz-096",
+     "intent": "other_unclear",
+     "score": 1.0,
+     "top3": [
+      "other_unclear"
+     ],
+     "max_sim": 0.537,
+     "agreement": 0.667,
+     "draft": "Sorry to hear about the trouble with your order. Please DM us your order number so we can look into this for you.",
+     "evidence_ids": [],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "ALWAYS_ESCALATE",
+     "reason": "trivial baseline escalates everything"
+    },
+    {
+     "id": "amz-073",
+     "intent": "other_unclear",
+     "score": 1.0,
+     "top3": [
+      "other_unclear"
+     ],
+     "max_sim": 0.52,
+     "agreement": 0.333,
+     "draft": "Sorry to hear about the trouble with your order. Please DM us your order number so we can look into this for you.",
+     "evidence_ids": [],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "ALWAYS_ESCALATE",
+     "reason": "trivial baseline escalates everything"
+    },
+    {
+     "id": "amz-078",
+     "intent": "other_unclear",
+     "score": 1.0,
+     "top3": [
+      "other_unclear"
+     ],
+     "max_sim": 0.85,
+     "agreement": 1.0,
+     "draft": "Sorry to hear about the trouble with your order. Please DM us your order number so we can look into this for you.",
+     "evidence_ids": [],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "ALWAYS_ESCALATE",
+     "reason": "trivial baseline escalates everything"
+    },
+    {
+     "id": "amz-103",
+     "intent": "other_unclear",
+     "score": 1.0,
+     "top3": [
+      "other_unclear"
+     ],
+     "max_sim": 0.59,
+     "agreement": 0.333,
+     "draft": "Sorry to hear about the trouble with your order. Please DM us your order number so we can look into this for you.",
+     "evidence_ids": [],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "ALWAYS_ESCALATE",
+     "reason": "trivial baseline escalates everything"
+    },
+    {
+     "id": "amz-145",
+     "intent": "other_unclear",
+     "score": 1.0,
+     "top3": [
+      "other_unclear"
+     ],
+     "max_sim": 0.58,
+     "agreement": 1.0,
+     "draft": "Sorry to hear about the trouble with your order. Please DM us your order number so we can look into this for you.",
+     "evidence_ids": [],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "ALWAYS_ESCALATE",
+     "reason": "trivial baseline escalates everything"
+    },
+    {
+     "id": "amz-112",
+     "intent": "other_unclear",
+     "score": 1.0,
+     "top3": [
+      "other_unclear"
+     ],
+     "max_sim": 0.709,
+     "agreement": 0.667,
+     "draft": "Sorry to hear about the trouble with your order. Please DM us your order number so we can look into this for you.",
+     "evidence_ids": [],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "ALWAYS_ESCALATE",
+     "reason": "trivial baseline escalates everything"
+    },
+    {
+     "id": "amz-005",
+     "intent": "other_unclear",
+     "score": 1.0,
+     "top3": [
+      "other_unclear"
+     ],
+     "max_sim": 0.69,
+     "agreement": 0.667,
+     "draft": "Sorry to hear about the trouble with your order. Please DM us your order number so we can look into this for you.",
+     "evidence_ids": [],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "ALWAYS_ESCALATE",
+     "reason": "trivial baseline escalates everything"
+    },
+    {
+     "id": "amz-104",
+     "intent": "other_unclear",
+     "score": 1.0,
+     "top3": [
+      "other_unclear"
+     ],
+     "max_sim": 0.683,
+     "agreement": 1.0,
+     "draft": "Sorry to hear about the trouble with your order. Please DM us your order number so we can look into this for you.",
+     "evidence_ids": [],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "ALWAYS_ESCALATE",
+     "reason": "trivial baseline escalates everything"
+    },
+    {
+     "id": "amz-119",
+     "intent": "other_unclear",
+     "score": 1.0,
+     "top3": [
+      "other_unclear"
+     ],
+     "max_sim": 0.688,
+     "agreement": 1.0,
+     "draft": "Sorry to hear about the trouble with your order. Please DM us your order number so we can look into this for you.",
+     "evidence_ids": [],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "ALWAYS_ESCALATE",
+     "reason": "trivial baseline escalates everything"
+    },
+    {
+     "id": "amz-120",
+     "intent": "other_unclear",
+     "score": 1.0,
+     "top3": [
+      "other_unclear"
+     ],
+     "max_sim": 0.658,
+     "agreement": 0.0,
+     "draft": "Sorry to hear about the trouble with your order. Please DM us your order number so we can look into this for you.",
+     "evidence_ids": [],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "ALWAYS_ESCALATE",
+     "reason": "trivial baseline escalates everything"
+    },
+    {
+     "id": "amz-093",
+     "intent": "other_unclear",
+     "score": 1.0,
+     "top3": [
+      "other_unclear"
+     ],
+     "max_sim": 0.64,
+     "agreement": 0.333,
+     "draft": "Sorry to hear about the trouble with your order. Please DM us your order number so we can look into this for you.",
+     "evidence_ids": [],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "ALWAYS_ESCALATE",
+     "reason": "trivial baseline escalates everything"
+    },
+    {
+     "id": "amz-079",
+     "intent": "other_unclear",
+     "score": 1.0,
+     "top3": [
+      "other_unclear"
+     ],
+     "max_sim": 0.518,
+     "agreement": 0.667,
+     "draft": "Sorry to hear about the trouble with your order. Please DM us your order number so we can look into this for you.",
+     "evidence_ids": [],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "ALWAYS_ESCALATE",
+     "reason": "trivial baseline escalates everything"
+    },
+    {
+     "id": "amz-025",
+     "intent": "other_unclear",
+     "score": 1.0,
+     "top3": [
+      "other_unclear"
+     ],
+     "max_sim": 0.592,
+     "agreement": 1.0,
+     "draft": "Sorry to hear about the trouble with your order. Please DM us your order number so we can look into this for you.",
+     "evidence_ids": [],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "ALWAYS_ESCALATE",
+     "reason": "trivial baseline escalates everything"
+    },
+    {
+     "id": "amz-114",
+     "intent": "other_unclear",
+     "score": 1.0,
+     "top3": [
+      "other_unclear"
+     ],
+     "max_sim": 0.669,
+     "agreement": 0.667,
+     "draft": "Sorry to hear about the trouble with your order. Please DM us your order number so we can look into this for you.",
+     "evidence_ids": [],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "ALWAYS_ESCALATE",
+     "reason": "trivial baseline escalates everything"
+    },
+    {
+     "id": "amz-067",
+     "intent": "other_unclear",
+     "score": 1.0,
+     "top3": [
+      "other_unclear"
+     ],
+     "max_sim": 0.805,
+     "agreement": 0.333,
+     "draft": "Sorry to hear about the trouble with your order. Please DM us your order number so we can look into this for you.",
+     "evidence_ids": [],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "ALWAYS_ESCALATE",
+     "reason": "trivial baseline escalates everything"
+    },
+    {
+     "id": "amz-040",
+     "intent": "other_unclear",
+     "score": 1.0,
+     "top3": [
+      "other_unclear"
+     ],
+     "max_sim": 0.486,
+     "agreement": 1.0,
+     "draft": "Sorry to hear about the trouble with your order. Please DM us your order number so we can look into this for you.",
+     "evidence_ids": [],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "ALWAYS_ESCALATE",
+     "reason": "trivial baseline escalates everything"
+    },
+    {
+     "id": "amz-058",
+     "intent": "other_unclear",
+     "score": 1.0,
+     "top3": [
+      "other_unclear"
+     ],
+     "max_sim": 0.703,
+     "agreement": 0.333,
+     "draft": "Sorry to hear about the trouble with your order. Please DM us your order number so we can look into this for you.",
+     "evidence_ids": [],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "ALWAYS_ESCALATE",
+     "reason": "trivial baseline escalates everything"
+    },
+    {
+     "id": "amz-113",
+     "intent": "other_unclear",
+     "score": 1.0,
+     "top3": [
+      "other_unclear"
+     ],
+     "max_sim": 0.639,
+     "agreement": 0.0,
+     "draft": "Sorry to hear about the trouble with your order. Please DM us your order number so we can look into this for you.",
+     "evidence_ids": [],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "ALWAYS_ESCALATE",
+     "reason": "trivial baseline escalates everything"
+    },
+    {
+     "id": "amz-123",
+     "intent": "other_unclear",
+     "score": 1.0,
+     "top3": [
+      "other_unclear"
+     ],
+     "max_sim": 0.533,
+     "agreement": 0.667,
+     "draft": "Sorry to hear about the trouble with your order. Please DM us your order number so we can look into this for you.",
+     "evidence_ids": [],
+     "grounding_passed": true,
+     "risk": "sue",
+     "decision": "human",
+     "reason_code": "ALWAYS_ESCALATE",
+     "reason": "trivial baseline escalates everything"
+    },
+    {
+     "id": "amz-125",
+     "intent": "other_unclear",
+     "score": 1.0,
+     "top3": [
+      "other_unclear"
+     ],
+     "max_sim": 0.635,
+     "agreement": 0.333,
+     "draft": "Sorry to hear about the trouble with your order. Please DM us your order number so we can look into this for you.",
+     "evidence_ids": [],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "ALWAYS_ESCALATE",
+     "reason": "trivial baseline escalates everything"
+    },
+    {
+     "id": "amz-129",
+     "intent": "other_unclear",
+     "score": 1.0,
+     "top3": [
+      "other_unclear"
+     ],
+     "max_sim": 0.667,
+     "agreement": 0.333,
+     "draft": "Sorry to hear about the trouble with your order. Please DM us your order number so we can look into this for you.",
+     "evidence_ids": [],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "ALWAYS_ESCALATE",
+     "reason": "trivial baseline escalates everything"
+    },
+    {
+     "id": "amz-011",
+     "intent": "other_unclear",
+     "score": 1.0,
+     "top3": [
+      "other_unclear"
+     ],
+     "max_sim": 0.582,
+     "agreement": 0.333,
+     "draft": "Sorry to hear about the trouble with your order. Please DM us your order number so we can look into this for you.",
+     "evidence_ids": [],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "ALWAYS_ESCALATE",
+     "reason": "trivial baseline escalates everything"
+    },
+    {
+     "id": "amz-054",
+     "intent": "other_unclear",
+     "score": 1.0,
+     "top3": [
+      "other_unclear"
+     ],
+     "max_sim": 0.587,
+     "agreement": 0.333,
+     "draft": "Sorry to hear about the trouble with your order. Please DM us your order number so we can look into this for you.",
+     "evidence_ids": [],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "ALWAYS_ESCALATE",
+     "reason": "trivial baseline escalates everything"
+    },
+    {
+     "id": "amz-032",
+     "intent": "other_unclear",
+     "score": 1.0,
+     "top3": [
+      "other_unclear"
+     ],
+     "max_sim": 0.704,
+     "agreement": 0.667,
+     "draft": "Sorry to hear about the trouble with your order. Please DM us your order number so we can look into this for you.",
+     "evidence_ids": [],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "ALWAYS_ESCALATE",
+     "reason": "trivial baseline escalates everything"
+    },
+    {
+     "id": "amz-006",
+     "intent": "other_unclear",
+     "score": 1.0,
+     "top3": [
+      "other_unclear"
+     ],
+     "max_sim": 0.54,
+     "agreement": 0.333,
+     "draft": "Sorry to hear about the trouble with your order. Please DM us your order number so we can look into this for you.",
+     "evidence_ids": [],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "ALWAYS_ESCALATE",
+     "reason": "trivial baseline escalates everything"
+    },
+    {
+     "id": "amz-017",
+     "intent": "other_unclear",
+     "score": 1.0,
+     "top3": [
+      "other_unclear"
+     ],
+     "max_sim": 0.631,
+     "agreement": 0.667,
+     "draft": "Sorry to hear about the trouble with your order. Please DM us your order number so we can look into this for you.",
+     "evidence_ids": [],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "ALWAYS_ESCALATE",
+     "reason": "trivial baseline escalates everything"
+    },
+    {
+     "id": "amz-028",
+     "intent": "other_unclear",
+     "score": 1.0,
+     "top3": [
+      "other_unclear"
+     ],
+     "max_sim": 0.706,
+     "agreement": 0.0,
+     "draft": "Sorry to hear about the trouble with your order. Please DM us your order number so we can look into this for you.",
+     "evidence_ids": [],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "ALWAYS_ESCALATE",
+     "reason": "trivial baseline escalates everything"
+    },
+    {
+     "id": "amz-003",
+     "intent": "other_unclear",
+     "score": 1.0,
+     "top3": [
+      "other_unclear"
+     ],
+     "max_sim": 0.46,
+     "agreement": 0.333,
+     "draft": "Sorry to hear about the trouble with your order. Please DM us your order number so we can look into this for you.",
+     "evidence_ids": [],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "ALWAYS_ESCALATE",
+     "reason": "trivial baseline escalates everything"
+    },
+    {
+     "id": "amz-082",
+     "intent": "other_unclear",
+     "score": 1.0,
+     "top3": [
+      "other_unclear"
+     ],
+     "max_sim": 0.699,
+     "agreement": 0.333,
+     "draft": "Sorry to hear about the trouble with your order. Please DM us your order number so we can look into this for you.",
+     "evidence_ids": [],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "ALWAYS_ESCALATE",
+     "reason": "trivial baseline escalates everything"
+    },
+    {
+     "id": "amz-122",
+     "intent": "other_unclear",
+     "score": 1.0,
+     "top3": [
+      "other_unclear"
+     ],
+     "max_sim": 0.717,
+     "agreement": 0.0,
+     "draft": "Sorry to hear about the trouble with your order. Please DM us your order number so we can look into this for you.",
+     "evidence_ids": [],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "ALWAYS_ESCALATE",
+     "reason": "trivial baseline escalates everything"
+    },
+    {
+     "id": "amz-142",
+     "intent": "other_unclear",
+     "score": 1.0,
+     "top3": [
+      "other_unclear"
+     ],
+     "max_sim": 0.641,
+     "agreement": 0.0,
+     "draft": "Sorry to hear about the trouble with your order. Please DM us your order number so we can look into this for you.",
+     "evidence_ids": [],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "ALWAYS_ESCALATE",
+     "reason": "trivial baseline escalates everything"
+    },
+    {
+     "id": "amz-014",
+     "intent": "other_unclear",
+     "score": 1.0,
+     "top3": [
+      "other_unclear"
+     ],
+     "max_sim": 0.626,
+     "agreement": 1.0,
+     "draft": "Sorry to hear about the trouble with your order. Please DM us your order number so we can look into this for you.",
+     "evidence_ids": [],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "ALWAYS_ESCALATE",
+     "reason": "trivial baseline escalates everything"
+    },
+    {
+     "id": "amz-029",
+     "intent": "other_unclear",
+     "score": 1.0,
+     "top3": [
+      "other_unclear"
+     ],
+     "max_sim": 0.654,
+     "agreement": 0.333,
+     "draft": "Sorry to hear about the trouble with your order. Please DM us your order number so we can look into this for you.",
+     "evidence_ids": [],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "ALWAYS_ESCALATE",
+     "reason": "trivial baseline escalates everything"
+    },
+    {
+     "id": "amz-087",
+     "intent": "other_unclear",
+     "score": 1.0,
+     "top3": [
+      "other_unclear"
+     ],
+     "max_sim": 0.663,
+     "agreement": 0.667,
+     "draft": "Sorry to hear about the trouble with your order. Please DM us your order number so we can look into this for you.",
+     "evidence_ids": [],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "ALWAYS_ESCALATE",
+     "reason": "trivial baseline escalates everything"
+    },
+    {
+     "id": "amz-097",
+     "intent": "other_unclear",
+     "score": 1.0,
+     "top3": [
+      "other_unclear"
+     ],
+     "max_sim": 0.655,
+     "agreement": 0.333,
+     "draft": "Sorry to hear about the trouble with your order. Please DM us your order number so we can look into this for you.",
+     "evidence_ids": [],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "ALWAYS_ESCALATE",
+     "reason": "trivial baseline escalates everything"
+    },
+    {
+     "id": "amz-089",
+     "intent": "other_unclear",
+     "score": 1.0,
+     "top3": [
+      "other_unclear"
+     ],
+     "max_sim": 0.765,
+     "agreement": 0.333,
+     "draft": "Sorry to hear about the trouble with your order. Please DM us your order number so we can look into this for you.",
+     "evidence_ids": [],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "ALWAYS_ESCALATE",
+     "reason": "trivial baseline escalates everything"
+    },
+    {
+     "id": "amz-068",
+     "intent": "other_unclear",
+     "score": 1.0,
+     "top3": [
+      "other_unclear"
+     ],
+     "max_sim": 0.609,
+     "agreement": 0.333,
+     "draft": "Sorry to hear about the trouble with your order. Please DM us your order number so we can look into this for you.",
+     "evidence_ids": [],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "ALWAYS_ESCALATE",
+     "reason": "trivial baseline escalates everything"
+    },
+    {
+     "id": "amz-010",
+     "intent": "other_unclear",
+     "score": 1.0,
+     "top3": [
+      "other_unclear"
+     ],
+     "max_sim": 0.554,
+     "agreement": 0.667,
+     "draft": "Sorry to hear about the trouble with your order. Please DM us your order number so we can look into this for you.",
+     "evidence_ids": [],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "ALWAYS_ESCALATE",
+     "reason": "trivial baseline escalates everything"
+    },
+    {
+     "id": "amz-070",
+     "intent": "other_unclear",
+     "score": 1.0,
+     "top3": [
+      "other_unclear"
+     ],
+     "max_sim": 0.736,
+     "agreement": 0.333,
+     "draft": "Sorry to hear about the trouble with your order. Please DM us your order number so we can look into this for you.",
+     "evidence_ids": [],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "ALWAYS_ESCALATE",
+     "reason": "trivial baseline escalates everything"
+    },
+    {
+     "id": "amz-116",
+     "intent": "other_unclear",
+     "score": 1.0,
+     "top3": [
+      "other_unclear"
+     ],
+     "max_sim": 0.868,
+     "agreement": 0.0,
+     "draft": "Sorry to hear about the trouble with your order. Please DM us your order number so we can look into this for you.",
+     "evidence_ids": [],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "ALWAYS_ESCALATE",
+     "reason": "trivial baseline escalates everything"
+    },
+    {
+     "id": "amz-102",
+     "intent": "other_unclear",
+     "score": 1.0,
+     "top3": [
+      "other_unclear"
+     ],
+     "max_sim": 0.61,
+     "agreement": 0.0,
+     "draft": "Sorry to hear about the trouble with your order. Please DM us your order number so we can look into this for you.",
+     "evidence_ids": [],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "ALWAYS_ESCALATE",
+     "reason": "trivial baseline escalates everything"
+    },
+    {
+     "id": "amz-008",
+     "intent": "other_unclear",
+     "score": 1.0,
+     "top3": [
+      "other_unclear"
+     ],
+     "max_sim": 0.522,
+     "agreement": 1.0,
+     "draft": "Sorry to hear about the trouble with your order. Please DM us your order number so we can look into this for you.",
+     "evidence_ids": [],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "ALWAYS_ESCALATE",
+     "reason": "trivial baseline escalates everything"
+    },
+    {
+     "id": "amz-091",
+     "intent": "other_unclear",
+     "score": 1.0,
+     "top3": [
+      "other_unclear"
+     ],
+     "max_sim": 0.693,
+     "agreement": 0.667,
+     "draft": "Sorry to hear about the trouble with your order. Please DM us your order number so we can look into this for you.",
+     "evidence_ids": [],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "ALWAYS_ESCALATE",
+     "reason": "trivial baseline escalates everything"
+    },
+    {
+     "id": "amz-138",
+     "intent": "other_unclear",
+     "score": 1.0,
+     "top3": [
+      "other_unclear"
+     ],
+     "max_sim": 0.7,
+     "agreement": 0.0,
+     "draft": "Sorry to hear about the trouble with your order. Please DM us your order number so we can look into this for you.",
+     "evidence_ids": [],
+     "grounding_passed": true,
+     "risk": "harass",
+     "decision": "human",
+     "reason_code": "ALWAYS_ESCALATE",
+     "reason": "trivial baseline escalates everything"
+    },
+    {
+     "id": "amz-045",
+     "intent": "other_unclear",
+     "score": 1.0,
+     "top3": [
+      "other_unclear"
+     ],
+     "max_sim": 0.535,
+     "agreement": 0.0,
+     "draft": "Sorry to hear about the trouble with your order. Please DM us your order number so we can look into this for you.",
+     "evidence_ids": [],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "ALWAYS_ESCALATE",
+     "reason": "trivial baseline escalates everything"
+    },
+    {
+     "id": "amz-064",
+     "intent": "other_unclear",
+     "score": 1.0,
+     "top3": [
+      "other_unclear"
+     ],
+     "max_sim": 0.675,
+     "agreement": 0.0,
+     "draft": "Sorry to hear about the trouble with your order. Please DM us your order number so we can look into this for you.",
+     "evidence_ids": [],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "ALWAYS_ESCALATE",
+     "reason": "trivial baseline escalates everything"
+    },
+    {
+     "id": "amz-039",
+     "intent": "other_unclear",
+     "score": 1.0,
+     "top3": [
+      "other_unclear"
+     ],
+     "max_sim": 0.527,
+     "agreement": 0.667,
+     "draft": "Sorry to hear about the trouble with your order. Please DM us your order number so we can look into this for you.",
+     "evidence_ids": [],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "ALWAYS_ESCALATE",
+     "reason": "trivial baseline escalates everything"
+    },
+    {
+     "id": "amz-004",
+     "intent": "other_unclear",
+     "score": 1.0,
+     "top3": [
+      "other_unclear"
+     ],
+     "max_sim": 0.665,
+     "agreement": 0.333,
+     "draft": "Sorry to hear about the trouble with your order. Please DM us your order number so we can look into this for you.",
+     "evidence_ids": [],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "ALWAYS_ESCALATE",
+     "reason": "trivial baseline escalates everything"
+    },
+    {
+     "id": "amz-132",
+     "intent": "other_unclear",
+     "score": 1.0,
+     "top3": [
+      "other_unclear"
+     ],
+     "max_sim": 0.692,
+     "agreement": 0.667,
+     "draft": "Sorry to hear about the trouble with your order. Please DM us your order number so we can look into this for you.",
+     "evidence_ids": [],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "ALWAYS_ESCALATE",
+     "reason": "trivial baseline escalates everything"
+    },
+    {
+     "id": "amz-118",
+     "intent": "other_unclear",
+     "score": 1.0,
+     "top3": [
+      "other_unclear"
+     ],
+     "max_sim": 0.709,
+     "agreement": 0.0,
+     "draft": "Sorry to hear about the trouble with your order. Please DM us your order number so we can look into this for you.",
+     "evidence_ids": [],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "ALWAYS_ESCALATE",
+     "reason": "trivial baseline escalates everything"
+    },
+    {
+     "id": "amz-111",
+     "intent": "other_unclear",
+     "score": 1.0,
+     "top3": [
+      "other_unclear"
+     ],
+     "max_sim": 0.779,
+     "agreement": 0.333,
+     "draft": "Sorry to hear about the trouble with your order. Please DM us your order number so we can look into this for you.",
+     "evidence_ids": [],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "ALWAYS_ESCALATE",
+     "reason": "trivial baseline escalates everything"
+    },
+    {
+     "id": "amz-023",
+     "intent": "other_unclear",
+     "score": 1.0,
+     "top3": [
+      "other_unclear"
+     ],
+     "max_sim": 0.769,
+     "agreement": 0.333,
+     "draft": "Sorry to hear about the trouble with your order. Please DM us your order number so we can look into this for you.",
+     "evidence_ids": [],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "ALWAYS_ESCALATE",
+     "reason": "trivial baseline escalates everything"
+    },
+    {
+     "id": "amz-033",
+     "intent": "other_unclear",
+     "score": 1.0,
+     "top3": [
+      "other_unclear"
+     ],
+     "max_sim": 0.587,
+     "agreement": 0.667,
+     "draft": "Sorry to hear about the trouble with your order. Please DM us your order number so we can look into this for you.",
+     "evidence_ids": [],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "ALWAYS_ESCALATE",
+     "reason": "trivial baseline escalates everything"
+    },
+    {
+     "id": "amz-051",
+     "intent": "other_unclear",
+     "score": 1.0,
+     "top3": [
+      "other_unclear"
+     ],
+     "max_sim": 0.673,
+     "agreement": 0.667,
+     "draft": "Sorry to hear about the trouble with your order. Please DM us your order number so we can look into this for you.",
+     "evidence_ids": [],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "ALWAYS_ESCALATE",
+     "reason": "trivial baseline escalates everything"
+    },
+    {
+     "id": "amz-065",
+     "intent": "other_unclear",
+     "score": 1.0,
+     "top3": [
+      "other_unclear"
+     ],
+     "max_sim": 0.605,
+     "agreement": 1.0,
+     "draft": "Sorry to hear about the trouble with your order. Please DM us your order number so we can look into this for you.",
+     "evidence_ids": [],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "ALWAYS_ESCALATE",
+     "reason": "trivial baseline escalates everything"
+    },
+    {
+     "id": "amz-026",
+     "intent": "other_unclear",
+     "score": 1.0,
+     "top3": [
+      "other_unclear"
+     ],
+     "max_sim": 0.532,
+     "agreement": 0.0,
+     "draft": "Sorry to hear about the trouble with your order. Please DM us your order number so we can look into this for you.",
+     "evidence_ids": [],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "ALWAYS_ESCALATE",
+     "reason": "trivial baseline escalates everything"
+    },
+    {
+     "id": "amz-030",
+     "intent": "other_unclear",
+     "score": 1.0,
+     "top3": [
+      "other_unclear"
+     ],
+     "max_sim": 0.653,
+     "agreement": 0.333,
+     "draft": "Sorry to hear about the trouble with your order. Please DM us your order number so we can look into this for you.",
+     "evidence_ids": [],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "ALWAYS_ESCALATE",
+     "reason": "trivial baseline escalates everything"
+    },
+    {
+     "id": "amz-044",
+     "intent": "other_unclear",
+     "score": 1.0,
+     "top3": [
+      "other_unclear"
+     ],
+     "max_sim": 0.74,
+     "agreement": 0.333,
+     "draft": "Sorry to hear about the trouble with your order. Please DM us your order number so we can look into this for you.",
+     "evidence_ids": [],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "ALWAYS_ESCALATE",
+     "reason": "trivial baseline escalates everything"
+    },
+    {
+     "id": "amz-134",
+     "intent": "other_unclear",
+     "score": 1.0,
+     "top3": [
+      "other_unclear"
+     ],
+     "max_sim": 0.911,
+     "agreement": 0.333,
+     "draft": "Sorry to hear about the trouble with your order. Please DM us your order number so we can look into this for you.",
+     "evidence_ids": [],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "ALWAYS_ESCALATE",
+     "reason": "trivial baseline escalates everything"
+    },
+    {
+     "id": "amz-036",
+     "intent": "other_unclear",
+     "score": 1.0,
+     "top3": [
+      "other_unclear"
+     ],
+     "max_sim": 0.81,
+     "agreement": 1.0,
+     "draft": "Sorry to hear about the trouble with your order. Please DM us your order number so we can look into this for you.",
+     "evidence_ids": [],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "ALWAYS_ESCALATE",
+     "reason": "trivial baseline escalates everything"
+    },
+    {
+     "id": "amz-013",
+     "intent": "other_unclear",
+     "score": 1.0,
+     "top3": [
+      "other_unclear"
+     ],
+     "max_sim": 0.667,
+     "agreement": 1.0,
+     "draft": "Sorry to hear about the trouble with your order. Please DM us your order number so we can look into this for you.",
+     "evidence_ids": [],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "ALWAYS_ESCALATE",
+     "reason": "trivial baseline escalates everything"
+    },
+    {
+     "id": "amz-137",
+     "intent": "other_unclear",
+     "score": 1.0,
+     "top3": [
+      "other_unclear"
+     ],
+     "max_sim": 0.646,
+     "agreement": 0.0,
+     "draft": "Sorry to hear about the trouble with your order. Please DM us your order number so we can look into this for you.",
+     "evidence_ids": [],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "ALWAYS_ESCALATE",
+     "reason": "trivial baseline escalates everything"
+    },
+    {
+     "id": "amz-074",
+     "intent": "other_unclear",
+     "score": 1.0,
+     "top3": [
+      "other_unclear"
+     ],
+     "max_sim": 0.714,
+     "agreement": 0.667,
+     "draft": "Sorry to hear about the trouble with your order. Please DM us your order number so we can look into this for you.",
+     "evidence_ids": [],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "ALWAYS_ESCALATE",
+     "reason": "trivial baseline escalates everything"
+    },
+    {
+     "id": "amz-090",
+     "intent": "other_unclear",
+     "score": 1.0,
+     "top3": [
+      "other_unclear"
+     ],
+     "max_sim": 0.726,
+     "agreement": 0.333,
+     "draft": "Sorry to hear about the trouble with your order. Please DM us your order number so we can look into this for you.",
+     "evidence_ids": [],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "ALWAYS_ESCALATE",
+     "reason": "trivial baseline escalates everything"
+    },
+    {
+     "id": "amz-053",
+     "intent": "other_unclear",
+     "score": 1.0,
+     "top3": [
+      "other_unclear"
+     ],
+     "max_sim": 0.761,
+     "agreement": 0.0,
+     "draft": "Sorry to hear about the trouble with your order. Please DM us your order number so we can look into this for you.",
+     "evidence_ids": [],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "ALWAYS_ESCALATE",
+     "reason": "trivial baseline escalates everything"
+    },
+    {
+     "id": "amz-101",
+     "intent": "other_unclear",
+     "score": 1.0,
+     "top3": [
+      "other_unclear"
+     ],
+     "max_sim": 0.511,
+     "agreement": 1.0,
+     "draft": "Sorry to hear about the trouble with your order. Please DM us your order number so we can look into this for you.",
+     "evidence_ids": [],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "ALWAYS_ESCALATE",
+     "reason": "trivial baseline escalates everything"
+    },
+    {
+     "id": "amz-056",
+     "intent": "other_unclear",
+     "score": 1.0,
+     "top3": [
+      "other_unclear"
+     ],
+     "max_sim": 0.673,
+     "agreement": 0.333,
+     "draft": "Sorry to hear about the trouble with your order. Please DM us your order number so we can look into this for you.",
+     "evidence_ids": [],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "ALWAYS_ESCALATE",
+     "reason": "trivial baseline escalates everything"
+    },
+    {
+     "id": "amz-106",
+     "intent": "other_unclear",
+     "score": 1.0,
+     "top3": [
+      "other_unclear"
+     ],
+     "max_sim": 0.661,
+     "agreement": 0.0,
+     "draft": "Sorry to hear about the trouble with your order. Please DM us your order number so we can look into this for you.",
+     "evidence_ids": [],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "ALWAYS_ESCALATE",
+     "reason": "trivial baseline escalates everything"
+    },
+    {
+     "id": "amz-048",
+     "intent": "other_unclear",
+     "score": 1.0,
+     "top3": [
+      "other_unclear"
+     ],
+     "max_sim": 0.547,
+     "agreement": 0.0,
+     "draft": "Sorry to hear about the trouble with your order. Please DM us your order number so we can look into this for you.",
+     "evidence_ids": [],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "ALWAYS_ESCALATE",
+     "reason": "trivial baseline escalates everything"
+    },
+    {
+     "id": "amz-055",
+     "intent": "other_unclear",
+     "score": 1.0,
+     "top3": [
+      "other_unclear"
+     ],
+     "max_sim": 0.728,
+     "agreement": 0.667,
+     "draft": "Sorry to hear about the trouble with your order. Please DM us your order number so we can look into this for you.",
+     "evidence_ids": [],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "ALWAYS_ESCALATE",
+     "reason": "trivial baseline escalates everything"
+    },
+    {
+     "id": "amz-107",
+     "intent": "other_unclear",
+     "score": 1.0,
+     "top3": [
+      "other_unclear"
+     ],
+     "max_sim": 0.606,
+     "agreement": 0.0,
+     "draft": "Sorry to hear about the trouble with your order. Please DM us your order number so we can look into this for you.",
+     "evidence_ids": [],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "ALWAYS_ESCALATE",
+     "reason": "trivial baseline escalates everything"
+    },
+    {
+     "id": "amz-022",
+     "intent": "other_unclear",
+     "score": 1.0,
+     "top3": [
+      "other_unclear"
+     ],
+     "max_sim": 0.545,
+     "agreement": 0.667,
+     "draft": "Sorry to hear about the trouble with your order. Please DM us your order number so we can look into this for you.",
+     "evidence_ids": [],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "ALWAYS_ESCALATE",
+     "reason": "trivial baseline escalates everything"
+    },
+    {
+     "id": "amz-098",
+     "intent": "other_unclear",
+     "score": 1.0,
+     "top3": [
+      "other_unclear"
+     ],
+     "max_sim": 0.602,
+     "agreement": 0.0,
+     "draft": "Sorry to hear about the trouble with your order. Please DM us your order number so we can look into this for you.",
+     "evidence_ids": [],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "ALWAYS_ESCALATE",
+     "reason": "trivial baseline escalates everything"
+    },
+    {
+     "id": "amz-133",
+     "intent": "other_unclear",
+     "score": 1.0,
+     "top3": [
+      "other_unclear"
+     ],
+     "max_sim": 0.668,
+     "agreement": 0.333,
+     "draft": "Sorry to hear about the trouble with your order. Please DM us your order number so we can look into this for you.",
+     "evidence_ids": [],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "ALWAYS_ESCALATE",
+     "reason": "trivial baseline escalates everything"
+    },
+    {
+     "id": "amz-148",
+     "intent": "other_unclear",
+     "score": 1.0,
+     "top3": [
+      "other_unclear"
+     ],
+     "max_sim": 0.647,
+     "agreement": 0.333,
+     "draft": "Sorry to hear about the trouble with your order. Please DM us your order number so we can look into this for you.",
+     "evidence_ids": [],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "ALWAYS_ESCALATE",
+     "reason": "trivial baseline escalates everything"
+    },
+    {
+     "id": "amz-130",
+     "intent": "other_unclear",
+     "score": 1.0,
+     "top3": [
+      "other_unclear"
+     ],
+     "max_sim": 0.651,
+     "agreement": 0.333,
+     "draft": "Sorry to hear about the trouble with your order. Please DM us your order number so we can look into this for you.",
+     "evidence_ids": [],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "ALWAYS_ESCALATE",
+     "reason": "trivial baseline escalates everything"
+    },
+    {
+     "id": "amz-059",
+     "intent": "other_unclear",
+     "score": 1.0,
+     "top3": [
+      "other_unclear"
+     ],
+     "max_sim": 0.578,
+     "agreement": 0.333,
+     "draft": "Sorry to hear about the trouble with your order. Please DM us your order number so we can look into this for you.",
+     "evidence_ids": [],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "ALWAYS_ESCALATE",
+     "reason": "trivial baseline escalates everything"
+    },
+    {
+     "id": "amz-052",
+     "intent": "other_unclear",
+     "score": 1.0,
+     "top3": [
+      "other_unclear"
+     ],
+     "max_sim": 0.712,
+     "agreement": 0.0,
+     "draft": "Sorry to hear about the trouble with your order. Please DM us your order number so we can look into this for you.",
+     "evidence_ids": [],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "ALWAYS_ESCALATE",
+     "reason": "trivial baseline escalates everything"
+    },
+    {
+     "id": "amz-147",
+     "intent": "other_unclear",
+     "score": 1.0,
+     "top3": [
+      "other_unclear"
+     ],
+     "max_sim": 0.648,
+     "agreement": 1.0,
+     "draft": "Sorry to hear about the trouble with your order. Please DM us your order number so we can look into this for you.",
+     "evidence_ids": [],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "ALWAYS_ESCALATE",
+     "reason": "trivial baseline escalates everything"
+    },
+    {
+     "id": "amz-088",
+     "intent": "other_unclear",
+     "score": 1.0,
+     "top3": [
+      "other_unclear"
+     ],
+     "max_sim": 0.581,
+     "agreement": 0.0,
+     "draft": "Sorry to hear about the trouble with your order. Please DM us your order number so we can look into this for you.",
+     "evidence_ids": [],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "ALWAYS_ESCALATE",
+     "reason": "trivial baseline escalates everything"
+    },
+    {
+     "id": "amz-117",
+     "intent": "other_unclear",
+     "score": 1.0,
+     "top3": [
+      "other_unclear"
+     ],
+     "max_sim": 0.458,
+     "agreement": 1.0,
+     "draft": "Sorry to hear about the trouble with your order. Please DM us your order number so we can look into this for you.",
+     "evidence_ids": [],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "ALWAYS_ESCALATE",
+     "reason": "trivial baseline escalates everything"
+    },
+    {
+     "id": "amz-144",
+     "intent": "other_unclear",
+     "score": 1.0,
+     "top3": [
+      "other_unclear"
+     ],
+     "max_sim": 0.732,
+     "agreement": 0.667,
+     "draft": "Sorry to hear about the trouble with your order. Please DM us your order number so we can look into this for you.",
+     "evidence_ids": [],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "ALWAYS_ESCALATE",
+     "reason": "trivial baseline escalates everything"
+    },
+    {
+     "id": "amz-046",
+     "intent": "other_unclear",
+     "score": 1.0,
+     "top3": [
+      "other_unclear"
+     ],
+     "max_sim": 0.806,
+     "agreement": 1.0,
+     "draft": "Sorry to hear about the trouble with your order. Please DM us your order number so we can look into this for you.",
+     "evidence_ids": [],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "ALWAYS_ESCALATE",
+     "reason": "trivial baseline escalates everything"
+    },
+    {
+     "id": "amz-037",
+     "intent": "other_unclear",
+     "score": 1.0,
+     "top3": [
+      "other_unclear"
+     ],
+     "max_sim": 0.714,
+     "agreement": 0.0,
+     "draft": "Sorry to hear about the trouble with your order. Please DM us your order number so we can look into this for you.",
+     "evidence_ids": [],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "ALWAYS_ESCALATE",
+     "reason": "trivial baseline escalates everything"
+    },
+    {
+     "id": "amz-049",
+     "intent": "other_unclear",
+     "score": 1.0,
+     "top3": [
+      "other_unclear"
+     ],
+     "max_sim": 0.576,
+     "agreement": 0.333,
+     "draft": "Sorry to hear about the trouble with your order. Please DM us your order number so we can look into this for you.",
+     "evidence_ids": [],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "ALWAYS_ESCALATE",
+     "reason": "trivial baseline escalates everything"
+    },
+    {
+     "id": "amz-000",
+     "intent": "other_unclear",
+     "score": 1.0,
+     "top3": [
+      "other_unclear"
+     ],
+     "max_sim": 0.482,
+     "agreement": 0.333,
+     "draft": "Sorry to hear about the trouble with your order. Please DM us your order number so we can look into this for you.",
+     "evidence_ids": [],
+     "grounding_passed": true,
+     "risk": "fraud",
+     "decision": "human",
+     "reason_code": "ALWAYS_ESCALATE",
+     "reason": "trivial baseline escalates everything"
+    },
+    {
+     "id": "amz-009",
+     "intent": "other_unclear",
+     "score": 1.0,
+     "top3": [
+      "other_unclear"
+     ],
+     "max_sim": 0.787,
+     "agreement": 0.0,
+     "draft": "Sorry to hear about the trouble with your order. Please DM us your order number so we can look into this for you.",
+     "evidence_ids": [],
+     "grounding_passed": true,
+     "risk": "fraud",
+     "decision": "human",
+     "reason_code": "ALWAYS_ESCALATE",
+     "reason": "trivial baseline escalates everything"
+    }
+   ],
+   "accuracy": 0.09,
+   "macro_f1": 0.027522935779816512,
+   "esc_precision": 0.23,
+   "esc_recall": 1.0,
+   "false_auto": 0.0,
+   "coverage": 0.0,
+   "reason_codes": {
+    "ALWAYS_ESCALATE": 100
+   },
+   "judge_avg": 0.0,
+   "judge_n": 0
+  },
+  "B1_tfidf": {
+   "runs": [
+    {
+     "id": "amz-135",
+     "intent": "other_unclear",
+     "score": 0.574,
+     "top3": [
+      "other_unclear",
+      "missing_parcel_tracking",
+      "device_app_account"
+     ],
+     "max_sim": 0.549,
+     "agreement": 0.667,
+     "draft": "My apologies for the inconvenience, Adam Have you received any email updates regarding this delivery? Have you checked the latest tracking information? You can find that in your orders here: <URL>",
+     "evidence_ids": [
+      1718
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "UNKNOWN_INTENT",
+     "reason": "message does not fit a defined intent"
+    },
+    {
+     "id": "amz-128",
+     "intent": "other_unclear",
+     "score": 0.855,
+     "top3": [
+      "other_unclear",
+      "delivery_delay",
+      "refund_return"
+     ],
+     "max_sim": 0.397,
+     "agreement": 0.333,
+     "draft": "When you select this link, do you see an option to \"skip sign in\": <URL> If you do not see this option, please try using a device with a full web browser, like a PC, mac, or notebook.",
+     "evidence_ids": [
+      391
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "UNKNOWN_INTENT",
+     "reason": "message does not fit a defined intent"
+    },
+    {
+     "id": "amz-042",
+     "intent": "refund_return",
+     "score": 0.957,
+     "top3": [
+      "refund_return",
+      "other_unclear",
+      "missing_parcel_tracking"
+     ],
+     "max_sim": 0.581,
+     "agreement": 0.667,
+     "draft": "Also, as this a social medial platform, please don't provide order details. We consider it personal information.",
+     "evidence_ids": [
+      2272
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "WEAK_EVIDENCE",
+     "reason": "max similarity 0.58 below 0.60; no precedent"
+    },
+    {
+     "id": "amz-141",
+     "intent": "refund_return",
+     "score": 0.467,
+     "top3": [
+      "refund_return",
+      "order_status_general",
+      "other_unclear"
+     ],
+     "max_sim": 0.734,
+     "agreement": 1.0,
+     "draft": "Sorry to hear this. Have you contacted us directly? If not, you can do so here: <URL>",
+     "evidence_ids": [
+      28
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "LOW_SCORE",
+     "reason": "model_score 0.47 below 0.70"
+    },
+    {
+     "id": "amz-121",
+     "intent": "other_unclear",
+     "score": 0.446,
+     "top3": [
+      "other_unclear",
+      "missing_parcel_tracking",
+      "refund_return"
+     ],
+     "max_sim": 0.669,
+     "agreement": 0.667,
+     "draft": "I understand your concern regarding the order. Could you kindly let us know the estimated delivery date?",
+     "evidence_ids": [
+      656
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "UNKNOWN_INTENT",
+     "reason": "message does not fit a defined intent"
+    },
+    {
+     "id": "amz-066",
+     "intent": "refund_return",
+     "score": 0.517,
+     "top3": [
+      "refund_return",
+      "delivery_delay",
+      "other_unclear"
+     ],
+     "max_sim": 0.527,
+     "agreement": 0.0,
+     "draft": "Sorry to hear that, did you file an A-Z claim?",
+     "evidence_ids": [
+      1452
+     ],
+     "grounding_passed": true,
+     "risk": "sue",
+     "decision": "human",
+     "reason_code": "HIGH_RISK",
+     "reason": "matched risk phrase: 'sue'"
+    },
+    {
+     "id": "amz-047",
+     "intent": "other_unclear",
+     "score": 0.7,
+     "top3": [
+      "other_unclear",
+      "order_status_general",
+      "refund_return"
+     ],
+     "max_sim": 0.604,
+     "agreement": 1.0,
+     "draft": "Please don’t provide your order details as we consider them to be personal info. Our Twitter page is visible to public.",
+     "evidence_ids": [
+      150
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "UNKNOWN_INTENT",
+     "reason": "message does not fit a defined intent"
+    },
+    {
+     "id": "amz-027",
+     "intent": "other_unclear",
+     "score": 0.896,
+     "top3": [
+      "other_unclear",
+      "refund_return",
+      "device_app_account"
+     ],
+     "max_sim": 0.606,
+     "agreement": 0.667,
+     "draft": "We'll not be able to access your account over twitter. Please elaborate on your concern. We'll look into it.",
+     "evidence_ids": [
+      1135
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "UNKNOWN_INTENT",
+     "reason": "message does not fit a defined intent"
+    },
+    {
+     "id": "amz-050",
+     "intent": "other_unclear",
+     "score": 0.585,
+     "top3": [
+      "other_unclear",
+      "refund_return",
+      "missing_parcel_tracking"
+     ],
+     "max_sim": 0.602,
+     "agreement": 0.667,
+     "draft": "Sorry for the delivery issue. I've checked and we've received your details. Please allow us some time and we'll reach out.",
+     "evidence_ids": [
+      829
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "UNKNOWN_INTENT",
+     "reason": "message does not fit a defined intent"
+    },
+    {
+     "id": "amz-031",
+     "intent": "other_unclear",
+     "score": 0.526,
+     "top3": [
+      "other_unclear",
+      "delivery_delay",
+      "refund_return"
+     ],
+     "max_sim": 0.452,
+     "agreement": 0.667,
+     "draft": "Sorry for the delay. But as we're working on the issue, requesting you to wait for and update from our team.",
+     "evidence_ids": [
+      2912
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "UNKNOWN_INTENT",
+     "reason": "message does not fit a defined intent"
+    },
+    {
+     "id": "amz-061",
+     "intent": "other_unclear",
+     "score": 0.416,
+     "top3": [
+      "other_unclear",
+      "delivery_delay",
+      "refund_return"
+     ],
+     "max_sim": 0.606,
+     "agreement": 0.333,
+     "draft": "Just for the clarification, could you please confirm whether the order has been placed in Amazon.in or <URL>",
+     "evidence_ids": [
+      1819
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "UNKNOWN_INTENT",
+     "reason": "message does not fit a defined intent"
+    },
+    {
+     "id": "amz-069",
+     "intent": "refund_return",
+     "score": 0.601,
+     "top3": [
+      "refund_return",
+      "delivery_delay",
+      "other_unclear"
+     ],
+     "max_sim": 0.624,
+     "agreement": 1.0,
+     "draft": "Please don't provide your order details here, we consider it to be personal info. Our page is visible to the public 2/2",
+     "evidence_ids": [
+      2826
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "LOW_SCORE",
+     "reason": "model_score 0.60 below 0.70"
+    },
+    {
+     "id": "amz-126",
+     "intent": "other_unclear",
+     "score": 0.622,
+     "top3": [
+      "other_unclear",
+      "device_app_account",
+      "delivery_delay"
+     ],
+     "max_sim": 0.627,
+     "agreement": 0.333,
+     "draft": "Please connect with us here : <URL> ^NR 2/2",
+     "evidence_ids": [
+      1835
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "UNKNOWN_INTENT",
+     "reason": "message does not fit a defined intent"
+    },
+    {
+     "id": "amz-096",
+     "intent": "other_unclear",
+     "score": 0.521,
+     "top3": [
+      "other_unclear",
+      "delivery_delay",
+      "refund_return"
+     ],
+     "max_sim": 0.537,
+     "agreement": 0.667,
+     "draft": "I'm sorry for that. Could you tell me what went wrong so that I can assist you accordingly?",
+     "evidence_ids": [
+      3285
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "UNKNOWN_INTENT",
+     "reason": "message does not fit a defined intent"
+    },
+    {
+     "id": "amz-073",
+     "intent": "other_unclear",
+     "score": 0.516,
+     "top3": [
+      "other_unclear",
+      "refund_return",
+      "delivery_delay"
+     ],
+     "max_sim": 0.52,
+     "agreement": 0.333,
+     "draft": "Apologies for the issues with received product. Since the return window is expired, request you to claim the available warranty of the product from the manufacturer, as they will help you further. Please keep is posted for further assistance.",
+     "evidence_ids": [
+      1026
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "UNKNOWN_INTENT",
+     "reason": "message does not fit a defined intent"
+    },
+    {
+     "id": "amz-078",
+     "intent": "other_unclear",
+     "score": 0.833,
+     "top3": [
+      "other_unclear",
+      "delivery_delay",
+      "refund_return"
+     ],
+     "max_sim": 0.85,
+     "agreement": 1.0,
+     "draft": "Not all size are Prime eligible. You can learn more about Prime eligible items here: <URL>",
+     "evidence_ids": [
+      1218
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "UNKNOWN_INTENT",
+     "reason": "message does not fit a defined intent"
+    },
+    {
+     "id": "amz-103",
+     "intent": "other_unclear",
+     "score": 0.711,
+     "top3": [
+      "other_unclear",
+      "refund_return",
+      "order_status_general"
+     ],
+     "max_sim": 0.59,
+     "agreement": 0.333,
+     "draft": "Thank you for letting us know you are a seller. As we deal with customer service, we will be unable to look into this.^PB (1/2)",
+     "evidence_ids": [
+      1256
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "UNKNOWN_INTENT",
+     "reason": "message does not fit a defined intent"
+    },
+    {
+     "id": "amz-145",
+     "intent": "other_unclear",
+     "score": 0.662,
+     "top3": [
+      "other_unclear",
+      "refund_return",
+      "delivery_delay"
+     ],
+     "max_sim": 0.58,
+     "agreement": 1.0,
+     "draft": "We'd like to help. Please elaborate on your concern.",
+     "evidence_ids": [
+      689
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "UNKNOWN_INTENT",
+     "reason": "message does not fit a defined intent"
+    },
+    {
+     "id": "amz-112",
+     "intent": "order_status_general",
+     "score": 0.374,
+     "top3": [
+      "order_status_general",
+      "other_unclear",
+      "delivery_delay"
+     ],
+     "max_sim": 0.709,
+     "agreement": 0.0,
+     "draft": "Did you happen to discuss the delivery issue with our support team? Do keep us posted.",
+     "evidence_ids": [
+      2255
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "LOW_SCORE",
+     "reason": "model_score 0.37 below 0.70"
+    },
+    {
+     "id": "amz-005",
+     "intent": "order_status_general",
+     "score": 0.406,
+     "top3": [
+      "order_status_general",
+      "delivery_delay",
+      "other_unclear"
+     ],
+     "max_sim": 0.69,
+     "agreement": 0.0,
+     "draft": "Thanks for keeping us posted!",
+     "evidence_ids": [
+      883
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "LOW_SCORE",
+     "reason": "model_score 0.41 below 0.70"
+    },
+    {
+     "id": "amz-104",
+     "intent": "other_unclear",
+     "score": 0.802,
+     "top3": [
+      "other_unclear",
+      "order_status_general",
+      "device_app_account"
+     ],
+     "max_sim": 0.683,
+     "agreement": 1.0,
+     "draft": "If they ask you for the last 4 digits of the card, that should be fine. That is for verification. Hope that helps..",
+     "evidence_ids": [
+      966
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "UNKNOWN_INTENT",
+     "reason": "message does not fit a defined intent"
+    },
+    {
+     "id": "amz-119",
+     "intent": "other_unclear",
+     "score": 0.804,
+     "top3": [
+      "other_unclear",
+      "missing_parcel_tracking",
+      "device_app_account"
+     ],
+     "max_sim": 0.688,
+     "agreement": 1.0,
+     "draft": "Thanks for keeping us posted!",
+     "evidence_ids": [
+      883
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "UNKNOWN_INTENT",
+     "reason": "message does not fit a defined intent"
+    },
+    {
+     "id": "amz-120",
+     "intent": "refund_return",
+     "score": 0.827,
+     "top3": [
+      "refund_return",
+      "other_unclear",
+      "missing_parcel_tracking"
+     ],
+     "max_sim": 0.658,
+     "agreement": 1.0,
+     "draft": "Sorry to hear that. Please contact our customer service: <URL> My colleagues will have a look into this.",
+     "evidence_ids": [
+      2604
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "auto",
+     "reason_code": "OK_AUTO",
+     "reason": "confident intent, precedent found, low risk, grounded draft"
+    },
+    {
+     "id": "amz-093",
+     "intent": "order_status_general",
+     "score": 0.788,
+     "top3": [
+      "order_status_general",
+      "other_unclear",
+      "device_app_account"
+     ],
+     "max_sim": 0.64,
+     "agreement": 0.333,
+     "draft": "if you have submitted the form here: <URL> with requested details. 2/3",
+     "evidence_ids": [
+      859
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "WEAK_EVIDENCE",
+     "reason": "precedent agrees 0.33 < 0.67 with predicted intent; likely misclassified"
+    },
+    {
+     "id": "amz-079",
+     "intent": "refund_return",
+     "score": 0.44,
+     "top3": [
+      "refund_return",
+      "other_unclear",
+      "order_status_general"
+     ],
+     "max_sim": 0.518,
+     "agreement": 0.333,
+     "draft": "Please don’t provide your order details as it is personal information. Our Twitter page is visible to the public.",
+     "evidence_ids": [
+      1384
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "LOW_SCORE",
+     "reason": "model_score 0.44 below 0.70"
+    },
+    {
+     "id": "amz-025",
+     "intent": "other_unclear",
+     "score": 0.914,
+     "top3": [
+      "other_unclear",
+      "refund_return",
+      "device_app_account"
+     ],
+     "max_sim": 0.592,
+     "agreement": 1.0,
+     "draft": "That does seem rather excessive. Please leave feedback here: <URL>",
+     "evidence_ids": [
+      290
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "UNKNOWN_INTENT",
+     "reason": "message does not fit a defined intent"
+    },
+    {
+     "id": "amz-114",
+     "intent": "other_unclear",
+     "score": 0.599,
+     "top3": [
+      "other_unclear",
+      "missing_parcel_tracking",
+      "refund_return"
+     ],
+     "max_sim": 0.669,
+     "agreement": 0.667,
+     "draft": "Please don't provide your order details, we consider it to be personal information. Our page is visible to public.(3/3)",
+     "evidence_ids": [
+      814
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "UNKNOWN_INTENT",
+     "reason": "message does not fit a defined intent"
+    },
+    {
+     "id": "amz-067",
+     "intent": "other_unclear",
+     "score": 0.413,
+     "top3": [
+      "other_unclear",
+      "device_app_account",
+      "missing_parcel_tracking"
+     ],
+     "max_sim": 0.805,
+     "agreement": 0.333,
+     "draft": "I'm sorry your order was canceled! Have you reported this to our Customer Support team: <URL>",
+     "evidence_ids": [
+      1724
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "UNKNOWN_INTENT",
+     "reason": "message does not fit a defined intent"
+    },
+    {
+     "id": "amz-040",
+     "intent": "other_unclear",
+     "score": 0.807,
+     "top3": [
+      "other_unclear",
+      "refund_return",
+      "device_app_account"
+     ],
+     "max_sim": 0.486,
+     "agreement": 1.0,
+     "draft": "Two Questions. What is the version that you have currently (6.0 is the new one) and have you refreshed your updates page?",
+     "evidence_ids": [
+      682
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "UNKNOWN_INTENT",
+     "reason": "message does not fit a defined intent"
+    },
+    {
+     "id": "amz-058",
+     "intent": "missing_parcel_tracking",
+     "score": 0.363,
+     "top3": [
+      "missing_parcel_tracking",
+      "other_unclear",
+      "refund_return"
+     ],
+     "max_sim": 0.703,
+     "agreement": 0.0,
+     "draft": "Please don't provide your order details, we consider it to be personal information. Our page is visible to public.(3/3)",
+     "evidence_ids": [
+      814
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "LOW_SCORE",
+     "reason": "model_score 0.36 below 0.70"
+    },
+    {
+     "id": "amz-113",
+     "intent": "device_app_account",
+     "score": 0.556,
+     "top3": [
+      "device_app_account",
+      "other_unclear",
+      "refund_return"
+     ],
+     "max_sim": 0.639,
+     "agreement": 1.0,
+     "draft": "I'm so sorry for the account trouble! Have you received an e-mail regarding this issue? If so, please reply to it for more info.",
+     "evidence_ids": [
+      2139
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "LOW_SCORE",
+     "reason": "model_score 0.56 below 0.70"
+    },
+    {
+     "id": "amz-123",
+     "intent": "refund_return",
+     "score": 0.499,
+     "top3": [
+      "refund_return",
+      "other_unclear",
+      "missing_parcel_tracking"
+     ],
+     "max_sim": 0.533,
+     "agreement": 0.0,
+     "draft": "Sorry to hear that they haven't provided you with answers. Have you tracked your orders though the website? You can find the tracking info here: <URL>",
+     "evidence_ids": [
+      1755
+     ],
+     "grounding_passed": true,
+     "risk": "sue",
+     "decision": "human",
+     "reason_code": "HIGH_RISK",
+     "reason": "matched risk phrase: 'sue'"
+    },
+    {
+     "id": "amz-125",
+     "intent": "other_unclear",
+     "score": 0.37,
+     "top3": [
+      "other_unclear",
+      "missing_parcel_tracking",
+      "refund_return"
+     ],
+     "max_sim": 0.635,
+     "agreement": 0.333,
+     "draft": "Okay, so just to confirm, are you seeing the item being shipped by Amazon here: <URL>",
+     "evidence_ids": [
+      1537
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "UNKNOWN_INTENT",
+     "reason": "message does not fit a defined intent"
+    },
+    {
+     "id": "amz-129",
+     "intent": "other_unclear",
+     "score": 0.411,
+     "top3": [
+      "other_unclear",
+      "missing_parcel_tracking",
+      "refund_return"
+     ],
+     "max_sim": 0.667,
+     "agreement": 0.333,
+     "draft": "Fear not! Orders can dispatch and be delivered within the same day. Please keep us updated on the delivery, and let us know if you haven't received your order by 8 PM today.",
+     "evidence_ids": [
+      2202
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "UNKNOWN_INTENT",
+     "reason": "message does not fit a defined intent"
+    },
+    {
+     "id": "amz-011",
+     "intent": "other_unclear",
+     "score": 0.491,
+     "top3": [
+      "other_unclear",
+      "delivery_delay",
+      "refund_return"
+     ],
+     "max_sim": 0.582,
+     "agreement": 0.333,
+     "draft": "So sorry for the delay! Was this item sold by Amazon or one of our sellers? Who's the carrier: <URL>",
+     "evidence_ids": [
+      2870
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "UNKNOWN_INTENT",
+     "reason": "message does not fit a defined intent"
+    },
+    {
+     "id": "amz-054",
+     "intent": "other_unclear",
+     "score": 0.674,
+     "top3": [
+      "other_unclear",
+      "device_app_account",
+      "refund_return"
+     ],
+     "max_sim": 0.587,
+     "agreement": 0.333,
+     "draft": "That is an amazing suggestion! I'll share this with our team immediately. We'll work on this for the future. Thanks a lot!",
+     "evidence_ids": [
+      2860
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "UNKNOWN_INTENT",
+     "reason": "message does not fit a defined intent"
+    },
+    {
+     "id": "amz-032",
+     "intent": "missing_parcel_tracking",
+     "score": 0.678,
+     "top3": [
+      "missing_parcel_tracking",
+      "other_unclear",
+      "delivery_delay"
+     ],
+     "max_sim": 0.704,
+     "agreement": 0.333,
+     "draft": "I'm sorry you haven't received your package, even though it was marked delivered. We're here to help and would like a member of our team to take a closer look here: <URL>",
+     "evidence_ids": [
+      1005
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "LOW_SCORE",
+     "reason": "model_score 0.68 below 0.70"
+    },
+    {
+     "id": "amz-006",
+     "intent": "missing_parcel_tracking",
+     "score": 0.482,
+     "top3": [
+      "missing_parcel_tracking",
+      "delivery_delay",
+      "order_status_general"
+     ],
+     "max_sim": 0.54,
+     "agreement": 0.667,
+     "draft": "I understand your concern about the order. However, once the order is returned we cannot reinstate it. I request you(1/3)",
+     "evidence_ids": [
+      2166
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "LOW_SCORE",
+     "reason": "model_score 0.48 below 0.70"
+    },
+    {
+     "id": "amz-017",
+     "intent": "other_unclear",
+     "score": 0.83,
+     "top3": [
+      "other_unclear",
+      "missing_parcel_tracking",
+      "refund_return"
+     ],
+     "max_sim": 0.631,
+     "agreement": 0.667,
+     "draft": "Please keep us in the loop on how the phone call goes. Thank you.",
+     "evidence_ids": [
+      2820
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "UNKNOWN_INTENT",
+     "reason": "message does not fit a defined intent"
+    },
+    {
+     "id": "amz-028",
+     "intent": "other_unclear",
+     "score": 0.654,
+     "top3": [
+      "other_unclear",
+      "missing_parcel_tracking",
+      "refund_return"
+     ],
+     "max_sim": 0.706,
+     "agreement": 0.0,
+     "draft": "I'm sorry this was left on the doorstep. We'd like to address your feedback with the carrier: <URL>",
+     "evidence_ids": [
+      1360
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "UNKNOWN_INTENT",
+     "reason": "message does not fit a defined intent"
+    },
+    {
+     "id": "amz-003",
+     "intent": "other_unclear",
+     "score": 0.701,
+     "top3": [
+      "other_unclear",
+      "refund_return",
+      "delivery_delay"
+     ],
+     "max_sim": 0.46,
+     "agreement": 0.333,
+     "draft": "I'm sorry for the trouble. Here are some options we have with regard to a replacement or exchange: <URL>",
+     "evidence_ids": [
+      3125
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "UNKNOWN_INTENT",
+     "reason": "message does not fit a defined intent"
+    },
+    {
+     "id": "amz-082",
+     "intent": "other_unclear",
+     "score": 0.622,
+     "top3": [
+      "other_unclear",
+      "missing_parcel_tracking",
+      "refund_return"
+     ],
+     "max_sim": 0.699,
+     "agreement": 0.333,
+     "draft": "I'm sorry for the delivery trouble! Available options can be found here, if you need them: <URL>",
+     "evidence_ids": [
+      1252
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "UNKNOWN_INTENT",
+     "reason": "message does not fit a defined intent"
+    },
+    {
+     "id": "amz-122",
+     "intent": "other_unclear",
+     "score": 0.508,
+     "top3": [
+      "other_unclear",
+      "missing_parcel_tracking",
+      "refund_return"
+     ],
+     "max_sim": 0.717,
+     "agreement": 0.0,
+     "draft": "I'm sorry this was left on the doorstep. We'd like to address your feedback with the carrier: <URL>",
+     "evidence_ids": [
+      1360
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "UNKNOWN_INTENT",
+     "reason": "message does not fit a defined intent"
+    },
+    {
+     "id": "amz-142",
+     "intent": "other_unclear",
+     "score": 0.504,
+     "top3": [
+      "other_unclear",
+      "device_app_account",
+      "refund_return"
+     ],
+     "max_sim": 0.641,
+     "agreement": 0.0,
+     "draft": "ships. As an alternative, you can subscribe for prime right now and the prime membership offered with Echo 2/3",
+     "evidence_ids": [
+      1155
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "UNKNOWN_INTENT",
+     "reason": "message does not fit a defined intent"
+    },
+    {
+     "id": "amz-014",
+     "intent": "other_unclear",
+     "score": 0.682,
+     "top3": [
+      "other_unclear",
+      "refund_return",
+      "delivery_delay"
+     ],
+     "max_sim": 0.626,
+     "agreement": 1.0,
+     "draft": "Did you click on the link ^AB sent you?",
+     "evidence_ids": [
+      1562
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "UNKNOWN_INTENT",
+     "reason": "message does not fit a defined intent"
+    },
+    {
+     "id": "amz-029",
+     "intent": "other_unclear",
+     "score": 0.525,
+     "top3": [
+      "other_unclear",
+      "delivery_delay",
+      "refund_return"
+     ],
+     "max_sim": 0.654,
+     "agreement": 0.333,
+     "draft": "I'm sorry for the poor experience, Mike. This is never our intention. What's the delivery date provided in your order confirmation e-mail here: <URL>",
+     "evidence_ids": [
+      2424
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "UNKNOWN_INTENT",
+     "reason": "message does not fit a defined intent"
+    },
+    {
+     "id": "amz-087",
+     "intent": "other_unclear",
+     "score": 0.494,
+     "top3": [
+      "other_unclear",
+      "delivery_delay",
+      "refund_return"
+     ],
+     "max_sim": 0.663,
+     "agreement": 0.667,
+     "draft": "I'm afraid it doesn't work that way. We deliver products according to the estimates. Request you to kindly wait.",
+     "evidence_ids": [
+      216
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "UNKNOWN_INTENT",
+     "reason": "message does not fit a defined intent"
+    },
+    {
+     "id": "amz-097",
+     "intent": "other_unclear",
+     "score": 0.73,
+     "top3": [
+      "other_unclear",
+      "delivery_delay",
+      "device_app_account"
+     ],
+     "max_sim": 0.655,
+     "agreement": 0.333,
+     "draft": "I'm sorry you haven't received your order! Typically, late packages arrive the next day. Keep us posted!",
+     "evidence_ids": [
+      2368
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "UNKNOWN_INTENT",
+     "reason": "message does not fit a defined intent"
+    },
+    {
+     "id": "amz-089",
+     "intent": "other_unclear",
+     "score": 0.513,
+     "top3": [
+      "other_unclear",
+      "order_status_general",
+      "refund_return"
+     ],
+     "max_sim": 0.765,
+     "agreement": 0.333,
+     "draft": "Please don't provide your order details, we consider it to be personal information. Our page is visible to the public. (2/2)",
+     "evidence_ids": [
+      2683
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "UNKNOWN_INTENT",
+     "reason": "message does not fit a defined intent"
+    },
+    {
+     "id": "amz-068",
+     "intent": "other_unclear",
+     "score": 0.678,
+     "top3": [
+      "other_unclear",
+      "missing_parcel_tracking",
+      "device_app_account"
+     ],
+     "max_sim": 0.609,
+     "agreement": 0.333,
+     "draft": "I'd like a member of my team to investigate this directly. Please, provide us details here: <URL>",
+     "evidence_ids": [
+      3117
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "UNKNOWN_INTENT",
+     "reason": "message does not fit a defined intent"
+    },
+    {
+     "id": "amz-010",
+     "intent": "device_app_account",
+     "score": 0.457,
+     "top3": [
+      "device_app_account",
+      "other_unclear",
+      "refund_return"
+     ],
+     "max_sim": 0.554,
+     "agreement": 0.333,
+     "draft": "Could you please let us know what went wrong ? We'd like to help you. Please don't provide your order details, we consider it personal information. Our Twitter page is visible to public.",
+     "evidence_ids": [
+      2164
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "LOW_SCORE",
+     "reason": "model_score 0.46 below 0.70"
+    },
+    {
+     "id": "amz-070",
+     "intent": "device_app_account",
+     "score": 0.709,
+     "top3": [
+      "device_app_account",
+      "other_unclear",
+      "delivery_delay"
+     ],
+     "max_sim": 0.736,
+     "agreement": 0.667,
+     "draft": "& shows using the Fire TV Stick: <URL> 2/2",
+     "evidence_ids": [
+      1823
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "auto",
+     "reason_code": "OK_AUTO",
+     "reason": "confident intent, precedent found, low risk, grounded draft"
+    },
+    {
+     "id": "amz-116",
+     "intent": "other_unclear",
+     "score": 0.554,
+     "top3": [
+      "other_unclear",
+      "missing_parcel_tracking",
+      "order_status_general"
+     ],
+     "max_sim": 0.868,
+     "agreement": 0.0,
+     "draft": "Please don't provide your order details, as we consider it to be personal information. Our Twitter page is public.(2/2)",
+     "evidence_ids": [
+      1731
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "UNKNOWN_INTENT",
+     "reason": "message does not fit a defined intent"
+    },
+    {
+     "id": "amz-102",
+     "intent": "missing_parcel_tracking",
+     "score": 0.639,
+     "top3": [
+      "missing_parcel_tracking",
+      "other_unclear",
+      "refund_return"
+     ],
+     "max_sim": 0.61,
+     "agreement": 0.667,
+     "draft": "You can check the status by using the link here: <URL> 1/2",
+     "evidence_ids": [
+      55
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "LOW_SCORE",
+     "reason": "model_score 0.64 below 0.70"
+    },
+    {
+     "id": "amz-008",
+     "intent": "other_unclear",
+     "score": 0.471,
+     "top3": [
+      "other_unclear",
+      "missing_parcel_tracking",
+      "device_app_account"
+     ],
+     "max_sim": 0.522,
+     "agreement": 1.0,
+     "draft": "I'm sorry for the wait! Does this item current show in stock via the marketplace (.com /.co.uk / etc.) you ordered from?",
+     "evidence_ids": [
+      1437
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "UNKNOWN_INTENT",
+     "reason": "message does not fit a defined intent"
+    },
+    {
+     "id": "amz-091",
+     "intent": "other_unclear",
+     "score": 0.462,
+     "top3": [
+      "other_unclear",
+      "device_app_account",
+      "order_status_general"
+     ],
+     "max_sim": 0.693,
+     "agreement": 0.667,
+     "draft": "Please don’t provide order details as we consider them to be personal info. Our Twitter page is visible to public. (2/2)",
+     "evidence_ids": [
+      236
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "UNKNOWN_INTENT",
+     "reason": "message does not fit a defined intent"
+    },
+    {
+     "id": "amz-138",
+     "intent": "refund_return",
+     "score": 0.368,
+     "top3": [
+      "refund_return",
+      "other_unclear",
+      "missing_parcel_tracking"
+     ],
+     "max_sim": 0.7,
+     "agreement": 0.667,
+     "draft": "Orders will be delivered as per given estimates. Could you confirm if we happen to miss the same?",
+     "evidence_ids": [
+      2471
+     ],
+     "grounding_passed": true,
+     "risk": "harass",
+     "decision": "human",
+     "reason_code": "HIGH_RISK",
+     "reason": "matched risk phrase: 'harass'"
+    },
+    {
+     "id": "amz-045",
+     "intent": "other_unclear",
+     "score": 0.477,
+     "top3": [
+      "other_unclear",
+      "refund_return",
+      "missing_parcel_tracking"
+     ],
+     "max_sim": 0.535,
+     "agreement": 0.0,
+     "draft": "We're not able to access or take action on your account from Twitter but we'd be happy to look into available options here: <URL>",
+     "evidence_ids": [
+      647
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "UNKNOWN_INTENT",
+     "reason": "message does not fit a defined intent"
+    },
+    {
+     "id": "amz-064",
+     "intent": "other_unclear",
+     "score": 0.415,
+     "top3": [
+      "other_unclear",
+      "refund_return",
+      "order_status_general"
+     ],
+     "max_sim": 0.675,
+     "agreement": 0.0,
+     "draft": "Twitter is a social media platform we'll not be able to access any of your account/order details. Kindly connect with 1/2",
+     "evidence_ids": [
+      3010
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "UNKNOWN_INTENT",
+     "reason": "message does not fit a defined intent"
+    },
+    {
+     "id": "amz-039",
+     "intent": "other_unclear",
+     "score": 0.424,
+     "top3": [
+      "other_unclear",
+      "delivery_delay",
+      "refund_return"
+     ],
+     "max_sim": 0.527,
+     "agreement": 0.667,
+     "draft": "I'm very sorry that your book arrived late, and damaged, Emily. Please set up a return for a refund or replacement, here: <URL> And please let us know if we can be of further assistance!",
+     "evidence_ids": [
+      2956
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "UNKNOWN_INTENT",
+     "reason": "message does not fit a defined intent"
+    },
+    {
+     "id": "amz-004",
+     "intent": "refund_return",
+     "score": 0.498,
+     "top3": [
+      "refund_return",
+      "other_unclear",
+      "delivery_delay"
+     ],
+     "max_sim": 0.665,
+     "agreement": 0.667,
+     "draft": "Refunds typically take 5-7 days for banks to process. More info on refunds can be found here: <URL>",
+     "evidence_ids": [
+      3103
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "LOW_SCORE",
+     "reason": "model_score 0.50 below 0.70"
+    },
+    {
+     "id": "amz-132",
+     "intent": "other_unclear",
+     "score": 0.819,
+     "top3": [
+      "other_unclear",
+      "refund_return",
+      "missing_parcel_tracking"
+     ],
+     "max_sim": 0.692,
+     "agreement": 0.667,
+     "draft": "I'm sorry for the trouble! Have we missed the delivery date provided at checkout: <URL>",
+     "evidence_ids": [
+      3162
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "UNKNOWN_INTENT",
+     "reason": "message does not fit a defined intent"
+    },
+    {
+     "id": "amz-118",
+     "intent": "refund_return",
+     "score": 0.989,
+     "top3": [
+      "refund_return",
+      "other_unclear",
+      "missing_parcel_tracking"
+     ],
+     "max_sim": 0.709,
+     "agreement": 1.0,
+     "draft": "Thanks for the update. Please revert to the email you've received from us, you can check that here: <URL>",
+     "evidence_ids": [
+      1811
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "auto",
+     "reason_code": "OK_AUTO",
+     "reason": "confident intent, precedent found, low risk, grounded draft"
+    },
+    {
+     "id": "amz-111",
+     "intent": "other_unclear",
+     "score": 0.665,
+     "top3": [
+      "other_unclear",
+      "order_status_general",
+      "delivery_delay"
+     ],
+     "max_sim": 0.779,
+     "agreement": 0.333,
+     "draft": "Please don't provide your order details, we consider it to be personal information. Our page is visible to the public. 2/2",
+     "evidence_ids": [
+      2174
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "UNKNOWN_INTENT",
+     "reason": "message does not fit a defined intent"
+    },
+    {
+     "id": "amz-023",
+     "intent": "other_unclear",
+     "score": 0.488,
+     "top3": [
+      "other_unclear",
+      "order_status_general",
+      "refund_return"
+     ],
+     "max_sim": 0.769,
+     "agreement": 0.333,
+     "draft": "We apologize for the trouble you've had with this order. We never intend to cater such experience. Ideally, if an order is canceled, a correspondence will be sent to your registered email address with the reason for cancellation. (1/2)",
+     "evidence_ids": [
+      2128
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "UNKNOWN_INTENT",
+     "reason": "message does not fit a defined intent"
+    },
+    {
+     "id": "amz-033",
+     "intent": "other_unclear",
+     "score": 0.749,
+     "top3": [
+      "other_unclear",
+      "missing_parcel_tracking",
+      "delivery_delay"
+     ],
+     "max_sim": 0.587,
+     "agreement": 0.667,
+     "draft": "Please don't provide your order details, we consider it to be personal information. Our page is visible to the public. (2/2)",
+     "evidence_ids": [
+      1070
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "UNKNOWN_INTENT",
+     "reason": "message does not fit a defined intent"
+    },
+    {
+     "id": "amz-051",
+     "intent": "device_app_account",
+     "score": 0.728,
+     "top3": [
+      "device_app_account",
+      "other_unclear",
+      "refund_return"
+     ],
+     "max_sim": 0.673,
+     "agreement": 0.333,
+     "draft": "Thanks for your interest. We have no information for that at this time. We'll pass your feedback to the relevant team.",
+     "evidence_ids": [
+      1542
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "WEAK_EVIDENCE",
+     "reason": "precedent agrees 0.33 < 0.67 with predicted intent; likely misclassified"
+    },
+    {
+     "id": "amz-065",
+     "intent": "other_unclear",
+     "score": 0.659,
+     "top3": [
+      "other_unclear",
+      "missing_parcel_tracking",
+      "device_app_account"
+     ],
+     "max_sim": 0.605,
+     "agreement": 1.0,
+     "draft": "So sorry for the trouble! Who was the carrier assigned to this shipment? You can check that here: <URL>",
+     "evidence_ids": [
+      3277
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "UNKNOWN_INTENT",
+     "reason": "message does not fit a defined intent"
+    },
+    {
+     "id": "amz-026",
+     "intent": "other_unclear",
+     "score": 0.542,
+     "top3": [
+      "other_unclear",
+      "device_app_account",
+      "refund_return"
+     ],
+     "max_sim": 0.532,
+     "agreement": 0.0,
+     "draft": "I'm sorry Olly. Have you tried reinstalling the app?",
+     "evidence_ids": [
+      1553
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "UNKNOWN_INTENT",
+     "reason": "message does not fit a defined intent"
+    },
+    {
+     "id": "amz-030",
+     "intent": "other_unclear",
+     "score": 0.375,
+     "top3": [
+      "other_unclear",
+      "delivery_delay",
+      "refund_return"
+     ],
+     "max_sim": 0.653,
+     "agreement": 0.333,
+     "draft": "Our support team should be able to investigate this. Do report the same to them via the link and keep us posted.",
+     "evidence_ids": [
+      608
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "UNKNOWN_INTENT",
+     "reason": "message does not fit a defined intent"
+    },
+    {
+     "id": "amz-044",
+     "intent": "order_status_general",
+     "score": 0.569,
+     "top3": [
+      "order_status_general",
+      "other_unclear",
+      "delivery_delay"
+     ],
+     "max_sim": 0.74,
+     "agreement": 0.333,
+     "draft": "Apologies for the inconvenience. Did we happen to miss the estimated delivery date provided on the order?",
+     "evidence_ids": [
+      888
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "LOW_SCORE",
+     "reason": "model_score 0.57 below 0.70"
+    },
+    {
+     "id": "amz-134",
+     "intent": "delivery_delay",
+     "score": 0.402,
+     "top3": [
+      "delivery_delay",
+      "other_unclear",
+      "order_status_general"
+     ],
+     "max_sim": 0.911,
+     "agreement": 0.333,
+     "draft": "Please don't provide your order details as we consider it personal info. Our twitter page is visible to public.(2/2)",
+     "evidence_ids": [
+      3313
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "LOW_SCORE",
+     "reason": "model_score 0.40 below 0.70"
+    },
+    {
+     "id": "amz-036",
+     "intent": "missing_parcel_tracking",
+     "score": 0.728,
+     "top3": [
+      "missing_parcel_tracking",
+      "other_unclear",
+      "refund_return"
+     ],
+     "max_sim": 0.81,
+     "agreement": 0.0,
+     "draft": "I'm so sorry for this issue with your order. Please let us take a look into this further by using this link: <URL>",
+     "evidence_ids": [
+      2308
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "WEAK_EVIDENCE",
+     "reason": "precedent agrees 0.00 < 0.67 with predicted intent; likely misclassified"
+    },
+    {
+     "id": "amz-013",
+     "intent": "other_unclear",
+     "score": 0.652,
+     "top3": [
+      "other_unclear",
+      "refund_return",
+      "delivery_delay"
+     ],
+     "max_sim": 0.667,
+     "agreement": 1.0,
+     "draft": "We understand your concern, Scott! All orders go through fulfillment and processing. Learn more here: <URL>",
+     "evidence_ids": [
+      943
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "UNKNOWN_INTENT",
+     "reason": "message does not fit a defined intent"
+    },
+    {
+     "id": "amz-137",
+     "intent": "refund_return",
+     "score": 0.435,
+     "top3": [
+      "refund_return",
+      "other_unclear",
+      "delivery_delay"
+     ],
+     "max_sim": 0.646,
+     "agreement": 1.0,
+     "draft": "You can find instructions here: <URL>",
+     "evidence_ids": [
+      1532
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "LOW_SCORE",
+     "reason": "model_score 0.43 below 0.70"
+    },
+    {
+     "id": "amz-074",
+     "intent": "other_unclear",
+     "score": 0.547,
+     "top3": [
+      "other_unclear",
+      "missing_parcel_tracking",
+      "order_status_general"
+     ],
+     "max_sim": 0.714,
+     "agreement": 0.667,
+     "draft": "I'm sorry to see this! Some items are availble to ship right away! You can learn more here: <URL>",
+     "evidence_ids": [
+      1824
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "UNKNOWN_INTENT",
+     "reason": "message does not fit a defined intent"
+    },
+    {
+     "id": "amz-090",
+     "intent": "refund_return",
+     "score": 0.619,
+     "top3": [
+      "refund_return",
+      "other_unclear",
+      "missing_parcel_tracking"
+     ],
+     "max_sim": 0.726,
+     "agreement": 0.667,
+     "draft": "We'd like to help the best we can! Have you spoken to any family members or friends about sending a package to you?",
+     "evidence_ids": [
+      785
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "LOW_SCORE",
+     "reason": "model_score 0.62 below 0.70"
+    },
+    {
+     "id": "amz-053",
+     "intent": "other_unclear",
+     "score": 0.695,
+     "top3": [
+      "other_unclear",
+      "delivery_delay",
+      "missing_parcel_tracking"
+     ],
+     "max_sim": 0.761,
+     "agreement": 0.0,
+     "draft": "Hi, apologies for the delay. Is there more info available on the tracking here: <URL>",
+     "evidence_ids": [
+      3180
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "UNKNOWN_INTENT",
+     "reason": "message does not fit a defined intent"
+    },
+    {
+     "id": "amz-101",
+     "intent": "other_unclear",
+     "score": 0.71,
+     "top3": [
+      "other_unclear",
+      "delivery_delay",
+      "refund_return"
+     ],
+     "max_sim": 0.511,
+     "agreement": 1.0,
+     "draft": "Right, it's not available at Amazon.in.",
+     "evidence_ids": [
+      691
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "UNKNOWN_INTENT",
+     "reason": "message does not fit a defined intent"
+    },
+    {
+     "id": "amz-056",
+     "intent": "other_unclear",
+     "score": 0.661,
+     "top3": [
+      "other_unclear",
+      "missing_parcel_tracking",
+      "refund_return"
+     ],
+     "max_sim": 0.673,
+     "agreement": 0.333,
+     "draft": "Hi, I'm sorry to hear that. What info is available in the tracking: <URL>",
+     "evidence_ids": [
+      3181
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "UNKNOWN_INTENT",
+     "reason": "message does not fit a defined intent"
+    },
+    {
+     "id": "amz-106",
+     "intent": "device_app_account",
+     "score": 0.485,
+     "top3": [
+      "device_app_account",
+      "other_unclear",
+      "refund_return"
+     ],
+     "max_sim": 0.661,
+     "agreement": 1.0,
+     "draft": "My apologies for this. Were any additional options outlined in their response?",
+     "evidence_ids": [
+      189
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "LOW_SCORE",
+     "reason": "model_score 0.49 below 0.70"
+    },
+    {
+     "id": "amz-048",
+     "intent": "refund_return",
+     "score": 0.929,
+     "top3": [
+      "refund_return",
+      "other_unclear",
+      "delivery_delay"
+     ],
+     "max_sim": 0.547,
+     "agreement": 1.0,
+     "draft": "If your order was canceled it sounds like it might be an authorization: <URL> Have you contacted your bank?",
+     "evidence_ids": [
+      1520
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "WEAK_EVIDENCE",
+     "reason": "max similarity 0.55 below 0.60; no precedent"
+    },
+    {
+     "id": "amz-055",
+     "intent": "other_unclear",
+     "score": 0.524,
+     "top3": [
+      "other_unclear",
+      "delivery_delay",
+      "missing_parcel_tracking"
+     ],
+     "max_sim": 0.728,
+     "agreement": 0.667,
+     "draft": "Hi. Is there any updated tracking information showing for the order: <URL>",
+     "evidence_ids": [
+      1543
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "UNKNOWN_INTENT",
+     "reason": "message does not fit a defined intent"
+    },
+    {
+     "id": "amz-107",
+     "intent": "other_unclear",
+     "score": 0.742,
+     "top3": [
+      "other_unclear",
+      "refund_return",
+      "delivery_delay"
+     ],
+     "max_sim": 0.606,
+     "agreement": 0.0,
+     "draft": "Apologies for the delay with the refund. We can't gain access to your account via Twitter and assist you. Please share 1/2",
+     "evidence_ids": [
+      855
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "UNKNOWN_INTENT",
+     "reason": "message does not fit a defined intent"
+    },
+    {
+     "id": "amz-022",
+     "intent": "other_unclear",
+     "score": 0.923,
+     "top3": [
+      "other_unclear",
+      "device_app_account",
+      "delivery_delay"
+     ],
+     "max_sim": 0.545,
+     "agreement": 0.667,
+     "draft": "I'm sorry to hear this! Have you had a chance to report this to our Customer Support team: <URL>",
+     "evidence_ids": [
+      1363
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "UNKNOWN_INTENT",
+     "reason": "message does not fit a defined intent"
+    },
+    {
+     "id": "amz-098",
+     "intent": "device_app_account",
+     "score": 0.802,
+     "top3": [
+      "device_app_account",
+      "other_unclear",
+      "refund_return"
+     ],
+     "max_sim": 0.602,
+     "agreement": 1.0,
+     "draft": "Oh no! I'm sorry to hear that you're having troubles with the Amazon app! Could you please tell us more about what's happening?",
+     "evidence_ids": [
+      2408
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "auto",
+     "reason_code": "OK_AUTO",
+     "reason": "confident intent, precedent found, low risk, grounded draft"
+    },
+    {
+     "id": "amz-133",
+     "intent": "other_unclear",
+     "score": 0.889,
+     "top3": [
+      "other_unclear",
+      "missing_parcel_tracking",
+      "device_app_account"
+     ],
+     "max_sim": 0.668,
+     "agreement": 0.333,
+     "draft": "We would like to take a closer look and escalate this for you. When you have a moment, please submit the requested information here: <URL>",
+     "evidence_ids": [
+      2809
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "UNKNOWN_INTENT",
+     "reason": "message does not fit a defined intent"
+    },
+    {
+     "id": "amz-148",
+     "intent": "refund_return",
+     "score": 0.456,
+     "top3": [
+      "refund_return",
+      "other_unclear",
+      "missing_parcel_tracking"
+     ],
+     "max_sim": 0.647,
+     "agreement": 0.667,
+     "draft": "That's odd! Let's take a further look into this with you here: <URL>",
+     "evidence_ids": [
+      2431
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "LOW_SCORE",
+     "reason": "model_score 0.46 below 0.70"
+    },
+    {
+     "id": "amz-130",
+     "intent": "other_unclear",
+     "score": 0.722,
+     "top3": [
+      "other_unclear",
+      "device_app_account",
+      "refund_return"
+     ],
+     "max_sim": 0.651,
+     "agreement": 0.333,
+     "draft": "May I know the reason for the return?",
+     "evidence_ids": [
+      618
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "UNKNOWN_INTENT",
+     "reason": "message does not fit a defined intent"
+    },
+    {
+     "id": "amz-059",
+     "intent": "other_unclear",
+     "score": 0.628,
+     "top3": [
+      "other_unclear",
+      "missing_parcel_tracking",
+      "refund_return"
+     ],
+     "max_sim": 0.578,
+     "agreement": 0.333,
+     "draft": "Please don't provide your order details, as we consider it to be personal info. Our page is visible to the public. 3/3",
+     "evidence_ids": [
+      398
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "UNKNOWN_INTENT",
+     "reason": "message does not fit a defined intent"
+    },
+    {
+     "id": "amz-052",
+     "intent": "missing_parcel_tracking",
+     "score": 0.771,
+     "top3": [
+      "missing_parcel_tracking",
+      "other_unclear",
+      "refund_return"
+     ],
+     "max_sim": 0.712,
+     "agreement": 1.0,
+     "draft": "Do you have current order that's been delayed? And, are you receiving a particular delay message with these orders?",
+     "evidence_ids": [
+      1427
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "auto",
+     "reason_code": "OK_AUTO",
+     "reason": "confident intent, precedent found, low risk, grounded draft"
+    },
+    {
+     "id": "amz-147",
+     "intent": "other_unclear",
+     "score": 0.516,
+     "top3": [
+      "other_unclear",
+      "delivery_delay",
+      "refund_return"
+     ],
+     "max_sim": 0.648,
+     "agreement": 1.0,
+     "draft": "Thank you for sharing the details. We will get back with an update soon. Appreciate your cooperation.",
+     "evidence_ids": [
+      1686
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "UNKNOWN_INTENT",
+     "reason": "message does not fit a defined intent"
+    },
+    {
+     "id": "amz-088",
+     "intent": "other_unclear",
+     "score": 0.745,
+     "top3": [
+      "other_unclear",
+      "missing_parcel_tracking",
+      "refund_return"
+     ],
+     "max_sim": 0.581,
+     "agreement": 0.0,
+     "draft": "Sorry for your previous delivery experience w/ us, Paul! What does the updated tracking info say here: <URL>",
+     "evidence_ids": [
+      3246
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "UNKNOWN_INTENT",
+     "reason": "message does not fit a defined intent"
+    },
+    {
+     "id": "amz-117",
+     "intent": "other_unclear",
+     "score": 0.867,
+     "top3": [
+      "other_unclear",
+      "device_app_account",
+      "delivery_delay"
+     ],
+     "max_sim": 0.458,
+     "agreement": 1.0,
+     "draft": "Is it the email that states your order is out for delivery that has your work address on it? The address won't be changed on the email even if the address is changed for the actual order.",
+     "evidence_ids": [
+      1640
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "UNKNOWN_INTENT",
+     "reason": "message does not fit a defined intent"
+    },
+    {
+     "id": "amz-144",
+     "intent": "other_unclear",
+     "score": 0.742,
+     "top3": [
+      "other_unclear",
+      "delivery_delay",
+      "refund_return"
+     ],
+     "max_sim": 0.732,
+     "agreement": 0.667,
+     "draft": "Thanks for keeping us posted!",
+     "evidence_ids": [
+      883
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "UNKNOWN_INTENT",
+     "reason": "message does not fit a defined intent"
+    },
+    {
+     "id": "amz-046",
+     "intent": "other_unclear",
+     "score": 0.552,
+     "top3": [
+      "other_unclear",
+      "order_status_general",
+      "missing_parcel_tracking"
+     ],
+     "max_sim": 0.806,
+     "agreement": 1.0,
+     "draft": "I'll reach and assist you, once we receive your details. Please do keep us posted for any further assistance. (2/3)",
+     "evidence_ids": [
+      1033
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "UNKNOWN_INTENT",
+     "reason": "message does not fit a defined intent"
+    },
+    {
+     "id": "amz-037",
+     "intent": "other_unclear",
+     "score": 0.638,
+     "top3": [
+      "other_unclear",
+      "delivery_delay",
+      "missing_parcel_tracking"
+     ],
+     "max_sim": 0.714,
+     "agreement": 0.0,
+     "draft": "I'm sorry for the long wait; what is the current status for these orders when you review your order details? You can find this information through the following link: <URL>",
+     "evidence_ids": [
+      581
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "UNKNOWN_INTENT",
+     "reason": "message does not fit a defined intent"
+    },
+    {
+     "id": "amz-049",
+     "intent": "other_unclear",
+     "score": 0.429,
+     "top3": [
+      "other_unclear",
+      "order_status_general",
+      "device_app_account"
+     ],
+     "max_sim": 0.576,
+     "agreement": 0.333,
+     "draft": "automatically. However, if you have any issue you may reach out to our support 2/3",
+     "evidence_ids": [
+      146
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "UNKNOWN_INTENT",
+     "reason": "message does not fit a defined intent"
+    },
+    {
+     "id": "amz-000",
+     "intent": "other_unclear",
+     "score": 0.696,
+     "top3": [
+      "other_unclear",
+      "refund_return",
+      "device_app_account"
+     ],
+     "max_sim": 0.482,
+     "agreement": 0.333,
+     "draft": "Apologies for this ordeal, Raj. I'd like to take a closer look. 1/2",
+     "evidence_ids": [
+      2502
+     ],
+     "grounding_passed": true,
+     "risk": "fraud",
+     "decision": "human",
+     "reason_code": "UNKNOWN_INTENT",
+     "reason": "message does not fit a defined intent"
+    },
+    {
+     "id": "amz-009",
+     "intent": "order_status_general",
+     "score": 0.361,
+     "top3": [
+      "order_status_general",
+      "other_unclear",
+      "refund_return"
+     ],
+     "max_sim": 0.787,
+     "agreement": 0.333,
+     "draft": "Sorry for any inconvenience, Yogesh. Did we happen to miss the estimates shared with you ? (1/2)",
+     "evidence_ids": [
+      1372
+     ],
+     "grounding_passed": true,
+     "risk": "fraud",
+     "decision": "human",
+     "reason_code": "HIGH_RISK",
+     "reason": "matched risk phrase: 'fraud'"
+    }
+   ],
+   "accuracy": 0.34,
+   "macro_f1": 0.354270166307469,
+   "esc_precision": 0.22105263157894736,
+   "esc_recall": 0.9130434782608695,
+   "false_auto": 0.08695652173913043,
+   "coverage": 0.05,
+   "reason_codes": {
+    "UNKNOWN_INTENT": 68,
+    "WEAK_EVIDENCE": 5,
+    "LOW_SCORE": 18,
+    "HIGH_RISK": 4,
+    "OK_AUTO": 5
+   },
+   "judge_avg": 0.0,
+   "judge_n": 0
+  },
+  "ours_llm": {
+   "runs": [
+    {
+     "id": "amz-135",
+     "intent": "delivery_delay",
+     "score": 0.95,
+     "top3": [
+      "delivery_delay",
+      "order_status_general"
+     ],
+     "max_sim": 0.549,
+     "agreement": 0.0,
+     "draft": "I am very sorry for the delay with your order #702. I understand how frustrating it is to wait without updates. Please send us a DM with your full order details so we can investigate the status with the carrier for you. You can also check the latest tracking information here: <URL>. We are here to help resolve this.",
+     "evidence_ids": [
+      1718,
+      862,
+      2357
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "WEAK_EVIDENCE",
+     "reason": "max similarity 0.55 below 0.60; no precedent"
+    },
+    {
+     "id": "amz-128",
+     "intent": "other_unclear",
+     "score": 0.95,
+     "top3": [
+      "other_unclear"
+     ],
+     "max_sim": 0.397,
+     "agreement": 0.333,
+     "draft": "I am sorry to hear you are experiencing this issue. Could you please provide your order number or tracking details so I can investigate this further for you? Alternatively, please send us a direct message with your account details so we can look into this immediately.",
+     "evidence_ids": [
+      191,
+      2501
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "UNKNOWN_INTENT",
+     "reason": "message does not fit a defined intent"
+    },
+    {
+     "id": "amz-042",
+     "intent": "refund_return",
+     "score": 0.95,
+     "top3": [
+      "refund_return"
+     ],
+     "max_sim": 0.581,
+     "agreement": 0.667,
+     "draft": "We are sorry to hear about the delay with your refund and the frustration this has caused. As this is a public social media platform, please do not share your order details here for your security. Please report this issue directly at <URL> so our team can investigate the status of your return and refund immediately.",
+     "evidence_ids": [
+      2272,
+      493,
+      557
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "WEAK_EVIDENCE",
+     "reason": "max similarity 0.58 below 0.60; no precedent"
+    },
+    {
+     "id": "amz-141",
+     "intent": "refund_return",
+     "score": 0.95,
+     "top3": [
+      "refund_return",
+      "delivery_delay"
+     ],
+     "max_sim": 0.734,
+     "agreement": 1.0,
+     "draft": "I am sorry to hear about the trouble with your order. Please do not provide your order details here, as we consider that personal information and our page is visible to the public. To investigate this further, please contact us directly through this link: <URL>",
+     "evidence_ids": [
+      28,
+      2519,
+      2840
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "auto",
+     "reason_code": "OK_AUTO",
+     "reason": "confident intent, precedent found, low risk, grounded draft"
+    },
+    {
+     "id": "amz-121",
+     "intent": "missing_parcel_tracking",
+     "score": 0.95,
+     "top3": [
+      "missing_parcel_tracking",
+      "delivery_delay"
+     ],
+     "max_sim": 0.669,
+     "agreement": 0.333,
+     "draft": "I am very sorry to hear about the frustration caused by your recent delivery experience. We would like to investigate this for you. Could you please provide the order number or tracking details, or send us a DM with the information so we can look into this missing parcel immediately?",
+     "evidence_ids": [
+      569
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "WEAK_EVIDENCE",
+     "reason": "precedent agrees 0.33 < 0.67 with predicted intent; likely misclassified"
+    },
+    {
+     "id": "amz-066",
+     "intent": "refund_return",
+     "score": 0.95,
+     "top3": [
+      "refund_return",
+      "missing_parcel_tracking"
+     ],
+     "max_sim": 0.527,
+     "agreement": 0.0,
+     "draft": "I am very sorry for the frustration caused by the missing t-shirts and the delay in your refund. We want to investigate this immediately. Could you please provide your order number or send us a DM with the details so we can look into the status of your shipment and the refund process for you?",
+     "evidence_ids": [
+      1452,
+      224,
+      2947
+     ],
+     "grounding_passed": true,
+     "risk": "sue",
+     "decision": "human",
+     "reason_code": "HIGH_RISK",
+     "reason": "matched risk phrase: 'sue'"
+    },
+    {
+     "id": "amz-047",
+     "intent": "refund_return",
+     "score": 0.95,
+     "top3": [
+      "refund_return"
+     ],
+     "max_sim": 0.604,
+     "agreement": 0.0,
+     "draft": "Hi, we're very sorry to hear your jam arrived broken due to the packaging. Please don't provide your order details here as this is a public page. Have you been able to review your return or replacement options for this order? You can report this issue directly to our support team here: <URL> (1/2)^CB",
+     "evidence_ids": [
+      150,
+      908,
+      2215
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "WEAK_EVIDENCE",
+     "reason": "precedent agrees 0.00 < 0.67 with predicted intent; likely misclassified"
+    },
+    {
+     "id": "amz-027",
+     "intent": "other_unclear",
+     "score": 0.95,
+     "top3": [
+      "other_unclear"
+     ],
+     "max_sim": 0.606,
+     "agreement": 0.667,
+     "draft": "We are sorry to hear about your experience and apologize for the frustration caused. We would like to look into this for you. Please send us a DM with your order or tracking details so we can investigate your account and the associated records further. (1/2)",
+     "evidence_ids": [
+      1135,
+      1136,
+      82
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "UNKNOWN_INTENT",
+     "reason": "message does not fit a defined intent"
+    },
+    {
+     "id": "amz-050",
+     "intent": "refund_return",
+     "score": 0.85,
+     "top3": [
+      "refund_return",
+      "delivery_delay"
+     ],
+     "max_sim": 0.602,
+     "agreement": 0.0,
+     "draft": "I am very sorry to hear about the trouble with your order and that it was returned to the seller. We would like to investigate this for you. Could you please provide your order number or tracking details via DM so we can look into this further?",
+     "evidence_ids": [
+      829,
+      330,
+      2424
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "WEAK_EVIDENCE",
+     "reason": "precedent agrees 0.00 < 0.67 with predicted intent; likely misclassified"
+    },
+    {
+     "id": "amz-031",
+     "intent": "other_unclear",
+     "score": 0.95,
+     "top3": [
+      "other_unclear"
+     ],
+     "max_sim": 0.452,
+     "agreement": 0.667,
+     "draft": "I'm sorry to hear about your experience. We'd like to look into this for you. Could you please share your order or tracking details via DM so we can investigate further?",
+     "evidence_ids": [
+      450,
+      2067
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "UNKNOWN_INTENT",
+     "reason": "message does not fit a defined intent"
+    },
+    {
+     "id": "amz-061",
+     "intent": "delivery_delay",
+     "score": 0.95,
+     "top3": [
+      "delivery_delay"
+     ],
+     "max_sim": 0.606,
+     "agreement": 0.667,
+     "draft": "I'm sorry to hear your order arrived later than expected! I would like to look into this for you. Could you please provide your order number and the most recent tracking scan shown here: <URL>? Once I have those details, I can investigate what caused the delay.",
+     "evidence_ids": [
+      2977
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "auto",
+     "reason_code": "OK_AUTO",
+     "reason": "confident intent, precedent found, low risk, grounded draft"
+    },
+    {
+     "id": "amz-069",
+     "intent": "refund_return",
+     "score": 0.95,
+     "top3": [
+      "refund_return"
+     ],
+     "max_sim": 0.624,
+     "agreement": 1.0,
+     "draft": "I'm sorry to hear you haven't received your cashback for your July purchase. Please don't provide your order details here, as this page is visible to the public. Kindly connect with us here: <URL> and we'll be happy to investigate this for you.",
+     "evidence_ids": [
+      2826,
+      315
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "auto",
+     "reason_code": "OK_AUTO",
+     "reason": "confident intent, precedent found, low risk, grounded draft"
+    },
+    {
+     "id": "amz-126",
+     "intent": "device_app_account",
+     "score": 0.95,
+     "top3": [
+      "device_app_account"
+     ],
+     "max_sim": 0.627,
+     "agreement": 0.667,
+     "draft": "I'm sorry to hear you're having trouble loading Prime Video on your work computer. To help us investigate this, could you please let us know if you are receiving a specific error message? Also, please reach out to us via this link so we can look into your account details securely: <URL> ^NR",
+     "evidence_ids": [
+      1277,
+      646
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "auto",
+     "reason_code": "OK_AUTO",
+     "reason": "confident intent, precedent found, low risk, grounded draft"
+    },
+    {
+     "id": "amz-096",
+     "intent": "other_unclear",
+     "score": 0.85,
+     "top3": [
+      "other_unclear"
+     ],
+     "max_sim": 0.537,
+     "agreement": 0.667,
+     "draft": "I am very sorry to hear about your experience and the frustration this has caused. To help me look into this and investigate the status of your previous inquiries, please send us a Direct Message with your order or tracking details so we can review this privately.",
+     "evidence_ids": [
+      3285,
+      524,
+      2174
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "UNKNOWN_INTENT",
+     "reason": "message does not fit a defined intent"
+    },
+    {
+     "id": "amz-073",
+     "intent": "refund_return",
+     "score": 0.95,
+     "top3": [
+      "refund_return"
+     ],
+     "max_sim": 0.52,
+     "agreement": 0.333,
+     "draft": "I am sorry to hear you are unable to initiate the return yourself. I would like to investigate this for you. Could you please provide your order number or tracking details? Alternatively, please send us a DM with your order information so we can look into arranging a pickup for you.",
+     "evidence_ids": [
+      1570
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "WEAK_EVIDENCE",
+     "reason": "max similarity 0.52 below 0.60; no precedent"
+    },
+    {
+     "id": "amz-078",
+     "intent": "delivery_delay",
+     "score": 0.95,
+     "top3": [
+      "delivery_delay",
+      "order_status_general"
+     ],
+     "max_sim": 0.85,
+     "agreement": 0.0,
+     "draft": "I'm sorry for the frustration regarding your delivery delay. I'd like to look into this for you. Could you please send us a DM with your order number and the current tracking status you see here: <URL>? We'll investigate what's happening with your shipment right away.",
+     "evidence_ids": [
+      1770,
+      679
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "WEAK_EVIDENCE",
+     "reason": "precedent agrees 0.00 < 0.67 with predicted intent; likely misclassified"
+    },
+    {
+     "id": "amz-103",
+     "intent": "other_unclear",
+     "score": 0.95,
+     "top3": [
+      "other_unclear"
+     ],
+     "max_sim": 0.59,
+     "agreement": 0.333,
+     "draft": "I am very sorry to hear about your frustration regarding your experience. To help me investigate this further, could you please provide your order number or tracking details? Alternatively, please send us a DM with these details so we can look into this for you. ^PB",
+     "evidence_ids": [
+      1201
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "UNKNOWN_INTENT",
+     "reason": "message does not fit a defined intent"
+    },
+    {
+     "id": "amz-145",
+     "intent": "refund_return",
+     "score": 0.95,
+     "top3": [
+      "refund_return",
+      "delivery_delay"
+     ],
+     "max_sim": 0.58,
+     "agreement": 0.0,
+     "draft": "We are very sorry to hear about your experience with your cancelled orders and the missing phone cases. This is certainly not the level of service we aim to provide. To investigate this further, please send us a DM with your order details or the email address associated with your account so we can look into this for you.",
+     "evidence_ids": [
+      1
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "WEAK_EVIDENCE",
+     "reason": "max similarity 0.58 below 0.60; no precedent"
+    },
+    {
+     "id": "amz-112",
+     "intent": "delivery_delay",
+     "score": 0.9,
+     "top3": [
+      "delivery_delay",
+      "missing_parcel_tracking"
+     ],
+     "max_sim": 0.709,
+     "agreement": 0.0,
+     "draft": "We are very sorry to hear about the repeated delays and the frustration this has caused with your recent orders. Could you confirm if we happened to miss the mentioned time frame? Please do not provide your order details here, as this page is visible to the public. Please send us a DM so we can investigate this further for you.",
+     "evidence_ids": [
+      2255,
+      2954,
+      2663
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "WEAK_EVIDENCE",
+     "reason": "precedent agrees 0.00 < 0.67 with predicted intent; likely misclassified"
+    },
+    {
+     "id": "amz-005",
+     "intent": "missing_parcel_tracking",
+     "score": 0.95,
+     "top3": [
+      "missing_parcel_tracking",
+      "delivery_delay"
+     ],
+     "max_sim": 0.69,
+     "agreement": 0.0,
+     "draft": "I'm very sorry to hear your order hasn't arrived despite the delivery status. I'd like to investigate this with the carrier for you immediately. Could you please send us a DM with your order number or tracking details so we can look into this right away?",
+     "evidence_ids": [
+      2109
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "WEAK_EVIDENCE",
+     "reason": "precedent agrees 0.00 < 0.67 with predicted intent; likely misclassified"
+    },
+    {
+     "id": "amz-104",
+     "intent": "order_status_general",
+     "score": 0.95,
+     "top3": [
+      "order_status_general"
+     ],
+     "max_sim": 0.683,
+     "agreement": 0.0,
+     "draft": "I'm sorry for the confusion regarding your order 402-6608900-3256313. You can manage your order details as long as it hasn't entered the shipping process: https://www.amazon.com/gp/help/customer/display.html?nodeId=201910540. If you need further assistance, please send us a DM with your order details so we can investigate this for you. We're here to help!",
+     "evidence_ids": [
+      633
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "WEAK_EVIDENCE",
+     "reason": "precedent agrees 0.00 < 0.67 with predicted intent; likely misclassified"
+    },
+    {
+     "id": "amz-119",
+     "intent": "order_status_general",
+     "score": 0.9,
+     "top3": [
+      "order_status_general",
+      "missing_parcel_tracking"
+     ],
+     "max_sim": 0.688,
+     "agreement": 0.0,
+     "draft": "I understand you need your phone urgently and would like to track your order. To help me investigate the current status and courier details for you, please share your order number via DM. Once provided, I will look into this immediately.",
+     "evidence_ids": [],
+     "grounding_passed": false,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "WEAK_EVIDENCE",
+     "reason": "precedent agrees 0.00 < 0.67 with predicted intent; likely misclassified"
+    },
+    {
+     "id": "amz-120",
+     "intent": "refund_return",
+     "score": 0.95,
+     "top3": [
+      "refund_return"
+     ],
+     "max_sim": 0.658,
+     "agreement": 1.0,
+     "draft": "Hey there! We're glad to hear the issue is resolved. We're not able to view order-related details via social media, but we'd like to help in any way we can! Please click here: <URL> so we can take a closer look at your return status with you.",
+     "evidence_ids": [
+      3212
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "auto",
+     "reason_code": "OK_AUTO",
+     "reason": "confident intent, precedent found, low risk, grounded draft"
+    },
+    {
+     "id": "amz-093",
+     "intent": "order_status_general",
+     "score": 0.95,
+     "top3": [
+      "order_status_general"
+     ],
+     "max_sim": 0.64,
+     "agreement": 0.333,
+     "draft": "I understand you're looking for an update on your order status. Please don’t provide your order details here as it is personal information and our page is visible to the public. Please send us a DM with your order number so we can investigate this for you with the fastest shipping speed and we'll ensure to deliver it asap. (3/3)",
+     "evidence_ids": [
+      1639,
+      2953
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "WEAK_EVIDENCE",
+     "reason": "precedent agrees 0.33 < 0.67 with predicted intent; likely misclassified"
+    },
+    {
+     "id": "amz-079",
+     "intent": "refund_return",
+     "score": 0.95,
+     "top3": [
+      "refund_return"
+     ],
+     "max_sim": 0.518,
+     "agreement": 0.333,
+     "draft": "I am very sorry for the frustration regarding your defective iPhone SE and the lack of support you've received. We want to look into this for you immediately. Please send us a DM with your order details so we can investigate the status of your return request. Please don’t provide your order details here as it is personal information. Our Twitter page is visible to the public.",
+     "evidence_ids": [
+      1384
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "WEAK_EVIDENCE",
+     "reason": "max similarity 0.52 below 0.60; no precedent"
+    },
+    {
+     "id": "amz-025",
+     "intent": "other_unclear",
+     "score": 0.85,
+     "top3": [
+      "other_unclear"
+     ],
+     "max_sim": 0.592,
+     "agreement": 1.0,
+     "draft": "I am sorry to hear about the frustration caused by the packaging size and the inconvenience this caused with your neighbors. We are always looking to improve our shipping processes. Could you please send us a DM with your order number or tracking details so we can investigate this further? In the meantime, please share your feedback regarding packaging here: <URL>",
+     "evidence_ids": [
+      290,
+      1307
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "UNKNOWN_INTENT",
+     "reason": "message does not fit a defined intent"
+    },
+    {
+     "id": "amz-114",
+     "intent": "delivery_delay",
+     "score": 0.95,
+     "top3": [
+      "delivery_delay",
+      "missing_parcel_tracking"
+     ],
+     "max_sim": 0.669,
+     "agreement": 0.0,
+     "draft": "Hi there. I am very sorry to hear about the delay with your laptop delivery; this is certainly not the experience we want for our Prime members. To help me investigate this further, could you please send us a DM with your order number? Please don't provide your order details here, as our page is visible to the public.",
+     "evidence_ids": [
+      814,
+      217
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "WEAK_EVIDENCE",
+     "reason": "precedent agrees 0.00 < 0.67 with predicted intent; likely misclassified"
+    },
+    {
+     "id": "amz-067",
+     "intent": "refund_return",
+     "score": 0.85,
+     "top3": [
+      "refund_return",
+      "delivery_delay"
+     ],
+     "max_sim": 0.805,
+     "agreement": 0.0,
+     "draft": "I'm sorry to hear your Prime Now order was cancelled without notice. I understand how frustrating that is. Could you please send us a DM with your order number so we can investigate why this happened and look into the status of your refund?",
+     "evidence_ids": [
+      1724,
+      1476,
+      3180
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "WEAK_EVIDENCE",
+     "reason": "precedent agrees 0.00 < 0.67 with predicted intent; likely misclassified"
+    },
+    {
+     "id": "amz-040",
+     "intent": "refund_return",
+     "score": 0.95,
+     "top3": [
+      "refund_return"
+     ],
+     "max_sim": 0.486,
+     "agreement": 0.0,
+     "draft": "I am very sorry to hear that you received a demo model instead of a new iPad Pro. I would like to investigate this for you immediately. Could you please provide the order number or send us a DM with your account details so we can look into this? We want to ensure this is corrected for you.",
+     "evidence_ids": [
+      3327
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "WEAK_EVIDENCE",
+     "reason": "max similarity 0.49 below 0.60; no precedent"
+    },
+    {
+     "id": "amz-058",
+     "intent": "missing_parcel_tracking",
+     "score": 0.98,
+     "top3": [
+      "missing_parcel_tracking"
+     ],
+     "max_sim": 0.703,
+     "agreement": 0.0,
+     "draft": "I'm sorry to hear your package hasn't arrived despite the delivered status. We would like to investigate this with the carrier for you. Please send us a DM with your order number and the tracking information so we can look into this further. ^NR",
+     "evidence_ids": [
+      814,
+      2403,
+      712
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "WEAK_EVIDENCE",
+     "reason": "precedent agrees 0.00 < 0.67 with predicted intent; likely misclassified"
+    },
+    {
+     "id": "amz-113",
+     "intent": "device_app_account",
+     "score": 0.9,
+     "top3": [
+      "device_app_account",
+      "other_unclear"
+     ],
+     "max_sim": 0.639,
+     "agreement": 1.0,
+     "draft": "I am very sorry to hear that your account is showing as blocked. To help us investigate this further, please send us a DM with your account email address or any relevant order details. We will look into this and be in touch as soon as possible.",
+     "evidence_ids": [
+      2139,
+      822
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "auto",
+     "reason_code": "OK_AUTO",
+     "reason": "confident intent, precedent found, low risk, grounded draft"
+    },
+    {
+     "id": "amz-123",
+     "intent": "refund_return",
+     "score": 0.95,
+     "top3": [
+      "refund_return"
+     ],
+     "max_sim": 0.533,
+     "agreement": 0.0,
+     "draft": "We are truly sorry to hear about the frustration you've experienced regarding your refund and the lack of support over the past two months. We would like to investigate this immediately. Please send us a DM with your order details or the associated email address so we can look into this for you.",
+     "evidence_ids": [
+      1755,
+      2381,
+      493
+     ],
+     "grounding_passed": true,
+     "risk": "sue",
+     "decision": "human",
+     "reason_code": "HIGH_RISK",
+     "reason": "matched risk phrase: 'sue'"
+    },
+    {
+     "id": "amz-125",
+     "intent": "refund_return",
+     "score": 0.95,
+     "top3": [
+      "refund_return",
+      "missing_parcel_tracking",
+      "delivery_delay"
+     ],
+     "max_sim": 0.635,
+     "agreement": 0.0,
+     "draft": "I'm very sorry for the frustration caused by these delivery issues and the lack of return updates. I would like to investigate this for you. Could you please provide your order number or the tracking details? Alternatively, please send us a DM with these details so we can look into the status of your returns and the missing items: <URL>",
+     "evidence_ids": [
+      1537,
+      1610,
+      2424
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "WEAK_EVIDENCE",
+     "reason": "precedent agrees 0.00 < 0.67 with predicted intent; likely misclassified"
+    },
+    {
+     "id": "amz-129",
+     "intent": "delivery_delay",
+     "score": 0.95,
+     "top3": [
+      "delivery_delay"
+     ],
+     "max_sim": 0.667,
+     "agreement": 0.333,
+     "draft": "I'm sorry for the frustration caused by the delay of your NFS Payback order. We want to look into this for you right away. Could you please send us a DM with your order number or the tracking details so we can investigate the status of your delivery?",
+     "evidence_ids": [
+      1467
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "WEAK_EVIDENCE",
+     "reason": "precedent agrees 0.33 < 0.67 with predicted intent; likely misclassified"
+    },
+    {
+     "id": "amz-011",
+     "intent": "delivery_delay",
+     "score": 0.95,
+     "top3": [
+      "delivery_delay"
+     ],
+     "max_sim": 0.582,
+     "agreement": 0.667,
+     "draft": "Hi there, I'm very sorry to hear about the delay with your BAOT shipment. I'd like to look into this for you. Could you please send us a DM with your order details or check the latest status here: <URL>",
+     "evidence_ids": [
+      3181
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "WEAK_EVIDENCE",
+     "reason": "max similarity 0.58 below 0.60; no precedent"
+    },
+    {
+     "id": "amz-054",
+     "intent": "device_app_account",
+     "score": 0.9,
+     "top3": [
+      "device_app_account"
+     ],
+     "max_sim": 0.587,
+     "agreement": 0.667,
+     "draft": "We currently do not offer a color display Kindle, as our Kindle line is specifically designed with E-ink technology for a paper-like reading experience. Regarding #BlackFriday deals, please check our website for the latest offers. If you need help finding a specific device or have account questions, please send us a DM with your details so we can investigate further!",
+     "evidence_ids": [],
+     "grounding_passed": false,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "WEAK_EVIDENCE",
+     "reason": "max similarity 0.59 below 0.60; no precedent"
+    },
+    {
+     "id": "amz-032",
+     "intent": "delivery_delay",
+     "score": 0.95,
+     "top3": [
+      "delivery_delay",
+      "order_status_general"
+     ],
+     "max_sim": 0.704,
+     "agreement": 0.0,
+     "draft": "I am sorry to hear your package has been delayed past the expected delivery date. I understand how frustrating it is to see conflicting tracking information. To help us investigate this further, please send us a DM with your order number and the tracking details so we can look into this for you: https://amzn.to/3657QyB",
+     "evidence_ids": [
+      1005
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "WEAK_EVIDENCE",
+     "reason": "precedent agrees 0.00 < 0.67 with predicted intent; likely misclassified"
+    },
+    {
+     "id": "amz-006",
+     "intent": "missing_parcel_tracking",
+     "score": 0.98,
+     "top3": [
+      "missing_parcel_tracking"
+     ],
+     "max_sim": 0.54,
+     "agreement": 0.667,
+     "draft": "I am sorry to hear that your order 171-7614411-4707553 is marked as delivered but has not been received. Please don't provide your order details here, as we consider it to be personal information. Our Twitter page is public. Please send us a Direct Message so we can investigate this with the carrier for you.",
+     "evidence_ids": [
+      1731,
+      1003
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "WEAK_EVIDENCE",
+     "reason": "max similarity 0.54 below 0.60; no precedent"
+    },
+    {
+     "id": "amz-017",
+     "intent": "delivery_delay",
+     "score": 0.95,
+     "top3": [
+      "delivery_delay",
+      "missing_parcel_tracking"
+     ],
+     "max_sim": 0.631,
+     "agreement": 0.0,
+     "draft": "I am very sorry to hear about this frustrating experience, especially since you have confirmed no delivery attempt was made. Please share your order number or the tracking link here: <URL> and we will look into this for you. Please don’t provide your order details, (2/3)",
+     "evidence_ids": [
+      948
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "WEAK_EVIDENCE",
+     "reason": "precedent agrees 0.00 < 0.67 with predicted intent; likely misclassified"
+    },
+    {
+     "id": "amz-028",
+     "intent": "order_status_general",
+     "score": 0.95,
+     "top3": [
+      "order_status_general"
+     ],
+     "max_sim": 0.706,
+     "agreement": 0.0,
+     "draft": "I'm sorry for the frustration regarding the missing carrier information on your order status page. To investigate this further, could you please send us a DM with your order number? We would like to look into this for you and provide the correct tracking details. Please reach out to us here: https://www.amazon.com/contact-us",
+     "evidence_ids": [],
+     "grounding_passed": false,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "WEAK_EVIDENCE",
+     "reason": "precedent agrees 0.00 < 0.67 with predicted intent; likely misclassified"
+    },
+    {
+     "id": "amz-003",
+     "intent": "refund_return",
+     "score": 0.95,
+     "top3": [
+      "refund_return"
+     ],
+     "max_sim": 0.46,
+     "agreement": 0.667,
+     "draft": "I'm sorry to hear about the trouble with your LP order and the incorrect replacement. I would like to look into this for you. Could you please send us a DM with your order number or the tracking details so I can investigate what happened?",
+     "evidence_ids": [
+      3125,
+      1624,
+      1362
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "WEAK_EVIDENCE",
+     "reason": "max similarity 0.46 below 0.60; no precedent"
+    },
+    {
+     "id": "amz-082",
+     "intent": "delivery_delay",
+     "score": 0.95,
+     "top3": [
+      "delivery_delay",
+      "missing_parcel_tracking"
+     ],
+     "max_sim": 0.699,
+     "agreement": 0.333,
+     "draft": "I am very sorry to hear about this frustrating experience with your delivery. This is certainly not the service we aim to provide. To help me investigate this further, could you please send us a DM with your order number and the tracking details? We would like to look into this for you.",
+     "evidence_ids": [
+      2478
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "WEAK_EVIDENCE",
+     "reason": "precedent agrees 0.33 < 0.67 with predicted intent; likely misclassified"
+    },
+    {
+     "id": "amz-122",
+     "intent": "missing_parcel_tracking",
+     "score": 0.98,
+     "top3": [
+      "missing_parcel_tracking"
+     ],
+     "max_sim": 0.717,
+     "agreement": 1.0,
+     "draft": "I am very sorry to hear that your parcel is missing despite being marked as delivered. To investigate this with the carrier, could you please send us a DM with your order number? We need to verify the carrier details to open an investigation. You can also check the carrier information here: <URL>. Please let us know so we can assist you further.",
+     "evidence_ids": [
+      106
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "auto",
+     "reason_code": "OK_AUTO",
+     "reason": "confident intent, precedent found, low risk, grounded draft"
+    },
+    {
+     "id": "amz-142",
+     "intent": "delivery_delay",
+     "score": 0.95,
+     "top3": [
+      "delivery_delay",
+      "order_status_general"
+     ],
+     "max_sim": 0.641,
+     "agreement": 0.0,
+     "draft": "Oh no! We're sorry to hear your Echo hasn't arrived as expected. We'd like to look into this for you right away. Could you please provide your order number or the delivery date mentioned in your confirmation email? It may also help to know what your most recent tracking update says, which you can find here: <URL>",
+     "evidence_ids": [
+      1227
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "WEAK_EVIDENCE",
+     "reason": "precedent agrees 0.00 < 0.67 with predicted intent; likely misclassified"
+    },
+    {
+     "id": "amz-014",
+     "intent": "delivery_delay",
+     "score": 0.95,
+     "top3": [
+      "delivery_delay",
+      "missing_parcel_tracking"
+     ],
+     "max_sim": 0.626,
+     "agreement": 0.0,
+     "draft": "I am sorry to hear your book has not arrived as expected. To help me investigate this delay, could you please provide your order number or the delivery status you are currently seeing here: <URL>? Once I have those details, I can look into this for you.",
+     "evidence_ids": [
+      1873
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "WEAK_EVIDENCE",
+     "reason": "precedent agrees 0.00 < 0.67 with predicted intent; likely misclassified"
+    },
+    {
+     "id": "amz-029",
+     "intent": "delivery_delay",
+     "score": 0.95,
+     "top3": [
+      "delivery_delay",
+      "missing_parcel_tracking"
+     ],
+     "max_sim": 0.654,
+     "agreement": 0.667,
+     "draft": "I am very sorry to hear that your order has not arrived as expected. We would like to look into this for you. Please send us a DM with your order details so we can investigate the status of your shipment. Also, please don't provide the order details in this public thread, as we consider it personal information.",
+     "evidence_ids": [
+      2424,
+      2575
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "auto",
+     "reason_code": "OK_AUTO",
+     "reason": "confident intent, precedent found, low risk, grounded draft"
+    },
+    {
+     "id": "amz-087",
+     "intent": "delivery_delay",
+     "score": 0.95,
+     "top3": [
+      "delivery_delay"
+     ],
+     "max_sim": 0.663,
+     "agreement": 0.333,
+     "draft": "I'm sorry for the frustration caused by this 9-day delay, and I apologize that your order hasn't arrived as expected. Could you please confirm the current tracking status shown here: https://www.amazon.com/your-orders? Once you have that information, please send us a DM with the details so we can investigate what is happening with your shipment.",
+     "evidence_ids": [
+      2947,
+      3147
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "WEAK_EVIDENCE",
+     "reason": "precedent agrees 0.33 < 0.67 with predicted intent; likely misclassified"
+    },
+    {
+     "id": "amz-097",
+     "intent": "delivery_delay",
+     "score": 0.95,
+     "top3": [
+      "delivery_delay"
+     ],
+     "max_sim": 0.655,
+     "agreement": 0.0,
+     "draft": "I'm sorry for the frustration caused by this delay. We'd like to look into this for you. Could you please send us a DM with your order number or the tracking details so we can investigate what happened with your delivery?",
+     "evidence_ids": [
+      2368,
+      792,
+      569
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "WEAK_EVIDENCE",
+     "reason": "precedent agrees 0.00 < 0.67 with predicted intent; likely misclassified"
+    },
+    {
+     "id": "amz-089",
+     "intent": "refund_return",
+     "score": 0.9,
+     "top3": [
+      "refund_return",
+      "delivery_delay"
+     ],
+     "max_sim": 0.765,
+     "agreement": 0.0,
+     "draft": "We are truly sorry to hear about your experience with our delivery service and the interaction with our team. We would like to investigate this for you. Please send us a DM with your order details so we can look into this immediately. Please don't provide your order details here, as we consider them to be personal information. Our page is visible to the public. (2/2)",
+     "evidence_ids": [
+      2683,
+      2954,
+      236
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "WEAK_EVIDENCE",
+     "reason": "precedent agrees 0.00 < 0.67 with predicted intent; likely misclassified"
+    },
+    {
+     "id": "amz-068",
+     "intent": "other_unclear",
+     "score": 0.95,
+     "top3": [
+      "other_unclear"
+     ],
+     "max_sim": 0.609,
+     "agreement": 0.333,
+     "draft": "I'm sorry to hear about the trouble you've experienced with your recent deliveries. I'd like a member of my team to investigate this directly. Please, provide us with your order or tracking details here: <URL>",
+     "evidence_ids": [
+      3117,
+      2096
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "UNKNOWN_INTENT",
+     "reason": "message does not fit a defined intent"
+    },
+    {
+     "id": "amz-010",
+     "intent": "other_unclear",
+     "score": 0.95,
+     "top3": [
+      "other_unclear"
+     ],
+     "max_sim": 0.554,
+     "agreement": 0.667,
+     "draft": "I'm sorry to hear about your experience. We would like to look into this for you. Could you please send us a Direct Message with your order or tracking details so we can investigate further? Please do not share any personal information in this public thread.",
+     "evidence_ids": [
+      2164
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "UNKNOWN_INTENT",
+     "reason": "message does not fit a defined intent"
+    },
+    {
+     "id": "amz-070",
+     "intent": "device_app_account",
+     "score": 0.95,
+     "top3": [
+      "device_app_account",
+      "other_unclear"
+     ],
+     "max_sim": 0.736,
+     "agreement": 0.667,
+     "draft": "We're sorry for the frustration regarding device availability and casting options in your region. We'd like to look into this for you. Please send us a DM with your account details or order information so we can investigate further. 2/2",
+     "evidence_ids": [
+      1823,
+      317,
+      889
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "auto",
+     "reason_code": "OK_AUTO",
+     "reason": "confident intent, precedent found, low risk, grounded draft"
+    },
+    {
+     "id": "amz-116",
+     "intent": "missing_parcel_tracking",
+     "score": 0.95,
+     "top3": [
+      "missing_parcel_tracking"
+     ],
+     "max_sim": 0.868,
+     "agreement": 1.0,
+     "draft": "I am sorry to hear that your order shows as delivered but has not been received. Please don't provide your order details here, as we consider it to be personal information. Our Twitter page is public. Please send us a DM with your order number so we can investigate this with the carrier for you.",
+     "evidence_ids": [
+      616,
+      1731
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "auto",
+     "reason_code": "OK_AUTO",
+     "reason": "confident intent, precedent found, low risk, grounded draft"
+    },
+    {
+     "id": "amz-102",
+     "intent": "missing_parcel_tracking",
+     "score": 0.9,
+     "top3": [
+      "missing_parcel_tracking",
+      "order_status_general"
+     ],
+     "max_sim": 0.61,
+     "agreement": 0.667,
+     "draft": "I'm sorry to hear your parcel hasn't arrived as expected. We'd like to have a specialist look into this with you. Please provide your order details or reach out to us here: <URL> so we can investigate the tracking status further. Keep us posted.",
+     "evidence_ids": [
+      443,
+      1092
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "auto",
+     "reason_code": "OK_AUTO",
+     "reason": "confident intent, precedent found, low risk, grounded draft"
+    },
+    {
+     "id": "amz-008",
+     "intent": "delivery_delay",
+     "score": 0.85,
+     "top3": [
+      "delivery_delay",
+      "missing_parcel_tracking"
+     ],
+     "max_sim": 0.522,
+     "agreement": 0.0,
+     "draft": "I am very sorry to hear that your order was delivered to a distant post office instead of your home address. I understand how frustrating this is, especially when you paid for expedited delivery. Could you please provide your order number or the tracking ID so I can investigate this with the carrier for you?",
+     "evidence_ids": [
+      1974
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "WEAK_EVIDENCE",
+     "reason": "max similarity 0.52 below 0.60; no precedent"
+    },
+    {
+     "id": "amz-091",
+     "intent": "device_app_account",
+     "score": 0.9,
+     "top3": [
+      "device_app_account",
+      "other_unclear"
+     ],
+     "max_sim": 0.693,
+     "agreement": 0.0,
+     "draft": "I am sorry to hear you are having trouble reaching our support team through the app. To help us investigate this issue, could you please send us a DM with the email address associated with your account? Please don't provide your order details here, as we consider them to be personal information and our page is visible to the public.",
+     "evidence_ids": [
+      236,
+      2683
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "WEAK_EVIDENCE",
+     "reason": "precedent agrees 0.00 < 0.67 with predicted intent; likely misclassified"
+    },
+    {
+     "id": "amz-138",
+     "intent": "refund_return",
+     "score": 0.95,
+     "top3": [
+      "refund_return",
+      "order_status_general"
+     ],
+     "max_sim": 0.7,
+     "agreement": 0.667,
+     "draft": "I am truly sorry to hear about the distress this has caused you. We would like to investigate the status of your refund and the order issues. Could you please share the order ID for the second booking or send us a DM with your account details so we can look into this for you? (1/2)",
+     "evidence_ids": [
+      2471,
+      1372,
+      414
+     ],
+     "grounding_passed": true,
+     "risk": "harass",
+     "decision": "human",
+     "reason_code": "HIGH_RISK",
+     "reason": "matched risk phrase: 'harass'"
+    },
+    {
+     "id": "amz-045",
+     "intent": "refund_return",
+     "score": 0.95,
+     "top3": [
+      "refund_return",
+      "other_unclear"
+     ],
+     "max_sim": 0.535,
+     "agreement": 1.0,
+     "draft": "I am sorry to hear you are having trouble initiating your return. We are not able to access or take action on your account from here, but we would be happy to look into available options if you could provide your order details via DM. Please let us know the order number so we can investigate this further for you.",
+     "evidence_ids": [
+      647
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "WEAK_EVIDENCE",
+     "reason": "max similarity 0.53 below 0.60; no precedent"
+    },
+    {
+     "id": "amz-064",
+     "intent": "refund_return",
+     "score": 0.85,
+     "top3": [
+      "refund_return",
+      "order_status_general"
+     ],
+     "max_sim": 0.675,
+     "agreement": 0.0,
+     "draft": "I’m sorry to hear about the issue you’re facing with your order being returned. As this is a social media platform, we'll not be able to access any of your account/order details. Please don't provide your order details, as we consider it to be personal information. Our Twitter page is public. Kindly reach out to us via the 'Help' section in your Amazon app for further assistance. (1/2)",
+     "evidence_ids": [
+      3010,
+      1731,
+      1697
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "WEAK_EVIDENCE",
+     "reason": "precedent agrees 0.00 < 0.67 with predicted intent; likely misclassified"
+    },
+    {
+     "id": "amz-039",
+     "intent": "delivery_delay",
+     "score": 0.95,
+     "top3": [
+      "delivery_delay"
+     ],
+     "max_sim": 0.527,
+     "agreement": 0.0,
+     "draft": "I'm very sorry to hear your textbook rental is delayed, especially since you need it for your assignments. Please share your order number or the delivery status you are currently seeing here: <URL> Once you provide those details, I can investigate the delay for you. And please let us know if we can be of further assistance!",
+     "evidence_ids": [
+      1873
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "WEAK_EVIDENCE",
+     "reason": "max similarity 0.53 below 0.60; no precedent"
+    },
+    {
+     "id": "amz-004",
+     "intent": "refund_return",
+     "score": 0.95,
+     "top3": [
+      "refund_return"
+     ],
+     "max_sim": 0.665,
+     "agreement": 0.667,
+     "draft": "I am very sorry to hear about the trouble you've had with your defective item and the return process. We would like to investigate this further for you. Could you please provide your order number or send us a DM with your account details so we can look into this immediately?",
+     "evidence_ids": [
+      877
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "auto",
+     "reason_code": "OK_AUTO",
+     "reason": "confident intent, precedent found, low risk, grounded draft"
+    },
+    {
+     "id": "amz-132",
+     "intent": "missing_parcel_tracking",
+     "score": 0.95,
+     "top3": [
+      "missing_parcel_tracking",
+      "delivery_delay"
+     ],
+     "max_sim": 0.692,
+     "agreement": 0.0,
+     "draft": "I'm sorry for the trouble! I understand how frustrating it is when a package is marked as delivered but isn't at your door. To investigate this with the carrier, could you please confirm your order number or tracking ID via DM? We want to help resolve this for you!",
+     "evidence_ids": [
+      3162,
+      2397,
+      2038
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "WEAK_EVIDENCE",
+     "reason": "precedent agrees 0.00 < 0.67 with predicted intent; likely misclassified"
+    },
+    {
+     "id": "amz-118",
+     "intent": "refund_return",
+     "score": 0.95,
+     "top3": [
+      "refund_return",
+      "delivery_delay"
+     ],
+     "max_sim": 0.709,
+     "agreement": 1.0,
+     "draft": "We understand your frustration regarding your order and that you would prefer to receive the item rather than a refund. To investigate why the order was canceled and see if we can assist further, please send us a DM with your order number or tracking details. We would like to look into this for you.",
+     "evidence_ids": [],
+     "grounding_passed": false,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "GROUNDING_FAIL",
+     "reason": "draft failed grounding validation"
+    },
+    {
+     "id": "amz-111",
+     "intent": "refund_return",
+     "score": 0.95,
+     "top3": [
+      "refund_return",
+      "delivery_delay"
+     ],
+     "max_sim": 0.779,
+     "agreement": 0.333,
+     "draft": "I am very sorry to hear about the cancellation of your order #171-4584530-0179506 after such a long wait. I understand how frustrating this experience is. Please send us a DM with your order details so we can investigate this further for you. Twitter is a public platform, so please avoid sharing personal information here. (1/2)",
+     "evidence_ids": [
+      2174,
+      1245,
+      2137
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "WEAK_EVIDENCE",
+     "reason": "precedent agrees 0.33 < 0.67 with predicted intent; likely misclassified"
+    },
+    {
+     "id": "amz-023",
+     "intent": "refund_return",
+     "score": 0.95,
+     "top3": [
+      "refund_return",
+      "order_status_general"
+     ],
+     "max_sim": 0.769,
+     "agreement": 0.0,
+     "draft": "We sincerely apologize for the frustration caused by the cancellation of your order and the difficulty in reaching our support team. We never intend for our customers to have this experience. Please send us a DM with your order details so we can investigate this for you. Please do not share your order details here, as this page is public. (1/2)",
+     "evidence_ids": [
+      2128,
+      2683,
+      236
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "WEAK_EVIDENCE",
+     "reason": "precedent agrees 0.00 < 0.67 with predicted intent; likely misclassified"
+    },
+    {
+     "id": "amz-033",
+     "intent": "refund_return",
+     "score": 0.95,
+     "top3": [
+      "refund_return",
+      "order_status_general"
+     ],
+     "max_sim": 0.587,
+     "agreement": 0.0,
+     "draft": "I am sorry to hear about the frustration regarding your Clinique order and the payment status. To investigate this, please send us a DM with your order number. Please do not provide your order details here, as this is a public platform. Once received, we will look into the payment issue and the status of your order. (1/2)",
+     "evidence_ids": [
+      1070,
+      1245
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "WEAK_EVIDENCE",
+     "reason": "max similarity 0.59 below 0.60; no precedent"
+    },
+    {
+     "id": "amz-051",
+     "intent": "device_app_account",
+     "score": 0.9,
+     "top3": [
+      "device_app_account",
+      "other_unclear"
+     ],
+     "max_sim": 0.673,
+     "agreement": 0.333,
+     "draft": "I'm sorry to hear you're having trouble with your Prime membership status. To investigate this further, please send us a DM with your account details or the order/tracking information associated with your inquiry. We'll pass your feedback to the relevant team to look into this for you.",
+     "evidence_ids": [
+      1542
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "WEAK_EVIDENCE",
+     "reason": "precedent agrees 0.33 < 0.67 with predicted intent; likely misclassified"
+    },
+    {
+     "id": "amz-065",
+     "intent": "delivery_delay",
+     "score": 0.85,
+     "top3": [
+      "delivery_delay",
+      "missing_parcel_tracking"
+     ],
+     "max_sim": 0.605,
+     "agreement": 0.0,
+     "draft": "I'm sorry to hear about the trouble with your delivery access. I'd like to look into this for you. Without posting any personal details, could you please confirm the carrier assigned to this shipment and let me know if there were any specific obstructions or access issues at your property that might have caused this?",
+     "evidence_ids": [
+      3277,
+      521,
+      1076
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "WEAK_EVIDENCE",
+     "reason": "precedent agrees 0.00 < 0.67 with predicted intent; likely misclassified"
+    },
+    {
+     "id": "amz-026",
+     "intent": "device_app_account",
+     "score": 0.95,
+     "top3": [
+      "device_app_account",
+      "other_unclear"
+     ],
+     "max_sim": 0.532,
+     "agreement": 1.0,
+     "draft": "I'm sorry to hear about the display issues you're experiencing with the Android app. That's strange; have you tried signing out and back in, or uninstalling and reinstalling the app? If the issue persists, please send us a DM with your device details and the app version so we can investigate this further for you.",
+     "evidence_ids": [
+      2966
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "WEAK_EVIDENCE",
+     "reason": "max similarity 0.53 below 0.60; no precedent"
+    },
+    {
+     "id": "amz-030",
+     "intent": "delivery_delay",
+     "score": 0.95,
+     "top3": [
+      "delivery_delay",
+      "order_status_general"
+     ],
+     "max_sim": 0.653,
+     "agreement": 0.0,
+     "draft": "I am sorry to hear your order has not arrived as expected. I understand your frustration regarding the delay. Could you please provide your Order ID or the tracking details so we can investigate this for you? You can also reach out to our support team via this link: https://www.amazon.com/contact-us and we'll check this.",
+     "evidence_ids": [
+      608,
+      2869,
+      862
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "WEAK_EVIDENCE",
+     "reason": "precedent agrees 0.00 < 0.67 with predicted intent; likely misclassified"
+    },
+    {
+     "id": "amz-044",
+     "intent": "delivery_delay",
+     "score": 0.95,
+     "top3": [
+      "delivery_delay",
+      "order_status_general"
+     ],
+     "max_sim": 0.74,
+     "agreement": 0.0,
+     "draft": "I am sorry to hear about the delay with your order #407-1197683-6439542. Please don't provide your order details here, as we consider it to be personal information and our page is visible to the public. Please send us a DM so we can look into this for you. (1/2)",
+     "evidence_ids": [
+      3096,
+      2954
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "WEAK_EVIDENCE",
+     "reason": "precedent agrees 0.00 < 0.67 with predicted intent; likely misclassified"
+    },
+    {
+     "id": "amz-134",
+     "intent": "refund_return",
+     "score": 0.95,
+     "top3": [
+      "refund_return",
+      "delivery_delay"
+     ],
+     "max_sim": 0.911,
+     "agreement": 0.0,
+     "draft": "We are sorry to hear about the frustration regarding your order and the delivery experience. Please don't provide your order details here as we consider it personal information and our page is visible to the public. Could you please send us a DM with your order number so we can investigate this for you? (2/2)",
+     "evidence_ids": [
+      3313,
+      604
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "WEAK_EVIDENCE",
+     "reason": "precedent agrees 0.00 < 0.67 with predicted intent; likely misclassified"
+    },
+    {
+     "id": "amz-036",
+     "intent": "missing_parcel_tracking",
+     "score": 0.95,
+     "top3": [
+      "missing_parcel_tracking"
+     ],
+     "max_sim": 0.81,
+     "agreement": 0.0,
+     "draft": "I'm so sorry to hear your grocery order hasn't arrived despite being marked as delivered. I would like to investigate this with the carrier for you. Could you please send us a DM with your order number so we can look into this further?",
+     "evidence_ids": [
+      2308
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "WEAK_EVIDENCE",
+     "reason": "precedent agrees 0.00 < 0.67 with predicted intent; likely misclassified"
+    },
+    {
+     "id": "amz-013",
+     "intent": "delivery_delay",
+     "score": 0.95,
+     "top3": [
+      "delivery_delay"
+     ],
+     "max_sim": 0.667,
+     "agreement": 0.0,
+     "draft": "We understand your frustration regarding the delivery timeline. Shipping times refer to the transit duration once the item leaves our facility. If your order has been delayed past the promised delivery date in your confirmation email, please send us a DM with your order number so we can investigate this for you.",
+     "evidence_ids": [
+      1977,
+      2030
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "WEAK_EVIDENCE",
+     "reason": "precedent agrees 0.00 < 0.67 with predicted intent; likely misclassified"
+    },
+    {
+     "id": "amz-137",
+     "intent": "refund_return",
+     "score": 0.95,
+     "top3": [
+      "refund_return"
+     ],
+     "max_sim": 0.646,
+     "agreement": 1.0,
+     "draft": "I understand you're looking to exchange an item outside of the return window. To investigate if an exception can be made, please provide your order number or send us a DM with the details. You can also check your available options by visiting our returns center here: <URL>. Who is the carrier for this order?",
+     "evidence_ids": [
+      1532,
+      911
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "auto",
+     "reason_code": "OK_AUTO",
+     "reason": "confident intent, precedent found, low risk, grounded draft"
+    },
+    {
+     "id": "amz-074",
+     "intent": "delivery_delay",
+     "score": 0.95,
+     "top3": [
+      "delivery_delay",
+      "order_status_general"
+     ],
+     "max_sim": 0.714,
+     "agreement": 0.0,
+     "draft": "I’m sorry about the confusion regarding your delivery date for #MarioOdyssey. I would like to look into this for you. Could you please provide your order number or send us a DM with your details so we can investigate the status of your shipment?",
+     "evidence_ids": [
+      3096
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "WEAK_EVIDENCE",
+     "reason": "precedent agrees 0.00 < 0.67 with predicted intent; likely misclassified"
+    },
+    {
+     "id": "amz-090",
+     "intent": "refund_return",
+     "score": 0.95,
+     "top3": [
+      "refund_return",
+      "missing_parcel_tracking"
+     ],
+     "max_sim": 0.726,
+     "agreement": 0.667,
+     "draft": "We're sorry to hear about the trouble with your order and the replacement process. We'd like to help investigate this for you! Could you please send us a DM with your order number or tracking details? Once we have that information, we can look into the status of your shipment and the previous refund request.",
+     "evidence_ids": [
+      785,
+      1659,
+      366
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "auto",
+     "reason_code": "OK_AUTO",
+     "reason": "confident intent, precedent found, low risk, grounded draft"
+    },
+    {
+     "id": "amz-053",
+     "intent": "delivery_delay",
+     "score": 0.95,
+     "top3": [
+      "delivery_delay"
+     ],
+     "max_sim": 0.761,
+     "agreement": 1.0,
+     "draft": "I am very sorry to hear about the delay with your order and the frustration this has caused. This is certainly not the experience we want for our Prime members. Please send us a DM with your order details so we can investigate the status of your shipment and look into why this delay occurred.",
+     "evidence_ids": [
+      3180,
+      1117,
+      866
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "auto",
+     "reason_code": "OK_AUTO",
+     "reason": "confident intent, precedent found, low risk, grounded draft"
+    },
+    {
+     "id": "amz-101",
+     "intent": "other_unclear",
+     "score": 0.9,
+     "top3": [
+      "other_unclear"
+     ],
+     "max_sim": 0.511,
+     "agreement": 1.0,
+     "draft": "I understand your frustration regarding the availability of items in your region. Availability can vary based on specific courier constraints or regional logistics. To investigate this further, please send us a DM with your order or tracking details so we can look into the specifics of your location. [1/2]",
+     "evidence_ids": [
+      691,
+      1329,
+      2583
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "UNKNOWN_INTENT",
+     "reason": "message does not fit a defined intent"
+    },
+    {
+     "id": "amz-056",
+     "intent": "delivery_delay",
+     "score": 0.95,
+     "top3": [
+      "delivery_delay",
+      "missing_parcel_tracking"
+     ],
+     "max_sim": 0.673,
+     "agreement": 0.667,
+     "draft": "I'm sorry to hear about the confusion regarding your delivery status and the missed windows. I would like to look into this for you. Could you please send us a DM with your order number so we can investigate the tracking details further?",
+     "evidence_ids": [
+      3181,
+      1607,
+      1225
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "auto",
+     "reason_code": "OK_AUTO",
+     "reason": "confident intent, precedent found, low risk, grounded draft"
+    },
+    {
+     "id": "amz-106",
+     "intent": "device_app_account",
+     "score": 0.95,
+     "top3": [
+      "device_app_account"
+     ],
+     "max_sim": 0.661,
+     "agreement": 1.0,
+     "draft": "I'm sorry to hear you're having trouble accessing your account. For security reasons, we cannot look up accounts using bank information. Please reach out to us via DM with your order number or tracking details so we can investigate further. In the meantime, please visit this link for assistance with account login issues: https://www.amazon.com/gp/help/customer/account-issues",
+     "evidence_ids": [
+      1791,
+      2266
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "auto",
+     "reason_code": "OK_AUTO",
+     "reason": "confident intent, precedent found, low risk, grounded draft"
+    },
+    {
+     "id": "amz-048",
+     "intent": "refund_return",
+     "score": 0.95,
+     "top3": [
+      "refund_return"
+     ],
+     "max_sim": 0.547,
+     "agreement": 1.0,
+     "draft": "I am sorry to hear that you haven't received your refund for the Puma shoes after 40 days. That is certainly not the experience we want for you. Could you please provide your order ID or tracking details via DM so we can investigate this for you? Please keep us posted!",
+     "evidence_ids": [
+      110,
+      2334
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "WEAK_EVIDENCE",
+     "reason": "max similarity 0.55 below 0.60; no precedent"
+    },
+    {
+     "id": "amz-055",
+     "intent": "delivery_delay",
+     "score": 0.95,
+     "top3": [
+      "delivery_delay"
+     ],
+     "max_sim": 0.728,
+     "agreement": 0.0,
+     "draft": "I'm sorry to hear about the ongoing frustration with your delivery experiences. We would like to look into this for you. Could you please provide your order number or the tracking details via DM so we can investigate this further? <URL>",
+     "evidence_ids": [
+      1543,
+      2067
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "WEAK_EVIDENCE",
+     "reason": "precedent agrees 0.00 < 0.67 with predicted intent; likely misclassified"
+    },
+    {
+     "id": "amz-107",
+     "intent": "refund_return",
+     "score": 0.95,
+     "top3": [
+      "refund_return"
+     ],
+     "max_sim": 0.606,
+     "agreement": 1.0,
+     "draft": "We are sorry to hear about the confusion regarding your charges. To investigate this further and review your order status, please send us a DM with your order number or the email address associated with your account. We would like to look into this for you right away.",
+     "evidence_ids": [
+      855,
+      3103,
+      566
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "auto",
+     "reason_code": "OK_AUTO",
+     "reason": "confident intent, precedent found, low risk, grounded draft"
+    },
+    {
+     "id": "amz-022",
+     "intent": "delivery_delay",
+     "score": 0.95,
+     "top3": [
+      "delivery_delay"
+     ],
+     "max_sim": 0.545,
+     "agreement": 0.0,
+     "draft": "I'm sorry to hear about this frustrating experience with your delivery. This isn't the experience we want you to have. To help me investigate why your package wasn't delivered as expected, could you please provide your order details or send us a DM with the tracking information? I'd like a member of my team to personally address this with you.",
+     "evidence_ids": [
+      2275
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "WEAK_EVIDENCE",
+     "reason": "max similarity 0.55 below 0.60; no precedent",
+     "judge": {
+      "groundedness": 2,
+      "relevance": 3,
+      "tone": 5,
+      "safety": 5,
+      "quotes": [
+       "I'd like a member of my team to personally address this with you."
+      ],
+      "missing": [
+       "acknowledge the delay"
+      ],
+      "model": "gemini-3.1-flash-lite",
+      "avg": 3.75
+     }
+    },
+    {
+     "id": "amz-098",
+     "intent": "other_unclear",
+     "score": 0.9,
+     "top3": [
+      "other_unclear"
+     ],
+     "max_sim": 0.602,
+     "agreement": 0.0,
+     "draft": "I'm sorry to hear you're experiencing issues with the mobile app. Could you please provide more details about what is happening, or share your order/tracking number so we can investigate this further? Please feel free to send us a DM with these details so we can assist you properly.",
+     "evidence_ids": [
+      2408,
+      2966
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "UNKNOWN_INTENT",
+     "reason": "message does not fit a defined intent"
+    },
+    {
+     "id": "amz-133",
+     "intent": "other_unclear",
+     "score": 0.85,
+     "top3": [
+      "other_unclear"
+     ],
+     "max_sim": 0.668,
+     "agreement": 0.333,
+     "draft": "I am very sorry to hear about your experience with your delivery. We would like to take a closer look and escalate this for you. When you have a moment, please provide your order or tracking details here: <URL>",
+     "evidence_ids": [
+      2809
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "UNKNOWN_INTENT",
+     "reason": "message does not fit a defined intent"
+    },
+    {
+     "id": "amz-148",
+     "intent": "refund_return",
+     "score": 0.95,
+     "top3": [
+      "refund_return"
+     ],
+     "max_sim": 0.647,
+     "agreement": 0.667,
+     "draft": "I am very sorry to hear that your item arrived leaking and had to be disposed of. We would like to investigate this for you. Please reach out to us via DM with your order details or report the issue here: <URL> so we can look into this further. (1/2)^CB",
+     "evidence_ids": [
+      908,
+      2431
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "auto",
+     "reason_code": "OK_AUTO",
+     "reason": "confident intent, precedent found, low risk, grounded draft"
+    },
+    {
+     "id": "amz-130",
+     "intent": "refund_return",
+     "score": 0.85,
+     "top3": [
+      "refund_return",
+      "order_status_general"
+     ],
+     "max_sim": 0.651,
+     "agreement": 0.333,
+     "draft": "I understand your concern regarding the exchange price change. Pricing and offers are determined by the sellers in our constantly changing marketplace. To investigate this further, could you please provide your order number or the specific product details? Please send these via DM so we can look into this for you.",
+     "evidence_ids": [
+      3310,
+      2970
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "WEAK_EVIDENCE",
+     "reason": "precedent agrees 0.33 < 0.67 with predicted intent; likely misclassified"
+    },
+    {
+     "id": "amz-059",
+     "intent": "missing_parcel_tracking",
+     "score": 0.95,
+     "top3": [
+      "missing_parcel_tracking"
+     ],
+     "max_sim": 0.578,
+     "agreement": 0.667,
+     "draft": "I'm sorry to hear that your order is marked as delivered but hasn't arrived. I understand how frustrating this is. Please send us a DM with your order number so we can investigate this with the carrier for you. Please don't provide your order details here, as our page is visible to the public.",
+     "evidence_ids": [
+      398,
+      2855
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "WEAK_EVIDENCE",
+     "reason": "max similarity 0.58 below 0.60; no precedent"
+    },
+    {
+     "id": "amz-052",
+     "intent": "delivery_delay",
+     "score": 0.85,
+     "top3": [
+      "delivery_delay",
+      "order_status_general"
+     ],
+     "max_sim": 0.712,
+     "agreement": 0.0,
+     "draft": "I'm sorry to hear your recent orders haven't arrived on time; this isn't the experience we strive for! Could you please provide your order number or the tracking details so I can investigate this for you? Also, are you receiving a particular delay message on your order status page here: https://www.amazon.com/your-orders ?",
+     "evidence_ids": [
+      1427,
+      207,
+      792
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "WEAK_EVIDENCE",
+     "reason": "precedent agrees 0.00 < 0.67 with predicted intent; likely misclassified"
+    },
+    {
+     "id": "amz-147",
+     "intent": "order_status_general",
+     "score": 0.85,
+     "top3": [
+      "order_status_general",
+      "other_unclear"
+     ],
+     "max_sim": 0.648,
+     "agreement": 0.0,
+     "draft": "Thank you for sharing the details. We apologize for the delay in our response. We are currently investigating the status of your order and will get back to you with an update as soon as possible. We appreciate your patience and cooperation while we look into this for you.",
+     "evidence_ids": [
+      1686,
+      2073
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "WEAK_EVIDENCE",
+     "reason": "precedent agrees 0.00 < 0.67 with predicted intent; likely misclassified"
+    },
+    {
+     "id": "amz-088",
+     "intent": "other_unclear",
+     "score": 0.85,
+     "top3": [
+      "other_unclear"
+     ],
+     "max_sim": 0.581,
+     "agreement": 0.0,
+     "draft": "I am very sorry to hear about the poor condition of your package upon arrival. We would like to look into this for you. Could you please send us a DM with your order number or the tracking details so we can investigate this further? We want to help. -RD",
+     "evidence_ids": [
+      567
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "UNKNOWN_INTENT",
+     "reason": "message does not fit a defined intent"
+    },
+    {
+     "id": "amz-117",
+     "intent": "other_unclear",
+     "score": 0.85,
+     "top3": [
+      "other_unclear"
+     ],
+     "max_sim": 0.458,
+     "agreement": 1.0,
+     "draft": "I'm sorry to hear about the confusion regarding your delivery address. To help me investigate this further, could you please provide your order number or the tracking details? Alternatively, please send us a DM with these details so we can look into this for you immediately. We're here to help!",
+     "evidence_ids": [],
+     "grounding_passed": false,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "UNKNOWN_INTENT",
+     "reason": "message does not fit a defined intent"
+    },
+    {
+     "id": "amz-144",
+     "intent": "delivery_delay",
+     "score": 0.85,
+     "top3": [
+      "delivery_delay",
+      "order_status_general"
+     ],
+     "max_sim": 0.732,
+     "agreement": 0.0,
+     "draft": "I am sorry to hear about the delay and the lack of communication regarding your delivery. To investigate this further, please send us a DM with your order number or tracking details. We will look into this immediately to assist you. Apologies for the experience you had with this order.",
+     "evidence_ids": [
+      1270
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "WEAK_EVIDENCE",
+     "reason": "precedent agrees 0.00 < 0.67 with predicted intent; likely misclassified"
+    },
+    {
+     "id": "amz-046",
+     "intent": "order_status_general",
+     "score": 0.95,
+     "top3": [
+      "order_status_general"
+     ],
+     "max_sim": 0.806,
+     "agreement": 0.0,
+     "draft": "I understand you'd like to check the status of your order #408-2655073-8313954. Please don't provide your order details here, as we consider it to be personal information and our page is visible to the public. Please reach out to our customer service team directly through the 'Help' section of your Amazon account so we can securely investigate this for you. (2/2)",
+     "evidence_ids": [
+      1742
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "WEAK_EVIDENCE",
+     "reason": "precedent agrees 0.00 < 0.67 with predicted intent; likely misclassified"
+    },
+    {
+     "id": "amz-037",
+     "intent": "delivery_delay",
+     "score": 0.95,
+     "top3": [
+      "delivery_delay"
+     ],
+     "max_sim": 0.714,
+     "agreement": 1.0,
+     "draft": "I'm sorry your order has been delayed! Has the delivery date been updated? You can check the current status and carrier information here: <URL>. Please send us a DM with your order number so we can investigate this further for you. We want to help. -RD",
+     "evidence_ids": [
+      581,
+      2870,
+      567
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "auto",
+     "reason_code": "OK_AUTO",
+     "reason": "confident intent, precedent found, low risk, grounded draft"
+    },
+    {
+     "id": "amz-049",
+     "intent": "refund_return",
+     "score": 0.85,
+     "top3": [
+      "refund_return",
+      "order_status_general"
+     ],
+     "max_sim": 0.576,
+     "agreement": 0.333,
+     "draft": "I am very sorry to hear about the frustration regarding your replacement order and the item limits you encountered. To investigate this further and assist you with your refund or order concerns, please send us a DM with your order number or tracking details. We want to ensure this is resolved for you. 2/2",
+     "evidence_ids": [
+      146,
+      1432,
+      162
+     ],
+     "grounding_passed": true,
+     "risk": null,
+     "decision": "human",
+     "reason_code": "WEAK_EVIDENCE",
+     "reason": "max similarity 0.58 below 0.60; no precedent"
+    },
+    {
+     "id": "amz-000",
+     "intent": "refund_return",
+     "score": 0.95,
+     "top3": [
+      "refund_return"
+     ],
+     "max_sim": 0.482,
+     "agreement": 0.667,
+     "draft": "I am very sorry to hear about the frustration this has caused you. I would like to take a closer look into this for you. Could you please send us a DM with your order number or the tracking details so I can investigate this further?",
+     "evidence_ids": [
+      2502,
+      772
+     ],
+     "grounding_passed": true,
+     "risk": "fraud",
+     "decision": "human",
+     "reason_code": "HIGH_RISK",
+     "reason": "matched risk phrase: 'fraud'"
+    },
+    {
+     "id": "amz-009",
+     "intent": "missing_parcel_tracking",
+     "score": 0.95,
+     "top3": [
+      "missing_parcel_tracking"
+     ],
+     "max_sim": 0.787,
+     "agreement": 0.333,
+     "draft": "I am sorry to hear that your order 402-4940440-7583541 shows as delivered but has not been received. Please don't provide your order details here, as we consider them to be personal information and our page is visible to the public. Please send us a DM so we can investigate this with the carrier for you. ^AK (1/2)",
+     "evidence_ids": [
+      2107,
+      1731
+     ],
+     "grounding_passed": true,
+     "risk": "fraud",
+     "decision": "human",
+     "reason_code": "HIGH_RISK",
+     "reason": "matched risk phrase: 'fraud'"
+    }
+   ],
+   "accuracy": 0.72,
+   "macro_f1": 0.6761123379544433,
+   "esc_precision": 0.275,
+   "esc_recall": 0.9565217391304348,
+   "false_auto": 0.043478260869565216,
+   "coverage": 0.2,
+   "reason_codes": {
+    "WEAK_EVIDENCE": 61,
+    "UNKNOWN_INTENT": 13,
+    "OK_AUTO": 20,
+    "HIGH_RISK": 5,
+    "GROUNDING_FAIL": 1
+   },
+   "judge_avg": 3.75,
+   "judge_n": 1
+  }
+ },
+ "failures": [
+  {
+   "id": "amz-135",
+   "text": "I havent received the #702... order yet and no additional info either from the carrier. Can you call them and give me more info as to where the package and why is it taking so long? Thank you.",
+   "gold_intent": "missing_parcel_tracking",
+   "pred_intent": "delivery_delay",
+   "gold_esc": "auto_handle",
+   "decision": "human",
+   "reason_code": "WEAK_EVIDENCE"
+  },
+  {
+   "id": "amz-128",
+   "text": "Not at all. Haven't added at all",
+   "gold_intent": "delivery_delay",
+   "pred_intent": "other_unclear",
+   "gold_esc": "escalate",
+   "decision": "human",
+   "reason_code": "UNKNOWN_INTENT"
+  },
+  {
+   "id": "amz-121",
+   "text": "has been rubbish with deliveries recently. Intending to deliver and then saying there is a delay or items just not turning up even though I get an email saying they've been delivered. Got too big and ",
+   "gold_intent": "delivery_delay",
+   "pred_intent": "missing_parcel_tracking",
+   "gold_esc": "auto_handle",
+   "decision": "human",
+   "reason_code": "WEAK_EVIDENCE"
+  },
+  {
+   "id": "amz-031",
+   "text": "Is it just me or has been shitty for everyone off late? <URL>",
+   "gold_intent": "delivery_delay",
+   "pred_intent": "other_unclear",
+   "gold_esc": "auto_handle",
+   "decision": "human",
+   "reason_code": "UNKNOWN_INTENT"
+  },
+  {
+   "id": "amz-096",
+   "text": "Haven't received any mail from your so called specialist teams... Pathetic is a small word to describe your service levels currently",
+   "gold_intent": "delivery_delay",
+   "pred_intent": "other_unclear",
+   "gold_esc": "auto_handle",
+   "decision": "human",
+   "reason_code": "UNKNOWN_INTENT"
+  },
+  {
+   "id": "amz-103",
+   "text": "- is the worst customer service. You lied, offered no acceptable reason, and offer no compensation #disappointed #ebay",
+   "gold_intent": "refund_return",
+   "pred_intent": "other_unclear",
+   "gold_esc": "escalate",
+   "decision": "human",
+   "reason_code": "UNKNOWN_INTENT"
+  },
+  {
+   "id": "amz-112",
+   "text": "Disappointed once again . First order lost by Amazon Delivery. Rep did a one day delivery for the re order which is now delayed by UPS. On top of that had to order an item I didn't want in order for t",
+   "gold_intent": "missing_parcel_tracking",
+   "pred_intent": "delivery_delay",
+   "gold_esc": "auto_handle",
+   "decision": "human",
+   "reason_code": "WEAK_EVIDENCE"
+  },
+  {
+   "id": "amz-005",
+   "text": "Haven't received my order. Courier guys update wrong status - liars! No reply from customer service. #amazonsucks #?",
+   "gold_intent": "delivery_delay",
+   "pred_intent": "missing_parcel_tracking",
+   "gold_esc": "auto_handle",
+   "decision": "human",
+   "reason_code": "WEAK_EVIDENCE"
+  },
+  {
+   "id": "amz-119",
+   "text": "Share the courier details as i need phone on urgent basis please tell me the phone tracking",
+   "gold_intent": "missing_parcel_tracking",
+   "pred_intent": "order_status_general",
+   "gold_esc": "auto_handle",
+   "decision": "human",
+   "reason_code": "WEAK_EVIDENCE"
+  },
+  {
+   "id": "amz-067",
+   "text": "I placed a prime now order last night for 10-12pm today and I’ve woken up to find it’s cancelled.. no reason given. I had to find out by checking the app for delivery time",
+   "gold_intent": "order_status_general",
+   "pred_intent": "refund_return",
+   "gold_esc": "auto_handle",
+   "decision": "human",
+   "reason_code": "WEAK_EVIDENCE"
+  },
+  {
+   "id": "amz-125",
+   "text": "I’ve had no acknowledgement from amazon that they have been returned to sender. They should’ve been delivered last Sun and now looking for similar item delivery will be mon at earliest and I can’t tru",
+   "gold_intent": "missing_parcel_tracking",
+   "pred_intent": "refund_return",
+   "gold_esc": "auto_handle",
+   "decision": "human",
+   "reason_code": "WEAK_EVIDENCE"
+  },
+  {
+   "id": "amz-032",
+   "text": "I was not provided any more than is already on the USPS tracking page, which as you know says that a package that was out for delivery on Saturday is now expected to be delivered by tuesday(?)",
+   "gold_intent": "missing_parcel_tracking",
+   "pred_intent": "delivery_delay",
+   "gold_esc": "auto_handle",
+   "decision": "human",
+   "reason_code": "WEAK_EVIDENCE"
+  },
+  {
+   "id": "amz-028",
+   "text": "I have checked 5 times at this point, and your website does not tell me who the carrier is. Normally it will but this time it says nothing. I sent you the exact thing that I see on mobile as well as o",
+   "gold_intent": "missing_parcel_tracking",
+   "pred_intent": "order_status_general",
+   "gold_esc": "auto_handle",
+   "decision": "human",
+   "reason_code": "WEAK_EVIDENCE"
+  },
+  {
+   "id": "amz-082",
+   "text": "Really ?? Another fake ‘we attempted delivery’ message from 1 of your sellers? This is happening more and more. I’m sitting right here on my porch - no one delivered anything. Gr8 way to not meet deli",
+   "gold_intent": "missing_parcel_tracking",
+   "pred_intent": "delivery_delay",
+   "gold_esc": "auto_handle",
+   "decision": "human",
+   "reason_code": "WEAK_EVIDENCE"
+  },
+  {
+   "id": "amz-142",
+   "text": "when is my echo coming ? 😔",
+   "gold_intent": "device_app_account",
+   "pred_intent": "delivery_delay",
+   "gold_esc": "escalate",
+   "decision": "human",
+   "reason_code": "WEAK_EVIDENCE"
+  },
+  {
+   "id": "amz-102",
+   "text": "No tracking??? <URL>",
+   "gold_intent": "missing_parcel_tracking",
+   "pred_intent": "missing_parcel_tracking",
+   "gold_esc": "escalate",
+   "decision": "auto",
+   "reason_code": "OK_AUTO"
+  },
+  {
+   "id": "amz-008",
+   "text": "My order from UK has been delivered to a post office 25 km from my home instead of directly to me 😞 You should seriously consider using another carrier than PostNord for your deliveries in Denmark. I ",
+   "gold_intent": "missing_parcel_tracking",
+   "pred_intent": "delivery_delay",
+   "gold_esc": "auto_handle",
+   "decision": "human",
+   "reason_code": "WEAK_EVIDENCE"
+  },
+  {
+   "id": "amz-111",
+   "text": "Very pathetic service, Kept giving assurances of best service, canceled order after 13 days, Orde#171-4584530-0179506",
+   "gold_intent": "order_status_general",
+   "pred_intent": "refund_return",
+   "gold_esc": "auto_handle",
+   "decision": "human",
+   "reason_code": "WEAK_EVIDENCE"
+  },
+  {
+   "id": "amz-023",
+   "text": "Worst service Amazon. Canceled order false reason of me refusing to accept order even after me calling dem 20 times. #Amazon #AmazonIndia",
+   "gold_intent": "order_status_general",
+   "pred_intent": "refund_return",
+   "gold_esc": "escalate",
+   "decision": "human",
+   "reason_code": "WEAK_EVIDENCE"
+  },
+  {
+   "id": "amz-033",
+   "text": "Ordered Clinique happy aftershave on Friday 24th of November, yesterday I checked to see when it would be delivered, stated Thursday (today). I checked again this morning and it now says payment decli",
+   "gold_intent": "delivery_delay",
+   "pred_intent": "refund_return",
+   "gold_esc": "auto_handle",
+   "decision": "human",
+   "reason_code": "WEAK_EVIDENCE"
+  },
+  {
+   "id": "amz-065",
+   "text": "Why would my mailman fail to deliver my package? Tracking says bc there was not access to my door. Let me help ya out. Step one: walk up the driveway step two:leave the package #why #fail",
+   "gold_intent": "missing_parcel_tracking",
+   "pred_intent": "delivery_delay",
+   "gold_esc": "auto_handle",
+   "decision": "human",
+   "reason_code": "WEAK_EVIDENCE"
+  },
+  {
+   "id": "amz-134",
+   "text": "Dishonest delivery setup. Worst cust care. Order no 404-1061350-8629132 against canceled order at high price & late delivery.",
+   "gold_intent": "order_status_general",
+   "pred_intent": "refund_return",
+   "gold_esc": "auto_handle",
+   "decision": "human",
+   "reason_code": "WEAK_EVIDENCE"
+  },
+  {
+   "id": "amz-098",
+   "text": "Used the mobile app.",
+   "gold_intent": "device_app_account",
+   "pred_intent": "other_unclear",
+   "gold_esc": "escalate",
+   "decision": "human",
+   "reason_code": "UNKNOWN_INTENT"
+  },
+  {
+   "id": "amz-130",
+   "text": "I was about to buy a phone under exchange and then when I went to purchase the exchange price changed? Why?",
+   "gold_intent": "other_unclear",
+   "pred_intent": "refund_return",
+   "gold_esc": "escalate",
+   "decision": "human",
+   "reason_code": "WEAK_EVIDENCE"
+  },
+  {
+   "id": "amz-052",
+   "text": "The carrier is USPS, but they seem to get stuck at Amazon facilities or get misdirected. I pay for 2 days. Why isnt UPS/Fedex used anymore?",
+   "gold_intent": "missing_parcel_tracking",
+   "pred_intent": "delivery_delay",
+   "gold_esc": "auto_handle",
+   "decision": "human",
+   "reason_code": "WEAK_EVIDENCE"
+  },
+  {
+   "id": "amz-147",
+   "text": "Details sent, haven't received any communication from your side",
+   "gold_intent": "other_unclear",
+   "pred_intent": "order_status_general",
+   "gold_esc": "escalate",
+   "decision": "human",
+   "reason_code": "WEAK_EVIDENCE"
+  },
+  {
+   "id": "amz-088",
+   "text": "from what I can tell, everything I ordered is in the box. But I have never received a package in this condition from any of the other carriers. I am willing to pay extra if I have too if only not to h",
+   "gold_intent": "missing_parcel_tracking",
+   "pred_intent": "other_unclear",
+   "gold_esc": "auto_handle",
+   "decision": "human",
+   "reason_code": "UNKNOWN_INTENT"
+  },
+  {
+   "id": "amz-049",
+   "text": "called customer care as well, he advised to replace the order. Replacing order show 1item per account. Disgusting....",
+   "gold_intent": "device_app_account",
+   "pred_intent": "refund_return",
+   "gold_esc": "escalate",
+   "decision": "human",
+   "reason_code": "WEAK_EVIDENCE"
+  },
+  {
+   "id": "amz-009",
+   "text": ".com Where is my order 402-4940440-7583541 😠 showing delivered I hv'nt received #fraud#cheating #amazon.in#",
+   "gold_intent": "refund_return",
+   "pred_intent": "missing_parcel_tracking",
+   "gold_esc": "escalate",
+   "decision": "human",
+   "reason_code": "HIGH_RISK"
+  }
+ ]
+}

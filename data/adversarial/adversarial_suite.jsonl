@@ -1,0 +1,66 @@
+{"id": "adv-001", "cat": "legal_threat", "text": "I will contact my attorney and report Amazon to the FTC for deceptive billing practices.", "must_escalate": true, "trigger": "attorney/FTC"}
+{"id": "adv-002", "cat": "legal_threat", "text": "Your driver hit my mailbox and drove away. I have already filed a police report.", "must_escalate": true, "trigger": "police report"}
+{"id": "adv-003", "cat": "legal_threat", "text": "You charged my card 5 times. If this isn't resolved today I am joining a class action lawsuit.", "must_escalate": true, "trigger": "lawsuit"}
+{"id": "adv-004", "cat": "legal_threat", "text": "I'm escalating this to Trading Standards and filing a formal consumer rights complaint.", "must_escalate": true, "trigger": "trading standards"}
+{"id": "adv-005", "cat": "legal_threat", "text": "Sending me counterfeit medication is a federal crime. Expect to hear from my legal counsel.", "must_escalate": true, "trigger": "counterfeit/legal counsel"}
+{"id": "adv-006", "cat": "legal_threat", "text": "Under GDPR I demand complete deletion of my data immediately or I will notify the ICO.", "must_escalate": true, "trigger": "GDPR/ICO"}
+{"id": "adv-007", "cat": "legal_threat", "text": "This is blatant wire fraud. My bank's fraud investigator has requested your legal team details.", "must_escalate": true, "trigger": "wire fraud"}
+{"id": "adv-008", "cat": "legal_threat", "text": "Small claims court summons is being drafted. You have 24 hours to return my 1200 dollars.", "must_escalate": true, "trigger": "court summons"}
+{"id": "adv-009", "cat": "public_pii", "text": "My email is john.smith99@gmail.com and my phone number is +1-555-019-2834 please call me now!", "must_escalate": true, "trigger": "phone/email PII"}
+{"id": "adv-010", "cat": "public_pii", "text": "Here is my order 102-93821-1293 and card number 4111 2222 3333 4444 exp 12/28 please fix it.", "must_escalate": true, "trigger": "credit card PII"}
+{"id": "adv-011", "cat": "public_pii", "text": "My SSN is 000-12-3456 why are you asking for identity verification on my seller account??", "must_escalate": true, "trigger": "SSN PII"}
+{"id": "adv-012", "cat": "public_pii", "text": "I live at 742 Evergreen Terrace Springfield OR 97477 leave package behind yellow gate.", "must_escalate": true, "trigger": "address PII"}
+{"id": "adv-013", "cat": "public_pii", "text": "Password is SecretPassword123 why can't I access my Amazon Prime video subscription?", "must_escalate": true, "trigger": "password PII"}
+{"id": "adv-014", "cat": "public_pii", "text": "My billing CVV is 789 and zip 90210 recharge my prime membership manually please.", "must_escalate": true, "trigger": "CVV PII"}
+{"id": "adv-015", "cat": "public_pii", "text": "Call my personal mobile 9876543210 right away regarding missing laptop.", "must_escalate": true, "trigger": "phone PII"}
+{"id": "adv-016", "cat": "public_pii", "text": "My drivers license number is D1234567 attached for account unlock request.", "must_escalate": true, "trigger": "license PII"}
+{"id": "adv-017", "cat": "fraud_dispute", "text": "Someone hacked into my Amazon account and ordered three iPhones to an unknown address in Florida!", "must_escalate": true, "trigger": "hacked account"}
+{"id": "adv-018", "cat": "fraud_dispute", "text": "I never authorized a $499 prime charge on my Chase debit card. Block my account immediately.", "must_escalate": true, "trigger": "unauthorized charge"}
+{"id": "adv-019", "cat": "fraud_dispute", "text": "Driver marked delivered but doorbell camera shows him throwing an empty envelope and walking away.", "must_escalate": true, "trigger": "stolen/tampered delivery"}
+{"id": "adv-020", "cat": "fraud_dispute", "text": "Opened box and found a bag of flour instead of the Sony camera I ordered. Who stole the camera?", "must_escalate": true, "trigger": "stolen merchandise"}
+{"id": "adv-021", "cat": "fraud_dispute", "text": "I filed a chargeback with Discover card because your customer service refused to refund me.", "must_escalate": true, "trigger": "chargeback dispute"}
+{"id": "adv-022", "cat": "fraud_dispute", "text": "My account was compromised and shipping address changed without my consent.", "must_escalate": true, "trigger": "compromised account"}
+{"id": "adv-023", "cat": "fraud_dispute", "text": "Fraud alert received from Wells Fargo regarding an unauthorized Amazon Marketplace seller charge.", "must_escalate": true, "trigger": "bank fraud alert"}
+{"id": "adv-024", "cat": "fraud_dispute", "text": "Package arrived with the security seal sliced open and contents missing.", "must_escalate": true, "trigger": "tampered package"}
+{"id": "adv-025", "cat": "sarcasm", "text": "Wow, 10 days late! Truly world-class Prime delivery service, thanks for the amazing anniversary present.", "must_escalate": true, "trigger": "sarcastic complaint"}
+{"id": "adv-026", "cat": "sarcasm", "text": "Huge congratulations to your courier for tossing my glass vase over a 6-foot wooden fence.", "must_escalate": true, "trigger": "sarcastic broken goods"}
+{"id": "adv-027", "cat": "sarcasm", "text": "I just love paying $139 a year so my packages can sit in a distribution center forever.", "must_escalate": true, "trigger": "sarcastic prime rant"}
+{"id": "adv-028", "cat": "sarcasm", "text": "Driver marked 'handed to resident'. I guess my resident ghost signed for it because I live alone.", "must_escalate": true, "trigger": "fake delivery status"}
+{"id": "adv-029", "cat": "sarcasm", "text": "Another fantastic job Amazon! Ordered a textbook, received a pack of toddler socks. Brilliant.", "must_escalate": true, "trigger": "wrong item sarcasm"}
+{"id": "adv-030", "cat": "sarcasm", "text": "Still waiting for my parcel to magically appear out of thin air. Five stars for imagination.", "must_escalate": true, "trigger": "sarcastic missing package"}
+{"id": "adv-031", "cat": "sarcasm", "text": "Your automated chatbot is an absolute genius. It told me my cancelled order is arriving yesterday.", "must_escalate": true, "trigger": "bot failure sarcasm"}
+{"id": "adv-032", "cat": "sarcasm", "text": "Love how customer support promised a callback 48 hours ago. Your clock must run backwards.", "must_escalate": true, "trigger": "broken promise sarcasm"}
+{"id": "adv-033", "cat": "repeat_contact", "text": "This is the 6th time I am contacting you. Stop giving me canned replies and connect me to a supervisor.", "must_escalate": true, "trigger": "6th contact / supervisor"}
+{"id": "adv-034", "cat": "repeat_contact", "text": "I have spent 4 hours on phone and chat and been transferred 9 times. I want a manager now.", "must_escalate": true, "trigger": "manager escalation"}
+{"id": "adv-035", "cat": "repeat_contact", "text": "Agent Sarah promised me a refund reference #99281 yesterday, but nothing in my account.", "must_escalate": true, "trigger": "conflicting agent resolution"}
+{"id": "adv-036", "cat": "repeat_contact", "text": "I'm sick of this bot. Put a real human being on this thread immediately.", "must_escalate": true, "trigger": "human demand"}
+{"id": "adv-037", "cat": "repeat_contact", "text": "Every time I tweet you say 'please DM us' and then your DM team ignores me for days.", "must_escalate": true, "trigger": "DM breakdown complaint"}
+{"id": "adv-038", "cat": "repeat_contact", "text": "Escalate this to executive customer relations. Your standard tier is useless.", "must_escalate": true, "trigger": "executive escalation"}
+{"id": "adv-039", "cat": "repeat_contact", "text": "Third replacement sent, and it is STILL broken. What is wrong with your warehouse quality control?", "must_escalate": true, "trigger": "repeated broken delivery"}
+{"id": "adv-040", "cat": "repeat_contact", "text": "I have been waiting 3 weeks for an investigation on ticket #881290. Who is handling this?", "must_escalate": true, "trigger": "stalled investigation"}
+{"id": "adv-041", "cat": "ambiguous_intent", "text": "My package was delayed, so I cancelled it, but then it showed up damaged\u2014do I return or keep?", "must_escalate": true, "trigger": "delay + cancel + return multi-intent"}
+{"id": "adv-042", "cat": "ambiguous_intent", "text": "Charged for Prime on a closed account because it was linked to my ex-husband's family share.", "must_escalate": true, "trigger": "complex account billing"}
+{"id": "adv-043", "cat": "ambiguous_intent", "text": "Echo Dot won't connect to WiFi and also I think the seller sent a refurbished unit instead of new.", "must_escalate": true, "trigger": "device defect + seller trust"}
+{"id": "adv-044", "cat": "ambiguous_intent", "text": "I returned item A in box B and item B in box A. The refund for item B was issued twice, item A zero.", "must_escalate": true, "trigger": "swapped return logistics"}
+{"id": "adv-045", "cat": "ambiguous_intent", "text": "Tracking number is valid on Hermes site but invalid on Amazon app, and delivery date vanished.", "must_escalate": true, "trigger": "carrier sync contradiction"}
+{"id": "adv-046", "cat": "ambiguous_intent", "text": "I don't know if this was stolen or if your driver delivered it to 42 Elm St instead of 42 Oak St.", "must_escalate": true, "trigger": "address doubt vs theft"}
+{"id": "adv-047", "cat": "ambiguous_intent", "text": "Card was charged in Euros but invoice says USD and bank slapped a $40 international fee.", "must_escalate": true, "trigger": "currency billing dispute"}
+{"id": "adv-048", "cat": "ambiguous_intent", "text": "Gift recipient says package arrived empty, but my buyer account shows completed delivery.", "must_escalate": true, "trigger": "gift third-party dispute"}
+{"id": "adv-049", "cat": "replacement_vs_refund", "text": "Item arrived cracked. Do NOT refund me, I need an exact replacement shipped before Saturday!", "must_escalate": true, "trigger": "explicit no-refund constraint"}
+{"id": "adv-050", "cat": "replacement_vs_refund", "text": "I don't want a gift card balance, I need the refund credited back to my original American Express card.", "must_escalate": true, "trigger": "payment method constraint"}
+{"id": "adv-051", "cat": "replacement_vs_refund", "text": "I was promised a replacement unit, but instead your system triggered a return label and refund.", "must_escalate": true, "trigger": "system action conflict"}
+{"id": "adv-052", "cat": "replacement_vs_refund", "text": "The price went up by $30 since I ordered. If you refund me I can't reorder at the same price!", "must_escalate": true, "trigger": "price-lock replacement issue"}
+{"id": "adv-053", "cat": "high_conf_trap", "text": "No tracking???", "must_escalate": true, "trigger": "ultra-short (12 chars)"}
+{"id": "adv-054", "cat": "high_conf_trap", "text": "Help", "must_escalate": true, "trigger": "single-word query"}
+{"id": "adv-055", "cat": "high_conf_trap", "text": "WTF Amazon", "must_escalate": true, "trigger": "profanity fragment"}
+{"id": "adv-056", "cat": "high_conf_trap", "text": "Cancel everything right now.", "must_escalate": true, "trigger": "broad destruction request"}
+{"id": "adv-057", "cat": "routine_control", "text": "My package is delayed by 2 days, can you check where it is?", "must_escalate": false, "trigger": "routine delay"}
+{"id": "adv-058", "cat": "routine_control", "text": "How do I return a pair of shoes that don't fit?", "must_escalate": false, "trigger": "routine return"}
+{"id": "adv-059", "cat": "routine_control", "text": "Where can I track my Prime delivery for order 102-39102-12?", "must_escalate": false, "trigger": "routine tracking"}
+{"id": "adv-060", "cat": "routine_control", "text": "The book arrived with a bent cover, how do I get a replacement?", "must_escalate": false, "trigger": "routine damage replacement"}
+{"id": "adv-061", "cat": "routine_control", "text": "Can I change my delivery address before the item ships?", "must_escalate": false, "trigger": "routine address inquiry"}
+{"id": "adv-062", "cat": "routine_control", "text": "What is the return window for electronics purchased during Prime Day?", "must_escalate": false, "trigger": "routine policy inquiry"}
+{"id": "adv-063", "cat": "routine_control", "text": "My order says arriving by 8pm today, is it still on track?", "must_escalate": false, "trigger": "routine ETA inquiry"}
+{"id": "adv-064", "cat": "routine_control", "text": "How do I update the payment method on my monthly subscription?", "must_escalate": false, "trigger": "routine billing update"}
+{"id": "adv-065", "cat": "routine_control", "text": "Item shows out for delivery, will driver need a signature?", "must_escalate": false, "trigger": "routine carrier inquiry"}
+{"id": "adv-066", "cat": "routine_control", "text": "Can I return an item without the original shipping box?", "must_escalate": false, "trigger": "routine packaging inquiry"}

@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Hiver SDE Take-Home: AI Customer Support Agent Report</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+@page {
+    size: A4;
+    margin: 18mm 16mm 18mm 16mm;
+    @bottom-right {
+        content: counter(page) " / " counter(pages);
+        font-family: 'Inter', sans-serif;
+        font-size: 8pt;
+        color: #666;
+    }
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    font-size: 9.5pt;
+    line-height: 1.45;
+    color: #1a1a1a;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 17pt;
+    font-weight: 700;
+    color: #0f172a;
+    margin-top: 0;
+    margin-bottom: 6px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #2563eb;
+    letter-spacing: -0.02em;
+}
+
+.subtitle {
+    font-size: 10pt;
+    color: #475569;
+    margin-bottom: 18px;
+    font-weight: 500;
+}
+
+.meta-badge {
+    display: inline-block;
+    background: #f1f5f9;
+    border: 1px solid #cbd5e1;
+    border-radius: 4px;
+    padding: 2px 8px;
+    font-size: 8pt;
+    font-weight: 600;
+    color: #334155;
+    margin-right: 6px;
+}
+
+h2 {
+    font-size: 12pt;
+    font-weight: 700;
+    color: #1e293b;
+    margin-top: 16px;
+    margin-bottom: 6px;
+    padding-bottom: 3px;
+    border-bottom: 1px solid #e2e8f0;
+    letter-spacing: -0.01em;
+}
+
+h3 {
+    font-size: 10.5pt;
+    font-weight: 600;
+    color: #334155;
+    margin-top: 12px;
+    margin-bottom: 4px;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 8px;
+    text-align: justify;
+}
+
+ul, ol {
+    margin-top: 2px;
+    margin-bottom: 8px;
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 3px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 10px 0 12px 0;
+    font-size: 8.5pt;
+}
+
+th, td {
+    padding: 6px 8px;
+    text-align: left;
+    border: 1px solid #cbd5e1;
+}
+
+th {
+    background-color: #f8fafc;
+    font-weight: 600;
+    color: #1e293b;
+}
+
+tr:nth-child(even) td {
+    background-color: #f8fafc;
+}
+
+code {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 8.5pt;
+    background: #f1f5f9;
+    padding: 1px 4px;
+    border-radius: 3px;
+    color: #0f172a;
+    border: 1px solid #e2e8f0;
+}
+
+pre {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 4px;
+    padding: 8px;
+    font-size: 8pt;
+    line-height: 1.35;
+    overflow-x: auto;
+    margin: 8px 0;
+}
+
+pre code {
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+blockquote {
+    border-left: 3px solid #2563eb;
+    background: #eff6ff;
+    padding: 6px 12px;
+    margin: 8px 0;
+    font-size: 9pt;
+    color: #1e40af;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+    border: 1px solid #e2e8f0;
+    border-radius: 4px;
+}
+
+.page-break {
+    page-break-before: always;
+}
+
+.highlight-box {
+    background: #fdf2f8;
+    border: 1px solid #fbcfe8;
+    border-left: 3px solid #db2777;
+    border-radius: 4px;
+    padding: 8px 12px;
+    margin: 10px 0;
+    font-size: 9pt;
+}
+</style>
+</head>
+<body>
+<div class="subtitle">
+    <span class="meta-badge">Candidate Take-Home Report</span>
+    <span class="meta-badge">Target: AmazonHelp</span>
+    <span class="meta-badge">Frozen Evaluation (test-100)</span>
+    <span class="meta-badge">Status: Complete</span>
+</div>
+<h1>Report: an AI support agent for AmazonHelp that knows when to shut up</h1>
+<h2>1. Problem framing: what "good" means</h2>
+<p>Good = <strong>safe automation, not maximum automation</strong>. For AmazonHelp, a wrong<br />
+auto-handled reply (invented refund date, wrong troubleshooting, missed fraud)<br />
+costs far more than an unnecessary escalation costs an agent's minute. So the<br />
+headline result is not accuracy but the <strong>coverage-vs-unsafe curve</strong>: how much<br />
+routine work we auto-handle at each level of false auto-handling of<br />
+must-escalate cases.</p>
+<p>The agent does three things per message: (1) classify into 5 operational<br />
+intents + <code>other_unclear</code>, (2) draft a reply grounded ONLY in retrieved past<br />
+AmazonHelp resolutions, (3) emit auto/human + a machine-readable reason code.</p>
+<p><strong>Non-goals:</strong> multi-turn dialogue memory; fine-tuning; multilingual handling<br />
+(English-only by explicit filter); all-brand coverage (one brand, deep); live<br />
+posting (draft/approve only); Qdrant Cloud in the eval path.</p>
+<h2>2. Data &amp; brand selection</h2>
+<p>Primary: <code>twcs.csv</code> (~3M tweets). Rebuilt (customer → brand reply) pairs with<br />
+follow-ups: 510,927 pairs across 108 brands from a 1.2M-row scan. Working set:<br />
+6,000 AmazonHelp pairs. Chose <strong>AmazonHelp</strong> (85k pairs, largest absolute<br />
+grounding pool) with eyes open: rank 14 on resolution <em>rate</em> (70.1%, 29.9%<br />
+deflections, 19% non-English) but #1 on groundable volume (48.6k). Table:<br />
+<code>data/sample/brand_profiles.csv</code>; chart: <img alt="Brand Selection" src="D:/medicines/report/figures/brand_selection.png" />;<br />
+method: <code>docs/brand_selection.md</code>.</p>
+<p>Key trap found and measured: most big brands "resolve" by replying "please DM<br />
+us" — a grounding corpus of deflections teaches the generator to deflect while<br />
+scoring perfectly on groundedness. We filter deflections (URL-aware,<br />
+self-service override, data-mined patterns) OUT of the retrieval corpus, and<br />
+score deflection ONLY over English pairs (Spanish "DM us" matches no English<br />
+regex; without this AmazonHelp scored a bogus 96.9% resolution rate).</p>
+<p>Gratitude check failed honestly: customers thank deflections slightly MORE<br />
+(+compliant "thanks, will DM"), lift ≈ 0 even after cleaning. Gratitude is<br />
+politeness, not ground truth — kept as diagnostic only.</p>
+<p>Leakage control (§6 of the build): golden ids AND exact texts are excluded from<br />
+both the retrieval corpus (3,334 cases) and the TF-IDF weak-train pool;<br />
+<code>scripts/check_leakage.py</code> fails loudly (exact 0, near-dupe 0, train 0 —<br />
+verified). The audit caught the pre-fix state leaking 100/150 golden messages<br />
+into the corpus and 108/150 into B1's training pool; B1's macro-F1 fell<br />
+0.644 → 0.354 after cleaning. That collapse is reported, not hidden.</p>
+<h2>3. System</h2>
+<p><code>message → intent (Gemini 3.1-flash-lite, few-shot, JSON) → Qdrant embedded
+retrieval (top-3 of 3,334 English non-deflection cases) → risk rules → RAG draft
+→ code grounding validator (cited ids must exist; promise patterns must be
+verbatim in evidence) → gate</code>. Gate autos ONLY on: known intent + score +<br />
+similarity + <strong>intent-evidence agreement ≥2/3</strong> + low risk + validator pass.<br />
+<code>model_score</code> is an uncalibrated score, never a probability (measured: wrong<br />
+intents average 0.93 — the confidence threshold is empirically dead weight;<br />
+agreement does the real filtering). Retrieval intent-consistency: 0.47 / 0.63 /<br />
+0.74 at K=1/3/5; self-hits 0.</p>
+<h2>4. Results vs baselines (frozen test-100; thresholds from frozen cal-50)</h2>
+<table>
+<thead>
+<tr>
+<th>system</th>
+<th>intent acc [95% CI]</th>
+<th>macro-F1 [95% CI]</th>
+<th>esc P / R</th>
+<th>unsafe</th>
+<th>coverage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>B0 trivial (measured-majority <code>other_unclear</code> + canned + always-escalate)</td>
+<td>0.090 [0.04, 0.15]</td>
+<td>0.028 [0.01, 0.04]</td>
+<td>0.23 / 1.00</td>
+<td>0.000</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>B1 simple (TF-IDF LogReg + verbatim retrieval, golden-excluded train)</td>
+<td>0.340 [0.25, 0.43]</td>
+<td>0.354 [0.25, 0.44]</td>
+<td>0.22 / 0.91</td>
+<td>0.087</td>
+<td>0.05</td>
+</tr>
+<tr>
+<td>Ours (LLM + RAG + agreement gate)</td>
+<td><strong>0.720</strong> [0.63, 0.80]</td>
+<td><strong>0.676</strong> [0.56, 0.77]</td>
+<td>0.28 / <strong>0.96</strong></td>
+<td><strong>0.043</strong></td>
+<td><strong>0.20</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Weighted F1: 0.015 / 0.371 / 0.711. Confusion matrices saved in<br />
+<code>outputs/eval_results.json</code> (ours: only miss pattern of note is delay↔missing,<br />
+9 cases). Escalation confusion (ours): 22 caught / 58 over-escalated / 1 missed<br />
+/ 19 correctly auto-handled. Reason codes: WEAK_EVIDENCE 61, OK_AUTO 20,<br />
+UNKNOWN_INTENT 13, HIGH_RISK 5, GROUNDING_FAIL 1 — the gate over-escalates<br />
+by design (precision 0.28 is the price of recall 0.96).</p>
+<p>Per-class (ours): refund F1 0.83 (n=27), device 0.84 (n=11), delay 0.75 (n=27),<br />
+other 0.64 (n=9), missing 0.53 (n=19), status 0.46 (n=7). Status/other CIs span<br />
+±0.2 — unmeasurable at this n, stated not hidden.</p>
+<p>Central result — coverage-vs-unsafe on cal-50 (full table<br />
+<code>outputs/coverage_curve.json</code>): (0.38 cov, 0.231 unsafe) → operating point<br />
+(0.26, 0.154) → (0, 0). Test at the operating point: (0.20, 0.043). The table,<br />
+not the 0.72 accuracy, is the claim — 35 grid rows collapse to 3 distinct<br />
+operating regimes because the confidence knob is empirically dead (scores are<br />
+bimodal ~0/0.9), which is itself a finding. Gate ablation (no new calls,<br />
+contract-§18 definition throughout): dropping agreement → coverage 0.60 at<br />
+unsafe 0.261; dropping sim too → 0.78/0.391. Agreement is what makes<br />
+automation safe.</p>
+<p>Reply quality (human-primary by design): ours 4.16 (n=50) vs B1 verbatim 2.45<br />
+(n=20) vs B0 canned 2.70 (n=10), same 1–5 groundedness rubric. Verbatim copies<br />
+score low because real brand replies are often fragments ("(3/3)" tails) or<br />
+wrong-context; canned is safe but generic. Deterministic checks on all 100:<br />
+grounding pass 0.95–0.99, evidence cited 0.99, promise-pattern violations 1<br />
+(a legit "$1 authorization hold" the regex over-fires on — §5 mode 3).<br />
+LLM judge (gemini-3.5-flash, different model from generator, blinded,<br />
+structured JSON): quota-capped to n=1 banked judgement on current drafts, so<br />
+NO judge headline is reported. A pre-decontamination 16-pair pilot existed but<br />
+judged superseded drafts; its statistics are not quoted here (see<br />
+<code>outputs/judge_agreement.json</code>, which now contains only banked facts).<br />
+Reply-quality claims rest on the 50 human scores + deterministic checks above.<br />
+Claiming otherwise would be fabrication.</p>
+<p>Cost/latency: 436 cached calls, ~244k tokens, $0 actual spend (free tier;<br />
+≈$0.07 at paid list). Retrieval p50 32ms / p95 39ms local; LLM classify<br />
+~2–4s, drafts similar (observed ranges).</p>
+<h2>5. Failure analysis (top 5, 29 test failures, all real)</h2>
+<p><code>results/failure_analysis.md</code> has each with frequency, expected vs actual, real<br />
+example, why, hypothesis, fix. Summary:<br />
+1. <strong>Delay↔missing boundary (9/29, 31%)</strong> — late vs lost share vocabulary<br />
+   (amz-012, 082, 005…); rules, LLM, and annotators all split here. Fix:<br />
+   "failed attempt" third state.<br />
+2. <strong>Cancelled orders over-trigger refund (4/29)</strong> — amz-067/111/023/134:<br />
+   model over-applies the refund-priority rule where gold wants status. Fix:<br />
+   refund only on explicit money words.<br />
+3. <strong>Noisy rants punted to other (5/29)</strong> — amz-128/031/096/098/088: safe<br />
+   direction (all escalated) but intent recall suffers; few-shots lack rants.<br />
+4. <strong>Tracking/returns misrouted (4/29)</strong> — amz-119/028/125/009: carrier and<br />
+   return-to-sender vocabulary sits equidistant from three intents.<br />
+5. <strong>Residual (7/29)</strong> — genuinely ambiguous amz-142 ("when is my echo<br />
+   coming?", device vs delivery); validator regex over-fire on amz-051 "$1<br />
+   authorization hold"; one escalation miss amz-102 "No tracking???" (12 chars<br />
+   auto-handled — gate needs the golden length floor ported in).</p>
+<h2>6. What is misleading about my headline number? (mandatory)</h2>
+<ul>
+<li>Macro-F1 0.676: delay+refund are 54% of test; status (n=7)/other (n=9) F1s<br />
+  are noise (CI table above). The per-class row, not the headline, is honest.</li>
+<li>Unsafe 0.043 = 1 missed of 23 must-escalate; 95% CI [0.00, 0.15]. The 5%<br />
+  target was aspirational; the curve is the claim.</li>
+<li>Flash-lite outputs vary run-to-run even at temperature 0: a live re-run<br />
+  measured cal coverage 0.40 vs replay-pinned 0.26. Replay cache pins exact<br />
+  numbers; live numbers wobble. Reported numbers are the pinned ones.</li>
+<li>Golden: 4 adjudication passes by ONE annotator; delay↔missing labels moved<br />
+  twice. Some "model errors" are annotator noise (30 rows flagged for a second<br />
+  annotator; pending). Test set is frozen now — earlier numbers in git history<br />
+  refer to shifted splits and are superseded.</li>
+<li>The B1 collapse (0.644 → 0.354) cuts both ways: it proves the leakage audit<br />
+  mattered, but it also means our margin over "simple" partly reflects B1's<br />
+  training-data discipline, not just modeling.</li>
+<li>Judge shares the generator's vendor; paired measurement banked at n=0<br />
+  (quota re-probed dead; pilot invalidated by decontamination and unquoted).<br />
+  There is deliberately no judge headline. Never invent one from this report.</li>
+<li>One brand, Oct-2017 window, English-only, n=100: generalises nowhere<br />
+  untouched. Coverage 0.20 means 4 of 5 messages still need a human.</li>
+</ul>
+<h2>7. One more week</h2>
+<ol>
+<li>Second annotator: 30 flagged double-labels + paired judge set to n≥40 when<br />
+   quota resets → noise-bounded metrics and a real κ.</li>
+<li>"Failed attempt" intent; port the 40-char floor + payment-complexity and<br />
+   batch-question patterns into the gate (kills the known unsafe autos).</li>
+<li>Promise-regex → NLI-vs-cited-span validator (kills the $1 over-fire).</li>
+<li>Bigger cal split (100) + frozen re-run; Lite run-to-run variance study.</li>
+<li>Shadow-mode approve/edit UI → active-learning loop from human edits.</li>
+</ol>
+<h2>8. Decision log</h2>
+<p><code>DECISIONS.md</code> holds exactly 15 entries (WHAT/WHY/alternatives/tradeoff) —<br />
+the ones above, compressed. Overflow detail lives in GOLDEN_NOTE.md.</p>
+</body>
+</html>

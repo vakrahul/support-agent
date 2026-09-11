@@ -1,0 +1,55 @@
+{
+ "retrieval": {
+  "K=1": {
+   "intent_consistency": 0.47,
+   "mean_max_sim": 0.642,
+   "self_hits": 0
+  },
+  "K=3": {
+   "intent_consistency": 0.63,
+   "mean_max_sim": 0.642,
+   "self_hits": 0
+  },
+  "K=5": {
+   "intent_consistency": 0.74,
+   "mean_max_sim": 0.642,
+   "self_hits": 0
+  },
+  "K=1-exact": 0.47
+ },
+ "gate_ablation": {
+  "full_gate": {
+   "coverage": 0.2,
+   "unsafe_false_auto_rate": 0.043,
+   "unsafe_per_auto": 0.05,
+   "n_auto": 20,
+   "n_missed_escalations": 1,
+   "must_escalate": 23
+  },
+  "no_agreement": {
+   "coverage": 0.6,
+   "unsafe_false_auto_rate": 0.261,
+   "unsafe_per_auto": 0.1,
+   "n_auto": 60,
+   "n_missed_escalations": 6,
+   "must_escalate": 23
+  },
+  "no_sim_no_agreement": {
+   "coverage": 0.78,
+   "unsafe_false_auto_rate": 0.391,
+   "unsafe_per_auto": 0.115,
+   "n_auto": 78,
+   "n_missed_escalations": 9,
+   "must_escalate": 23
+  }
+ },
+ "evidence_ablation": {
+  "top3_grounding_pass": 0.95,
+  "top1_grounding_pass": 1.0
+ },
+ "note": "agreement gate removes wrong-intent autos at a coverage cost; top-3 vs top-1 grounding equivalent (verbatim passes trivially).",
+ "definitions": {
+  "unsafe_false_auto_rate": "missed must-escalate / ALL must-escalate (contract S18; headline)",
+  "unsafe_per_auto": "missed must-escalate / autos (diagnostic only)"
+ }
+}
