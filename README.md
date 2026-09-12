@@ -101,9 +101,9 @@ All thresholds were tuned strictly on a separate 50-conversation calibration set
 
 ---
 
-## 2. What Is Misleading About Our Headline Numbers (Mandatory Self-Critique)
+## 2. What About Our Headline Numbers (Mandatory Self-Critique)
 
-In production AI systems, a superficial metric can conceal catastrophic failure modes. Below is the strict, unvarnished reading of our reported metrics:
+In systems, a superficial metric can conceal catastrophic failure modes. Below is the strict, unvarnished reading of our reported metrics:
 
 1. **72.0% Intent Accuracy Masks Severe Class Imbalance:**
    - In our evaluation benchmark, `refund_return` represents 27% of test queries, whereas rare classes like `order_status_general` make up only 7%. A naive classifier predicting the dominant class achieves high accuracy while failing rare intents completely.
