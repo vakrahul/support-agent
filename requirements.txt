@@ -15,7 +15,7 @@ matplotlib>=3.7        # EDA charts
 # ============================================================================
 google-generativeai>=0.8.0     # Gemini: generator + judge
 sentence-transformers>=2.7.0   # local embeddings (free, deterministic, no API)
-qdrant-client>=1.9.0           # vector store, runs EMBEDDED (no Docker needed)
+qdrant-client>=1.9.0,<1.13.0   # vector store, runs EMBEDDED (no Docker needed)
 python-dotenv>=1.0.0
 
 # ============================================================================

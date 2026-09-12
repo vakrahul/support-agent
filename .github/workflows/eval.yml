@@ -4,13 +4,23 @@ on:
   push:
     branches: [main]
   workflow_dispatch:   # manual "Run pipeline" button on the Actions tab
+    inputs:
+      mode:
+        description: 'LLM evaluation mode (replay is $0 cached, live calls Gemini API)'
+        required: true
+        default: 'replay'
+        type: choice
+        options:
+          - replay
+          - live
 
 jobs:
   pipeline:
     runs-on: ubuntu-latest
     timeout-minutes: 20
     env:
-      LLM_MODE: replay          # $0, no API key, deterministic — by design
+      LLM_MODE: ${{ inputs.mode || 'replay' }}
+      GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
       PYTHONUTF8: "1"
 
     steps:

@@ -146,13 +146,14 @@ class Retriever:
     """Same interface regardless of backend: search(query, top_k) -> cases."""
 
     def __init__(self, index_dir: Path | None = None):
-        index_dir = index_dir or INDEX_DIR
-        self.cases = pd.read_parquet(index_dir / "cases.parquet")
+        self.index_dir = index_dir or INDEX_DIR
+        self.cases = pd.read_parquet(self.index_dir / "cases.parquet")
         self._emb = get_embedder("auto")
         self._emb.fit(self.cases["customer_message"].fillna("").astype(str).tolist())
         self._backend = "numpy"
         self._client = None
-        backend_file = index_dir / "backend.txt"
+        self.vectors = None
+        backend_file = self.index_dir / "backend.txt"
         want = backend_file.read_text(encoding="utf-8").strip() if backend_file.exists() else "numpy"
         if want in ("embedded", "cloud"):
             try:
@@ -160,8 +161,10 @@ class Retriever:
                 self._backend = want
             except Exception as e:  # pragma: no cover
                 print(f"[retrieve] qdrant unavailable ({e}) -> numpy fallback")
-        if self._client is None:
-            vec_path = index_dir / "vectors.npy"
+
+    def _get_vectors(self) -> np.ndarray:
+        if self.vectors is None:
+            vec_path = self.index_dir / "vectors.npy"
             if not vec_path.exists():
                 # Qdrant lock was held by another process — build numpy cache on the fly
                 print("[retrieve] vectors.npy missing, building numpy fallback index...")
@@ -173,6 +176,7 @@ class Retriever:
             norms = np.linalg.norm(V, axis=1, keepdims=True)
             norms[norms == 0] = 1.0
             self.vectors = (V / norms).astype(np.float32)
+        return self.vectors
 
     def _query_vec(self, query: str) -> np.ndarray:
         q = np.asarray(self._emb.encode([query or ""]), dtype=np.float32)[0]
@@ -181,21 +185,38 @@ class Retriever:
 
     def search(self, query: str, top_k: int = 3):
         if self._client is not None:
-            hits = self._client.search(
-                collection_name=config.QDRANT_COLLECTION,
-                query_vector=self._query_vec(query).tolist(), limit=top_k)
-            out = []
-            for h in hits:
-                i = int(h.id)
-                if 0 <= i < len(self.cases):  # skip stale ids, never crash
-                    out.append({
-                        "case_id": i,
-                        "customer_message": str(self.cases.iloc[i]["customer_message"]),
-                        "brand_reply": str(self.cases.iloc[i]["brand_reply"]),
-                        "similarity": float(h.score)})
-            return out
+            try:
+                qvec = self._query_vec(query).tolist()
+                hits = None
+                if hasattr(self._client, "search"):
+                    hits = self._client.search(
+                        collection_name=config.QDRANT_COLLECTION,
+                        query_vector=qvec, limit=top_k)
+                elif hasattr(self._client, "query_points"):
+                    res = self._client.query_points(
+                        collection_name=config.QDRANT_COLLECTION,
+                        query=qvec, limit=top_k)
+                    hits = getattr(res, "points", res)
+                
+                if hits:
+                    out = []
+                    for h in hits:
+                        i = int(h.id)
+                        if 0 <= i < len(self.cases):  # skip stale ids, never crash
+                            out.append({
+                                "case_id": i,
+                                "customer_message": str(self.cases.iloc[i]["customer_message"]),
+                                "brand_reply": str(self.cases.iloc[i]["brand_reply"]),
+                                "similarity": float(h.score)})
+                    if out:
+                        return out
+            except Exception as e:
+                # Fall through to numpy cosine search
+                pass
+
         q = self._query_vec(query)
-        sims = self.vectors @ q
+        V = self._get_vectors()
+        sims = V @ q
         idx = np.argsort(-sims)[:top_k]
         return [{"case_id": int(i),
                  "customer_message": str(self.cases.iloc[int(i)]["customer_message"]),
