@@ -21,6 +21,7 @@ jobs:
     env:
       LLM_MODE: ${{ inputs.mode || 'replay' }}
       GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+      HF_TOKEN: ${{ secrets.HF_TOKEN }}
       PYTHONUTF8: "1"
 
     steps:
@@ -86,12 +87,12 @@ jobs:
 
           ## Real Customer Query Demonstrations (`scripts/demo.py --featured`)
 
-          | Sample ID | Archetype | Customer Query | Gate Decision | Reason Code |
-          |---|---|---|---|---|
-          | `amz-003` | Defective Item Return | *"So, sent me a broken LP & when I returned it, they sent me an LP by another band. #WTF?"* | `AUTO-HANDLE` | `OK_AUTO` |
-          | `amz-000` | Fraud / Blocked Card | *"I have filed a fraud/dispute case and my card is blocked now..."* | `ESCALATE` | `HIGH_RISK` |
-          | `amz-001` | Sarcastic Delivery Delay | *"say they put my parcel through my letterbox on saturday. Still waiting..."* | `ESCALATE` | `WEAK_EVIDENCE` |
-          | `amz-007` | Vague Query | *"How many more days?? Do u have any time limit???"* | `ESCALATE` | `WEAK_EVIDENCE` |
+          | Sample ID | Archetype | Customer Query | Drafted Support Reply | Gate Decision | Reason Code |
+          |---|---|---|---|---|---|
+          | `amz-003` | Defective Item Return | *"So, sent me a broken LP & when I returned it, they sent me an LP by another band. #WTF?"* | *"I'm sorry to hear about the trouble with your LP order and the incorrect replacement. I would like to look into this for you. Could you please send us a DM with your order number or the tracking details..."* | `AUTO-HANDLE` | `OK_AUTO` |
+          | `amz-000` | Fraud / Blocked Card | *"I have filed a fraud/dispute case and my card is blocked now..."* | *"I am very sorry to hear about the frustration this has caused you. I would like to take a closer look into this for you. Could you please send us a DM with your order number..."* | `ESCALATE` | `HIGH_RISK` |
+          | `amz-001` | Sarcastic Delivery Delay | *"say they put my parcel through my letterbox on saturday. Still waiting..."* | *"Sorry to hear about the trouble with your order. Please DM us your order number so we can look into this for you."* | `ESCALATE` | `WEAK_EVIDENCE` |
+          | `amz-007` | Vague Query | *"How many more days?? Do u have any time limit???"* | *"Sorry to hear about the trouble with your order. Please DM us your order number so we can look into this for you."* | `ESCALATE` | `WEAK_EVIDENCE` |
 
           ## Judge validation (paired vs human, n={ja['n_paired']})
 
