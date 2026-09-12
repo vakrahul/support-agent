@@ -1,4 +1,4 @@
-# Production AI Customer Support Agent: Grounded Intent Triage & Escalation
+# AI Customer Support Agent: Grounded Intent Triage & Escalation
 
 > **Status: Verified & Reproducible End-to-End.** Locked test-100 headline results below, reproducible in replay mode with zero API key requirement and zero network calls.
 
@@ -6,11 +6,84 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Python 3.12](https://img.shields.io/badge/Python-3.12-green.svg)](https://www.python.org/)
 
-**Verify & Run in GitHub Actions without cloning:**  
-Open [GitHub Actions](https://github.com/vakrahul/support-agent/actions/workflows/eval.yml) → **eval** → **Run workflow** → `main`.  
-GitHub's Ubuntu runner regenerates the entire evaluation, tests, leakage check, and customer query diagnostic walkthroughs from scratch in under 4 minutes, posting the verifiable results table directly into the run's **Job Summary**.
+---
 
-An intent-classification → grounded-reply → policy-escalation support agent built on real-world customer support conversations, engineered with rigorous epistemic hygiene: **evaluation, safety auditing, and honest limitation disclosure are treated as the primary deliverables.**
+## Project Overview & Description
+
+This repository implements an AI customer support triage and escalation system built on real Twitter customer support dialogues (specifically high-volume e-commerce customer interactions). The system processes incoming inquiries through a robust, four-stage pipeline:
+
+1. **Intent Classification**: Classifies customer queries across 6 grounded intent categories via an LLM intent classifier.
+2. **Precedent Retrieval**: Queries an embedded vector store (`bge-small-en-v1.5` embeddings) over historical, verified resolutions, deliberately filtering out non-resolving deflection handoffs (*"Please DM us"*).
+3. **Grounded Resolution Drafting**: Synthesizes verified resolution replies referencing official support channels and store policies.
+4. **Multi-Point Safety & Escalation Gate**: Evaluates 6 deterministic and statistical criteria (precedent consensus, vector similarity, risk phrases, and grounding validation) to determine whether to auto-dispatch or escalate to human specialists.
+
+**Core Philosophy:** Unlike black-box generative bots, **epistemic honesty and evaluation rigor are treated as primary deliverables**: headline accuracy is paired with class-imbalanced macro-F1, zero-miss claims are mathematically bounded by the Rule of Three, and automated judge scores are cross-validated against blind human evaluations.
+
+---
+
+## Reproduce in Under 15 Minutes (pip Quickstart)
+
+Every headline metric in this repository can be fully reproduced on standard hardware (CPU-only, no GPU required, $0 API spend) in under 15 minutes via pip and python:
+
+### Step 1: Clone & Setup Environment (~1 minute)
+```bash
+git clone https://github.com/vakrahul/support-agent.git
+cd support-agent
+
+# Create and activate virtual environment:
+python -m venv .venv
+# On Windows:
+.venv\Scripts\activate
+# On Linux / macOS:
+source .venv/bin/activate
+
+# Install dependencies (pip):
+pip install --upgrade pip
+pip install -r requirements.txt
+```
+
+### Step 2: Run the Test Suite (~35 seconds)
+```bash
+# Executes 101 tests (metrics, gating rules, tokenizers, grounding validator):
+python -m pytest tests/ -q
+# Or via Make:
+make test
+```
+
+### Step 3: Verify Zero Data Contamination (~2 seconds)
+```bash
+# Audits that none of the 150 golden evaluation cases appear in training or retrieval sets:
+python scripts/check_leakage.py
+```
+
+### Step 4: Reproduce the Headline Evaluation Table (~3 minutes)
+```bash
+# Runs the frozen test-100 benchmark in deterministic replay mode ($0, no API key needed):
+python scripts/run_eval.py --skip-judge
+
+# Banks cached judge verdicts and runs paired agreement statistics:
+python scripts/bank_judges.py
+python scripts/pair_agreement.py
+
+# Or run all of the above via Make:
+make eval
+```
+
+### Step 5: Test Real Customer Query Archetypes (~5 seconds)
+```bash
+# Runs diagnostic inspection on 4 distinct customer query archetypes:
+python scripts/demo.py --featured
+# Or via Make:
+make demo
+```
+
+### Step 6: Launch the Local Web UI (~1 second)
+```bash
+# Launches zero-dependency browser UI on http://localhost:8000
+python scripts/ui.py
+# Or via Make:
+make ui
+```
 
 ---
 
@@ -22,7 +95,7 @@ All thresholds were tuned strictly on a separate 50-conversation calibration set
 |---|---|---|---|---|---|---|---|
 | **B0 Trivial Baseline** (Majority class + canned reply + always escalate) | 0.090 [0.04, 0.15] | 0.028 [0.01, 0.04] | 0.23 / 1.00 | **0.000** | 0.00 | 2.70 / 5.00 | — |
 | **B1 Simple Baseline** (TF-IDF + verbatim training retrieval, decontaminated) | 0.340 [0.25, 0.43] | 0.354 [0.25, 0.44] | 0.23 / 0.96 | 0.043 | 0.04 | 2.45 / 5.00 | — |
-| **Ours: Production Agent** (LLM + Vector RAG + 6-Point Gating Engine) | **0.720** [0.63, 0.80] | **0.676** [0.56, 0.77] | 0.28 / **1.00** | **0.000** | **0.17** | **4.16 / 5.00** | **4.31 / 5.00** |
+| **Ours (LLM + Vector RAG + 6-Point Gate)** | **0.720** [0.63, 0.80] | **0.676** [0.56, 0.77] | 0.28 / **1.00** | **0.000** | **0.17** | **4.16 / 5.00** | **4.31 / 5.00** |
 
 *Confidence intervals are 1,000-fold empirical bootstrap percentiles (numpy-only, no sklearn).*
 
@@ -215,41 +288,7 @@ Every component, script, and documentation artifact is linked and traceable:
 
 ---
 
-## 9. Quickstart & Local Reproduction
-
-### Setup in 60 Seconds
-```bash
-# 1. Clone & install dependencies:
-git clone https://github.com/vakrahul/support-agent.git
-cd support-agent
-pip install -r requirements.txt
-
-# 2. Run test suite (101 tests, zero API key needed):
-make test
-
-# 3. Verify data decontamination (fails build on any leak):
-python scripts/check_leakage.py
-```
-
-### Reproduce Headline Evaluation ($0, Replay Mode)
-```bash
-# Reproduces the headline tables, CIs, and metrics exactly from cache:
-make eval
-```
-
-### Diagnostic Inspection & Real-Time Demo
-```bash
-# Run featured real customer archetypes:
-make demo
-
-# Launch real-time local web UI:
-make ui
-# Visit http://localhost:8000
-```
-
----
-
-## 10. License & Attribution
+## 9. License & Attribution
 
 - **Source Code:** Released under the [MIT License](LICENSE).
 - **Dataset:** *Customer Support on Twitter*, thoughtvector (Kaggle), licensed under CC BY-NC-SA 4.0.
