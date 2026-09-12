@@ -12,6 +12,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 import sys
 import time
 from collections import Counter
@@ -261,6 +262,29 @@ def _finalize(results, test):
     print(f"[eval] failures={len(fails)} -> outputs/eval_results.json")
 
 
+def _write_curve(curve, sim_thr, conf_thr):
+    """Persist the cal-50 coverage-vs-unsafe sweep — the report's central table.
+    Written on every run so the committed JSON can never go stale again."""
+    OUT_DIR.mkdir(parents=True, exist_ok=True)
+    distinct = {}
+    for row in curve:
+        key = (row["coverage"], row["unsafe"], row["esc_recall"])
+        distinct.setdefault(key, row)
+    payload = {
+        "operating_point": {"sim": sim_thr, "conf": conf_thr},
+        "curve": curve,
+        "distinct_regimes": [
+            {"coverage": c, "unsafe": u, "esc_recall": e}
+            for (c, u, e), row in distinct.items()],
+        "reading": "sweep over sim x conf on frozen cal-50; many grid cells "
+                   "collapse because model_score is bimodal (the conf knob is "
+                   "empirically dead); test-100 runs at the operating point.",
+    }
+    with open(OUT_DIR / "coverage_curve.json", "w", encoding="utf-8") as f:
+        json.dump(payload, f, indent=1)
+    print(f"[eval] curve ({len(distinct)} distinct regimes) -> outputs/coverage_curve.json")
+
+
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--calibration-only", action="store_true")
@@ -316,11 +340,15 @@ def main() -> int:
 
     # threshold sweep on calibration with the LLM intents (cached after the
     # first live run) so the operating point transfers to the real system.
+    # The full sweep grid is saved as the coverage-vs-unsafe curve (the report's
+    # central result) — regenerating outputs/coverage_curve.json on every run.
     if args.sim_thr is None:
         best, best_cov = None, -1.0
         cal_llm = run_system(cal, "llm", llm, retriever, "retrieval", mode,
                              sim_thr=0.0, conf_thr=0.0)
         cal_intents = {t["id"]: (t["intent"], t["score"], [t["intent"]]) for t in cal_llm}
+        cal_gold_escalate = {r["id"]: r["escalate"] for r in cal}
+        curve = []
         for sim in (0.30, 0.40, 0.45, 0.50, 0.60):
             for conf in (0.40, 0.50, 0.60, 0.70):
                 tr = run_system(cal, "llm_cached", None, retriever, "retrieval",
@@ -330,6 +358,10 @@ def main() -> int:
                 yp = [("escalate" if t["decision"] == "human" else "auto_handle") for t in tr]
                 br = M.binary_report(yt, yp)
                 cov = sum(1 for t in tr if t["decision"] == "auto") / len(tr)
+                curve.append({"sim": sim, "conf": conf,
+                              "coverage": round(cov, 3),
+                              "unsafe": round(br.false_auto_handle_rate, 3),
+                              "esc_recall": round(br.recall, 3)})
                 if br.false_auto_handle_rate <= 0.05 and cov > best_cov:
                     best, best_cov = (sim, conf, br), cov
         if best is None:
@@ -343,6 +375,7 @@ def main() -> int:
                 1 for t in tr if t["decision"] == "auto") / len(tr)
             print("[eval] no operating point met unsafe<=5%; taking most conservative")
         sim_thr, conf_thr = best[0], best[1]
+        _write_curve(curve, sim_thr, conf_thr)
         print(f"[eval] tuned on cal: sim>={sim_thr} conf>={conf_thr} "
               f"coverage={best_cov:.2f} unsafe={best[2].false_auto_handle_rate:.3f}")
     else:

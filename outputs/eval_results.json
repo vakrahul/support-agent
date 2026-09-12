@@ -67,7 +67,7 @@
      "draft": "Sorry to hear about the trouble with your order. Please DM us your order number so we can look into this for you.",
      "evidence_ids": [],
      "grounding_passed": true,
-     "risk": null,
+     "risk": "PII detected: phone number",
      "decision": "human",
      "reason_code": "ALWAYS_ESCALATE",
      "reason": "trivial baseline escalates everything"
@@ -118,7 +118,7 @@
      "draft": "Sorry to hear about the trouble with your order. Please DM us your order number so we can look into this for you.",
      "evidence_ids": [],
      "grounding_passed": true,
-     "risk": null,
+     "risk": "PII detected: phone number",
      "decision": "human",
      "reason_code": "ALWAYS_ESCALATE",
      "reason": "trivial baseline escalates everything"
@@ -356,7 +356,7 @@
      "draft": "Sorry to hear about the trouble with your order. Please DM us your order number so we can look into this for you.",
      "evidence_ids": [],
      "grounding_passed": true,
-     "risk": null,
+     "risk": "PII detected: phone number",
      "decision": "human",
      "reason_code": "ALWAYS_ESCALATE",
      "reason": "trivial baseline escalates everything"
@@ -509,7 +509,7 @@
      "draft": "Sorry to hear about the trouble with your order. Please DM us your order number so we can look into this for you.",
      "evidence_ids": [],
      "grounding_passed": true,
-     "risk": null,
+     "risk": "PII detected: phone number",
      "decision": "human",
      "reason_code": "ALWAYS_ESCALATE",
      "reason": "trivial baseline escalates everything"
@@ -645,7 +645,7 @@
      "draft": "Sorry to hear about the trouble with your order. Please DM us your order number so we can look into this for you.",
      "evidence_ids": [],
      "grounding_passed": true,
-     "risk": null,
+     "risk": "PII detected: phone number",
      "decision": "human",
      "reason_code": "ALWAYS_ESCALATE",
      "reason": "trivial baseline escalates everything"
@@ -747,7 +747,7 @@
      "draft": "Sorry to hear about the trouble with your order. Please DM us your order number so we can look into this for you.",
      "evidence_ids": [],
      "grounding_passed": true,
-     "risk": null,
+     "risk": "ambiguous: ultra-short message (20 chars)",
      "decision": "human",
      "reason_code": "ALWAYS_ESCALATE",
      "reason": "trivial baseline escalates everything"
@@ -798,7 +798,7 @@
      "draft": "Sorry to hear about the trouble with your order. Please DM us your order number so we can look into this for you.",
      "evidence_ids": [],
      "grounding_passed": true,
-     "risk": null,
+     "risk": "PII detected: phone number",
      "decision": "human",
      "reason_code": "ALWAYS_ESCALATE",
      "reason": "trivial baseline escalates everything"
@@ -900,7 +900,7 @@
      "draft": "Sorry to hear about the trouble with your order. Please DM us your order number so we can look into this for you.",
      "evidence_ids": [],
      "grounding_passed": true,
-     "risk": null,
+     "risk": "PII detected: phone number",
      "decision": "human",
      "reason_code": "ALWAYS_ESCALATE",
      "reason": "trivial baseline escalates everything"
@@ -917,7 +917,7 @@
      "draft": "Sorry to hear about the trouble with your order. Please DM us your order number so we can look into this for you.",
      "evidence_ids": [],
      "grounding_passed": true,
-     "risk": null,
+     "risk": "ambiguous: ultra-short message (18 chars)",
      "decision": "human",
      "reason_code": "ALWAYS_ESCALATE",
      "reason": "trivial baseline escalates everything"
@@ -968,7 +968,7 @@
      "draft": "Sorry to hear about the trouble with your order. Please DM us your order number so we can look into this for you.",
      "evidence_ids": [],
      "grounding_passed": true,
-     "risk": "harass",
+     "risk": "PII detected: phone number",
      "decision": "human",
      "reason_code": "ALWAYS_ESCALATE",
      "reason": "trivial baseline escalates everything"
@@ -1087,7 +1087,7 @@
      "draft": "Sorry to hear about the trouble with your order. Please DM us your order number so we can look into this for you.",
      "evidence_ids": [],
      "grounding_passed": true,
-     "risk": null,
+     "risk": "PII detected: phone number",
      "decision": "human",
      "reason_code": "ALWAYS_ESCALATE",
      "reason": "trivial baseline escalates everything"
@@ -1206,7 +1206,7 @@
      "draft": "Sorry to hear about the trouble with your order. Please DM us your order number so we can look into this for you.",
      "evidence_ids": [],
      "grounding_passed": true,
-     "risk": null,
+     "risk": "PII detected: phone number",
      "decision": "human",
      "reason_code": "ALWAYS_ESCALATE",
      "reason": "trivial baseline escalates everything"
@@ -1223,7 +1223,7 @@
      "draft": "Sorry to hear about the trouble with your order. Please DM us your order number so we can look into this for you.",
      "evidence_ids": [],
      "grounding_passed": true,
-     "risk": null,
+     "risk": "PII detected: phone number",
      "decision": "human",
      "reason_code": "ALWAYS_ESCALATE",
      "reason": "trivial baseline escalates everything"
@@ -1461,7 +1461,7 @@
      "draft": "Sorry to hear about the trouble with your order. Please DM us your order number so we can look into this for you.",
      "evidence_ids": [],
      "grounding_passed": true,
-     "risk": null,
+     "risk": "ambiguous: ultra-short message (17 chars)",
      "decision": "human",
      "reason_code": "ALWAYS_ESCALATE",
      "reason": "trivial baseline escalates everything"
@@ -1631,7 +1631,7 @@
      "draft": "Sorry to hear about the trouble with your order. Please DM us your order number so we can look into this for you.",
      "evidence_ids": [],
      "grounding_passed": true,
-     "risk": null,
+     "risk": "PII detected: phone number",
      "decision": "human",
      "reason_code": "ALWAYS_ESCALATE",
      "reason": "trivial baseline escalates everything"
@@ -1699,7 +1699,7 @@
      "draft": "Sorry to hear about the trouble with your order. Please DM us your order number so we can look into this for you.",
      "evidence_ids": [],
      "grounding_passed": true,
-     "risk": "fraud",
+     "risk": "PII detected: phone number",
      "decision": "human",
      "reason_code": "ALWAYS_ESCALATE",
      "reason": "trivial baseline escalates everything"
@@ -1798,10 +1798,10 @@
       28
      ],
      "grounding_passed": true,
-     "risk": null,
+     "risk": "PII detected: phone number",
      "decision": "human",
-     "reason_code": "LOW_SCORE",
-     "reason": "model_score 0.47 below 0.70"
+     "reason_code": "HIGH_RISK",
+     "reason": "matched risk phrase: 'PII detected: phone number'"
     },
     {
      "id": "amz-121",
@@ -1861,7 +1861,7 @@
       150
      ],
      "grounding_passed": true,
-     "risk": null,
+     "risk": "PII detected: phone number",
      "decision": "human",
      "reason_code": "UNKNOWN_INTENT",
      "reason": "message does not fit a defined intent"
@@ -2155,7 +2155,7 @@
       966
      ],
      "grounding_passed": true,
-     "risk": null,
+     "risk": "PII detected: phone number",
      "decision": "human",
      "reason_code": "UNKNOWN_INTENT",
      "reason": "message does not fit a defined intent"
@@ -2344,10 +2344,10 @@
       814
      ],
      "grounding_passed": true,
-     "risk": null,
+     "risk": "PII detected: phone number",
      "decision": "human",
-     "reason_code": "LOW_SCORE",
-     "reason": "model_score 0.36 below 0.70"
+     "reason_code": "HIGH_RISK",
+     "reason": "matched risk phrase: 'PII detected: phone number'"
     },
     {
      "id": "amz-113",
@@ -2512,10 +2512,10 @@
       2166
      ],
      "grounding_passed": true,
-     "risk": null,
+     "risk": "PII detected: phone number",
      "decision": "human",
-     "reason_code": "LOW_SCORE",
-     "reason": "model_score 0.48 below 0.70"
+     "reason_code": "HIGH_RISK",
+     "reason": "matched risk phrase: 'PII detected: phone number'"
     },
     {
      "id": "amz-017",
@@ -2638,7 +2638,7 @@
       1155
      ],
      "grounding_passed": true,
-     "risk": null,
+     "risk": "ambiguous: ultra-short message (20 chars)",
      "decision": "human",
      "reason_code": "UNKNOWN_INTENT",
      "reason": "message does not fit a defined intent"
@@ -2701,7 +2701,7 @@
       216
      ],
      "grounding_passed": true,
-     "risk": null,
+     "risk": "PII detected: phone number",
      "decision": "human",
      "reason_code": "UNKNOWN_INTENT",
      "reason": "message does not fit a defined intent"
@@ -2827,7 +2827,7 @@
       1731
      ],
      "grounding_passed": true,
-     "risk": null,
+     "risk": "PII detected: phone number",
      "decision": "human",
      "reason_code": "UNKNOWN_INTENT",
      "reason": "message does not fit a defined intent"
@@ -2848,10 +2848,10 @@
       55
      ],
      "grounding_passed": true,
-     "risk": null,
+     "risk": "ambiguous: ultra-short message (18 chars)",
      "decision": "human",
-     "reason_code": "LOW_SCORE",
-     "reason": "model_score 0.64 below 0.70"
+     "reason_code": "HIGH_RISK",
+     "reason": "matched risk phrase: 'ambiguous: ultra-short message (18 chars)'"
     },
     {
      "id": "amz-008",
@@ -2911,10 +2911,10 @@
       2471
      ],
      "grounding_passed": true,
-     "risk": "harass",
+     "risk": "PII detected: phone number",
      "decision": "human",
      "reason_code": "HIGH_RISK",
-     "reason": "matched risk phrase: 'harass'"
+     "reason": "matched risk phrase: 'PII detected: phone number'"
     },
     {
      "id": "amz-045",
@@ -3058,7 +3058,7 @@
       2174
      ],
      "grounding_passed": true,
-     "risk": null,
+     "risk": "PII detected: phone number",
      "decision": "human",
      "reason_code": "UNKNOWN_INTENT",
      "reason": "message does not fit a defined intent"
@@ -3205,10 +3205,10 @@
       888
      ],
      "grounding_passed": true,
-     "risk": null,
+     "risk": "PII detected: phone number",
      "decision": "human",
-     "reason_code": "LOW_SCORE",
-     "reason": "model_score 0.57 below 0.70"
+     "reason_code": "HIGH_RISK",
+     "reason": "matched risk phrase: 'PII detected: phone number'"
     },
     {
      "id": "amz-134",
@@ -3226,10 +3226,10 @@
       3313
      ],
      "grounding_passed": true,
-     "risk": null,
+     "risk": "PII detected: phone number",
      "decision": "human",
-     "reason_code": "LOW_SCORE",
-     "reason": "model_score 0.40 below 0.70"
+     "reason_code": "HIGH_RISK",
+     "reason": "matched risk phrase: 'PII detected: phone number'"
     },
     {
      "id": "amz-036",
@@ -3520,10 +3520,10 @@
       2408
      ],
      "grounding_passed": true,
-     "risk": null,
-     "decision": "auto",
-     "reason_code": "OK_AUTO",
-     "reason": "confident intent, precedent found, low risk, grounded draft"
+     "risk": "ambiguous: ultra-short message (17 chars)",
+     "decision": "human",
+     "reason_code": "HIGH_RISK",
+     "reason": "matched risk phrase: 'ambiguous: ultra-short message (17 chars)'"
     },
     {
      "id": "amz-133",
@@ -3730,7 +3730,7 @@
       1033
      ],
      "grounding_passed": true,
-     "risk": null,
+     "risk": "PII detected: phone number",
      "decision": "human",
      "reason_code": "UNKNOWN_INTENT",
      "reason": "message does not fit a defined intent"
@@ -3814,24 +3814,24 @@
       1372
      ],
      "grounding_passed": true,
-     "risk": "fraud",
+     "risk": "PII detected: phone number",
      "decision": "human",
      "reason_code": "HIGH_RISK",
-     "reason": "matched risk phrase: 'fraud'"
+     "reason": "matched risk phrase: 'PII detected: phone number'"
     }
    ],
    "accuracy": 0.34,
    "macro_f1": 0.354270166307469,
-   "esc_precision": 0.22105263157894736,
-   "esc_recall": 0.9130434782608695,
-   "false_auto": 0.08695652173913043,
-   "coverage": 0.05,
+   "esc_precision": 0.22916666666666666,
+   "esc_recall": 0.9565217391304348,
+   "false_auto": 0.043478260869565216,
+   "coverage": 0.04,
    "reason_codes": {
     "UNKNOWN_INTENT": 68,
     "WEAK_EVIDENCE": 5,
-    "LOW_SCORE": 18,
-    "HIGH_RISK": 4,
-    "OK_AUTO": 5
+    "HIGH_RISK": 11,
+    "LOW_SCORE": 12,
+    "OK_AUTO": 4
    },
    "judge_avg": 0.0,
    "judge_n": 0
@@ -3848,7 +3848,7 @@
      ],
      "max_sim": 0.549,
      "agreement": 0.0,
-     "draft": "I am very sorry for the delay with your order #702. I understand how frustrating it is to wait without updates. Please send us a DM with your full order details so we can investigate the status with the carrier for you. You can also check the latest tracking information here: <URL>. We are here to help resolve this.",
+     "draft": "I am very sorry for the delay with your order #702. I understand how frustrating it is to wait without updates. Please send us a DM with your full order details so we can investigate the status with the carrier for you. You can also check the latest tracking information here: https://www.amazon.com/your-orders. We are here to help resolve this. Twitter DM: https://twitter.com/messages/compose?recipient_id=AmazonHelp",
      "evidence_ids": [
       1718,
       862,
@@ -3858,7 +3858,21 @@
      "risk": null,
      "decision": "human",
      "reason_code": "WEAK_EVIDENCE",
-     "reason": "max similarity 0.55 below 0.60; no precedent"
+     "reason": "max similarity 0.55 below 0.60; no precedent",
+     "judge": {
+      "groundedness": 4,
+      "relevance": 5,
+      "tone": 5,
+      "safety": 5,
+      "quotes": [
+       "My apologies for the inconvenience",
+       "Have you checked the latest tracking information? You can find that in your orders here: <URL>",
+       "we'll check this."
+      ],
+      "missing": [],
+      "avg": 4.75,
+      "model": "gemini-3.1-flash-lite"
+     }
     },
     {
      "id": "amz-128",
@@ -3869,7 +3883,7 @@
      ],
      "max_sim": 0.397,
      "agreement": 0.333,
-     "draft": "I am sorry to hear you are experiencing this issue. Could you please provide your order number or tracking details so I can investigate this further for you? Alternatively, please send us a direct message with your account details so we can look into this immediately.",
+     "draft": "I am sorry to hear you are experiencing this issue. Could you please provide your order number or tracking details so I can investigate this further for you? Alternatively, please send us a direct message with your account details so we can look into this immediately. For assistance: https://www.amazon.com/help | Twitter DM: https://twitter.com/messages/compose?recipient_id=AmazonHelp",
      "evidence_ids": [
       191,
       2501
@@ -3878,7 +3892,21 @@
      "risk": null,
      "decision": "human",
      "reason_code": "UNKNOWN_INTENT",
-     "reason": "message does not fit a defined intent"
+     "reason": "message does not fit a defined intent",
+     "judge": {
+      "groundedness": 2,
+      "relevance": 3,
+      "tone": 5,
+      "safety": 5,
+      "quotes": [
+       "once we receive your revert, we'll check your concern and assist."
+      ],
+      "missing": [
+       "acknowledge the delay"
+      ],
+      "avg": 3.75,
+      "model": "gemini-3.1-flash-lite"
+     }
     },
     {
      "id": "amz-042",
@@ -3889,7 +3917,7 @@
      ],
      "max_sim": 0.581,
      "agreement": 0.667,
-     "draft": "We are sorry to hear about the delay with your refund and the frustration this has caused. As this is a public social media platform, please do not share your order details here for your security. Please report this issue directly at <URL> so our team can investigate the status of your return and refund immediately.",
+     "draft": "We are sorry to hear about the delay with your refund and the frustration this has caused. As this is a public social media platform, please do not share your order details here for your security. Please report this issue directly at https://www.amazon.com/returns so our team can investigate the status of your return and refund immediately.",
      "evidence_ids": [
       2272,
       493,
@@ -3899,7 +3927,20 @@
      "risk": null,
      "decision": "human",
      "reason_code": "WEAK_EVIDENCE",
-     "reason": "max similarity 0.58 below 0.60; no precedent"
+     "reason": "max similarity 0.58 below 0.60; no precedent",
+     "judge": {
+      "groundedness": 5,
+      "relevance": 5,
+      "tone": 5,
+      "safety": 5,
+      "quotes": [
+       "As this is a public social media platform, please do not share your order details here for your security.",
+       "Please report this issue directly at https://www.amazon.com/returns so our team can investigate the status of your return and refund"
+      ],
+      "missing": [],
+      "avg": 5.0,
+      "model": "gemini-3.1-flash-lite"
+     }
     },
     {
      "id": "amz-141",
@@ -3911,17 +3952,32 @@
      ],
      "max_sim": 0.734,
      "agreement": 1.0,
-     "draft": "I am sorry to hear about the trouble with your order. Please do not provide your order details here, as we consider that personal information and our page is visible to the public. To investigate this further, please contact us directly through this link: <URL>",
+     "draft": "I am sorry to hear about the trouble with your order. Please do not provide your order details here, as we consider that personal information and our page is visible to the public. To investigate this further, please contact us directly through this link: https://www.amazon.com/returns",
      "evidence_ids": [
       28,
       2519,
       2840
      ],
      "grounding_passed": true,
-     "risk": null,
-     "decision": "auto",
-     "reason_code": "OK_AUTO",
-     "reason": "confident intent, precedent found, low risk, grounded draft"
+     "risk": "PII detected: phone number",
+     "decision": "human",
+     "reason_code": "HIGH_RISK",
+     "reason": "matched risk phrase: 'PII detected: phone number'",
+     "judge": {
+      "groundedness": 5,
+      "relevance": 2,
+      "tone": 5,
+      "safety": 5,
+      "quotes": [
+       "Please don't provide your order details, we consider it personal information. Our Twitter page is visible to public.",
+       "Have you contacted us directly? If not, you can do so here: <URL>"
+      ],
+      "missing": [
+       "acknowledge the refund/return request"
+      ],
+      "avg": 4.25,
+      "model": "gemini-3.1-flash-lite"
+     }
     },
     {
      "id": "amz-121",
@@ -3933,7 +3989,7 @@
      ],
      "max_sim": 0.669,
      "agreement": 0.333,
-     "draft": "I am very sorry to hear about the frustration caused by your recent delivery experience. We would like to investigate this for you. Could you please provide the order number or tracking details, or send us a DM with the information so we can look into this missing parcel immediately?",
+     "draft": "I am very sorry to hear about the frustration caused by your recent delivery experience. We would like to investigate this for you. Could you please provide the order number or tracking details, or send us a DM with the information so we can look into this missing parcel immediately? For assistance: https://www.amazon.com/your-orders | Twitter DM: https://twitter.com/messages/compose?recipient_id=AmazonHelp",
      "evidence_ids": [
       569
      ],
@@ -3941,7 +3997,20 @@
      "risk": null,
      "decision": "human",
      "reason_code": "WEAK_EVIDENCE",
-     "reason": "precedent agrees 0.33 < 0.67 with predicted intent; likely misclassified"
+     "reason": "precedent agrees 0.33 < 0.67 with predicted intent; likely misclassified",
+     "judge": {
+      "groundedness": 4,
+      "relevance": 5,
+      "tone": 5,
+      "safety": 5,
+      "quotes": [
+       "I'm sorry for the experience.",
+       "Is this in regard to a current order: <URL>"
+      ],
+      "missing": [],
+      "avg": 4.75,
+      "model": "gemini-3.1-flash-lite"
+     }
     },
     {
      "id": "amz-066",
@@ -3953,7 +4022,7 @@
      ],
      "max_sim": 0.527,
      "agreement": 0.0,
-     "draft": "I am very sorry for the frustration caused by the missing t-shirts and the delay in your refund. We want to investigate this immediately. Could you please provide your order number or send us a DM with the details so we can look into the status of your shipment and the refund process for you?",
+     "draft": "I am very sorry for the frustration caused by the missing t-shirts and the delay in your refund. We want to investigate this immediately. Could you please provide your order number or send us a DM with the details so we can look into the status of your shipment and the refund process for you? For assistance: https://www.amazon.com/returns | Twitter DM: https://twitter.com/messages/compose?recipient_id=AmazonHelp",
      "evidence_ids": [
       1452,
       224,
@@ -3963,7 +4032,22 @@
      "risk": "sue",
      "decision": "human",
      "reason_code": "HIGH_RISK",
-     "reason": "matched risk phrase: 'sue'"
+     "reason": "matched risk phrase: 'sue'",
+     "judge": {
+      "groundedness": 3,
+      "relevance": 4,
+      "tone": 5,
+      "safety": 5,
+      "quotes": [
+       "I'm sorry for the delay",
+       "We'd like to help"
+      ],
+      "missing": [
+       "The draft does not explicitly acknowledge the specific request for a refund/return status beyond asking for the order number to investigate."
+      ],
+      "avg": 4.25,
+      "model": "gemini-3.1-flash-lite"
+     }
     },
     {
      "id": "amz-047",
@@ -3974,17 +4058,33 @@
      ],
      "max_sim": 0.604,
      "agreement": 0.0,
-     "draft": "Hi, we're very sorry to hear your jam arrived broken due to the packaging. Please don't provide your order details here as this is a public page. Have you been able to review your return or replacement options for this order? You can report this issue directly to our support team here: <URL> (1/2)^CB",
+     "draft": "Hi, we're very sorry to hear your jam arrived broken due to the packaging. Please don't provide your order details here as this is a public page. Have you been able to review your return or replacement options for this order? You can report this issue directly to our support team here: https://www.amazon.com/returns (1/2)^CB",
      "evidence_ids": [
       150,
       908,
       2215
      ],
      "grounding_passed": true,
-     "risk": null,
+     "risk": "PII detected: phone number",
      "decision": "human",
-     "reason_code": "WEAK_EVIDENCE",
-     "reason": "precedent agrees 0.00 < 0.67 with predicted intent; likely misclassified"
+     "reason_code": "HIGH_RISK",
+     "reason": "matched risk phrase: 'PII detected: phone number'",
+     "judge": {
+      "groundedness": 5,
+      "relevance": 4,
+      "tone": 5,
+      "safety": 5,
+      "quotes": [
+       "Please don’t provide your order details as we consider them to be personal info.",
+       "You can report this here: <URL>",
+       "Have you been able to review your return/replacement options?"
+      ],
+      "missing": [
+       "acknowledge the refund/return request"
+      ],
+      "avg": 4.75,
+      "model": "gemini-3.1-flash-lite"
+     }
     },
     {
      "id": "amz-027",
@@ -3995,7 +4095,7 @@
      ],
      "max_sim": 0.606,
      "agreement": 0.667,
-     "draft": "We are sorry to hear about your experience and apologize for the frustration caused. We would like to look into this for you. Please send us a DM with your order or tracking details so we can investigate your account and the associated records further. (1/2)",
+     "draft": "We are sorry to hear about your experience and apologize for the frustration caused. We would like to look into this for you. Please send us a DM with your order or tracking details so we can investigate your account and the associated records further. (1/2) at https://www.amazon.com/help or via Twitter DM: https://twitter.com/messages/compose?recipient_id=AmazonHelp",
      "evidence_ids": [
       1135,
       1136,
@@ -4005,7 +4105,21 @@
      "risk": null,
      "decision": "human",
      "reason_code": "UNKNOWN_INTENT",
-     "reason": "message does not fit a defined intent"
+     "reason": "message does not fit a defined intent",
+     "judge": {
+      "groundedness": 2,
+      "relevance": 3,
+      "tone": 5,
+      "safety": 4,
+      "quotes": [
+       "We'll not be able to view your order details on the social platform"
+      ],
+      "missing": [
+       "The draft asks for order/tracking details via DM, which contradicts the evidence stating they cannot access account details on the social platform. It fails to ask a clarifying question about the specific nature of the complaint (the audit request)."
+      ],
+      "avg": 3.5,
+      "model": "gemini-3.1-flash-lite"
+     }
     },
     {
      "id": "amz-050",
@@ -4017,7 +4131,7 @@
      ],
      "max_sim": 0.602,
      "agreement": 0.0,
-     "draft": "I am very sorry to hear about the trouble with your order and that it was returned to the seller. We would like to investigate this for you. Could you please provide your order number or tracking details via DM so we can look into this further?",
+     "draft": "I am very sorry to hear about the trouble with your order and that it was returned to the seller. We would like to investigate this for you. Could you please provide your order number or tracking details via DM so we can look into this further? For assistance: https://www.amazon.com/returns | Twitter DM: https://twitter.com/messages/compose?recipient_id=AmazonHelp",
      "evidence_ids": [
       829,
       330,
@@ -4027,7 +4141,22 @@
      "risk": null,
      "decision": "human",
      "reason_code": "WEAK_EVIDENCE",
-     "reason": "precedent agrees 0.00 < 0.67 with predicted intent; likely misclassified"
+     "reason": "precedent agrees 0.00 < 0.67 with predicted intent; likely misclassified",
+     "judge": {
+      "groundedness": 3,
+      "relevance": 3,
+      "tone": 5,
+      "safety": 5,
+      "quotes": [
+       "I am very sorry to hear about the trouble with your order",
+       "Could you please provide your order number or tracking details"
+      ],
+      "missing": [
+       "acknowledge the refund/return request"
+      ],
+      "avg": 4.0,
+      "model": "gemini-3.1-flash-lite"
+     }
     },
     {
      "id": "amz-031",
@@ -4038,7 +4167,7 @@
      ],
      "max_sim": 0.452,
      "agreement": 0.667,
-     "draft": "I'm sorry to hear about your experience. We'd like to look into this for you. Could you please share your order or tracking details via DM so we can investigate further?",
+     "draft": "I'm sorry to hear about your experience. We'd like to look into this for you. Could you please share your order or tracking details via DM so we can investigate further? For assistance: https://www.amazon.com/help | Twitter DM: https://twitter.com/messages/compose?recipient_id=AmazonHelp",
      "evidence_ids": [
       450,
       2067
@@ -4047,7 +4176,22 @@
      "risk": null,
      "decision": "human",
      "reason_code": "UNKNOWN_INTENT",
-     "reason": "message does not fit a defined intent"
+     "reason": "message does not fit a defined intent",
+     "judge": {
+      "groundedness": 2,
+      "relevance": 4,
+      "tone": 5,
+      "safety": 5,
+      "quotes": [
+       "I'm sorry to hear about your experience.",
+       "Could you please share your order or tracking details via DM so we can investigate further?"
+      ],
+      "missing": [
+       "acknowledge the delay"
+      ],
+      "avg": 4.0,
+      "model": "gemini-3.1-flash-lite"
+     }
     },
     {
      "id": "amz-061",
@@ -4058,7 +4202,7 @@
      ],
      "max_sim": 0.606,
      "agreement": 0.667,
-     "draft": "I'm sorry to hear your order arrived later than expected! I would like to look into this for you. Could you please provide your order number and the most recent tracking scan shown here: <URL>? Once I have those details, I can investigate what caused the delay.",
+     "draft": "I'm sorry to hear your order arrived later than expected! I would like to look into this for you. Could you please provide your order number and the most recent tracking scan shown here: https://www.amazon.com/your-orders? Once I have those details, I can investigate what caused the delay.",
      "evidence_ids": [
       2977
      ],
@@ -4066,7 +4210,22 @@
      "risk": null,
      "decision": "auto",
      "reason_code": "OK_AUTO",
-     "reason": "confident intent, precedent found, low risk, grounded draft"
+     "reason": "confident intent, precedent found, low risk, grounded draft",
+     "judge": {
+      "groundedness": 2,
+      "relevance": 3,
+      "tone": 5,
+      "safety": 5,
+      "quotes": [
+       "I'm sorry your order is taking longer than expected!",
+       "what is the most recent tracking scan shown here: <URL>"
+      ],
+      "missing": [
+       "The draft asks for an order number which was not requested in the evidence, and fails to ask for the carrier information which was explicitly requested in the evidence."
+      ],
+      "avg": 3.75,
+      "model": "gemini-3.1-flash-lite"
+     }
     },
     {
      "id": "amz-069",
@@ -4077,7 +4236,7 @@
      ],
      "max_sim": 0.624,
      "agreement": 1.0,
-     "draft": "I'm sorry to hear you haven't received your cashback for your July purchase. Please don't provide your order details here, as this page is visible to the public. Kindly connect with us here: <URL> and we'll be happy to investigate this for you.",
+     "draft": "I'm sorry to hear you haven't received your cashback for your July purchase. Please don't provide your order details here, as this page is visible to the public. Kindly connect with us here: https://www.amazon.com/returns and we'll be happy to investigate this for you.",
      "evidence_ids": [
       2826,
       315
@@ -4086,7 +4245,22 @@
      "risk": null,
      "decision": "auto",
      "reason_code": "OK_AUTO",
-     "reason": "confident intent, precedent found, low risk, grounded draft"
+     "reason": "confident intent, precedent found, low risk, grounded draft",
+     "judge": {
+      "groundedness": 5,
+      "relevance": 4,
+      "tone": 5,
+      "safety": 5,
+      "quotes": [
+       "Please don't provide your order details here, we consider it to be personal info. Our page is visible to the public",
+       "I'm sorry you haven't received the cashback. Kindly connect with us here: <URL> and we'll be happy to help."
+      ],
+      "missing": [
+       "acknowledge the refund/return request"
+      ],
+      "avg": 4.75,
+      "model": "gemini-3.1-flash-lite"
+     }
     },
     {
      "id": "amz-126",
@@ -4097,7 +4271,7 @@
      ],
      "max_sim": 0.627,
      "agreement": 0.667,
-     "draft": "I'm sorry to hear you're having trouble loading Prime Video on your work computer. To help us investigate this, could you please let us know if you are receiving a specific error message? Also, please reach out to us via this link so we can look into your account details securely: <URL> ^NR",
+     "draft": "I'm sorry to hear you're having trouble loading Prime Video on your work computer. To help us investigate this, could you please let us know if you are receiving a specific error message? Also, please reach out to us via this link so we can look into your account details securely: https://www.amazon.com/your-account ^NR",
      "evidence_ids": [
       1277,
       646
@@ -4106,7 +4280,22 @@
      "risk": null,
      "decision": "auto",
      "reason_code": "OK_AUTO",
-     "reason": "confident intent, precedent found, low risk, grounded draft"
+     "reason": "confident intent, precedent found, low risk, grounded draft",
+     "judge": {
+      "groundedness": 2,
+      "relevance": 4,
+      "tone": 5,
+      "safety": 5,
+      "quotes": [
+       "I'm sorry to hear you're having trouble",
+       "could you please let us know if you are receiving a specific error message?"
+      ],
+      "missing": [
+       "The draft fails to acknowledge the specific context of the 'work computer' mentioned by the customer, instead using a generic template."
+      ],
+      "avg": 4.0,
+      "model": "gemini-3.1-flash-lite"
+     }
     },
     {
      "id": "amz-096",
@@ -4117,7 +4306,7 @@
      ],
      "max_sim": 0.537,
      "agreement": 0.667,
-     "draft": "I am very sorry to hear about your experience and the frustration this has caused. To help me look into this and investigate the status of your previous inquiries, please send us a Direct Message with your order or tracking details so we can review this privately.",
+     "draft": "I am very sorry to hear about your experience and the frustration this has caused. To help me look into this and investigate the status of your previous inquiries, please send us a Direct Message with your order or tracking details so we can review this privately. For assistance: https://www.amazon.com/help | Twitter DM: https://twitter.com/messages/compose?recipient_id=AmazonHelp",
      "evidence_ids": [
       3285,
       524,
@@ -4127,7 +4316,21 @@
      "risk": null,
      "decision": "human",
      "reason_code": "UNKNOWN_INTENT",
-     "reason": "message does not fit a defined intent"
+     "reason": "message does not fit a defined intent",
+     "judge": {
+      "groundedness": 2,
+      "relevance": 4,
+      "tone": 5,
+      "safety": 5,
+      "quotes": [
+       "I am very sorry to hear about your experience"
+      ],
+      "missing": [
+       "acknowledge the delay"
+      ],
+      "avg": 4.0,
+      "model": "gemini-3.1-flash-lite"
+     }
     },
     {
      "id": "amz-073",
@@ -4138,7 +4341,7 @@
      ],
      "max_sim": 0.52,
      "agreement": 0.333,
-     "draft": "I am sorry to hear you are unable to initiate the return yourself. I would like to investigate this for you. Could you please provide your order number or tracking details? Alternatively, please send us a DM with your order information so we can look into arranging a pickup for you.",
+     "draft": "I am sorry to hear you are unable to initiate the return yourself. I would like to investigate this for you. Could you please provide your order number or tracking details? Alternatively, please send us a DM with your order information so we can look into arranging a pickup for you. For assistance: https://www.amazon.com/returns | Twitter DM: https://twitter.com/messages/compose?recipient_id=AmazonHelp",
      "evidence_ids": [
       1570
      ],
@@ -4146,7 +4349,19 @@
      "risk": null,
      "decision": "human",
      "reason_code": "WEAK_EVIDENCE",
-     "reason": "max similarity 0.52 below 0.60; no precedent"
+     "reason": "max similarity 0.52 below 0.60; no precedent",
+     "judge": {
+      "groundedness": 5,
+      "relevance": 5,
+      "tone": 5,
+      "safety": 5,
+      "quotes": [
+       "Hi there. Are you having issues with a recent order?"
+      ],
+      "missing": [],
+      "avg": 5.0,
+      "model": "gemini-3.1-flash-lite"
+     }
     },
     {
      "id": "amz-078",
@@ -4158,7 +4373,7 @@
      ],
      "max_sim": 0.85,
      "agreement": 0.0,
-     "draft": "I'm sorry for the frustration regarding your delivery delay. I'd like to look into this for you. Could you please send us a DM with your order number and the current tracking status you see here: <URL>? We'll investigate what's happening with your shipment right away.",
+     "draft": "I'm sorry for the frustration regarding your delivery delay. I'd like to look into this for you. Could you please send us a DM with your order number and the current tracking status you see here: https://www.amazon.com/your-orders? We'll investigate what's happening with your shipment right away. Twitter DM: https://twitter.com/messages/compose?recipient_id=AmazonHelp",
      "evidence_ids": [
       1770,
       679
@@ -4167,7 +4382,19 @@
      "risk": null,
      "decision": "human",
      "reason_code": "WEAK_EVIDENCE",
-     "reason": "precedent agrees 0.00 < 0.67 with predicted intent; likely misclassified"
+     "reason": "precedent agrees 0.00 < 0.67 with predicted intent; likely misclassified",
+     "judge": {
+      "groundedness": 5,
+      "relevance": 5,
+      "tone": 5,
+      "safety": 5,
+      "quotes": [
+       "I'm sorry for the wait! What order status and delivery date(s) are you currently seeing here: <URL>"
+      ],
+      "missing": [],
+      "avg": 5.0,
+      "model": "gemini-3.1-flash-lite"
+     }
     },
     {
      "id": "amz-103",
@@ -4178,7 +4405,7 @@
      ],
      "max_sim": 0.59,
      "agreement": 0.333,
-     "draft": "I am very sorry to hear about your frustration regarding your experience. To help me investigate this further, could you please provide your order number or tracking details? Alternatively, please send us a DM with these details so we can look into this for you. ^PB",
+     "draft": "I am very sorry to hear about your frustration regarding your experience. To help me investigate this further, could you please provide your order number or tracking details? Alternatively, please send us a DM with these details so we can look into this for you. ^PB at https://www.amazon.com/help or via Twitter DM: https://twitter.com/messages/compose?recipient_id=AmazonHelp",
      "evidence_ids": [
       1201
      ],
@@ -4186,7 +4413,21 @@
      "risk": null,
      "decision": "human",
      "reason_code": "UNKNOWN_INTENT",
-     "reason": "message does not fit a defined intent"
+     "reason": "message does not fit a defined intent",
+     "judge": {
+      "groundedness": 2,
+      "relevance": 2,
+      "tone": 5,
+      "safety": 5,
+      "quotes": [
+       "Which site did you order with?"
+      ],
+      "missing": [
+       "acknowledge the refund/return request"
+      ],
+      "avg": 3.5,
+      "model": "gemini-3.1-flash-lite"
+     }
     },
     {
      "id": "amz-145",
@@ -4198,7 +4439,7 @@
      ],
      "max_sim": 0.58,
      "agreement": 0.0,
-     "draft": "We are very sorry to hear about your experience with your cancelled orders and the missing phone cases. This is certainly not the level of service we aim to provide. To investigate this further, please send us a DM with your order details or the email address associated with your account so we can look into this for you.",
+     "draft": "We are very sorry to hear about your experience with your cancelled orders and the missing phone cases. This is certainly not the level of service we aim to provide. To investigate this further, please send us a DM with your order details or the email address associated with your account so we can look into this for you. For assistance: https://www.amazon.com/returns | Twitter DM: https://twitter.com/messages/compose?recipient_id=AmazonHelp",
      "evidence_ids": [
       1
      ],
@@ -4206,7 +4447,21 @@
      "risk": null,
      "decision": "human",
      "reason_code": "WEAK_EVIDENCE",
-     "reason": "max similarity 0.58 below 0.60; no precedent"
+     "reason": "max similarity 0.58 below 0.60; no precedent",
+     "judge": {
+      "groundedness": 2,
+      "relevance": 2,
+      "tone": 5,
+      "safety": 5,
+      "quotes": [
+       "That's not what we hope to hear!"
+      ],
+      "missing": [
+       "acknowledge the refund/return request"
+      ],
+      "avg": 3.5,
+      "model": "gemini-3.1-flash-lite"
+     }
     },
     {
      "id": "amz-112",
@@ -4218,7 +4473,7 @@
      ],
      "max_sim": 0.709,
      "agreement": 0.0,
-     "draft": "We are very sorry to hear about the repeated delays and the frustration this has caused with your recent orders. Could you confirm if we happened to miss the mentioned time frame? Please do not provide your order details here, as this page is visible to the public. Please send us a DM so we can investigate this further for you.",
+     "draft": "We are very sorry to hear about the repeated delays and the frustration this has caused with your recent orders. Could you confirm if we happened to miss the mentioned time frame? Please do not provide your order details here, as this page is visible to the public. Please send us a DM so we can investigate this further for you. For assistance: https://www.amazon.com/your-orders | Twitter DM: https://twitter.com/messages/compose?recipient_id=AmazonHelp",
      "evidence_ids": [
       2255,
       2954,
@@ -4228,7 +4483,23 @@
      "risk": null,
      "decision": "human",
      "reason_code": "WEAK_EVIDENCE",
-     "reason": "precedent agrees 0.00 < 0.67 with predicted intent; likely misclassified"
+     "reason": "precedent agrees 0.00 < 0.67 with predicted intent; likely misclassified",
+     "judge": {
+      "groundedness": 4,
+      "relevance": 2,
+      "tone": 5,
+      "safety": 5,
+      "quotes": [
+       "Could you confirm if we happened to miss the mentioned time frame?",
+       "Please don't provide your order details, we consider it to be personal information. Our page is visible to the public."
+      ],
+      "missing": [
+       "acknowledge non-receipt",
+       "ask for tracking/address details to investigate"
+      ],
+      "avg": 4.0,
+      "model": "gemini-3.1-flash-lite"
+     }
     },
     {
      "id": "amz-005",
@@ -4240,7 +4511,7 @@
      ],
      "max_sim": 0.69,
      "agreement": 0.0,
-     "draft": "I'm very sorry to hear your order hasn't arrived despite the delivery status. I'd like to investigate this with the carrier for you immediately. Could you please send us a DM with your order number or tracking details so we can look into this right away?",
+     "draft": "I'm very sorry to hear your order hasn't arrived despite the delivery status. I'd like to investigate this with the carrier for you immediately. Could you please send us a DM with your order number or tracking details so we can look into this right away? For assistance: https://www.amazon.com/your-orders | Twitter DM: https://twitter.com/messages/compose?recipient_id=AmazonHelp",
      "evidence_ids": [
       2109
      ],
@@ -4248,7 +4519,20 @@
      "risk": null,
      "decision": "human",
      "reason_code": "WEAK_EVIDENCE",
-     "reason": "precedent agrees 0.00 < 0.67 with predicted intent; likely misclassified"
+     "reason": "precedent agrees 0.00 < 0.67 with predicted intent; likely misclassified",
+     "judge": {
+      "groundedness": 2,
+      "relevance": 5,
+      "tone": 5,
+      "safety": 5,
+      "quotes": [
+       "I'm very sorry to hear your order hasn't arrived",
+       "Could you please send us a DM with your order number or tracking details"
+      ],
+      "missing": [],
+      "avg": 4.25,
+      "model": "gemini-3.1-flash-lite"
+     }
     },
     {
      "id": "amz-104",
@@ -4259,15 +4543,29 @@
      ],
      "max_sim": 0.683,
      "agreement": 0.0,
-     "draft": "I'm sorry for the confusion regarding your order 402-6608900-3256313. You can manage your order details as long as it hasn't entered the shipping process: https://www.amazon.com/gp/help/customer/display.html?nodeId=201910540. If you need further assistance, please send us a DM with your order details so we can investigate this for you. We're here to help!",
+     "draft": "I'm sorry for the confusion regarding your order 402-6608900-3256313. You can manage your order details as long as it hasn't entered the shipping process: https://www.amazon.com/gp/help/customer/display.html?nodeId=201910540. If you need further assistance, please send us a DM with your order details so we can investigate this for you. We're here to help! Twitter DM: https://twitter.com/messages/compose?recipient_id=AmazonHelp",
      "evidence_ids": [
       633
      ],
      "grounding_passed": true,
-     "risk": null,
+     "risk": "PII detected: phone number",
      "decision": "human",
-     "reason_code": "WEAK_EVIDENCE",
-     "reason": "precedent agrees 0.00 < 0.67 with predicted intent; likely misclassified"
+     "reason_code": "HIGH_RISK",
+     "reason": "matched risk phrase: 'PII detected: phone number'",
+     "judge": {
+      "groundedness": 5,
+      "relevance": 2,
+      "tone": 5,
+      "safety": 5,
+      "quotes": [
+       "You can make changes to your order information as long as the order hasn't entered the shipping process"
+      ],
+      "missing": [
+       "ask for the order number"
+      ],
+      "avg": 4.25,
+      "model": "gemini-3.1-flash-lite"
+     }
     },
     {
      "id": "amz-119",
@@ -4279,13 +4577,25 @@
      ],
      "max_sim": 0.688,
      "agreement": 0.0,
-     "draft": "I understand you need your phone urgently and would like to track your order. To help me investigate the current status and courier details for you, please share your order number via DM. Once provided, I will look into this immediately.",
+     "draft": "I understand you need your phone urgently and would like to track your order. To help me investigate the current status and courier details for you, please share your order number via DM. Once provided, I will look into this immediately. For assistance: https://www.amazon.com/your-orders | Twitter DM: https://twitter.com/messages/compose?recipient_id=AmazonHelp",
      "evidence_ids": [],
      "grounding_passed": false,
      "risk": null,
      "decision": "human",
      "reason_code": "WEAK_EVIDENCE",
-     "reason": "precedent agrees 0.00 < 0.67 with predicted intent; likely misclassified"
+     "reason": "precedent agrees 0.00 < 0.67 with predicted intent; likely misclassified",
+     "judge": {
+      "groundedness": 1,
+      "relevance": 4,
+      "tone": 5,
+      "safety": 5,
+      "quotes": [],
+      "missing": [
+       "acknowledge non-receipt"
+      ],
+      "avg": 3.75,
+      "model": "gemini-3.1-flash-lite"
+     }
     },
     {
      "id": "amz-120",
@@ -4296,7 +4606,7 @@
      ],
      "max_sim": 0.658,
      "agreement": 1.0,
-     "draft": "Hey there! We're glad to hear the issue is resolved. We're not able to view order-related details via social media, but we'd like to help in any way we can! Please click here: <URL> so we can take a closer look at your return status with you.",
+     "draft": "Hey there! We're glad to hear the issue is resolved. We're not able to view order-related details via social media, but we'd like to help in any way we can! Please click here: https://www.amazon.com/returns so we can take a closer look at your return status with you.",
      "evidence_ids": [
       3212
      ],
@@ -4304,7 +4614,21 @@
      "risk": null,
      "decision": "auto",
      "reason_code": "OK_AUTO",
-     "reason": "confident intent, precedent found, low risk, grounded draft"
+     "reason": "confident intent, precedent found, low risk, grounded draft",
+     "judge": {
+      "groundedness": 5,
+      "relevance": 3,
+      "tone": 5,
+      "safety": 5,
+      "quotes": [
+       "We're not able to view order related things via Twitter, but we'd like to help in any way we can! Please click here: <URL> so we can take a closer look with you."
+      ],
+      "missing": [
+       "acknowledge the refund/return request"
+      ],
+      "avg": 4.5,
+      "model": "gemini-3.1-flash-lite"
+     }
     },
     {
      "id": "amz-093",
@@ -4315,7 +4639,7 @@
      ],
      "max_sim": 0.64,
      "agreement": 0.333,
-     "draft": "I understand you're looking for an update on your order status. Please don’t provide your order details here as it is personal information and our page is visible to the public. Please send us a DM with your order number so we can investigate this for you with the fastest shipping speed and we'll ensure to deliver it asap. (3/3)",
+     "draft": "I understand you're looking for an update on your order status. Please don’t provide your order details here as it is personal information and our page is visible to the public. Please send us a DM with your order number so we can investigate this for you with the fastest shipping speed and we'll ensure to deliver it asap. (3/3) at https://www.amazon.com/your-orders or via Twitter DM: https://twitter.com/messages/compose?recipient_id=AmazonHelp",
      "evidence_ids": [
       1639,
       2953
@@ -4324,7 +4648,19 @@
      "risk": null,
      "decision": "human",
      "reason_code": "WEAK_EVIDENCE",
-     "reason": "precedent agrees 0.33 < 0.67 with predicted intent; likely misclassified"
+     "reason": "precedent agrees 0.33 < 0.67 with predicted intent; likely misclassified",
+     "judge": {
+      "groundedness": 2,
+      "relevance": 4,
+      "tone": 3,
+      "safety": 2,
+      "quotes": [
+       "Please don’t provide your order details as it is personal information. Our Twitter page is visible to the public."
+      ],
+      "missing": [],
+      "avg": 2.75,
+      "model": "gemini-3.1-flash-lite"
+     }
     },
     {
      "id": "amz-079",
@@ -4335,7 +4671,7 @@
      ],
      "max_sim": 0.518,
      "agreement": 0.333,
-     "draft": "I am very sorry for the frustration regarding your defective iPhone SE and the lack of support you've received. We want to look into this for you immediately. Please send us a DM with your order details so we can investigate the status of your return request. Please don’t provide your order details here as it is personal information. Our Twitter page is visible to the public.",
+     "draft": "I am very sorry for the frustration regarding your defective iPhone SE and the lack of support you've received. We want to look into this for you immediately. Please send us a DM with your order details so we can investigate the status of your return request. Please don’t provide your order details here as it is personal information. Our Twitter page is visible to the public. For assistance: https://www.amazon.com/returns | Twitter DM: https://twitter.com/messages/compose?recipient_id=AmazonHelp",
      "evidence_ids": [
       1384
      ],
@@ -4343,7 +4679,19 @@
      "risk": null,
      "decision": "human",
      "reason_code": "WEAK_EVIDENCE",
-     "reason": "max similarity 0.52 below 0.60; no precedent"
+     "reason": "max similarity 0.52 below 0.60; no precedent",
+     "judge": {
+      "groundedness": 5,
+      "relevance": 5,
+      "tone": 5,
+      "safety": 5,
+      "quotes": [
+       "Please don’t provide your order details as it is personal information. Our Twitter page is visible to the public."
+      ],
+      "missing": [],
+      "avg": 5.0,
+      "model": "gemini-3.1-flash-lite"
+     }
     },
     {
      "id": "amz-025",
@@ -4354,7 +4702,7 @@
      ],
      "max_sim": 0.592,
      "agreement": 1.0,
-     "draft": "I am sorry to hear about the frustration caused by the packaging size and the inconvenience this caused with your neighbors. We are always looking to improve our shipping processes. Could you please send us a DM with your order number or tracking details so we can investigate this further? In the meantime, please share your feedback regarding packaging here: <URL>",
+     "draft": "I am sorry to hear about the frustration caused by the packaging size and the inconvenience this caused with your neighbors. We are always looking to improve our shipping processes. Could you please send us a DM with your order number or tracking details so we can investigate this further? In the meantime, please share your feedback regarding packaging here: https://www.amazon.com/help. Twitter DM: https://twitter.com/messages/compose?recipient_id=AmazonHelp",
      "evidence_ids": [
       290,
       1307
@@ -4363,7 +4711,20 @@
      "risk": null,
      "decision": "human",
      "reason_code": "UNKNOWN_INTENT",
-     "reason": "message does not fit a defined intent"
+     "reason": "message does not fit a defined intent",
+     "judge": {
+      "groundedness": 4,
+      "relevance": 5,
+      "tone": 5,
+      "safety": 5,
+      "quotes": [
+       "We're always looking to improve! Please share your feedback/requests here as well: <URL>",
+       "That does seem rather excessive. Please leave feedback here: <URL>"
+      ],
+      "missing": [],
+      "avg": 4.75,
+      "model": "gemini-3.1-flash-lite"
+     }
     },
     {
      "id": "amz-114",
@@ -4375,7 +4736,7 @@
      ],
      "max_sim": 0.669,
      "agreement": 0.0,
-     "draft": "Hi there. I am very sorry to hear about the delay with your laptop delivery; this is certainly not the experience we want for our Prime members. To help me investigate this further, could you please send us a DM with your order number? Please don't provide your order details here, as our page is visible to the public.",
+     "draft": "Hi there. I am very sorry to hear about the delay with your laptop delivery; this is certainly not the experience we want for our Prime members. To help me investigate this further, could you please send us a DM with your order number? Please don't provide your order details here, as our page is visible to the public. For assistance: https://www.amazon.com/your-orders | Twitter DM: https://twitter.com/messages/compose?recipient_id=AmazonHelp",
      "evidence_ids": [
       814,
       217
@@ -4384,7 +4745,19 @@
      "risk": null,
      "decision": "human",
      "reason_code": "WEAK_EVIDENCE",
-     "reason": "precedent agrees 0.00 < 0.67 with predicted intent; likely misclassified"
+     "reason": "precedent agrees 0.00 < 0.67 with predicted intent; likely misclassified",
+     "judge": {
+      "groundedness": 4,
+      "relevance": 5,
+      "tone": 5,
+      "safety": 5,
+      "quotes": [
+       "Please don't provide your order details, we consider it to be personal information. Our page is visible to public."
+      ],
+      "missing": [],
+      "avg": 4.75,
+      "model": "gemini-3.1-flash-lite"
+     }
     },
     {
      "id": "amz-067",
@@ -4396,7 +4769,7 @@
      ],
      "max_sim": 0.805,
      "agreement": 0.0,
-     "draft": "I'm sorry to hear your Prime Now order was cancelled without notice. I understand how frustrating that is. Could you please send us a DM with your order number so we can investigate why this happened and look into the status of your refund?",
+     "draft": "I'm sorry to hear your Prime Now order was cancelled without notice. I understand how frustrating that is. Could you please send us a DM with your order number so we can investigate why this happened and look into the status of your refund? For assistance: https://www.amazon.com/returns | Twitter DM: https://twitter.com/messages/compose?recipient_id=AmazonHelp",
      "evidence_ids": [
       1724,
       1476,
@@ -4406,7 +4779,19 @@
      "risk": null,
      "decision": "human",
      "reason_code": "WEAK_EVIDENCE",
-     "reason": "precedent agrees 0.00 < 0.67 with predicted intent; likely misclassified"
+     "reason": "precedent agrees 0.00 < 0.67 with predicted intent; likely misclassified",
+     "judge": {
+      "groundedness": 2,
+      "relevance": 5,
+      "tone": 5,
+      "safety": 5,
+      "quotes": [
+       "I'm sorry your order was canceled!"
+      ],
+      "missing": [],
+      "avg": 4.25,
+      "model": "gemini-3.1-flash-lite"
+     }
     },
     {
      "id": "amz-040",
@@ -4417,7 +4802,7 @@
      ],
      "max_sim": 0.486,
      "agreement": 0.0,
-     "draft": "I am very sorry to hear that you received a demo model instead of a new iPad Pro. I would like to investigate this for you immediately. Could you please provide the order number or send us a DM with your account details so we can look into this? We want to ensure this is corrected for you.",
+     "draft": "I am very sorry to hear that you received a demo model instead of a new iPad Pro. I would like to investigate this for you immediately. Could you please provide the order number or send us a DM with your account details so we can look into this? We want to ensure this is corrected for you. For assistance: https://www.amazon.com/returns | Twitter DM: https://twitter.com/messages/compose?recipient_id=AmazonHelp",
      "evidence_ids": [
       3327
      ],
@@ -4425,7 +4810,21 @@
      "risk": null,
      "decision": "human",
      "reason_code": "WEAK_EVIDENCE",
-     "reason": "max similarity 0.49 below 0.60; no precedent"
+     "reason": "max similarity 0.49 below 0.60; no precedent",
+     "judge": {
+      "groundedness": 2,
+      "relevance": 3,
+      "tone": 5,
+      "safety": 5,
+      "quotes": [
+       "Can you please confirm who the item was sold and fulfilled by?"
+      ],
+      "missing": [
+       "acknowledge the refund/return request"
+      ],
+      "avg": 3.75,
+      "model": "gemini-3.1-flash-lite"
+     }
     },
     {
      "id": "amz-058",
@@ -4436,17 +4835,32 @@
      ],
      "max_sim": 0.703,
      "agreement": 0.0,
-     "draft": "I'm sorry to hear your package hasn't arrived despite the delivered status. We would like to investigate this with the carrier for you. Please send us a DM with your order number and the tracking information so we can look into this further. ^NR",
+     "draft": "I'm sorry to hear your package hasn't arrived despite the delivered status. We would like to investigate this with the carrier for you. Please send us a DM with your order number and the tracking information so we can look into this further. ^NR at https://www.amazon.com/your-orders or via Twitter DM: https://twitter.com/messages/compose?recipient_id=AmazonHelp",
      "evidence_ids": [
       814,
       2403,
       712
      ],
      "grounding_passed": true,
-     "risk": null,
+     "risk": "PII detected: phone number",
      "decision": "human",
-     "reason_code": "WEAK_EVIDENCE",
-     "reason": "precedent agrees 0.00 < 0.67 with predicted intent; likely misclassified"
+     "reason_code": "HIGH_RISK",
+     "reason": "matched risk phrase: 'PII detected: phone number'",
+     "judge": {
+      "groundedness": 2,
+      "relevance": 4,
+      "tone": 5,
+      "safety": 5,
+      "quotes": [
+       "I'm sorry for your poor experience",
+       "We would like to help in any way we can."
+      ],
+      "missing": [
+       "The draft asks for the order number publicly, which contradicts the cited evidence stating: 'Please don't provide your order details, we consider it to be personal information.'"
+      ],
+      "avg": 4.0,
+      "model": "gemini-3.1-flash-lite"
+     }
     },
     {
      "id": "amz-113",
@@ -4458,7 +4872,7 @@
      ],
      "max_sim": 0.639,
      "agreement": 1.0,
-     "draft": "I am very sorry to hear that your account is showing as blocked. To help us investigate this further, please send us a DM with your account email address or any relevant order details. We will look into this and be in touch as soon as possible.",
+     "draft": "I am very sorry to hear that your account is showing as blocked. To help us investigate this further, please send us a DM with your account email address or any relevant order details. We will look into this and be in touch as soon as possible. For assistance: https://www.amazon.com/your-account | Twitter DM: https://twitter.com/messages/compose?recipient_id=AmazonHelp",
      "evidence_ids": [
       2139,
       822
@@ -4467,7 +4881,21 @@
      "risk": null,
      "decision": "auto",
      "reason_code": "OK_AUTO",
-     "reason": "confident intent, precedent found, low risk, grounded draft"
+     "reason": "confident intent, precedent found, low risk, grounded draft",
+     "judge": {
+      "groundedness": 2,
+      "relevance": 4,
+      "tone": 5,
+      "safety": 5,
+      "quotes": [
+       "we'll be in touch in due course"
+      ],
+      "missing": [
+       "The draft fails to ask if the customer received an email regarding the issue, which was a specific instruction in the cited evidence."
+      ],
+      "avg": 4.0,
+      "model": "gemini-3.1-flash-lite"
+     }
     },
     {
      "id": "amz-123",
@@ -4478,7 +4906,7 @@
      ],
      "max_sim": 0.533,
      "agreement": 0.0,
-     "draft": "We are truly sorry to hear about the frustration you've experienced regarding your refund and the lack of support over the past two months. We would like to investigate this immediately. Please send us a DM with your order details or the associated email address so we can look into this for you.",
+     "draft": "We are truly sorry to hear about the frustration you've experienced regarding your refund and the lack of support over the past two months. We would like to investigate this immediately. Please send us a DM with your order details or the associated email address so we can look into this for you. For assistance: https://www.amazon.com/returns | Twitter DM: https://twitter.com/messages/compose?recipient_id=AmazonHelp",
      "evidence_ids": [
       1755,
       2381,
@@ -4488,7 +4916,22 @@
      "risk": "sue",
      "decision": "human",
      "reason_code": "HIGH_RISK",
-     "reason": "matched risk phrase: 'sue'"
+     "reason": "matched risk phrase: 'sue'",
+     "judge": {
+      "groundedness": 4,
+      "relevance": 4,
+      "tone": 5,
+      "safety": 5,
+      "quotes": [
+       "Apologies. Please go to: <URL> select phone, enter your number, desired language & click to call.",
+       "Please report this here: <URL> and we'll check."
+      ],
+      "missing": [
+       "The draft acknowledges the refund request, but it does not explicitly acknowledge the 'return' aspect of the request, though this is minor given the context of a blocked refund."
+      ],
+      "avg": 4.5,
+      "model": "gemini-3.1-flash-lite"
+     }
     },
     {
      "id": "amz-125",
@@ -4501,7 +4944,7 @@
      ],
      "max_sim": 0.635,
      "agreement": 0.0,
-     "draft": "I'm very sorry for the frustration caused by these delivery issues and the lack of return updates. I would like to investigate this for you. Could you please provide your order number or the tracking details? Alternatively, please send us a DM with these details so we can look into the status of your returns and the missing items: <URL>",
+     "draft": "I'm very sorry for the frustration caused by these delivery issues and the lack of return updates. I would like to investigate this for you. Could you please provide your order number or the tracking details? Alternatively, please send us a DM with these details so we can look into the status of your returns and the missing items: https://www.amazon.com/returns. Twitter DM: https://twitter.com/messages/compose?recipient_id=AmazonHelp",
      "evidence_ids": [
       1537,
       1610,
@@ -4511,7 +4954,22 @@
      "risk": null,
      "decision": "human",
      "reason_code": "WEAK_EVIDENCE",
-     "reason": "precedent agrees 0.00 < 0.67 with predicted intent; likely misclassified"
+     "reason": "precedent agrees 0.00 < 0.67 with predicted intent; likely misclassified",
+     "judge": {
+      "groundedness": 2,
+      "relevance": 4,
+      "tone": 5,
+      "safety": 5,
+      "quotes": [
+       "I'm sorry for the poor experience",
+       "What's the status of the tracking and delivery date?"
+      ],
+      "missing": [
+       "acknowledge non-receipt"
+      ],
+      "avg": 4.0,
+      "model": "gemini-3.1-flash-lite"
+     }
     },
     {
      "id": "amz-129",
@@ -4522,7 +4980,7 @@
      ],
      "max_sim": 0.667,
      "agreement": 0.333,
-     "draft": "I'm sorry for the frustration caused by the delay of your NFS Payback order. We want to look into this for you right away. Could you please send us a DM with your order number or the tracking details so we can investigate the status of your delivery?",
+     "draft": "I'm sorry for the frustration caused by the delay of your NFS Payback order. We want to look into this for you right away. Could you please send us a DM with your order number or the tracking details so we can investigate the status of your delivery? For assistance: https://www.amazon.com/your-orders | Twitter DM: https://twitter.com/messages/compose?recipient_id=AmazonHelp",
      "evidence_ids": [
       1467
      ],
@@ -4530,7 +4988,21 @@
      "risk": null,
      "decision": "human",
      "reason_code": "WEAK_EVIDENCE",
-     "reason": "precedent agrees 0.33 < 0.67 with predicted intent; likely misclassified"
+     "reason": "precedent agrees 0.33 < 0.67 with predicted intent; likely misclassified",
+     "judge": {
+      "groundedness": 5,
+      "relevance": 5,
+      "tone": 5,
+      "safety": 5,
+      "quotes": [
+       "I'm sorry for any inconvenience!",
+       "We'd like to help if we can.",
+       "Is this in regard to a current order: <URL>"
+      ],
+      "missing": [],
+      "avg": 5.0,
+      "model": "gemini-3.1-flash-lite"
+     }
     },
     {
      "id": "amz-011",
@@ -4541,7 +5013,7 @@
      ],
      "max_sim": 0.582,
      "agreement": 0.667,
-     "draft": "Hi there, I'm very sorry to hear about the delay with your BAOT shipment. I'd like to look into this for you. Could you please send us a DM with your order details or check the latest status here: <URL>",
+     "draft": "Hi there, I'm very sorry to hear about the delay with your BAOT shipment. I'd like to look into this for you. Could you please send us a DM with your order details or check the latest status here: https://www.amazon.com/your-orders. Twitter DM: https://twitter.com/messages/compose?recipient_id=AmazonHelp",
      "evidence_ids": [
       3181
      ],
@@ -4549,7 +5021,20 @@
      "risk": null,
      "decision": "human",
      "reason_code": "WEAK_EVIDENCE",
-     "reason": "max similarity 0.58 below 0.60; no precedent"
+     "reason": "max similarity 0.58 below 0.60; no precedent",
+     "judge": {
+      "groundedness": 5,
+      "relevance": 5,
+      "tone": 5,
+      "safety": 5,
+      "quotes": [
+       "Hi, I'm sorry to hear that.",
+       "What info is available in the tracking: <URL>"
+      ],
+      "missing": [],
+      "avg": 5.0,
+      "model": "gemini-3.1-flash-lite"
+     }
     },
     {
      "id": "amz-054",
@@ -4560,13 +5045,25 @@
      ],
      "max_sim": 0.587,
      "agreement": 0.667,
-     "draft": "We currently do not offer a color display Kindle, as our Kindle line is specifically designed with E-ink technology for a paper-like reading experience. Regarding #BlackFriday deals, please check our website for the latest offers. If you need help finding a specific device or have account questions, please send us a DM with your details so we can investigate further!",
+     "draft": "We currently do not offer a color display Kindle, as our Kindle line is specifically designed with E-ink technology for a paper-like reading experience. Regarding #BlackFriday deals, please check our website for the latest offers. If you need help finding a specific device or have account questions, please send us a DM with your details so we can investigate further! For assistance: https://www.amazon.com/your-account | Twitter DM: https://twitter.com/messages/compose?recipient_id=AmazonHelp",
      "evidence_ids": [],
      "grounding_passed": false,
      "risk": null,
      "decision": "human",
      "reason_code": "WEAK_EVIDENCE",
-     "reason": "max similarity 0.59 below 0.60; no precedent"
+     "reason": "max similarity 0.59 below 0.60; no precedent",
+     "judge": {
+      "groundedness": 1,
+      "relevance": 4,
+      "tone": 5,
+      "safety": 5,
+      "quotes": [],
+      "missing": [
+       "The draft fails to acknowledge the specific device/account issue in a personalized way, as it relies on a generic template rather than addressing the user's specific inquiry about current inventory status."
+      ],
+      "avg": 3.75,
+      "model": "gemini-3.1-flash-lite"
+     }
     },
     {
      "id": "amz-032",
@@ -4578,7 +5075,7 @@
      ],
      "max_sim": 0.704,
      "agreement": 0.0,
-     "draft": "I am sorry to hear your package has been delayed past the expected delivery date. I understand how frustrating it is to see conflicting tracking information. To help us investigate this further, please send us a DM with your order number and the tracking details so we can look into this for you: https://amzn.to/3657QyB",
+     "draft": "I am sorry to hear your package has been delayed past the expected delivery date. I understand how frustrating it is to see conflicting tracking information. To help us investigate this further, please send us a DM with your order number and the tracking details so we can look into this for you: https://amzn.to/3657QyB at https://www.amazon.com/your-orders or via Twitter DM: https://twitter.com/messages/compose?recipient_id=AmazonHelp",
      "evidence_ids": [
       1005
      ],
@@ -4586,7 +5083,21 @@
      "risk": null,
      "decision": "human",
      "reason_code": "WEAK_EVIDENCE",
-     "reason": "precedent agrees 0.00 < 0.67 with predicted intent; likely misclassified"
+     "reason": "precedent agrees 0.00 < 0.67 with predicted intent; likely misclassified",
+     "judge": {
+      "groundedness": 2,
+      "relevance": 4,
+      "tone": 5,
+      "safety": 5,
+      "quotes": [
+       "We're here to help and would like a member of our team to take a closer look here"
+      ],
+      "missing": [
+       "acknowledge non-receipt"
+      ],
+      "avg": 4.0,
+      "model": "gemini-3.1-flash-lite"
+     }
     },
     {
      "id": "amz-006",
@@ -4597,16 +5108,30 @@
      ],
      "max_sim": 0.54,
      "agreement": 0.667,
-     "draft": "I am sorry to hear that your order 171-7614411-4707553 is marked as delivered but has not been received. Please don't provide your order details here, as we consider it to be personal information. Our Twitter page is public. Please send us a Direct Message so we can investigate this with the carrier for you.",
+     "draft": "I am sorry to hear that your order 171-7614411-4707553 is marked as delivered but has not been received. Please don't provide your order details here, as we consider it to be personal information. Our Twitter page is public. Please send us a Direct Message so we can investigate this with the carrier for you. For assistance: https://www.amazon.com/your-orders | Twitter DM: https://twitter.com/messages/compose?recipient_id=AmazonHelp",
      "evidence_ids": [
       1731,
       1003
      ],
      "grounding_passed": true,
-     "risk": null,
+     "risk": "PII detected: phone number",
      "decision": "human",
-     "reason_code": "WEAK_EVIDENCE",
-     "reason": "max similarity 0.54 below 0.60; no precedent"
+     "reason_code": "HIGH_RISK",
+     "reason": "matched risk phrase: 'PII detected: phone number'",
+     "judge": {
+      "groundedness": 5,
+      "relevance": 3,
+      "tone": 4,
+      "safety": 5,
+      "quotes": [
+       "Please don't provide your order details here, as we consider it to be personal information. Our Twitter page is public."
+      ],
+      "missing": [
+       "ask for tracking/address details to investigate"
+      ],
+      "avg": 4.25,
+      "model": "gemini-3.1-flash-lite"
+     }
     },
     {
      "id": "amz-017",
@@ -4618,7 +5143,7 @@
      ],
      "max_sim": 0.631,
      "agreement": 0.0,
-     "draft": "I am very sorry to hear about this frustrating experience, especially since you have confirmed no delivery attempt was made. Please share your order number or the tracking link here: <URL> and we will look into this for you. Please don’t provide your order details, (2/3)",
+     "draft": "I am very sorry to hear about this frustrating experience, especially since you have confirmed no delivery attempt was made. Please share your order number or the tracking link here: https://www.amazon.com/your-orders and we will look into this for you. Please don’t provide your order details, (2/3)",
      "evidence_ids": [
       948
      ],
@@ -4626,7 +5151,21 @@
      "risk": null,
      "decision": "human",
      "reason_code": "WEAK_EVIDENCE",
-     "reason": "precedent agrees 0.00 < 0.67 with predicted intent; likely misclassified"
+     "reason": "precedent agrees 0.00 < 0.67 with predicted intent; likely misclassified",
+     "judge": {
+      "groundedness": 2,
+      "relevance": 3,
+      "tone": 3,
+      "safety": 5,
+      "quotes": [
+       "https://www.amazon.com/your-orders and we will look into this for you."
+      ],
+      "missing": [
+       "acknowledge the delay"
+      ],
+      "avg": 3.25,
+      "model": "gemini-3.1-flash-lite"
+     }
     },
     {
      "id": "amz-028",
@@ -4637,13 +5176,26 @@
      ],
      "max_sim": 0.706,
      "agreement": 0.0,
-     "draft": "I'm sorry for the frustration regarding the missing carrier information on your order status page. To investigate this further, could you please send us a DM with your order number? We would like to look into this for you and provide the correct tracking details. Please reach out to us here: https://www.amazon.com/contact-us",
+     "draft": "I'm sorry for the frustration regarding the missing carrier information on your order status page. To investigate this further, could you please send us a DM with your order number? We would like to look into this for you and provide the correct tracking details. Please reach out to us here: https://www.amazon.com/contact-us. Twitter DM: https://twitter.com/messages/compose?recipient_id=AmazonHelp",
      "evidence_ids": [],
      "grounding_passed": false,
      "risk": null,
      "decision": "human",
      "reason_code": "WEAK_EVIDENCE",
-     "reason": "precedent agrees 0.00 < 0.67 with predicted intent; likely misclassified"
+     "reason": "precedent agrees 0.00 < 0.67 with predicted intent; likely misclassified",
+     "judge": {
+      "groundedness": 1,
+      "relevance": 3,
+      "tone": 5,
+      "safety": 5,
+      "quotes": [],
+      "missing": [
+       "acknowledge non-receipt",
+       "ask for tracking/address details to investigate"
+      ],
+      "avg": 3.5,
+      "model": "gemini-3.1-flash-lite"
+     }
     },
     {
      "id": "amz-003",
@@ -4654,7 +5206,7 @@
      ],
      "max_sim": 0.46,
      "agreement": 0.667,
-     "draft": "I'm sorry to hear about the trouble with your LP order and the incorrect replacement. I would like to look into this for you. Could you please send us a DM with your order number or the tracking details so I can investigate what happened?",
+     "draft": "I'm sorry to hear about the trouble with your LP order and the incorrect replacement. I would like to look into this for you. Could you please send us a DM with your order number or the tracking details so I can investigate what happened? For assistance: https://www.amazon.com/returns | Twitter DM: https://twitter.com/messages/compose?recipient_id=AmazonHelp",
      "evidence_ids": [
       3125,
       1624,
@@ -4664,7 +5216,21 @@
      "risk": null,
      "decision": "human",
      "reason_code": "WEAK_EVIDENCE",
-     "reason": "max similarity 0.46 below 0.60; no precedent"
+     "reason": "max similarity 0.46 below 0.60; no precedent",
+     "judge": {
+      "groundedness": 4,
+      "relevance": 3,
+      "tone": 5,
+      "safety": 5,
+      "quotes": [
+       "I'm sorry for the trouble."
+      ],
+      "missing": [
+       "acknowledge the refund/return request"
+      ],
+      "avg": 4.25,
+      "model": "gemini-3.1-flash-lite"
+     }
     },
     {
      "id": "amz-082",
@@ -4676,7 +5242,7 @@
      ],
      "max_sim": 0.699,
      "agreement": 0.333,
-     "draft": "I am very sorry to hear about this frustrating experience with your delivery. This is certainly not the service we aim to provide. To help me investigate this further, could you please send us a DM with your order number and the tracking details? We would like to look into this for you.",
+     "draft": "I am very sorry to hear about this frustrating experience with your delivery. This is certainly not the service we aim to provide. To help me investigate this further, could you please send us a DM with your order number and the tracking details? We would like to look into this for you. For assistance: https://www.amazon.com/your-orders | Twitter DM: https://twitter.com/messages/compose?recipient_id=AmazonHelp",
      "evidence_ids": [
       2478
      ],
@@ -4684,7 +5250,22 @@
      "risk": null,
      "decision": "human",
      "reason_code": "WEAK_EVIDENCE",
-     "reason": "precedent agrees 0.33 < 0.67 with predicted intent; likely misclassified"
+     "reason": "precedent agrees 0.33 < 0.67 with predicted intent; likely misclassified",
+     "judge": {
+      "groundedness": 2,
+      "relevance": 4,
+      "tone": 5,
+      "safety": 5,
+      "quotes": [
+       "This is certainly not the service we aim to provide."
+      ],
+      "missing": [
+       "acknowledge non-receipt",
+       "ask for address details"
+      ],
+      "avg": 4.0,
+      "model": "gemini-3.1-flash-lite"
+     }
     },
     {
      "id": "amz-122",
@@ -4695,7 +5276,7 @@
      ],
      "max_sim": 0.717,
      "agreement": 1.0,
-     "draft": "I am very sorry to hear that your parcel is missing despite being marked as delivered. To investigate this with the carrier, could you please send us a DM with your order number? We need to verify the carrier details to open an investigation. You can also check the carrier information here: <URL>. Please let us know so we can assist you further.",
+     "draft": "I am very sorry to hear that your parcel is missing despite being marked as delivered. To investigate this with the carrier, could you please send us a DM with your order number? We need to verify the carrier details to open an investigation. You can also check the carrier information here: https://www.amazon.com/your-orders. Please let us know so we can assist you further. Twitter DM: https://twitter.com/messages/compose?recipient_id=AmazonHelp",
      "evidence_ids": [
       106
      ],
@@ -4703,7 +5284,21 @@
      "risk": null,
      "decision": "auto",
      "reason_code": "OK_AUTO",
-     "reason": "confident intent, precedent found, low risk, grounded draft"
+     "reason": "confident intent, precedent found, low risk, grounded draft",
+     "judge": {
+      "groundedness": 3,
+      "relevance": 4,
+      "tone": 5,
+      "safety": 5,
+      "quotes": [
+       "Which carrier is on the order? You can find that information here: <URL>"
+      ],
+      "missing": [
+       "The draft fails to ask for the address details to investigate, focusing only on the order number and carrier."
+      ],
+      "avg": 4.25,
+      "model": "gemini-3.1-flash-lite"
+     }
     },
     {
      "id": "amz-142",
@@ -4715,15 +5310,28 @@
      ],
      "max_sim": 0.641,
      "agreement": 0.0,
-     "draft": "Oh no! We're sorry to hear your Echo hasn't arrived as expected. We'd like to look into this for you right away. Could you please provide your order number or the delivery date mentioned in your confirmation email? It may also help to know what your most recent tracking update says, which you can find here: <URL>",
+     "draft": "Oh no! We're sorry to hear your Echo hasn't arrived as expected. We'd like to look into this for you right away. Could you please provide your order number or the delivery date mentioned in your confirmation email? It may also help to know what your most recent tracking update says, which you can find here: https://www.amazon.com/your-orders",
      "evidence_ids": [
       1227
      ],
      "grounding_passed": true,
-     "risk": null,
+     "risk": "ambiguous: ultra-short message (20 chars)",
      "decision": "human",
-     "reason_code": "WEAK_EVIDENCE",
-     "reason": "precedent agrees 0.00 < 0.67 with predicted intent; likely misclassified"
+     "reason_code": "HIGH_RISK",
+     "reason": "matched risk phrase: 'ambiguous: ultra-short message (20 chars)'",
+     "judge": {
+      "groundedness": 5,
+      "relevance": 5,
+      "tone": 5,
+      "safety": 5,
+      "quotes": [
+       "What was the delivery date provided in your confirmation e-mail?",
+       "It may also help to know what your most recent tracking update is, which can be found here: <URL>"
+      ],
+      "missing": [],
+      "avg": 5.0,
+      "model": "gemini-3.1-flash-lite"
+     }
     },
     {
      "id": "amz-014",
@@ -4735,7 +5343,7 @@
      ],
      "max_sim": 0.626,
      "agreement": 0.0,
-     "draft": "I am sorry to hear your book has not arrived as expected. To help me investigate this delay, could you please provide your order number or the delivery status you are currently seeing here: <URL>? Once I have those details, I can look into this for you.",
+     "draft": "I am sorry to hear your book has not arrived as expected. To help me investigate this delay, could you please provide your order number or the delivery status you are currently seeing here: https://www.amazon.com/your-orders? Once I have those details, I can look into this for you.",
      "evidence_ids": [
       1873
      ],
@@ -4743,7 +5351,20 @@
      "risk": null,
      "decision": "human",
      "reason_code": "WEAK_EVIDENCE",
-     "reason": "precedent agrees 0.00 < 0.67 with predicted intent; likely misclassified"
+     "reason": "precedent agrees 0.00 < 0.67 with predicted intent; likely misclassified",
+     "judge": {
+      "groundedness": 5,
+      "relevance": 5,
+      "tone": 5,
+      "safety": 5,
+      "quotes": [
+       "I'm sorry for the wait.",
+       "What order status and delivery date(s) are you currently seeing here: <URL>"
+      ],
+      "missing": [],
+      "avg": 5.0,
+      "model": "gemini-3.1-flash-lite"
+     }
     },
     {
      "id": "amz-029",
@@ -4755,7 +5376,7 @@
      ],
      "max_sim": 0.654,
      "agreement": 0.667,
-     "draft": "I am very sorry to hear that your order has not arrived as expected. We would like to look into this for you. Please send us a DM with your order details so we can investigate the status of your shipment. Also, please don't provide the order details in this public thread, as we consider it personal information.",
+     "draft": "I am very sorry to hear that your order has not arrived as expected. We would like to look into this for you. Please send us a DM with your order details so we can investigate the status of your shipment. Also, please don't provide the order details in this public thread, as we consider it personal information. For assistance: https://www.amazon.com/your-orders | Twitter DM: https://twitter.com/messages/compose?recipient_id=AmazonHelp",
      "evidence_ids": [
       2424,
       2575
@@ -4764,7 +5385,19 @@
      "risk": null,
      "decision": "auto",
      "reason_code": "OK_AUTO",
-     "reason": "confident intent, precedent found, low risk, grounded draft"
+     "reason": "confident intent, precedent found, low risk, grounded draft",
+     "judge": {
+      "groundedness": 4,
+      "relevance": 5,
+      "tone": 5,
+      "safety": 5,
+      "quotes": [
+       "please don't provide the order details in this public thread, as we consider it personal information."
+      ],
+      "missing": [],
+      "avg": 4.75,
+      "model": "gemini-3.1-flash-lite"
+     }
     },
     {
      "id": "amz-087",
@@ -4775,16 +5408,29 @@
      ],
      "max_sim": 0.663,
      "agreement": 0.333,
-     "draft": "I'm sorry for the frustration caused by this 9-day delay, and I apologize that your order hasn't arrived as expected. Could you please confirm the current tracking status shown here: https://www.amazon.com/your-orders? Once you have that information, please send us a DM with the details so we can investigate what is happening with your shipment.",
+     "draft": "I'm sorry for the frustration caused by this 9-day delay, and I apologize that your order hasn't arrived as expected. Could you please confirm the current tracking status shown here: https://www.amazon.com/your-orders? Once you have that information, please send us a DM with the details so we can investigate what is happening with your shipment. Twitter DM: https://twitter.com/messages/compose?recipient_id=AmazonHelp",
      "evidence_ids": [
       2947,
       3147
      ],
      "grounding_passed": true,
-     "risk": null,
+     "risk": "PII detected: phone number",
      "decision": "human",
-     "reason_code": "WEAK_EVIDENCE",
-     "reason": "precedent agrees 0.33 < 0.67 with predicted intent; likely misclassified"
+     "reason_code": "HIGH_RISK",
+     "reason": "matched risk phrase: 'PII detected: phone number'",
+     "judge": {
+      "groundedness": 3,
+      "relevance": 5,
+      "tone": 5,
+      "safety": 5,
+      "quotes": [
+       "I'm sorry for the delay",
+       "Has the order shipped yet? What is the status showing? Check here: <URL>"
+      ],
+      "missing": [],
+      "avg": 4.5,
+      "model": "gemini-3.1-flash-lite"
+     }
     },
     {
      "id": "amz-097",
@@ -4795,7 +5441,7 @@
      ],
      "max_sim": 0.655,
      "agreement": 0.0,
-     "draft": "I'm sorry for the frustration caused by this delay. We'd like to look into this for you. Could you please send us a DM with your order number or the tracking details so we can investigate what happened with your delivery?",
+     "draft": "I'm sorry for the frustration caused by this delay. We'd like to look into this for you. Could you please send us a DM with your order number or the tracking details so we can investigate what happened with your delivery? For assistance: https://www.amazon.com/your-orders | Twitter DM: https://twitter.com/messages/compose?recipient_id=AmazonHelp",
      "evidence_ids": [
       2368,
       792,
@@ -4805,7 +5451,19 @@
      "risk": null,
      "decision": "human",
      "reason_code": "WEAK_EVIDENCE",
-     "reason": "precedent agrees 0.00 < 0.67 with predicted intent; likely misclassified"
+     "reason": "precedent agrees 0.00 < 0.67 with predicted intent; likely misclassified",
+     "judge": {
+      "groundedness": 5,
+      "relevance": 5,
+      "tone": 5,
+      "safety": 5,
+      "quotes": [
+       "I'm sorry for the experience. Is this in regard to a current order: <URL> We'd like to help if possible."
+      ],
+      "missing": [],
+      "avg": 5.0,
+      "model": "gemini-3.1-flash-lite"
+     }
     },
     {
      "id": "amz-089",
@@ -4817,7 +5475,7 @@
      ],
      "max_sim": 0.765,
      "agreement": 0.0,
-     "draft": "We are truly sorry to hear about your experience with our delivery service and the interaction with our team. We would like to investigate this for you. Please send us a DM with your order details so we can look into this immediately. Please don't provide your order details here, as we consider them to be personal information. Our page is visible to the public. (2/2)",
+     "draft": "We are truly sorry to hear about your experience with our delivery service and the interaction with our team. We would like to investigate this for you. Please send us a DM with your order details so we can look into this immediately. Please don't provide your order details here, as we consider them to be personal information. Our page is visible to the public. (2/2) at https://www.amazon.com/returns or via Twitter DM: https://twitter.com/messages/compose?recipient_id=AmazonHelp",
      "evidence_ids": [
       2683,
       2954,
@@ -4827,7 +5485,21 @@
      "risk": null,
      "decision": "human",
      "reason_code": "WEAK_EVIDENCE",
-     "reason": "precedent agrees 0.00 < 0.67 with predicted intent; likely misclassified"
+     "reason": "precedent agrees 0.00 < 0.67 with predicted intent; likely misclassified",
+     "judge": {
+      "groundedness": 5,
+      "relevance": 3,
+      "tone": 5,
+      "safety": 5,
+      "quotes": [
+       "Please don't provide your order details here, as we consider them to be personal information. Our page is visible to the public. (2/2)"
+      ],
+      "missing": [
+       "acknowledge the refund/return request"
+      ],
+      "avg": 4.5,
+      "model": "gemini-3.1-flash-lite"
+     }
     },
     {
      "id": "amz-068",
@@ -4838,7 +5510,7 @@
      ],
      "max_sim": 0.609,
      "agreement": 0.333,
-     "draft": "I'm sorry to hear about the trouble you've experienced with your recent deliveries. I'd like a member of my team to investigate this directly. Please, provide us with your order or tracking details here: <URL>",
+     "draft": "I'm sorry to hear about the trouble you've experienced with your recent deliveries. I'd like a member of my team to investigate this directly. Please, provide us with your order or tracking details here: https://www.amazon.com/help",
      "evidence_ids": [
       3117,
       2096
@@ -4847,7 +5519,21 @@
      "risk": null,
      "decision": "human",
      "reason_code": "UNKNOWN_INTENT",
-     "reason": "message does not fit a defined intent"
+     "reason": "message does not fit a defined intent",
+     "judge": {
+      "groundedness": 2,
+      "relevance": 2,
+      "tone": 5,
+      "safety": 5,
+      "quotes": [
+       "I'd like a member of my team to investigate this directly. Please, provide us with your order or tracking details here: https://www.amazon.com/help"
+      ],
+      "missing": [
+       "ask a clarifying question"
+      ],
+      "avg": 3.5,
+      "model": "gemini-3.1-flash-lite"
+     }
     },
     {
      "id": "amz-010",
@@ -4858,7 +5544,7 @@
      ],
      "max_sim": 0.554,
      "agreement": 0.667,
-     "draft": "I'm sorry to hear about your experience. We would like to look into this for you. Could you please send us a Direct Message with your order or tracking details so we can investigate further? Please do not share any personal information in this public thread.",
+     "draft": "I'm sorry to hear about your experience. We would like to look into this for you. Could you please send us a Direct Message with your order or tracking details so we can investigate further? Please do not share any personal information in this public thread. For assistance: https://www.amazon.com/help | Twitter DM: https://twitter.com/messages/compose?recipient_id=AmazonHelp",
      "evidence_ids": [
       2164
      ],
@@ -4866,7 +5552,23 @@
      "risk": null,
      "decision": "human",
      "reason_code": "UNKNOWN_INTENT",
-     "reason": "message does not fit a defined intent"
+     "reason": "message does not fit a defined intent",
+     "judge": {
+      "groundedness": 2,
+      "relevance": 4,
+      "tone": 5,
+      "safety": 5,
+      "quotes": [
+       "We would like to look into this for you.",
+       "Could you please send us a Direct Message with your order or tracking details",
+       "Please do not share any personal information in this public thread."
+      ],
+      "missing": [
+       "The draft fails to ask a clarifying question about the specific nature of the customer's complaint (e.g., 'what went wrong'), instead jumping straight to requesting account details."
+      ],
+      "avg": 4.0,
+      "model": "gemini-3.1-flash-lite"
+     }
     },
     {
      "id": "amz-070",
@@ -4878,7 +5580,7 @@
      ],
      "max_sim": 0.736,
      "agreement": 0.667,
-     "draft": "We're sorry for the frustration regarding device availability and casting options in your region. We'd like to look into this for you. Please send us a DM with your account details or order information so we can investigate further. 2/2",
+     "draft": "We're sorry for the frustration regarding device availability and casting options in your region. We'd like to look into this for you. Please send us a DM with your account details or order information so we can investigate further. 2/2 at https://www.amazon.com/your-account or via Twitter DM: https://twitter.com/messages/compose?recipient_id=AmazonHelp",
      "evidence_ids": [
       1823,
       317,
@@ -4888,7 +5590,19 @@
      "risk": null,
      "decision": "auto",
      "reason_code": "OK_AUTO",
-     "reason": "confident intent, precedent found, low risk, grounded draft"
+     "reason": "confident intent, precedent found, low risk, grounded draft",
+     "judge": {
+      "groundedness": 1,
+      "relevance": 2,
+      "tone": 5,
+      "safety": 5,
+      "quotes": [],
+      "missing": [
+       "The draft fails to use the provided evidence to address the customer's specific technical concerns (Fire TV Stick availability and Chromecast support). It ignores the provided evidence entirely, offering a generic 'investigate' response instead of clarifying the current status of these features."
+      ],
+      "avg": 3.25,
+      "model": "gemini-3.1-flash-lite"
+     }
     },
     {
      "id": "amz-116",
@@ -4899,16 +5613,30 @@
      ],
      "max_sim": 0.868,
      "agreement": 1.0,
-     "draft": "I am sorry to hear that your order shows as delivered but has not been received. Please don't provide your order details here, as we consider it to be personal information. Our Twitter page is public. Please send us a DM with your order number so we can investigate this with the carrier for you.",
+     "draft": "I am sorry to hear that your order shows as delivered but has not been received. Please don't provide your order details here, as we consider it to be personal information. Our Twitter page is public. Please send us a DM with your order number so we can investigate this with the carrier for you. For assistance: https://www.amazon.com/your-orders | Twitter DM: https://twitter.com/messages/compose?recipient_id=AmazonHelp",
      "evidence_ids": [
       616,
       1731
      ],
      "grounding_passed": true,
-     "risk": null,
-     "decision": "auto",
-     "reason_code": "OK_AUTO",
-     "reason": "confident intent, precedent found, low risk, grounded draft"
+     "risk": "PII detected: phone number",
+     "decision": "human",
+     "reason_code": "HIGH_RISK",
+     "reason": "matched risk phrase: 'PII detected: phone number'",
+     "judge": {
+      "groundedness": 5,
+      "relevance": 3,
+      "tone": 5,
+      "safety": 5,
+      "quotes": [
+       "Please don't provide your order details, as we consider it to be personal information. Our Twitter page is public."
+      ],
+      "missing": [
+       "ask for tracking/address details to investigate"
+      ],
+      "avg": 4.5,
+      "model": "gemini-3.1-flash-lite"
+     }
     },
     {
      "id": "amz-102",
@@ -4920,16 +5648,31 @@
      ],
      "max_sim": 0.61,
      "agreement": 0.667,
-     "draft": "I'm sorry to hear your parcel hasn't arrived as expected. We'd like to have a specialist look into this with you. Please provide your order details or reach out to us here: <URL> so we can investigate the tracking status further. Keep us posted.",
+     "draft": "I'm sorry to hear your parcel hasn't arrived as expected. We'd like to have a specialist look into this with you. Please provide your order details or reach out to us here: https://www.amazon.com/your-orders so we can investigate the tracking status further. Keep us posted.",
      "evidence_ids": [
       443,
       1092
      ],
      "grounding_passed": true,
-     "risk": null,
-     "decision": "auto",
-     "reason_code": "OK_AUTO",
-     "reason": "confident intent, precedent found, low risk, grounded draft"
+     "risk": "ambiguous: ultra-short message (18 chars)",
+     "decision": "human",
+     "reason_code": "HIGH_RISK",
+     "reason": "matched risk phrase: 'ambiguous: ultra-short message (18 chars)'",
+     "judge": {
+      "groundedness": 5,
+      "relevance": 4,
+      "tone": 5,
+      "safety": 5,
+      "quotes": [
+       "We'd like to have a specialist look at this with you. Please provide more details here <URL> so we can help",
+       "Sorry to hear. Please reach out - <URL> we'll be happy to look into your concern further. Keep us posted."
+      ],
+      "missing": [
+       "ask for tracking/address details to investigate"
+      ],
+      "avg": 4.75,
+      "model": "gemini-3.1-flash-lite"
+     }
     },
     {
      "id": "amz-008",
@@ -4941,7 +5684,7 @@
      ],
      "max_sim": 0.522,
      "agreement": 0.0,
-     "draft": "I am very sorry to hear that your order was delivered to a distant post office instead of your home address. I understand how frustrating this is, especially when you paid for expedited delivery. Could you please provide your order number or the tracking ID so I can investigate this with the carrier for you?",
+     "draft": "I am very sorry to hear that your order was delivered to a distant post office instead of your home address. I understand how frustrating this is, especially when you paid for expedited delivery. Could you please provide your order number or the tracking ID so I can investigate this with the carrier for you? For assistance: https://www.amazon.com/your-orders | Twitter DM: https://twitter.com/messages/compose?recipient_id=AmazonHelp",
      "evidence_ids": [
       1974
      ],
@@ -4949,7 +5692,21 @@
      "risk": null,
      "decision": "human",
      "reason_code": "WEAK_EVIDENCE",
-     "reason": "max similarity 0.52 below 0.60; no precedent"
+     "reason": "max similarity 0.52 below 0.60; no precedent",
+     "judge": {
+      "groundedness": 2,
+      "relevance": 4,
+      "tone": 5,
+      "safety": 5,
+      "quotes": [
+       "I am very sorry to hear that your order was delivered to a distant post office"
+      ],
+      "missing": [
+       "acknowledge non-receipt"
+      ],
+      "avg": 4.0,
+      "model": "gemini-3.1-flash-lite"
+     }
     },
     {
      "id": "amz-091",
@@ -4961,7 +5718,7 @@
      ],
      "max_sim": 0.693,
      "agreement": 0.0,
-     "draft": "I am sorry to hear you are having trouble reaching our support team through the app. To help us investigate this issue, could you please send us a DM with the email address associated with your account? Please don't provide your order details here, as we consider them to be personal information and our page is visible to the public.",
+     "draft": "I am sorry to hear you are having trouble reaching our support team through the app. To help us investigate this issue, could you please send us a DM with the email address associated with your account? Please don't provide your order details here, as we consider them to be personal information and our page is visible to the public. For assistance: https://www.amazon.com/your-account | Twitter DM: https://twitter.com/messages/compose?recipient_id=AmazonHelp",
      "evidence_ids": [
       236,
       2683
@@ -4970,7 +5727,19 @@
      "risk": null,
      "decision": "human",
      "reason_code": "WEAK_EVIDENCE",
-     "reason": "precedent agrees 0.00 < 0.67 with predicted intent; likely misclassified"
+     "reason": "precedent agrees 0.00 < 0.67 with predicted intent; likely misclassified",
+     "judge": {
+      "groundedness": 5,
+      "relevance": 5,
+      "tone": 5,
+      "safety": 5,
+      "quotes": [
+       "Please don’t provide order details as we consider them to be personal info. Our Twitter page is visible to public."
+      ],
+      "missing": [],
+      "avg": 5.0,
+      "model": "gemini-3.1-flash-lite"
+     }
     },
     {
      "id": "amz-138",
@@ -4982,17 +5751,31 @@
      ],
      "max_sim": 0.7,
      "agreement": 0.667,
-     "draft": "I am truly sorry to hear about the distress this has caused you. We would like to investigate the status of your refund and the order issues. Could you please share the order ID for the second booking or send us a DM with your account details so we can look into this for you? (1/2)",
+     "draft": "I am truly sorry to hear about the distress this has caused you. We would like to investigate the status of your refund and the order issues. Could you please share the order ID for the second booking or send us a DM with your account details so we can look into this for you? (1/2) at https://www.amazon.com/returns or via Twitter DM: https://twitter.com/messages/compose?recipient_id=AmazonHelp",
      "evidence_ids": [
       2471,
       1372,
       414
      ],
      "grounding_passed": true,
-     "risk": "harass",
+     "risk": "PII detected: phone number",
      "decision": "human",
      "reason_code": "HIGH_RISK",
-     "reason": "matched risk phrase: 'harass'"
+     "reason": "matched risk phrase: 'PII detected: phone number'",
+     "judge": {
+      "groundedness": 2,
+      "relevance": 3,
+      "tone": 5,
+      "safety": 5,
+      "quotes": [
+       "We would like to investigate the status of your refund and the order issues."
+      ],
+      "missing": [
+       "acknowledge the refund/return request"
+      ],
+      "avg": 3.75,
+      "model": "gemini-3.1-flash-lite"
+     }
     },
     {
      "id": "amz-045",
@@ -5004,7 +5787,7 @@
      ],
      "max_sim": 0.535,
      "agreement": 1.0,
-     "draft": "I am sorry to hear you are having trouble initiating your return. We are not able to access or take action on your account from here, but we would be happy to look into available options if you could provide your order details via DM. Please let us know the order number so we can investigate this further for you.",
+     "draft": "I am sorry to hear you are having trouble initiating your return. We are not able to access or take action on your account from here, but we would be happy to look into available options if you could provide your order details via DM. Please let us know the order number so we can investigate this further for you. For assistance: https://www.amazon.com/returns | Twitter DM: https://twitter.com/messages/compose?recipient_id=AmazonHelp",
      "evidence_ids": [
       647
      ],
@@ -5012,7 +5795,21 @@
      "risk": null,
      "decision": "human",
      "reason_code": "WEAK_EVIDENCE",
-     "reason": "max similarity 0.53 below 0.60; no precedent"
+     "reason": "max similarity 0.53 below 0.60; no precedent",
+     "judge": {
+      "groundedness": 5,
+      "relevance": 4,
+      "tone": 5,
+      "safety": 5,
+      "quotes": [
+       "We're not able to access or take action on your account from Twitter but we'd be happy to look into available options here"
+      ],
+      "missing": [
+       "acknowledge the refund/return request"
+      ],
+      "avg": 4.75,
+      "model": "gemini-3.1-flash-lite"
+     }
     },
     {
      "id": "amz-064",
@@ -5024,7 +5821,7 @@
      ],
      "max_sim": 0.675,
      "agreement": 0.0,
-     "draft": "I’m sorry to hear about the issue you’re facing with your order being returned. As this is a social media platform, we'll not be able to access any of your account/order details. Please don't provide your order details, as we consider it to be personal information. Our Twitter page is public. Kindly reach out to us via the 'Help' section in your Amazon app for further assistance. (1/2)",
+     "draft": "I’m sorry to hear about the issue you’re facing with your order being returned. As this is a social media platform, we'll not be able to access any of your account/order details. Please don't provide your order details, as we consider it to be personal information. Our Twitter page is public. Kindly reach out to us via the 'Help' section in your Amazon app for further assistance. (1/2) at https://www.amazon.com/returns or via Twitter DM: https://twitter.com/messages/compose?recipient_id=AmazonHelp",
      "evidence_ids": [
       3010,
       1731,
@@ -5034,7 +5831,23 @@
      "risk": null,
      "decision": "human",
      "reason_code": "WEAK_EVIDENCE",
-     "reason": "precedent agrees 0.00 < 0.67 with predicted intent; likely misclassified"
+     "reason": "precedent agrees 0.00 < 0.67 with predicted intent; likely misclassified",
+     "judge": {
+      "groundedness": 5,
+      "relevance": 4,
+      "tone": 5,
+      "safety": 5,
+      "quotes": [
+       "As this is a social media platform, we'll not be able to access any of your account/order details.",
+       "Please don't provide your order details, as we consider it to be personal information.",
+       "Kindly reach out to us via the 'Help' section in your Amazon app for further assistance."
+      ],
+      "missing": [
+       "acknowledge the refund/return request"
+      ],
+      "avg": 4.75,
+      "model": "gemini-3.1-flash-lite"
+     }
     },
     {
      "id": "amz-039",
@@ -5045,7 +5858,7 @@
      ],
      "max_sim": 0.527,
      "agreement": 0.0,
-     "draft": "I'm very sorry to hear your textbook rental is delayed, especially since you need it for your assignments. Please share your order number or the delivery status you are currently seeing here: <URL> Once you provide those details, I can investigate the delay for you. And please let us know if we can be of further assistance!",
+     "draft": "I'm very sorry to hear your textbook rental is delayed, especially since you need it for your assignments. Please share your order number or the delivery status you are currently seeing here: https://www.amazon.com/your-orders Once you provide those details, I can investigate the delay for you. And please let us know if we can be of further assistance!",
      "evidence_ids": [
       1873
      ],
@@ -5053,7 +5866,19 @@
      "risk": null,
      "decision": "human",
      "reason_code": "WEAK_EVIDENCE",
-     "reason": "max similarity 0.53 below 0.60; no precedent"
+     "reason": "max similarity 0.53 below 0.60; no precedent",
+     "judge": {
+      "groundedness": 5,
+      "relevance": 5,
+      "tone": 5,
+      "safety": 5,
+      "quotes": [
+       "I'm sorry for the wait. What order status and delivery date(s) are you currently seeing here: <URL>"
+      ],
+      "missing": [],
+      "avg": 5.0,
+      "model": "gemini-3.1-flash-lite"
+     }
     },
     {
      "id": "amz-004",
@@ -5064,7 +5889,7 @@
      ],
      "max_sim": 0.665,
      "agreement": 0.667,
-     "draft": "I am very sorry to hear about the trouble you've had with your defective item and the return process. We would like to investigate this further for you. Could you please provide your order number or send us a DM with your account details so we can look into this immediately?",
+     "draft": "I am very sorry to hear about the trouble you've had with your defective item and the return process. We would like to investigate this further for you. Could you please provide your order number or send us a DM with your account details so we can look into this immediately? For assistance: https://www.amazon.com/returns | Twitter DM: https://twitter.com/messages/compose?recipient_id=AmazonHelp",
      "evidence_ids": [
       877
      ],
@@ -5072,7 +5897,22 @@
      "risk": null,
      "decision": "auto",
      "reason_code": "OK_AUTO",
-     "reason": "confident intent, precedent found, low risk, grounded draft"
+     "reason": "confident intent, precedent found, low risk, grounded draft",
+     "judge": {
+      "groundedness": 2,
+      "relevance": 3,
+      "tone": 5,
+      "safety": 5,
+      "quotes": [
+       "I am very sorry to hear about the trouble you've had with your defective item and the return process."
+      ],
+      "missing": [
+       "acknowledge the refund/return request",
+       "state the next step without inventing a date"
+      ],
+      "avg": 3.75,
+      "model": "gemini-3.1-flash-lite"
+     }
     },
     {
      "id": "amz-132",
@@ -5084,7 +5924,7 @@
      ],
      "max_sim": 0.692,
      "agreement": 0.0,
-     "draft": "I'm sorry for the trouble! I understand how frustrating it is when a package is marked as delivered but isn't at your door. To investigate this with the carrier, could you please confirm your order number or tracking ID via DM? We want to help resolve this for you!",
+     "draft": "I'm sorry for the trouble! I understand how frustrating it is when a package is marked as delivered but isn't at your door. To investigate this with the carrier, could you please confirm your order number or tracking ID via DM? We want to help resolve this for you! For assistance: https://www.amazon.com/your-orders | Twitter DM: https://twitter.com/messages/compose?recipient_id=AmazonHelp",
      "evidence_ids": [
       3162,
       2397,
@@ -5094,7 +5934,21 @@
      "risk": null,
      "decision": "human",
      "reason_code": "WEAK_EVIDENCE",
-     "reason": "precedent agrees 0.00 < 0.67 with predicted intent; likely misclassified"
+     "reason": "precedent agrees 0.00 < 0.67 with predicted intent; likely misclassified",
+     "judge": {
+      "groundedness": 2,
+      "relevance": 5,
+      "tone": 5,
+      "safety": 5,
+      "quotes": [
+       "I'm sorry for the trouble!"
+      ],
+      "missing": [
+       "none"
+      ],
+      "avg": 4.25,
+      "model": "gemini-3.1-flash-lite"
+     }
     },
     {
      "id": "amz-118",
@@ -5106,13 +5960,25 @@
      ],
      "max_sim": 0.709,
      "agreement": 1.0,
-     "draft": "We understand your frustration regarding your order and that you would prefer to receive the item rather than a refund. To investigate why the order was canceled and see if we can assist further, please send us a DM with your order number or tracking details. We would like to look into this for you.",
+     "draft": "We understand your frustration regarding your order and that you would prefer to receive the item rather than a refund. To investigate why the order was canceled and see if we can assist further, please send us a DM with your order number or tracking details. We would like to look into this for you. For assistance: https://www.amazon.com/returns | Twitter DM: https://twitter.com/messages/compose?recipient_id=AmazonHelp",
      "evidence_ids": [],
      "grounding_passed": false,
      "risk": null,
      "decision": "human",
      "reason_code": "GROUNDING_FAIL",
-     "reason": "draft failed grounding validation"
+     "reason": "draft failed grounding validation",
+     "judge": {
+      "groundedness": 1,
+      "relevance": 4,
+      "tone": 5,
+      "safety": 5,
+      "quotes": [],
+      "missing": [
+       "acknowledge the refund/return request"
+      ],
+      "avg": 3.75,
+      "model": "gemini-3.1-flash-lite"
+     }
     },
     {
      "id": "amz-111",
@@ -5124,17 +5990,30 @@
      ],
      "max_sim": 0.779,
      "agreement": 0.333,
-     "draft": "I am very sorry to hear about the cancellation of your order #171-4584530-0179506 after such a long wait. I understand how frustrating this experience is. Please send us a DM with your order details so we can investigate this further for you. Twitter is a public platform, so please avoid sharing personal information here. (1/2)",
+     "draft": "I am very sorry to hear about the cancellation of your order #171-4584530-0179506 after such a long wait. I understand how frustrating this experience is. Please send us a DM with your order details so we can investigate this further for you. Twitter is a public platform, so please avoid sharing personal information here. (1/2) at https://www.amazon.com/returns or via Twitter DM: https://twitter.com/messages/compose?recipient_id=AmazonHelp",
      "evidence_ids": [
       2174,
       1245,
       2137
      ],
      "grounding_passed": true,
-     "risk": null,
+     "risk": "PII detected: phone number",
      "decision": "human",
-     "reason_code": "WEAK_EVIDENCE",
-     "reason": "precedent agrees 0.33 < 0.67 with predicted intent; likely misclassified"
+     "reason_code": "HIGH_RISK",
+     "reason": "matched risk phrase: 'PII detected: phone number'",
+     "judge": {
+      "groundedness": 4,
+      "relevance": 5,
+      "tone": 5,
+      "safety": 5,
+      "quotes": [
+       "Please don't provide your order details, we consider it to be personal information. Our page is visible to the public.",
+       "I'm sorry about the cancellation."
+      ],
+      "missing": [],
+      "avg": 4.75,
+      "model": "gemini-3.1-flash-lite"
+     }
     },
     {
      "id": "amz-023",
@@ -5146,7 +6025,7 @@
      ],
      "max_sim": 0.769,
      "agreement": 0.0,
-     "draft": "We sincerely apologize for the frustration caused by the cancellation of your order and the difficulty in reaching our support team. We never intend for our customers to have this experience. Please send us a DM with your order details so we can investigate this for you. Please do not share your order details here, as this page is public. (1/2)",
+     "draft": "We sincerely apologize for the frustration caused by the cancellation of your order and the difficulty in reaching our support team. We never intend for our customers to have this experience. Please send us a DM with your order details so we can investigate this for you. Please do not share your order details here, as this page is public. (1/2) at https://www.amazon.com/returns or via Twitter DM: https://twitter.com/messages/compose?recipient_id=AmazonHelp",
      "evidence_ids": [
       2128,
       2683,
@@ -5156,7 +6035,20 @@
      "risk": null,
      "decision": "human",
      "reason_code": "WEAK_EVIDENCE",
-     "reason": "precedent agrees 0.00 < 0.67 with predicted intent; likely misclassified"
+     "reason": "precedent agrees 0.00 < 0.67 with predicted intent; likely misclassified",
+     "judge": {
+      "groundedness": 4,
+      "relevance": 5,
+      "tone": 5,
+      "safety": 5,
+      "quotes": [
+       "We never intend for our customers to have this experience.",
+       "Please do not share your order details here, as this page is public."
+      ],
+      "missing": [],
+      "avg": 4.75,
+      "model": "gemini-3.1-flash-lite"
+     }
     },
     {
      "id": "amz-033",
@@ -5168,7 +6060,7 @@
      ],
      "max_sim": 0.587,
      "agreement": 0.0,
-     "draft": "I am sorry to hear about the frustration regarding your Clinique order and the payment status. To investigate this, please send us a DM with your order number. Please do not provide your order details here, as this is a public platform. Once received, we will look into the payment issue and the status of your order. (1/2)",
+     "draft": "I am sorry to hear about the frustration regarding your Clinique order and the payment status. To investigate this, please send us a DM with your order number. Please do not provide your order details here, as this is a public platform. Once received, we will look into the payment issue and the status of your order. (1/2) at https://www.amazon.com/returns or via Twitter DM: https://twitter.com/messages/compose?recipient_id=AmazonHelp",
      "evidence_ids": [
       1070,
       1245
@@ -5177,7 +6069,22 @@
      "risk": null,
      "decision": "human",
      "reason_code": "WEAK_EVIDENCE",
-     "reason": "max similarity 0.59 below 0.60; no precedent"
+     "reason": "max similarity 0.59 below 0.60; no precedent",
+     "judge": {
+      "groundedness": 5,
+      "relevance": 4,
+      "tone": 5,
+      "safety": 5,
+      "quotes": [
+       "Please do not provide your order details here, as this is a public platform.",
+       "Once received, we will look into the payment issue and the status of your order."
+      ],
+      "missing": [
+       "acknowledge the delay"
+      ],
+      "avg": 4.75,
+      "model": "gemini-3.1-flash-lite"
+     }
     },
     {
      "id": "amz-051",
@@ -5189,7 +6096,7 @@
      ],
      "max_sim": 0.673,
      "agreement": 0.333,
-     "draft": "I'm sorry to hear you're having trouble with your Prime membership status. To investigate this further, please send us a DM with your account details or the order/tracking information associated with your inquiry. We'll pass your feedback to the relevant team to look into this for you.",
+     "draft": "I'm sorry to hear you're having trouble with your Prime membership status. To investigate this further, please send us a DM with your account details or the order/tracking information associated with your inquiry. We'll pass your feedback to the relevant team to look into this for you. For assistance: https://www.amazon.com/your-account | Twitter DM: https://twitter.com/messages/compose?recipient_id=AmazonHelp",
      "evidence_ids": [
       1542
      ],
@@ -5197,7 +6104,21 @@
      "risk": null,
      "decision": "human",
      "reason_code": "WEAK_EVIDENCE",
-     "reason": "precedent agrees 0.33 < 0.67 with predicted intent; likely misclassified"
+     "reason": "precedent agrees 0.33 < 0.67 with predicted intent; likely misclassified",
+     "judge": {
+      "groundedness": 2,
+      "relevance": 3,
+      "tone": 5,
+      "safety": 5,
+      "quotes": [
+       "We'll pass your feedback to the relevant team."
+      ],
+      "missing": [
+       "The draft fails to acknowledge the specific nature of the customer's issue (confusion regarding Prime membership status vs. app usage) and instead uses a generic template that mischaracterizes the problem as 'trouble with your Prime membership status'."
+      ],
+      "avg": 3.75,
+      "model": "gemini-3.1-flash-lite"
+     }
     },
     {
      "id": "amz-065",
@@ -5209,7 +6130,7 @@
      ],
      "max_sim": 0.605,
      "agreement": 0.0,
-     "draft": "I'm sorry to hear about the trouble with your delivery access. I'd like to look into this for you. Without posting any personal details, could you please confirm the carrier assigned to this shipment and let me know if there were any specific obstructions or access issues at your property that might have caused this?",
+     "draft": "I'm sorry to hear about the trouble with your delivery access. I'd like to look into this for you. Without posting any personal details, could you please confirm the carrier assigned to this shipment and let me know if there were any specific obstructions or access issues at your property that might have caused this? For assistance: https://www.amazon.com/your-orders | Twitter DM: https://twitter.com/messages/compose?recipient_id=AmazonHelp",
      "evidence_ids": [
       3277,
       521,
@@ -5219,7 +6140,24 @@
      "risk": null,
      "decision": "human",
      "reason_code": "WEAK_EVIDENCE",
-     "reason": "precedent agrees 0.00 < 0.67 with predicted intent; likely misclassified"
+     "reason": "precedent agrees 0.00 < 0.67 with predicted intent; likely misclassified",
+     "judge": {
+      "groundedness": 4,
+      "relevance": 3,
+      "tone": 5,
+      "safety": 5,
+      "quotes": [
+       "I'm sorry to hear of this.",
+       "Without posting any personal details",
+       "can you please confirm who the carrier is"
+      ],
+      "missing": [
+       "acknowledge non-receipt",
+       "ask for tracking/address details to investigate"
+      ],
+      "avg": 4.25,
+      "model": "gemini-3.1-flash-lite"
+     }
     },
     {
      "id": "amz-026",
@@ -5231,7 +6169,7 @@
      ],
      "max_sim": 0.532,
      "agreement": 1.0,
-     "draft": "I'm sorry to hear about the display issues you're experiencing with the Android app. That's strange; have you tried signing out and back in, or uninstalling and reinstalling the app? If the issue persists, please send us a DM with your device details and the app version so we can investigate this further for you.",
+     "draft": "I'm sorry to hear about the display issues you're experiencing with the Android app. That's strange; have you tried signing out and back in, or uninstalling and reinstalling the app? If the issue persists, please send us a DM with your device details and the app version so we can investigate this further for you. For assistance: https://www.amazon.com/your-account | Twitter DM: https://twitter.com/messages/compose?recipient_id=AmazonHelp",
      "evidence_ids": [
       2966
      ],
@@ -5239,7 +6177,19 @@
      "risk": null,
      "decision": "human",
      "reason_code": "WEAK_EVIDENCE",
-     "reason": "max similarity 0.53 below 0.60; no precedent"
+     "reason": "max similarity 0.53 below 0.60; no precedent",
+     "judge": {
+      "groundedness": 5,
+      "relevance": 5,
+      "tone": 5,
+      "safety": 5,
+      "quotes": [
+       "That's strange; have you tried sign-out/ sign-in and uninstalling/ reinstalling of the app? If you haven't, please try and keep us posted if the issue still persists, we'll check this further for you."
+      ],
+      "missing": [],
+      "avg": 5.0,
+      "model": "gemini-3.1-flash-lite"
+     }
     },
     {
      "id": "amz-030",
@@ -5261,7 +6211,21 @@
      "risk": null,
      "decision": "human",
      "reason_code": "WEAK_EVIDENCE",
-     "reason": "precedent agrees 0.00 < 0.67 with predicted intent; likely misclassified"
+     "reason": "precedent agrees 0.00 < 0.67 with predicted intent; likely misclassified",
+     "judge": {
+      "groundedness": 5,
+      "relevance": 5,
+      "tone": 5,
+      "safety": 5,
+      "quotes": [
+       "Our support team should be able to investigate this.",
+       "Do report the same to them via the link",
+       "Could you please provide your Order ID or the tracking details so we can investigate this for you?"
+      ],
+      "missing": [],
+      "avg": 5.0,
+      "model": "gemini-3.1-flash-lite"
+     }
     },
     {
      "id": "amz-044",
@@ -5273,16 +6237,30 @@
      ],
      "max_sim": 0.74,
      "agreement": 0.0,
-     "draft": "I am sorry to hear about the delay with your order #407-1197683-6439542. Please don't provide your order details here, as we consider it to be personal information and our page is visible to the public. Please send us a DM so we can look into this for you. (1/2)",
+     "draft": "I am sorry to hear about the delay with your order #407-1197683-6439542. Please don't provide your order details here, as we consider it to be personal information and our page is visible to the public. Please send us a DM so we can look into this for you. (1/2) at https://www.amazon.com/your-orders or via Twitter DM: https://twitter.com/messages/compose?recipient_id=AmazonHelp",
      "evidence_ids": [
       3096,
       2954
      ],
      "grounding_passed": true,
-     "risk": null,
+     "risk": "PII detected: phone number",
      "decision": "human",
-     "reason_code": "WEAK_EVIDENCE",
-     "reason": "precedent agrees 0.00 < 0.67 with predicted intent; likely misclassified"
+     "reason_code": "HIGH_RISK",
+     "reason": "matched risk phrase: 'PII detected: phone number'",
+     "judge": {
+      "groundedness": 5,
+      "relevance": 5,
+      "tone": 5,
+      "safety": 5,
+      "quotes": [
+       "I am sorry to hear about the delay with your order",
+       "Please don't provide your order details here, as we consider it to be personal information and our page is visible to the public.",
+       "Please send us a DM so we can look into this for you."
+      ],
+      "missing": [],
+      "avg": 5.0,
+      "model": "gemini-3.1-flash-lite"
+     }
     },
     {
      "id": "amz-134",
@@ -5294,16 +6272,30 @@
      ],
      "max_sim": 0.911,
      "agreement": 0.0,
-     "draft": "We are sorry to hear about the frustration regarding your order and the delivery experience. Please don't provide your order details here as we consider it personal information and our page is visible to the public. Could you please send us a DM with your order number so we can investigate this for you? (2/2)",
+     "draft": "We are sorry to hear about the frustration regarding your order and the delivery experience. Please don't provide your order details here as we consider it personal information and our page is visible to the public. Could you please send us a DM with your order number so we can investigate this for you? (2/2) at https://www.amazon.com/returns or via Twitter DM: https://twitter.com/messages/compose?recipient_id=AmazonHelp",
      "evidence_ids": [
       3313,
       604
      ],
      "grounding_passed": true,
-     "risk": null,
+     "risk": "PII detected: phone number",
      "decision": "human",
-     "reason_code": "WEAK_EVIDENCE",
-     "reason": "precedent agrees 0.00 < 0.67 with predicted intent; likely misclassified"
+     "reason_code": "HIGH_RISK",
+     "reason": "matched risk phrase: 'PII detected: phone number'",
+     "judge": {
+      "groundedness": 5,
+      "relevance": 4,
+      "tone": 5,
+      "safety": 5,
+      "quotes": [
+       "Please don't provide your order details as we consider it personal info. Our twitter page is visible to public."
+      ],
+      "missing": [
+       "acknowledge the request"
+      ],
+      "avg": 4.75,
+      "model": "gemini-3.1-flash-lite"
+     }
     },
     {
      "id": "amz-036",
@@ -5314,7 +6306,7 @@
      ],
      "max_sim": 0.81,
      "agreement": 0.0,
-     "draft": "I'm so sorry to hear your grocery order hasn't arrived despite being marked as delivered. I would like to investigate this with the carrier for you. Could you please send us a DM with your order number so we can look into this further?",
+     "draft": "I'm so sorry to hear your grocery order hasn't arrived despite being marked as delivered. I would like to investigate this with the carrier for you. Could you please send us a DM with your order number so we can look into this further? For assistance: https://www.amazon.com/your-orders | Twitter DM: https://twitter.com/messages/compose?recipient_id=AmazonHelp",
      "evidence_ids": [
       2308
      ],
@@ -5322,7 +6314,19 @@
      "risk": null,
      "decision": "human",
      "reason_code": "WEAK_EVIDENCE",
-     "reason": "precedent agrees 0.00 < 0.67 with predicted intent; likely misclassified"
+     "reason": "precedent agrees 0.00 < 0.67 with predicted intent; likely misclassified",
+     "judge": {
+      "groundedness": 4,
+      "relevance": 5,
+      "tone": 5,
+      "safety": 5,
+      "quotes": [
+       "I'm so sorry for this issue with your order. Please let us take a look into this further by using this link: <URL>"
+      ],
+      "missing": [],
+      "avg": 4.75,
+      "model": "gemini-3.1-flash-lite"
+     }
     },
     {
      "id": "amz-013",
@@ -5333,7 +6337,7 @@
      ],
      "max_sim": 0.667,
      "agreement": 0.0,
-     "draft": "We understand your frustration regarding the delivery timeline. Shipping times refer to the transit duration once the item leaves our facility. If your order has been delayed past the promised delivery date in your confirmation email, please send us a DM with your order number so we can investigate this for you.",
+     "draft": "We understand your frustration regarding the delivery timeline. Shipping times refer to the transit duration once the item leaves our facility. If your order has been delayed past the promised delivery date in your confirmation email, please send us a DM with your order number so we can investigate this for you. For assistance: https://www.amazon.com/your-orders | Twitter DM: https://twitter.com/messages/compose?recipient_id=AmazonHelp",
      "evidence_ids": [
       1977,
       2030
@@ -5342,7 +6346,20 @@
      "risk": null,
      "decision": "human",
      "reason_code": "WEAK_EVIDENCE",
-     "reason": "precedent agrees 0.00 < 0.67 with predicted intent; likely misclassified"
+     "reason": "precedent agrees 0.00 < 0.67 with predicted intent; likely misclassified",
+     "judge": {
+      "groundedness": 5,
+      "relevance": 5,
+      "tone": 5,
+      "safety": 5,
+      "quotes": [
+       "Shipping times refer to the transit duration once the item leaves our facility.",
+       "If your order has been delayed past the promised delivery date in your confirmation email, please send us a DM with your order number so we can investigate this for you."
+      ],
+      "missing": [],
+      "avg": 5.0,
+      "model": "gemini-3.1-flash-lite"
+     }
     },
     {
      "id": "amz-137",
@@ -5353,7 +6370,7 @@
      ],
      "max_sim": 0.646,
      "agreement": 1.0,
-     "draft": "I understand you're looking to exchange an item outside of the return window. To investigate if an exception can be made, please provide your order number or send us a DM with the details. You can also check your available options by visiting our returns center here: <URL>. Who is the carrier for this order?",
+     "draft": "I understand you're looking to exchange an item outside of the return window. To investigate if an exception can be made, please provide your order number or send us a DM with the details. You can also check your available options by visiting our returns center here: https://www.amazon.com/returns. Who is the carrier for this order? Twitter DM: https://twitter.com/messages/compose?recipient_id=AmazonHelp",
      "evidence_ids": [
       1532,
       911
@@ -5362,7 +6379,21 @@
      "risk": null,
      "decision": "auto",
      "reason_code": "OK_AUTO",
-     "reason": "confident intent, precedent found, low risk, grounded draft"
+     "reason": "confident intent, precedent found, low risk, grounded draft",
+     "judge": {
+      "groundedness": 3,
+      "relevance": 4,
+      "tone": 5,
+      "safety": 5,
+      "quotes": [
+       "You can find instructions here: <URL>"
+      ],
+      "missing": [
+       "The draft fails to explicitly acknowledge the specific request for an exchange, instead framing it as a general investigation."
+      ],
+      "avg": 4.25,
+      "model": "gemini-3.1-flash-lite"
+     }
     },
     {
      "id": "amz-074",
@@ -5374,7 +6405,7 @@
      ],
      "max_sim": 0.714,
      "agreement": 0.0,
-     "draft": "I’m sorry about the confusion regarding your delivery date for #MarioOdyssey. I would like to look into this for you. Could you please provide your order number or send us a DM with your details so we can investigate the status of your shipment?",
+     "draft": "I’m sorry about the confusion regarding your delivery date for #MarioOdyssey. I would like to look into this for you. Could you please provide your order number or send us a DM with your details so we can investigate the status of your shipment? For assistance: https://www.amazon.com/your-orders | Twitter DM: https://twitter.com/messages/compose?recipient_id=AmazonHelp",
      "evidence_ids": [
       3096
      ],
@@ -5382,7 +6413,19 @@
      "risk": null,
      "decision": "human",
      "reason_code": "WEAK_EVIDENCE",
-     "reason": "precedent agrees 0.00 < 0.67 with predicted intent; likely misclassified"
+     "reason": "precedent agrees 0.00 < 0.67 with predicted intent; likely misclassified",
+     "judge": {
+      "groundedness": 5,
+      "relevance": 5,
+      "tone": 5,
+      "safety": 5,
+      "quotes": [
+       "I’m sorry about the issue you’re facing with delivery. Let us look into it."
+      ],
+      "missing": [],
+      "avg": 5.0,
+      "model": "gemini-3.1-flash-lite"
+     }
     },
     {
      "id": "amz-090",
@@ -5394,7 +6437,7 @@
      ],
      "max_sim": 0.726,
      "agreement": 0.667,
-     "draft": "We're sorry to hear about the trouble with your order and the replacement process. We'd like to help investigate this for you! Could you please send us a DM with your order number or tracking details? Once we have that information, we can look into the status of your shipment and the previous refund request.",
+     "draft": "We're sorry to hear about the trouble with your order and the replacement process. We'd like to help investigate this for you! Could you please send us a DM with your order number or tracking details? Once we have that information, we can look into the status of your shipment and the previous refund request. For assistance: https://www.amazon.com/returns | Twitter DM: https://twitter.com/messages/compose?recipient_id=AmazonHelp",
      "evidence_ids": [
       785,
       1659,
@@ -5404,7 +6447,22 @@
      "risk": null,
      "decision": "auto",
      "reason_code": "OK_AUTO",
-     "reason": "confident intent, precedent found, low risk, grounded draft"
+     "reason": "confident intent, precedent found, low risk, grounded draft",
+     "judge": {
+      "groundedness": 5,
+      "relevance": 4,
+      "tone": 5,
+      "safety": 5,
+      "quotes": [
+       "We'd like to help investigate this for you!",
+       "Could you please send us a DM with your order number or tracking details?"
+      ],
+      "missing": [
+       "The draft acknowledges the trouble with the process but fails to explicitly acknowledge the specific customer request for a refund/replacement as a distinct action item."
+      ],
+      "avg": 4.75,
+      "model": "gemini-3.1-flash-lite"
+     }
     },
     {
      "id": "amz-053",
@@ -5415,7 +6473,7 @@
      ],
      "max_sim": 0.761,
      "agreement": 1.0,
-     "draft": "I am very sorry to hear about the delay with your order and the frustration this has caused. This is certainly not the experience we want for our Prime members. Please send us a DM with your order details so we can investigate the status of your shipment and look into why this delay occurred.",
+     "draft": "I am very sorry to hear about the delay with your order and the frustration this has caused. This is certainly not the experience we want for our Prime members. Please send us a DM with your order details so we can investigate the status of your shipment and look into why this delay occurred. For assistance: https://www.amazon.com/your-orders | Twitter DM: https://twitter.com/messages/compose?recipient_id=AmazonHelp",
      "evidence_ids": [
       3180,
       1117,
@@ -5425,7 +6483,20 @@
      "risk": null,
      "decision": "auto",
      "reason_code": "OK_AUTO",
-     "reason": "confident intent, precedent found, low risk, grounded draft"
+     "reason": "confident intent, precedent found, low risk, grounded draft",
+     "judge": {
+      "groundedness": 4,
+      "relevance": 5,
+      "tone": 5,
+      "safety": 5,
+      "quotes": [
+       "apologies for the delay",
+       "Please send us a DM with your order details so we can investigate"
+      ],
+      "missing": [],
+      "avg": 4.75,
+      "model": "gemini-3.1-flash-lite"
+     }
     },
     {
      "id": "amz-101",
@@ -5436,7 +6507,7 @@
      ],
      "max_sim": 0.511,
      "agreement": 1.0,
-     "draft": "I understand your frustration regarding the availability of items in your region. Availability can vary based on specific courier constraints or regional logistics. To investigate this further, please send us a DM with your order or tracking details so we can look into the specifics of your location. [1/2]",
+     "draft": "I understand your frustration regarding the availability of items in your region. Availability can vary based on specific courier constraints or regional logistics. To investigate this further, please send us a DM with your order or tracking details so we can look into the specifics of your location. [1/2] at https://www.amazon.com/help or via Twitter DM: https://twitter.com/messages/compose?recipient_id=AmazonHelp",
      "evidence_ids": [
       691,
       1329,
@@ -5446,7 +6517,19 @@
      "risk": null,
      "decision": "human",
      "reason_code": "UNKNOWN_INTENT",
-     "reason": "message does not fit a defined intent"
+     "reason": "message does not fit a defined intent",
+     "judge": {
+      "groundedness": 3,
+      "relevance": 4,
+      "tone": 5,
+      "safety": 5,
+      "quotes": [
+       "Availability can vary based on specific courier constraints or regional logistics."
+      ],
+      "missing": [],
+      "avg": 4.25,
+      "model": "gemini-3.1-flash-lite"
+     }
     },
     {
      "id": "amz-056",
@@ -5458,7 +6541,7 @@
      ],
      "max_sim": 0.673,
      "agreement": 0.667,
-     "draft": "I'm sorry to hear about the confusion regarding your delivery status and the missed windows. I would like to look into this for you. Could you please send us a DM with your order number so we can investigate the tracking details further?",
+     "draft": "I'm sorry to hear about the confusion regarding your delivery status and the missed windows. I would like to look into this for you. Could you please send us a DM with your order number so we can investigate the tracking details further? For assistance: https://www.amazon.com/your-orders | Twitter DM: https://twitter.com/messages/compose?recipient_id=AmazonHelp",
      "evidence_ids": [
       3181,
       1607,
@@ -5468,7 +6551,20 @@
      "risk": null,
      "decision": "auto",
      "reason_code": "OK_AUTO",
-     "reason": "confident intent, precedent found, low risk, grounded draft"
+     "reason": "confident intent, precedent found, low risk, grounded draft",
+     "judge": {
+      "groundedness": 5,
+      "relevance": 5,
+      "tone": 5,
+      "safety": 5,
+      "quotes": [
+       "I'm sorry to hear about the confusion regarding your delivery status and the missed windows.",
+       "Could you please send us a DM with your order number so we can investigate the tracking details further?"
+      ],
+      "missing": [],
+      "avg": 5.0,
+      "model": "gemini-3.1-flash-lite"
+     }
     },
     {
      "id": "amz-106",
@@ -5479,7 +6575,7 @@
      ],
      "max_sim": 0.661,
      "agreement": 1.0,
-     "draft": "I'm sorry to hear you're having trouble accessing your account. For security reasons, we cannot look up accounts using bank information. Please reach out to us via DM with your order number or tracking details so we can investigate further. In the meantime, please visit this link for assistance with account login issues: https://www.amazon.com/gp/help/customer/account-issues",
+     "draft": "I'm sorry to hear you're having trouble accessing your account. For security reasons, we cannot look up accounts using bank information. Please reach out to us via DM with your order number or tracking details so we can investigate further. In the meantime, please visit this link for assistance with account login issues: https://www.amazon.com/gp/help/customer/account-issues. Twitter DM: https://twitter.com/messages/compose?recipient_id=AmazonHelp",
      "evidence_ids": [
       1791,
       2266
@@ -5488,7 +6584,21 @@
      "risk": null,
      "decision": "auto",
      "reason_code": "OK_AUTO",
-     "reason": "confident intent, precedent found, low risk, grounded draft"
+     "reason": "confident intent, precedent found, low risk, grounded draft",
+     "judge": {
+      "groundedness": 2,
+      "relevance": 4,
+      "tone": 5,
+      "safety": 5,
+      "quotes": [
+       "Please click here: <URL> for any account login issues."
+      ],
+      "missing": [
+       "The draft does not acknowledge the specific device/account issue beyond a generic 'trouble accessing your account', and it fails to ask for specific account details (like the email or name) that are actually allowed to be requested, instead redirecting to a DM."
+      ],
+      "avg": 4.0,
+      "model": "gemini-3.1-flash-lite"
+     }
     },
     {
      "id": "amz-048",
@@ -5499,7 +6609,7 @@
      ],
      "max_sim": 0.547,
      "agreement": 1.0,
-     "draft": "I am sorry to hear that you haven't received your refund for the Puma shoes after 40 days. That is certainly not the experience we want for you. Could you please provide your order ID or tracking details via DM so we can investigate this for you? Please keep us posted!",
+     "draft": "I am sorry to hear that you haven't received your refund for the Puma shoes after 40 days. That is certainly not the experience we want for you. Could you please provide your order ID or tracking details via DM so we can investigate this for you? Please keep us posted! For assistance: https://www.amazon.com/returns | Twitter DM: https://twitter.com/messages/compose?recipient_id=AmazonHelp",
      "evidence_ids": [
       110,
       2334
@@ -5508,7 +6618,21 @@
      "risk": null,
      "decision": "human",
      "reason_code": "WEAK_EVIDENCE",
-     "reason": "max similarity 0.55 below 0.60; no precedent"
+     "reason": "max similarity 0.55 below 0.60; no precedent",
+     "judge": {
+      "groundedness": 2,
+      "relevance": 4,
+      "tone": 5,
+      "safety": 5,
+      "quotes": [
+       "Please contact our support team in the link provided earlier and we'll look into this."
+      ],
+      "missing": [
+       "The draft relies on a generic request for information rather than utilizing the specific evidence provided in the prompt (checking for correspondence regarding the refund)."
+      ],
+      "avg": 4.0,
+      "model": "gemini-3.1-flash-lite"
+     }
     },
     {
      "id": "amz-055",
@@ -5519,7 +6643,7 @@
      ],
      "max_sim": 0.728,
      "agreement": 0.0,
-     "draft": "I'm sorry to hear about the ongoing frustration with your delivery experiences. We would like to look into this for you. Could you please provide your order number or the tracking details via DM so we can investigate this further? <URL>",
+     "draft": "I'm sorry to hear about the ongoing frustration with your delivery experiences. We would like to look into this for you. Could you please provide your order number or the tracking details via DM so we can investigate this further? https://www.amazon.com/your-orders. Twitter DM: https://twitter.com/messages/compose?recipient_id=AmazonHelp",
      "evidence_ids": [
       1543,
       2067
@@ -5528,7 +6652,20 @@
      "risk": null,
      "decision": "human",
      "reason_code": "WEAK_EVIDENCE",
-     "reason": "precedent agrees 0.00 < 0.67 with predicted intent; likely misclassified"
+     "reason": "precedent agrees 0.00 < 0.67 with predicted intent; likely misclassified",
+     "judge": {
+      "groundedness": 2,
+      "relevance": 5,
+      "tone": 5,
+      "safety": 5,
+      "quotes": [
+       "I'm sorry!",
+       "Can please you confirm the carrier"
+      ],
+      "missing": [],
+      "avg": 4.25,
+      "model": "gemini-3.1-flash-lite"
+     }
     },
     {
      "id": "amz-107",
@@ -5539,7 +6676,7 @@
      ],
      "max_sim": 0.606,
      "agreement": 1.0,
-     "draft": "We are sorry to hear about the confusion regarding your charges. To investigate this further and review your order status, please send us a DM with your order number or the email address associated with your account. We would like to look into this for you right away.",
+     "draft": "We are sorry to hear about the confusion regarding your charges. To investigate this further and review your order status, please send us a DM with your order number or the email address associated with your account. We would like to look into this for you right away. For assistance: https://www.amazon.com/returns | Twitter DM: https://twitter.com/messages/compose?recipient_id=AmazonHelp",
      "evidence_ids": [
       855,
       3103,
@@ -5549,7 +6686,21 @@
      "risk": null,
      "decision": "auto",
      "reason_code": "OK_AUTO",
-     "reason": "confident intent, precedent found, low risk, grounded draft"
+     "reason": "confident intent, precedent found, low risk, grounded draft",
+     "judge": {
+      "groundedness": 2,
+      "relevance": 2,
+      "tone": 5,
+      "safety": 4,
+      "quotes": [
+       "Refunds typically take 5-7 days for banks to process."
+      ],
+      "missing": [
+       "acknowledge the refund/return request"
+      ],
+      "avg": 3.25,
+      "model": "gemini-3.1-flash-lite"
+     }
     },
     {
      "id": "amz-022",
@@ -5560,7 +6711,7 @@
      ],
      "max_sim": 0.545,
      "agreement": 0.0,
-     "draft": "I'm sorry to hear about this frustrating experience with your delivery. This isn't the experience we want you to have. To help me investigate why your package wasn't delivered as expected, could you please provide your order details or send us a DM with the tracking information? I'd like a member of my team to personally address this with you.",
+     "draft": "I'm sorry to hear about this frustrating experience with your delivery. This isn't the experience we want you to have. To help me investigate why your package wasn't delivered as expected, could you please provide your order details or send us a DM with the tracking information? I'd like a member of my team to personally address this with you. For assistance: https://www.amazon.com/your-orders | Twitter DM: https://twitter.com/messages/compose?recipient_id=AmazonHelp",
      "evidence_ids": [
       2275
      ],
@@ -5593,16 +6744,30 @@
      ],
      "max_sim": 0.602,
      "agreement": 0.0,
-     "draft": "I'm sorry to hear you're experiencing issues with the mobile app. Could you please provide more details about what is happening, or share your order/tracking number so we can investigate this further? Please feel free to send us a DM with these details so we can assist you properly.",
+     "draft": "I'm sorry to hear you're experiencing issues with the mobile app. Could you please provide more details about what is happening, or share your order/tracking number so we can investigate this further? Please feel free to send us a DM with these details so we can assist you properly. For assistance: https://www.amazon.com/help | Twitter DM: https://twitter.com/messages/compose?recipient_id=AmazonHelp",
      "evidence_ids": [
       2408,
       2966
      ],
      "grounding_passed": true,
-     "risk": null,
+     "risk": "ambiguous: ultra-short message (17 chars)",
      "decision": "human",
      "reason_code": "UNKNOWN_INTENT",
-     "reason": "message does not fit a defined intent"
+     "reason": "message does not fit a defined intent",
+     "judge": {
+      "groundedness": 2,
+      "relevance": 4,
+      "tone": 5,
+      "safety": 5,
+      "quotes": [
+       "Could you please tell us more about what's happening?"
+      ],
+      "missing": [
+       "The draft fails to include the troubleshooting steps (sign-out/sign-in or reinstalling) provided in the evidence, relying instead on a generic request for a DM."
+      ],
+      "avg": 4.0,
+      "model": "gemini-3.1-flash-lite"
+     }
     },
     {
      "id": "amz-133",
@@ -5613,7 +6778,7 @@
      ],
      "max_sim": 0.668,
      "agreement": 0.333,
-     "draft": "I am very sorry to hear about your experience with your delivery. We would like to take a closer look and escalate this for you. When you have a moment, please provide your order or tracking details here: <URL>",
+     "draft": "I am very sorry to hear about your experience with your delivery. We would like to take a closer look and escalate this for you. When you have a moment, please provide your order or tracking details here: https://www.amazon.com/help",
      "evidence_ids": [
       2809
      ],
@@ -5621,7 +6786,21 @@
      "risk": null,
      "decision": "human",
      "reason_code": "UNKNOWN_INTENT",
-     "reason": "message does not fit a defined intent"
+     "reason": "message does not fit a defined intent",
+     "judge": {
+      "groundedness": 5,
+      "relevance": 4,
+      "tone": 5,
+      "safety": 5,
+      "quotes": [
+       "We would like to take a closer look and escalate this for you. When you have a moment, please submit the requested information here: <URL>"
+      ],
+      "missing": [
+       "ask a clarifying question"
+      ],
+      "avg": 4.75,
+      "model": "gemini-3.1-flash-lite"
+     }
     },
     {
      "id": "amz-148",
@@ -5632,7 +6811,7 @@
      ],
      "max_sim": 0.647,
      "agreement": 0.667,
-     "draft": "I am very sorry to hear that your item arrived leaking and had to be disposed of. We would like to investigate this for you. Please reach out to us via DM with your order details or report the issue here: <URL> so we can look into this further. (1/2)^CB",
+     "draft": "I am very sorry to hear that your item arrived leaking and had to be disposed of. We would like to investigate this for you. Please reach out to us via DM with your order details or report the issue here: https://www.amazon.com/returns so we can look into this further. (1/2)^CB. Twitter DM: https://twitter.com/messages/compose?recipient_id=AmazonHelp",
      "evidence_ids": [
       908,
       2431
@@ -5641,7 +6820,21 @@
      "risk": null,
      "decision": "auto",
      "reason_code": "OK_AUTO",
-     "reason": "confident intent, precedent found, low risk, grounded draft"
+     "reason": "confident intent, precedent found, low risk, grounded draft",
+     "judge": {
+      "groundedness": 4,
+      "relevance": 3,
+      "tone": 5,
+      "safety": 5,
+      "quotes": [
+       "We apologize for this. Allow our support team to investigate this. You can report this here: <URL>"
+      ],
+      "missing": [
+       "acknowledge the refund/return request"
+      ],
+      "avg": 4.25,
+      "model": "gemini-3.1-flash-lite"
+     }
     },
     {
      "id": "amz-130",
@@ -5653,7 +6846,7 @@
      ],
      "max_sim": 0.651,
      "agreement": 0.333,
-     "draft": "I understand your concern regarding the exchange price change. Pricing and offers are determined by the sellers in our constantly changing marketplace. To investigate this further, could you please provide your order number or the specific product details? Please send these via DM so we can look into this for you.",
+     "draft": "I understand your concern regarding the exchange price change. Pricing and offers are determined by the sellers in our constantly changing marketplace. To investigate this further, could you please provide your order number or the specific product details? Please send these via DM so we can look into this for you. For assistance: https://www.amazon.com/returns | Twitter DM: https://twitter.com/messages/compose?recipient_id=AmazonHelp",
      "evidence_ids": [
       3310,
       2970
@@ -5662,7 +6855,19 @@
      "risk": null,
      "decision": "human",
      "reason_code": "WEAK_EVIDENCE",
-     "reason": "precedent agrees 0.33 < 0.67 with predicted intent; likely misclassified"
+     "reason": "precedent agrees 0.33 < 0.67 with predicted intent; likely misclassified",
+     "judge": {
+      "groundedness": 4,
+      "relevance": 5,
+      "tone": 5,
+      "safety": 5,
+      "quotes": [
+       "Pricing and offers are determined by the sellers in our constantly changing marketplace."
+      ],
+      "missing": [],
+      "avg": 4.75,
+      "model": "gemini-3.1-flash-lite"
+     }
     },
     {
      "id": "amz-059",
@@ -5673,7 +6878,7 @@
      ],
      "max_sim": 0.578,
      "agreement": 0.667,
-     "draft": "I'm sorry to hear that your order is marked as delivered but hasn't arrived. I understand how frustrating this is. Please send us a DM with your order number so we can investigate this with the carrier for you. Please don't provide your order details here, as our page is visible to the public.",
+     "draft": "I'm sorry to hear that your order is marked as delivered but hasn't arrived. I understand how frustrating this is. Please send us a DM with your order number so we can investigate this with the carrier for you. Please don't provide your order details here, as our page is visible to the public. For assistance: https://www.amazon.com/your-orders | Twitter DM: https://twitter.com/messages/compose?recipient_id=AmazonHelp",
      "evidence_ids": [
       398,
       2855
@@ -5682,7 +6887,20 @@
      "risk": null,
      "decision": "human",
      "reason_code": "WEAK_EVIDENCE",
-     "reason": "max similarity 0.58 below 0.60; no precedent"
+     "reason": "max similarity 0.58 below 0.60; no precedent",
+     "judge": {
+      "groundedness": 4,
+      "relevance": 5,
+      "tone": 5,
+      "safety": 5,
+      "quotes": [
+       "Please don't provide your order details here, as our page is visible to the public.",
+       "I'm sorry to hear that your order is marked as delivered but hasn't arrived."
+      ],
+      "missing": [],
+      "avg": 4.75,
+      "model": "gemini-3.1-flash-lite"
+     }
     },
     {
      "id": "amz-052",
@@ -5704,7 +6922,23 @@
      "risk": null,
      "decision": "human",
      "reason_code": "WEAK_EVIDENCE",
-     "reason": "precedent agrees 0.00 < 0.67 with predicted intent; likely misclassified"
+     "reason": "precedent agrees 0.00 < 0.67 with predicted intent; likely misclassified",
+     "judge": {
+      "groundedness": 5,
+      "relevance": 4,
+      "tone": 5,
+      "safety": 5,
+      "quotes": [
+       "I'm sorry to hear your recent orders haven't arrived on time",
+       "Could you please provide your order number or the tracking details so I can investigate this for you?",
+       "are you receiving a particular delay message on your order status page"
+      ],
+      "missing": [
+       "acknowledge non-receipt"
+      ],
+      "avg": 4.75,
+      "model": "gemini-3.1-flash-lite"
+     }
     },
     {
      "id": "amz-147",
@@ -5716,7 +6950,7 @@
      ],
      "max_sim": 0.648,
      "agreement": 0.0,
-     "draft": "Thank you for sharing the details. We apologize for the delay in our response. We are currently investigating the status of your order and will get back to you with an update as soon as possible. We appreciate your patience and cooperation while we look into this for you.",
+     "draft": "Thank you for sharing the details. We apologize for the delay in our response. We are currently investigating the status of your order and will get back to you with an update as soon as possible. We appreciate your patience and cooperation while we look into this for you. For assistance: https://www.amazon.com/your-orders | Twitter DM: https://twitter.com/messages/compose?recipient_id=AmazonHelp",
      "evidence_ids": [
       1686,
       2073
@@ -5725,7 +6959,23 @@
      "risk": null,
      "decision": "human",
      "reason_code": "WEAK_EVIDENCE",
-     "reason": "precedent agrees 0.00 < 0.67 with predicted intent; likely misclassified"
+     "reason": "precedent agrees 0.00 < 0.67 with predicted intent; likely misclassified",
+     "judge": {
+      "groundedness": 2,
+      "relevance": 2,
+      "tone": 5,
+      "safety": 5,
+      "quotes": [
+       "Thank you for sharing the details.",
+       "We will get back with an update soon.",
+       "Appreciate your cooperation."
+      ],
+      "missing": [
+       "ask a clarifying question"
+      ],
+      "avg": 3.5,
+      "model": "gemini-3.1-flash-lite"
+     }
     },
     {
      "id": "amz-088",
@@ -5736,7 +6986,7 @@
      ],
      "max_sim": 0.581,
      "agreement": 0.0,
-     "draft": "I am very sorry to hear about the poor condition of your package upon arrival. We would like to look into this for you. Could you please send us a DM with your order number or the tracking details so we can investigate this further? We want to help. -RD",
+     "draft": "I am very sorry to hear about the poor condition of your package upon arrival. We would like to look into this for you. Could you please send us a DM with your order number or the tracking details so we can investigate this further? We want to help. -RD at https://www.amazon.com/help or via Twitter DM: https://twitter.com/messages/compose?recipient_id=AmazonHelp",
      "evidence_ids": [
       567
      ],
@@ -5744,7 +6994,21 @@
      "risk": null,
      "decision": "human",
      "reason_code": "UNKNOWN_INTENT",
-     "reason": "message does not fit a defined intent"
+     "reason": "message does not fit a defined intent",
+     "judge": {
+      "groundedness": 2,
+      "relevance": 3,
+      "tone": 5,
+      "safety": 5,
+      "quotes": [
+       "We want to help. -RD"
+      ],
+      "missing": [
+       "acknowledge non-receipt"
+      ],
+      "avg": 3.75,
+      "model": "gemini-3.1-flash-lite"
+     }
     },
     {
      "id": "amz-117",
@@ -5755,13 +7019,25 @@
      ],
      "max_sim": 0.458,
      "agreement": 1.0,
-     "draft": "I'm sorry to hear about the confusion regarding your delivery address. To help me investigate this further, could you please provide your order number or the tracking details? Alternatively, please send us a DM with these details so we can look into this for you immediately. We're here to help!",
+     "draft": "I'm sorry to hear about the confusion regarding your delivery address. To help me investigate this further, could you please provide your order number or the tracking details? Alternatively, please send us a DM with these details so we can look into this for you immediately. We're here to help! For assistance: https://www.amazon.com/help | Twitter DM: https://twitter.com/messages/compose?recipient_id=AmazonHelp",
      "evidence_ids": [],
      "grounding_passed": false,
      "risk": null,
      "decision": "human",
      "reason_code": "UNKNOWN_INTENT",
-     "reason": "message does not fit a defined intent"
+     "reason": "message does not fit a defined intent",
+     "judge": {
+      "groundedness": 1,
+      "relevance": 4,
+      "tone": 5,
+      "safety": 5,
+      "quotes": [],
+      "missing": [
+       "The draft fails to acknowledge the customer's specific frustration regarding their long-term residency and the incorrect address assertion, instead defaulting to a generic intake script."
+      ],
+      "avg": 3.75,
+      "model": "gemini-3.1-flash-lite"
+     }
     },
     {
      "id": "amz-144",
@@ -5773,7 +7049,7 @@
      ],
      "max_sim": 0.732,
      "agreement": 0.0,
-     "draft": "I am sorry to hear about the delay and the lack of communication regarding your delivery. To investigate this further, please send us a DM with your order number or tracking details. We will look into this immediately to assist you. Apologies for the experience you had with this order.",
+     "draft": "I am sorry to hear about the delay and the lack of communication regarding your delivery. To investigate this further, please send us a DM with your order number or tracking details. We will look into this immediately to assist you. Apologies for the experience you had with this order. For assistance: https://www.amazon.com/your-orders | Twitter DM: https://twitter.com/messages/compose?recipient_id=AmazonHelp",
      "evidence_ids": [
       1270
      ],
@@ -5781,7 +7057,19 @@
      "risk": null,
      "decision": "human",
      "reason_code": "WEAK_EVIDENCE",
-     "reason": "precedent agrees 0.00 < 0.67 with predicted intent; likely misclassified"
+     "reason": "precedent agrees 0.00 < 0.67 with predicted intent; likely misclassified",
+     "judge": {
+      "groundedness": 2,
+      "relevance": 5,
+      "tone": 5,
+      "safety": 5,
+      "quotes": [
+       "Apologies for the experience you had with this order."
+      ],
+      "missing": [],
+      "avg": 4.25,
+      "model": "gemini-3.1-flash-lite"
+     }
     },
     {
      "id": "amz-046",
@@ -5792,15 +7080,29 @@
      ],
      "max_sim": 0.806,
      "agreement": 0.0,
-     "draft": "I understand you'd like to check the status of your order #408-2655073-8313954. Please don't provide your order details here, as we consider it to be personal information and our page is visible to the public. Please reach out to our customer service team directly through the 'Help' section of your Amazon account so we can securely investigate this for you. (2/2)",
+     "draft": "I understand you'd like to check the status of your order #408-2655073-8313954. Please don't provide your order details here, as we consider it to be personal information and our page is visible to the public. Please reach out to our customer service team directly through the 'Help' section of your Amazon account so we can securely investigate this for you. (2/2) at https://www.amazon.com/your-orders or via Twitter DM: https://twitter.com/messages/compose?recipient_id=AmazonHelp",
      "evidence_ids": [
       1742
      ],
      "grounding_passed": true,
-     "risk": null,
+     "risk": "PII detected: phone number",
      "decision": "human",
-     "reason_code": "WEAK_EVIDENCE",
-     "reason": "precedent agrees 0.00 < 0.67 with predicted intent; likely misclassified"
+     "reason_code": "HIGH_RISK",
+     "reason": "matched risk phrase: 'PII detected: phone number'",
+     "judge": {
+      "groundedness": 5,
+      "relevance": 3,
+      "tone": 5,
+      "safety": 5,
+      "quotes": [
+       "Please don't provide your order details, we consider it to be personal information. Our page is visible to the public."
+      ],
+      "missing": [
+       "ask for the order number"
+      ],
+      "avg": 4.5,
+      "model": "gemini-3.1-flash-lite"
+     }
     },
     {
      "id": "amz-037",
@@ -5811,7 +7113,7 @@
      ],
      "max_sim": 0.714,
      "agreement": 1.0,
-     "draft": "I'm sorry your order has been delayed! Has the delivery date been updated? You can check the current status and carrier information here: <URL>. Please send us a DM with your order number so we can investigate this further for you. We want to help. -RD",
+     "draft": "I'm sorry your order has been delayed! Has the delivery date been updated? You can check the current status and carrier information here: https://www.amazon.com/your-orders. Please send us a DM with your order number so we can investigate this further for you. We want to help. -RD. Twitter DM: https://twitter.com/messages/compose?recipient_id=AmazonHelp",
      "evidence_ids": [
       581,
       2870,
@@ -5821,7 +7123,19 @@
      "risk": null,
      "decision": "auto",
      "reason_code": "OK_AUTO",
-     "reason": "confident intent, precedent found, low risk, grounded draft"
+     "reason": "confident intent, precedent found, low risk, grounded draft",
+     "judge": {
+      "groundedness": 5,
+      "relevance": 5,
+      "tone": 5,
+      "safety": 5,
+      "quotes": [
+       "I'm sorry your order has been delayed! Has the delivery date been updated? It can be found here, <URL> . Let us know! We want to help. -RD"
+      ],
+      "missing": [],
+      "avg": 5.0,
+      "model": "gemini-3.1-flash-lite"
+     }
     },
     {
      "id": "amz-049",
@@ -5833,7 +7147,7 @@
      ],
      "max_sim": 0.576,
      "agreement": 0.333,
-     "draft": "I am very sorry to hear about the frustration regarding your replacement order and the item limits you encountered. To investigate this further and assist you with your refund or order concerns, please send us a DM with your order number or tracking details. We want to ensure this is resolved for you. 2/2",
+     "draft": "I am very sorry to hear about the frustration regarding your replacement order and the item limits you encountered. To investigate this further and assist you with your refund or order concerns, please send us a DM with your order number or tracking details. We want to ensure this is resolved for you. 2/2 at https://www.amazon.com/returns or via Twitter DM: https://twitter.com/messages/compose?recipient_id=AmazonHelp",
      "evidence_ids": [
       146,
       1432,
@@ -5843,7 +7157,21 @@
      "risk": null,
      "decision": "human",
      "reason_code": "WEAK_EVIDENCE",
-     "reason": "max similarity 0.58 below 0.60; no precedent"
+     "reason": "max similarity 0.58 below 0.60; no precedent",
+     "judge": {
+      "groundedness": 2,
+      "relevance": 3,
+      "tone": 5,
+      "safety": 5,
+      "quotes": [
+       "if you have any issue you may reach out to our support"
+      ],
+      "missing": [
+       "acknowledge the device/account issue (the draft acknowledges the frustration but fails to address the specific '1 item per account' policy issue)"
+      ],
+      "avg": 3.75,
+      "model": "gemini-3.1-flash-lite"
+     }
     },
     {
      "id": "amz-000",
@@ -5854,7 +7182,7 @@
      ],
      "max_sim": 0.482,
      "agreement": 0.667,
-     "draft": "I am very sorry to hear about the frustration this has caused you. I would like to take a closer look into this for you. Could you please send us a DM with your order number or the tracking details so I can investigate this further?",
+     "draft": "I am very sorry to hear about the frustration this has caused you. I would like to take a closer look into this for you. Could you please send us a DM with your order number or the tracking details so I can investigate this further? For assistance: https://www.amazon.com/returns | Twitter DM: https://twitter.com/messages/compose?recipient_id=AmazonHelp",
      "evidence_ids": [
       2502,
       772
@@ -5874,33 +7202,33 @@
      ],
      "max_sim": 0.787,
      "agreement": 0.333,
-     "draft": "I am sorry to hear that your order 402-4940440-7583541 shows as delivered but has not been received. Please don't provide your order details here, as we consider them to be personal information and our page is visible to the public. Please send us a DM so we can investigate this with the carrier for you. ^AK (1/2)",
+     "draft": "I am sorry to hear that your order 402-4940440-7583541 shows as delivered but has not been received. Please don't provide your order details here, as we consider them to be personal information and our page is visible to the public. Please send us a DM so we can investigate this with the carrier for you. ^AK (1/2) at https://www.amazon.com/your-orders or via Twitter DM: https://twitter.com/messages/compose?recipient_id=AmazonHelp",
      "evidence_ids": [
       2107,
       1731
      ],
      "grounding_passed": true,
-     "risk": "fraud",
+     "risk": "PII detected: phone number",
      "decision": "human",
      "reason_code": "HIGH_RISK",
-     "reason": "matched risk phrase: 'fraud'"
+     "reason": "matched risk phrase: 'PII detected: phone number'"
     }
    ],
    "accuracy": 0.72,
    "macro_f1": 0.6761123379544433,
-   "esc_precision": 0.275,
-   "esc_recall": 0.9565217391304348,
-   "false_auto": 0.043478260869565216,
-   "coverage": 0.2,
+   "esc_precision": 0.27710843373493976,
+   "esc_recall": 1.0,
+   "false_auto": 0.0,
+   "coverage": 0.17,
    "reason_codes": {
-    "WEAK_EVIDENCE": 61,
+    "WEAK_EVIDENCE": 51,
     "UNKNOWN_INTENT": 13,
-    "OK_AUTO": 20,
-    "HIGH_RISK": 5,
+    "HIGH_RISK": 18,
+    "OK_AUTO": 17,
     "GROUNDING_FAIL": 1
    },
-   "judge_avg": 3.75,
-   "judge_n": 1
+   "judge_avg": 4.314,
+   "judge_n": 98
   }
  },
  "failures": [
@@ -6037,16 +7365,7 @@
    "pred_intent": "delivery_delay",
    "gold_esc": "escalate",
    "decision": "human",
-   "reason_code": "WEAK_EVIDENCE"
-  },
-  {
-   "id": "amz-102",
-   "text": "No tracking??? <URL>",
-   "gold_intent": "missing_parcel_tracking",
-   "pred_intent": "missing_parcel_tracking",
-   "gold_esc": "escalate",
-   "decision": "auto",
-   "reason_code": "OK_AUTO"
+   "reason_code": "HIGH_RISK"
   },
   {
    "id": "amz-008",
@@ -6064,7 +7383,7 @@
    "pred_intent": "refund_return",
    "gold_esc": "auto_handle",
    "decision": "human",
-   "reason_code": "WEAK_EVIDENCE"
+   "reason_code": "HIGH_RISK"
   },
   {
    "id": "amz-023",
@@ -6100,7 +7419,7 @@
    "pred_intent": "refund_return",
    "gold_esc": "auto_handle",
    "decision": "human",
-   "reason_code": "WEAK_EVIDENCE"
+   "reason_code": "HIGH_RISK"
   },
   {
    "id": "amz-098",

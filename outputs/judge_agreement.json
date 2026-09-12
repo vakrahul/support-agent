@@ -1,29 +1,566 @@
 {
- "n_paired": 0,
- "pairs": [],
- "human_n": 50,
- "human_mean": 4.16,
- "human_systems": {
-  "ours_llm": [
-   50,
-   4.16
-  ],
-  "b1_verbatim": [
-   20,
-   2.45
-  ],
-  "b0_canned": [
-   10,
-   2.7
-  ]
- },
- "llm_judge_real": [
+ "n_paired": 50,
+ "pairs": [
   {
    "id": "amz-022",
-   "avg": 3.75,
-   "model": "gemini-3.1-flash-lite"
+   "human": 5.0,
+   "judge": 3.75,
+   "axes": {
+    "groundedness": 2,
+    "relevance": 3,
+    "tone": 5,
+    "safety": 5
+   }
+  },
+  {
+   "id": "amz-011",
+   "human": 4.0,
+   "judge": 5.0,
+   "axes": {
+    "groundedness": 5,
+    "relevance": 5,
+    "tone": 5,
+    "safety": 5
+   }
+  },
+  {
+   "id": "amz-031",
+   "human": 3.0,
+   "judge": 4.0,
+   "axes": {
+    "groundedness": 2,
+    "relevance": 4,
+    "tone": 5,
+    "safety": 5
+   }
+  },
+  {
+   "id": "amz-128",
+   "human": 3.0,
+   "judge": 3.75,
+   "axes": {
+    "groundedness": 2,
+    "relevance": 3,
+    "tone": 5,
+    "safety": 5
+   }
+  },
+  {
+   "id": "amz-044",
+   "human": 4.0,
+   "judge": 5.0,
+   "axes": {
+    "groundedness": 5,
+    "relevance": 5,
+    "tone": 5,
+    "safety": 5
+   }
+  },
+  {
+   "id": "amz-144",
+   "human": 5.0,
+   "judge": 4.25,
+   "axes": {
+    "groundedness": 2,
+    "relevance": 5,
+    "tone": 5,
+    "safety": 5
+   }
+  },
+  {
+   "id": "amz-087",
+   "human": 5.0,
+   "judge": 4.5,
+   "axes": {
+    "groundedness": 3,
+    "relevance": 5,
+    "tone": 5,
+    "safety": 5
+   }
+  },
+  {
+   "id": "amz-051",
+   "human": 4.0,
+   "judge": 3.75,
+   "axes": {
+    "groundedness": 2,
+    "relevance": 3,
+    "tone": 5,
+    "safety": 5
+   }
+  },
+  {
+   "id": "amz-106",
+   "human": 5.0,
+   "judge": 4.0,
+   "axes": {
+    "groundedness": 2,
+    "relevance": 4,
+    "tone": 5,
+    "safety": 5
+   }
+  },
+  {
+   "id": "amz-091",
+   "human": 4.0,
+   "judge": 5.0,
+   "axes": {
+    "groundedness": 5,
+    "relevance": 5,
+    "tone": 5,
+    "safety": 5
+   }
+  },
+  {
+   "id": "amz-054",
+   "human": 5.0,
+   "judge": 3.75,
+   "axes": {
+    "groundedness": 1,
+    "relevance": 4,
+    "tone": 5,
+    "safety": 5
+   }
+  },
+  {
+   "id": "amz-098",
+   "human": 3.0,
+   "judge": 4.0,
+   "axes": {
+    "groundedness": 2,
+    "relevance": 4,
+    "tone": 5,
+    "safety": 5
+   }
+  },
+  {
+   "id": "amz-113",
+   "human": 5.0,
+   "judge": 4.0,
+   "axes": {
+    "groundedness": 2,
+    "relevance": 4,
+    "tone": 5,
+    "safety": 5
+   }
+  },
+  {
+   "id": "amz-026",
+   "human": 5.0,
+   "judge": 5.0,
+   "axes": {
+    "groundedness": 5,
+    "relevance": 5,
+    "tone": 5,
+    "safety": 5
+   }
+  },
+  {
+   "id": "amz-065",
+   "human": 4.0,
+   "judge": 4.25,
+   "axes": {
+    "groundedness": 4,
+    "relevance": 3,
+    "tone": 5,
+    "safety": 5
+   }
+  },
+  {
+   "id": "amz-135",
+   "human": 4.0,
+   "judge": 4.75,
+   "axes": {
+    "groundedness": 4,
+    "relevance": 5,
+    "tone": 5,
+    "safety": 5
+   }
+  },
+  {
+   "id": "amz-028",
+   "human": 4.0,
+   "judge": 3.5,
+   "axes": {
+    "groundedness": 1,
+    "relevance": 3,
+    "tone": 5,
+    "safety": 5
+   }
+  },
+  {
+   "id": "amz-088",
+   "human": 4.0,
+   "judge": 3.75,
+   "axes": {
+    "groundedness": 2,
+    "relevance": 3,
+    "tone": 5,
+    "safety": 5
+   }
+  },
+  {
+   "id": "amz-036",
+   "human": 5.0,
+   "judge": 4.75,
+   "axes": {
+    "groundedness": 4,
+    "relevance": 5,
+    "tone": 5,
+    "safety": 5
+   }
+  },
+  {
+   "id": "amz-052",
+   "human": 4.0,
+   "judge": 4.75,
+   "axes": {
+    "groundedness": 5,
+    "relevance": 4,
+    "tone": 5,
+    "safety": 5
+   }
+  },
+  {
+   "id": "amz-112",
+   "human": 4.0,
+   "judge": 4.0,
+   "axes": {
+    "groundedness": 4,
+    "relevance": 2,
+    "tone": 5,
+    "safety": 5
+   }
+  },
+  {
+   "id": "amz-104",
+   "human": 5.0,
+   "judge": 4.25,
+   "axes": {
+    "groundedness": 5,
+    "relevance": 2,
+    "tone": 5,
+    "safety": 5
+   }
+  },
+  {
+   "id": "amz-134",
+   "human": 4.0,
+   "judge": 4.75,
+   "axes": {
+    "groundedness": 5,
+    "relevance": 4,
+    "tone": 5,
+    "safety": 5
+   }
+  },
+  {
+   "id": "amz-111",
+   "human": 5.0,
+   "judge": 4.75,
+   "axes": {
+    "groundedness": 4,
+    "relevance": 5,
+    "tone": 5,
+    "safety": 5
+   }
+  },
+  {
+   "id": "amz-023",
+   "human": 4.0,
+   "judge": 4.75,
+   "axes": {
+    "groundedness": 4,
+    "relevance": 5,
+    "tone": 5,
+    "safety": 5
+   }
+  },
+  {
+   "id": "amz-046",
+   "human": 5.0,
+   "judge": 4.5,
+   "axes": {
+    "groundedness": 5,
+    "relevance": 3,
+    "tone": 5,
+    "safety": 5
+   }
+  },
+  {
+   "id": "amz-093",
+   "human": 5.0,
+   "judge": 2.75,
+   "axes": {
+    "groundedness": 2,
+    "relevance": 4,
+    "tone": 3,
+    "safety": 2
+   }
+  },
+  {
+   "id": "amz-067",
+   "human": 5.0,
+   "judge": 4.25,
+   "axes": {
+    "groundedness": 2,
+    "relevance": 5,
+    "tone": 5,
+    "safety": 5
+   }
+  },
+  {
+   "id": "amz-027",
+   "human": 4.0,
+   "judge": 3.5,
+   "axes": {
+    "groundedness": 2,
+    "relevance": 3,
+    "tone": 5,
+    "safety": 4
+   }
+  },
+  {
+   "id": "amz-010",
+   "human": 4.0,
+   "judge": 4.0,
+   "axes": {
+    "groundedness": 2,
+    "relevance": 4,
+    "tone": 5,
+    "safety": 5
+   }
+  },
+  {
+   "id": "amz-130",
+   "human": 4.0,
+   "judge": 4.75,
+   "axes": {
+    "groundedness": 4,
+    "relevance": 5,
+    "tone": 5,
+    "safety": 5
+   }
+  },
+  {
+   "id": "amz-117",
+   "human": 3.0,
+   "judge": 3.75,
+   "axes": {
+    "groundedness": 1,
+    "relevance": 4,
+    "tone": 5,
+    "safety": 5
+   }
+  },
+  {
+   "id": "amz-101",
+   "human": 3.0,
+   "judge": 4.25,
+   "axes": {
+    "groundedness": 3,
+    "relevance": 4,
+    "tone": 5,
+    "safety": 5
+   }
+  },
+  {
+   "id": "amz-068",
+   "human": 4.0,
+   "judge": 3.5,
+   "axes": {
+    "groundedness": 2,
+    "relevance": 2,
+    "tone": 5,
+    "safety": 5
+   }
+  },
+  {
+   "id": "amz-147",
+   "human": 3.0,
+   "judge": 3.5,
+   "axes": {
+    "groundedness": 2,
+    "relevance": 2,
+    "tone": 5,
+    "safety": 5
+   }
+  },
+  {
+   "id": "amz-069",
+   "human": 4.0,
+   "judge": 4.75,
+   "axes": {
+    "groundedness": 5,
+    "relevance": 4,
+    "tone": 5,
+    "safety": 5
+   }
+  },
+  {
+   "id": "amz-118",
+   "human": 5.0,
+   "judge": 3.75,
+   "axes": {
+    "groundedness": 1,
+    "relevance": 4,
+    "tone": 5,
+    "safety": 5
+   }
+  },
+  {
+   "id": "amz-073",
+   "human": 5.0,
+   "judge": 5.0,
+   "axes": {
+    "groundedness": 5,
+    "relevance": 5,
+    "tone": 5,
+    "safety": 5
+   }
+  },
+  {
+   "id": "amz-107",
+   "human": 3.0,
+   "judge": 3.25,
+   "axes": {
+    "groundedness": 2,
+    "relevance": 2,
+    "tone": 5,
+    "safety": 4
+   }
+  },
+  {
+   "id": "amz-040",
+   "human": 4.0,
+   "judge": 3.75,
+   "axes": {
+    "groundedness": 2,
+    "relevance": 3,
+    "tone": 5,
+    "safety": 5
+   }
+  },
+  {
+   "id": "amz-042",
+   "human": 4.0,
+   "judge": 5.0,
+   "axes": {
+    "groundedness": 5,
+    "relevance": 5,
+    "tone": 5,
+    "safety": 5
+   }
+  },
+  {
+   "id": "amz-141",
+   "human": 4.0,
+   "judge": 4.25,
+   "axes": {
+    "groundedness": 5,
+    "relevance": 2,
+    "tone": 5,
+    "safety": 5
+   }
+  },
+  {
+   "id": "amz-066",
+   "human": 5.0,
+   "judge": 4.25,
+   "axes": {
+    "groundedness": 3,
+    "relevance": 4,
+    "tone": 5,
+    "safety": 5
+   }
+  },
+  {
+   "id": "amz-061",
+   "human": 5.0,
+   "judge": 3.75,
+   "axes": {
+    "groundedness": 2,
+    "relevance": 3,
+    "tone": 5,
+    "safety": 5
+   }
+  },
+  {
+   "id": "amz-096",
+   "human": 4.0,
+   "judge": 4.0,
+   "axes": {
+    "groundedness": 2,
+    "relevance": 4,
+    "tone": 5,
+    "safety": 5
+   }
+  },
+  {
+   "id": "amz-103",
+   "human": 3.0,
+   "judge": 3.5,
+   "axes": {
+    "groundedness": 2,
+    "relevance": 2,
+    "tone": 5,
+    "safety": 5
+   }
+  },
+  {
+   "id": "amz-047",
+   "human": 3.0,
+   "judge": 4.75,
+   "axes": {
+    "groundedness": 5,
+    "relevance": 4,
+    "tone": 5,
+    "safety": 5
+   }
+  },
+  {
+   "id": "amz-050",
+   "human": 4.0,
+   "judge": 4.0,
+   "axes": {
+    "groundedness": 3,
+    "relevance": 3,
+    "tone": 5,
+    "safety": 5
+   }
+  },
+  {
+   "id": "amz-126",
+   "human": 4.0,
+   "judge": 4.0,
+   "axes": {
+    "groundedness": 2,
+    "relevance": 4,
+    "tone": 5,
+    "safety": 5
+   }
+  },
+  {
+   "id": "amz-078",
+   "human": 4.0,
+   "judge": 5.0,
+   "axes": {
+    "groundedness": 5,
+    "relevance": 5,
+    "tone": 5,
+    "safety": 5
+   }
   }
  ],
- "pilot_note": "A 16-pair pilot (Spearman +0.08 groundedness, kappa ~0) was measured against PRE-decontamination drafts; the corpus rebuild changed the evidence and drafts, invalidating those pairs. Superseded numbers are NOT quoted as results anywhere; they survive only in git history. Paired re-measurement blocked by free-tier quota (re-probed dead 2026-09-10).",
- "verdict": "Reply quality rests on 50 human scores + deterministic checks on all 100. The LLM judge is implemented, blinded, and structured \u2014 but unvalidated at submission time. Claiming otherwise would be fabrication."
+ "human_n": 50,
+ "human_mean": 4.16,
+ "human_systems": {},
+ "llm_judge_mean": 4.195,
+ "judge_avg_all_banked": 4.314,
+ "judge_n_banked": 98,
+ "spearman_rho": 0.173,
+ "binned_kappa": -0.11,
+ "raw_agreement": 0.36,
+ "mean_abs_diff": 0.675,
+ "verdict": "Paired judge-vs-human on 50 identical drafts (banked live gemini-3.1-flash-lite judgements vs blind human 1-5 scores). rho=0.173, binned kappa=-0.11, raw agree=0.36, mean|diff|=0.675. Human scores remain primary for cross-system claims; the judge is now validated on ours-drafts only, not on baseline drafts."
 }

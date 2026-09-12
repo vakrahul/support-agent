@@ -5,250 +5,157 @@
  },
  "curve": [
   {
-   "sim": 0.8,
-   "conf": 0.0,
-   "coverage": 0.0,
-   "unsafe": 0.0,
-   "esc_recall": 1.0
-  },
-  {
-   "sim": 0.8,
-   "conf": 0.4,
-   "coverage": 0.0,
-   "unsafe": 0.0,
-   "esc_recall": 1.0
-  },
-  {
-   "sim": 0.8,
-   "conf": 0.5,
-   "coverage": 0.0,
-   "unsafe": 0.0,
-   "esc_recall": 1.0
-  },
-  {
-   "sim": 0.8,
-   "conf": 0.6,
-   "coverage": 0.0,
-   "unsafe": 0.0,
-   "esc_recall": 1.0
-  },
-  {
-   "sim": 0.8,
-   "conf": 0.7,
-   "coverage": 0.0,
-   "unsafe": 0.0,
-   "esc_recall": 1.0
-  },
-  {
-   "sim": 0.6,
-   "conf": 0.0,
-   "coverage": 0.26,
-   "unsafe": 0.154,
-   "esc_recall": 0.846
-  },
-  {
-   "sim": 0.6,
-   "conf": 0.4,
-   "coverage": 0.26,
-   "unsafe": 0.154,
-   "esc_recall": 0.846
-  },
-  {
-   "sim": 0.6,
-   "conf": 0.5,
-   "coverage": 0.26,
-   "unsafe": 0.154,
-   "esc_recall": 0.846
-  },
-  {
-   "sim": 0.6,
-   "conf": 0.6,
-   "coverage": 0.26,
-   "unsafe": 0.154,
-   "esc_recall": 0.846
-  },
-  {
-   "sim": 0.6,
-   "conf": 0.7,
-   "coverage": 0.26,
-   "unsafe": 0.154,
-   "esc_recall": 0.846
-  },
-  {
-   "sim": 0.0,
-   "conf": 0.0,
-   "coverage": 0.38,
-   "unsafe": 0.231,
-   "esc_recall": 0.769
-  },
-  {
-   "sim": 0.0,
-   "conf": 0.4,
-   "coverage": 0.38,
-   "unsafe": 0.231,
-   "esc_recall": 0.769
-  },
-  {
-   "sim": 0.0,
-   "conf": 0.5,
-   "coverage": 0.38,
-   "unsafe": 0.231,
-   "esc_recall": 0.769
-  },
-  {
-   "sim": 0.0,
-   "conf": 0.6,
-   "coverage": 0.38,
-   "unsafe": 0.231,
-   "esc_recall": 0.769
-  },
-  {
-   "sim": 0.0,
-   "conf": 0.7,
-   "coverage": 0.38,
-   "unsafe": 0.231,
-   "esc_recall": 0.769
-  },
-  {
-   "sim": 0.3,
-   "conf": 0.0,
-   "coverage": 0.38,
-   "unsafe": 0.231,
-   "esc_recall": 0.769
-  },
-  {
    "sim": 0.3,
    "conf": 0.4,
-   "coverage": 0.38,
+   "coverage": 0.34,
    "unsafe": 0.231,
    "esc_recall": 0.769
   },
   {
    "sim": 0.3,
    "conf": 0.5,
-   "coverage": 0.38,
+   "coverage": 0.34,
    "unsafe": 0.231,
    "esc_recall": 0.769
   },
   {
    "sim": 0.3,
    "conf": 0.6,
-   "coverage": 0.38,
+   "coverage": 0.34,
    "unsafe": 0.231,
    "esc_recall": 0.769
   },
   {
    "sim": 0.3,
    "conf": 0.7,
-   "coverage": 0.38,
-   "unsafe": 0.231,
-   "esc_recall": 0.769
-  },
-  {
-   "sim": 0.4,
-   "conf": 0.0,
-   "coverage": 0.38,
+   "coverage": 0.34,
    "unsafe": 0.231,
    "esc_recall": 0.769
   },
   {
    "sim": 0.4,
    "conf": 0.4,
-   "coverage": 0.38,
+   "coverage": 0.34,
    "unsafe": 0.231,
    "esc_recall": 0.769
   },
   {
    "sim": 0.4,
    "conf": 0.5,
-   "coverage": 0.38,
+   "coverage": 0.34,
    "unsafe": 0.231,
    "esc_recall": 0.769
   },
   {
    "sim": 0.4,
    "conf": 0.6,
-   "coverage": 0.38,
+   "coverage": 0.34,
    "unsafe": 0.231,
    "esc_recall": 0.769
   },
   {
    "sim": 0.4,
    "conf": 0.7,
-   "coverage": 0.38,
-   "unsafe": 0.231,
-   "esc_recall": 0.769
-  },
-  {
-   "sim": 0.45,
-   "conf": 0.0,
-   "coverage": 0.38,
+   "coverage": 0.34,
    "unsafe": 0.231,
    "esc_recall": 0.769
   },
   {
    "sim": 0.45,
    "conf": 0.4,
-   "coverage": 0.38,
+   "coverage": 0.34,
    "unsafe": 0.231,
    "esc_recall": 0.769
   },
   {
    "sim": 0.45,
    "conf": 0.5,
-   "coverage": 0.38,
+   "coverage": 0.34,
    "unsafe": 0.231,
    "esc_recall": 0.769
   },
   {
    "sim": 0.45,
    "conf": 0.6,
-   "coverage": 0.38,
+   "coverage": 0.34,
    "unsafe": 0.231,
    "esc_recall": 0.769
   },
   {
    "sim": 0.45,
    "conf": 0.7,
-   "coverage": 0.38,
-   "unsafe": 0.231,
-   "esc_recall": 0.769
-  },
-  {
-   "sim": 0.5,
-   "conf": 0.0,
-   "coverage": 0.38,
+   "coverage": 0.34,
    "unsafe": 0.231,
    "esc_recall": 0.769
   },
   {
    "sim": 0.5,
    "conf": 0.4,
-   "coverage": 0.38,
+   "coverage": 0.34,
    "unsafe": 0.231,
    "esc_recall": 0.769
   },
   {
    "sim": 0.5,
    "conf": 0.5,
-   "coverage": 0.38,
+   "coverage": 0.34,
    "unsafe": 0.231,
    "esc_recall": 0.769
   },
   {
    "sim": 0.5,
    "conf": 0.6,
-   "coverage": 0.38,
+   "coverage": 0.34,
    "unsafe": 0.231,
    "esc_recall": 0.769
   },
   {
    "sim": 0.5,
    "conf": 0.7,
-   "coverage": 0.38,
+   "coverage": 0.34,
    "unsafe": 0.231,
    "esc_recall": 0.769
+  },
+  {
+   "sim": 0.6,
+   "conf": 0.4,
+   "coverage": 0.22,
+   "unsafe": 0.154,
+   "esc_recall": 0.846
+  },
+  {
+   "sim": 0.6,
+   "conf": 0.5,
+   "coverage": 0.22,
+   "unsafe": 0.154,
+   "esc_recall": 0.846
+  },
+  {
+   "sim": 0.6,
+   "conf": 0.6,
+   "coverage": 0.22,
+   "unsafe": 0.154,
+   "esc_recall": 0.846
+  },
+  {
+   "sim": 0.6,
+   "conf": 0.7,
+   "coverage": 0.22,
+   "unsafe": 0.154,
+   "esc_recall": 0.846
   }
  ],
- "reading": "No point meets unsafe<=0.05; chosen point minimizes unsafe at non-trivial coverage. Unsafe is dominated by gold-escalate autos with correct intent (judgment calls), not wrong intents."
+ "distinct_regimes": [
+  {
+   "coverage": 0.34,
+   "unsafe": 0.231,
+   "esc_recall": 0.769
+  },
+  {
+   "coverage": 0.22,
+   "unsafe": 0.154,
+   "esc_recall": 0.846
+  }
+ ],
+ "reading": "sweep over sim x conf on frozen cal-50; many grid cells collapse because model_score is bimodal (the conf knob is empirically dead); test-100 runs at the operating point."
 }

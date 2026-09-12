@@ -72,9 +72,10 @@ def main() -> int:
         "no_agreement": {"agreement": 99.0},  # effectively disable
         "no_sim_no_agreement": {"agreement": 99.0, "sim_thr": 0.0},
     }
+    must_escalate = sum(1 for t in ours.values() if gold[t["id"]]["escalate"] == "escalate")
     abl = {}
     for name, ov in variants.items():
-        n_auto = n_unsafe = 0
+        n_auto = n_missed = n_wrong_intent_auto = 0
         for t in ours.values():
             g = gold[t["id"]]
             dec = decide(t["intent"], t["score"], t["max_sim"], t["risk"],
@@ -82,11 +83,19 @@ def main() -> int:
                          conf_thr=conf_thr, agreement=ov.get("agreement", t.get("agreement", 1.0)))
             if dec["decision"] == "auto":
                 n_auto += 1
-                if t["intent"] != g["intent"] or g["escalate"] == "escalate":
-                    n_unsafe += 1
-        abl[name] = {"coverage": round(n_auto / len(ours), 3),
-                     "unsafe": round(n_unsafe / max(n_auto, 1), 3),
-                     "n_auto": n_auto, "n_unsafe": n_unsafe}
+                if g["escalate"] == "escalate":
+                    n_missed += 1
+                if t["intent"] != g["intent"]:
+                    n_wrong_intent_auto += 1
+        abl[name] = {
+            "coverage": round(n_auto / len(ours), 3),
+            # contract-S18 headline: missed must-escalate / ALL must-escalate
+            "unsafe_false_auto_rate": round(n_missed / max(must_escalate, 1), 3),
+            # diagnostic: unsafe per auto decision
+            "unsafe_per_auto": round((n_missed + n_wrong_intent_auto) / max(n_auto, 1), 3),
+            "n_auto": n_auto, "n_missed_escalations": n_missed,
+            "must_escalate": must_escalate,
+        }
     print("[gate-ablation]", json.dumps(abl))
 
     # --- 3. evidence-amount ablation: top3 (saved) vs top1-only ---
@@ -108,7 +117,10 @@ def main() -> int:
     out = {"retrieval": rq, "gate_ablation": {k: v for k, v in abl.items() if k != "evidence"},
            "evidence_ablation": abl["evidence"],
            "note": "agreement gate removes wrong-intent autos at a coverage cost; "
-                   "top-3 vs top-1 grounding equivalent (verbatim passes trivially)."}
+                   "top-3 vs top-1 grounding equivalent (verbatim passes trivially).",
+           "definitions": {
+               "unsafe_false_auto_rate": "missed must-escalate / ALL must-escalate (contract S18; headline)",
+               "unsafe_per_auto": "missed-or-wrong-intent autos / autos (diagnostic only)"}}
     json.dump(out, open(config.ROOT / "outputs" / "retrieval_ablation.json", "w"), indent=1)
     print("[eval] -> outputs/retrieval_ablation.json")
     return 0

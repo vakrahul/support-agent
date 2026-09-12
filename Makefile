@@ -1,4 +1,4 @@
-.PHONY: help setup fixture test eda eda-fixture eval eval-live leakage human-pack agreement architecture clean
+.PHONY: help setup fixture test eda eda-fixture eval eval-live leakage human-pack agreement architecture demo-image ui demo bank-judges pair-agreement clean
 
 PY ?= python3
 
@@ -13,6 +13,11 @@ help:
 	@echo "  make architecture build report/figures/architecture.png"
 	@echo "  make human-pack   emit blank human-scoring CSVs (fill by hand, no fakes)"
 	@echo "  make agreement    score filled human CSVs (fails loudly if empty)"
+	@echo "  make bank-judges  bank cached judge verdicts into eval results (no net)"
+	@echo "  make pair-agreement compute paired judge-vs-human kappa/rho"
+	@echo "  make demo         run diagnostic pipeline on 4 unique customer queries"
+	@echo "  make demo-image   render colorful real-run demo PNG (report/figures)"
+	@echo "  make ui           real-time web UI on http://localhost:8000"
 
 setup:
 	$(PY) -m pip install -r requirements.txt
@@ -50,6 +55,21 @@ human-pack:
 
 agreement:
 	$(PY) scripts/score_agreement.py
+
+bank-judges:
+	$(PY) scripts/bank_judges.py
+
+pair-agreement:
+	$(PY) scripts/pair_agreement.py
+
+demo-image:
+	$(PY) scripts/make_demo_image.py
+
+ui:
+	$(PY) scripts/ui.py
+
+demo:
+	$(PY) scripts/demo.py --featured
 
 clean:
 	rm -rf __pycache__ */__pycache__ */*/__pycache__ .pytest_cache qdrant_storage

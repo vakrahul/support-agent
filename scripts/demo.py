@@ -222,9 +222,10 @@ FEATURED_SAMPLES = [
 def main():
     parser = argparse.ArgumentParser(description="AmazonHelp AI Support Agent Inspector")
     parser.add_argument("query", nargs="?", type=str, help="Customer query text")
-    parser.add_argument("--id", type=str, help="Golden sample ID (e.g. amz-000, amz-001, amz-003)")
+    parser.add_argument("--id", "--preset", dest="id", type=str, help="Golden sample ID (e.g. amz-000, amz-001, amz-003)")
     parser.add_argument("--sample-random", action="store_true", help="Pick a random golden test sample")
     parser.add_argument("--interactive", action="store_true", help="Run interactive inspection loop")
+    parser.add_argument("--featured", action="store_true", help="Run diagnostic pipeline over top diverse archetype customer queries")
     parser.add_argument("--list", action="store_true", help="List recommended test cases across all intents")
     parser.add_argument("--live", action="store_true", help="Use live API calls rather than replay cache")
     args = parser.parse_args()
@@ -261,6 +262,16 @@ def main():
     print(f"Initializing AmazonHelp Agent (mode={mode})...")
     retriever = Retriever()
     classifier = LLMClassifier()
+
+    if args.featured:
+        featured_ids = ["amz-003", "amz-000", "amz-001", "amz-007"]
+        print(f"\nRunning diagnostic pipeline over {len(featured_ids)} unique customer query archetypes...")
+        for sid in featured_ids:
+            if sid in goldens:
+                q = goldens[sid]["text"]
+                res = run_pipeline(q, retriever, classifier, mode=mode)
+                print_result(res, sample_id=sid)
+        return 0
 
     if args.interactive:
         print("\n" + "=" * 70)
