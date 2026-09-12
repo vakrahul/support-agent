@@ -265,12 +265,37 @@ def main():
 
     if args.featured:
         featured_ids = ["amz-003", "amz-000", "amz-001", "amz-007"]
+        archetype_map = {
+            "amz-003": "Defective Item Return",
+            "amz-000": "Fraud / Blocked Card",
+            "amz-001": "Sarcastic Delivery Delay",
+            "amz-007": "Vague Query",
+        }
         print(f"\nRunning diagnostic pipeline over {len(featured_ids)} unique customer query archetypes...")
+        featured_records = []
         for sid in featured_ids:
             if sid in goldens:
                 q = goldens[sid]["text"]
                 res = run_pipeline(q, retriever, classifier, mode=mode)
                 print_result(res, sample_id=sid)
+                featured_records.append({
+                    "id": sid,
+                    "archetype": archetype_map.get(sid, "General Inquiry"),
+                    "query": q,
+                    "intent": res["intent"],
+                    "score": res["score"],
+                    "max_sim": res["max_sim"],
+                    "agreement": res["agreement"],
+                    "draft": res["draft"],
+                    "decision": res["decision"],
+                    "reason_code": res["reason_code"],
+                    "reason": res["reason"],
+                })
+        out_path = config.OUTPUTS_DIR / "featured_demo.json"
+        out_path.parent.mkdir(parents=True, exist_ok=True)
+        with open(out_path, "w", encoding="utf-8") as f:
+            json.dump(featured_records, f, indent=2)
+        print(f"[demo] Saved {len(featured_records)} featured demos -> {out_path}")
         return 0
 
     if args.interactive:

@@ -48,7 +48,7 @@ ax.annotate("", xy=(18.5, 52), xytext=(16.2, 52), arrowprops=dict(arrowstyle="->
 draw_card(19, 28, 17, 48, bg="#ffffff", border="#93c5fd")
 draw_pill(20.5, 69.5, 14, 4.0, "STAGE 1: INTENT", bg="#eff6ff", border="#bfdbfe", text_color="#1d4ed8")
 ax.text(27.5, 62, "Few-Shot Classifier", ha="center", fontsize=8.5, weight="bold", color="#1e40af", fontfamily="sans-serif")
-ax.text(27.5, 43, "• 5 operational classes\n  + other_unclear\n• Few-shot JSON schema\n• Strict parse validator\n• Platt calibrated score\n  (fitted on cal-50)",
+ax.text(27.5, 43, "• 5 operational classes\n  + other_unclear\n• Few-shot JSON schema\n• Strict parse validator\n• Raw score ≥ 0.70\n  (tuned on cal-50)",
         ha="center", fontsize=7.0, color="#334155", fontfamily="sans-serif")
 
 # Arrow 2 -> 3
@@ -58,7 +58,7 @@ ax.annotate("", xy=(38.5, 52), xytext=(36.2, 52), arrowprops=dict(arrowstyle="->
 draw_card(39, 28, 18, 48, bg="#ffffff", border="#86efac")
 draw_pill(40.5, 69.5, 15, 4.0, "STAGE 2: RETRIEVE", bg="#f0fdf4", border="#bbf7d0", text_color="#15803d")
 ax.text(48, 62, "Qdrant Vector RAG", ha="center", fontsize=8.5, weight="bold", color="#166534", fontfamily="sans-serif")
-ax.text(48, 43, "• 3,334 historical pairs\n• Non-deflection filtered\n• Dense embedding search\n• Top-3 precedent match\n• Cosine similarity score\n• Precedent intent tags",
+ax.text(48, 43, "• 3,334 historical pairs\n• Non-deflection filtered\n• all-MiniLM-L6-v2 (384d)\n• Top-3 precedent match\n• Cosine similarity score\n• Precedent intent tags",
         ha="center", fontsize=7.0, color="#334155", fontfamily="sans-serif")
 
 # Arrow 3 -> 4
@@ -78,7 +78,7 @@ ax.annotate("", xy=(79.5, 52), xytext=(77.2, 52), arrowprops=dict(arrowstyle="->
 draw_card(80, 24, 18, 56, bg="#ffffff", border="#c084fc", lw=1.5)
 draw_pill(81.5, 73.5, 15, 4.0, "STAGE 4: POLICY GATE", bg="#faf5ff", border="#e9d5ff", text_color="#6b21a8")
 ax.text(89, 66.5, "6-Point Verification", ha="center", fontsize=8.5, weight="bold", color="#581c87", fontfamily="sans-serif")
-ax.text(89, 47, "1. Intent ≠ other_unclear\n2. Model score ≥ thresh\n3. Retrieval sim ≥ 0.70\n4. Intent agreement ≥ 2/3\n5. Risk flags == 0\n6. Code validator == pass",
+ax.text(89, 47, "1. Intent ≠ other_unclear\n2. Model conf ≥ 0.70\n3. Retrieval sim ≥ 0.60\n4. Intent agreement ≥ 2/3\n5. Risk flags == 0\n6. Code validator == pass",
         ha="center", fontsize=6.8, color="#3b0764", fontfamily="sans-serif")
 
 # Gate Split Arrows

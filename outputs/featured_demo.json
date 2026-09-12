@@ -1,0 +1,54 @@
+[
+  {
+    "id": "amz-003",
+    "archetype": "Defective Item Return",
+    "query": "So, sent me a broken LP & when I returned it, they sent me an LP by another band. #WTF?",
+    "intent": "refund_return",
+    "score": 0.95,
+    "max_sim": 0.45995666018796466,
+    "agreement": 0.6666666666666666,
+    "draft": "I'm sorry to hear about the trouble with your LP order and the incorrect replacement. I would like to look into this for you. Could you please send us a DM with your order number or the tracking details so I can investigate what happened? For assistance: https://www.amazon.com/returns | Twitter DM: https://twitter.com/messages/compose?recipient_id=AmazonHelp",
+    "decision": "auto",
+    "reason_code": "OK_AUTO",
+    "reason": "confident intent, precedent found, low risk, grounded draft"
+  },
+  {
+    "id": "amz-000",
+    "archetype": "Fraud / Blocked Card",
+    "query": "I have filed a fraud/dispute case and my card is blocked now. I am expecting an answer for this from 3/3",
+    "intent": "refund_return",
+    "score": 0.95,
+    "max_sim": 0.48177658736004914,
+    "agreement": 0.6666666666666666,
+    "draft": "I am very sorry to hear about the frustration this has caused you. I would like to take a closer look into this for you. Could you please send us a DM with your order number or the tracking details so I can investigate this further? For assistance: https://www.amazon.com/returns | Twitter DM: https://twitter.com/messages/compose?recipient_id=AmazonHelp",
+    "decision": "human",
+    "reason_code": "HIGH_RISK",
+    "reason": "matched risk phrase: 'fraud'"
+  },
+  {
+    "id": "amz-001",
+    "archetype": "Sarcastic Delivery Delay",
+    "query": "say they put my parcel through my letterbox on saturday. Still waiting for it to come out the other side \ud83d\ude20 <URL>",
+    "intent": "missing_parcel_tracking",
+    "score": 0.95,
+    "max_sim": 0.6694921650760886,
+    "agreement": 0.0,
+    "draft": "Sorry to hear about the trouble with your order. Please DM us your order number so we can look into this for you.",
+    "decision": "human",
+    "reason_code": "WEAK_EVIDENCE",
+    "reason": "precedent agrees 0.00 < 0.67 with predicted intent; likely misclassified"
+  },
+  {
+    "id": "amz-007",
+    "archetype": "Vague Query",
+    "query": "How many more days?? Do u have any time limit???",
+    "intent": "delivery_delay",
+    "score": 0.85,
+    "max_sim": 0.6117968054743821,
+    "agreement": 0.0,
+    "draft": "Sorry to hear about the trouble with your order. Please DM us your order number so we can look into this for you.",
+    "decision": "human",
+    "reason_code": "WEAK_EVIDENCE",
+    "reason": "precedent agrees 0.00 < 0.67 with predicted intent; likely misclassified"
+  }
+]

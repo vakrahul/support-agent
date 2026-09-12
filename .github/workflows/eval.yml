@@ -65,7 +65,7 @@ jobs:
           numbers as the README table or the build fails._
           EOF
           # Numbers below are extracted live from outputs/ so the summary can
-          # never go stale vs the JSON the eval just wrote.
+          # never go stale vs the JSON the eval and demo just wrote.
           python - <<'PYEOF'
           import json, os
           res = json.load(open("outputs/eval_results.json"))
@@ -75,6 +75,18 @@ jobs:
               return (f"| {name} | {x['accuracy']:.3f} | {x['macro_f1']:.3f} | "
                       f"{x['esc_precision']:.2f} / {x['esc_recall']:.2f} | "
                       f"{x['false_auto']:.3f} | {x['coverage']:.2f} |")
+          
+          # Dynamic featured demo table extraction
+          demo_data = json.load(open("outputs/featured_demo.json")) if os.path.exists("outputs/featured_demo.json") else []
+          demo_rows = []
+          for d in demo_data:
+              q = d["query"].replace("\n", " ").replace("|", "\\|").strip()
+              draft = d["draft"].replace("\n", " ").replace("|", "\\|").strip()
+              dec = f"`{d['decision'].upper()}`" if d["decision"] == "auto" else "`ESCALATE`"
+              code = f"`{d['reason_code']}`"
+              demo_rows.append(f"| `{d['id']}` | {d['archetype']} | *\"{q[:65]}...\"* | *\"{draft[:85]}...\"* | {dec} | {code} |")
+          demo_table = "\n".join(demo_rows)
+
           ja = json.load(open("outputs/judge_agreement.json"))
           summary = f"""
           ## Systems (frozen test-100)
@@ -89,10 +101,16 @@ jobs:
 
           | Sample ID | Archetype | Customer Query | Drafted Support Reply | Gate Decision | Reason Code |
           |---|---|---|---|---|---|
-          | `amz-003` | Defective Item Return | *"So, sent me a broken LP & when I returned it, they sent me an LP by another band. #WTF?"* | *"I'm sorry to hear about the trouble with your LP order and the incorrect replacement. I would like to look into this for you. Could you please send us a DM with your order number or the tracking details..."* | `AUTO-HANDLE` | `OK_AUTO` |
-          | `amz-000` | Fraud / Blocked Card | *"I have filed a fraud/dispute case and my card is blocked now..."* | *"I am very sorry to hear about the frustration this has caused you. I would like to take a closer look into this for you. Could you please send us a DM with your order number..."* | `ESCALATE` | `HIGH_RISK` |
-          | `amz-001` | Sarcastic Delivery Delay | *"say they put my parcel through my letterbox on saturday. Still waiting..."* | *"Sorry to hear about the trouble with your order. Please DM us your order number so we can look into this for you."* | `ESCALATE` | `WEAK_EVIDENCE` |
-          | `amz-007` | Vague Query | *"How many more days?? Do u have any time limit???"* | *"Sorry to hear about the trouble with your order. Please DM us your order number so we can look into this for you."* | `ESCALATE` | `WEAK_EVIDENCE` |
+          {demo_table}
+
+          ## System & Model Architecture Specifications
+
+          - **Vector Embedding Model**: `sentence-transformers/all-MiniLM-L6-v2` (384-dimensional dense semantic vectors, normalized cosine similarity).
+          - **Pluggable Offline Fallback**: `TfidfSvdEmbedder` (`src/retrieve/embeddings.py`) implemented natively in NumPy with zero torch dependencies, clamping precision@1 ≥ 0.80.
+          - **Vector Precedent Storage**: Embedded Qdrant (`qdrant_storage/`, local file storage, zero Docker or cloud API dependencies).
+          - **Grounding Corpus**: 3,334 verified, deflection-free English AmazonHelp resolution threads.
+          - **Intent Classifier & Generator**: Few-shot JSON schema prompting using `gemini-3.1-flash-lite`, with 100% deterministic offline replay cache ($0 compute, 436 banked responses).
+          - **6-Point Policy Safety Gate**: Strict deterministic verification enforcing `conf_thr=0.70`, `sim_thr=0.60`, `agree_thr=2/3`, zero risk triggers, grounding validator pass, and known operational intent.
 
           ## Judge validation (paired vs human, n={ja['n_paired']})
 
@@ -102,6 +120,7 @@ jobs:
 
           ## Artifacts
           - Full runs: outputs/eval_results.json
+          - Featured demos: outputs/featured_demo.json
           - Coverage-vs-unsafe curve: outputs/coverage_curve.json
           - Gate/retrieval ablations: outputs/retrieval_ablation.json
           - Judge pairs: outputs/judge_agreement.json

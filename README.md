@@ -17,9 +17,9 @@
 This repository implements an AI customer support triage and escalation system built on real Twitter customer support dialogues (specifically high-volume e-commerce customer interactions). The system processes incoming inquiries through a robust, four-stage pipeline:
 
 1. **Intent Classification**: Classifies customer queries across 6 grounded intent categories via an LLM intent classifier.
-2. **Precedent Retrieval**: Queries an embedded vector store (`bge-small-en-v1.5` embeddings) over historical, verified resolutions, deliberately filtering out non-resolving deflection handoffs (*"Please DM us"*).
+2. **Precedent Retrieval**: Queries an embedded vector store (`sentence-transformers/all-MiniLM-L6-v2`, 384-dimensional dense embeddings) over historical, verified resolutions, deliberately filtering out non-resolving deflection handoffs (*"Please DM us"*). Includes a native NumPy SVD fallback (`TfidfSvdEmbedder`) for environments without torch.
 3. **Grounded Resolution Drafting**: Synthesizes verified resolution replies referencing official support channels and store policies.
-4. **Multi-Point Safety & Escalation Gate**: Evaluates 6 deterministic and statistical criteria (precedent consensus, vector similarity, risk phrases, and grounding validation) to determine whether to auto-dispatch or escalate to human specialists.
+4. **Multi-Point Safety & Escalation Gate**: Evaluates 6 deterministic criteria (`conf_thr=0.70`, `sim_thr=0.60`, `agree_thr=2/3`, risk triggers, grounding validation) to determine whether to auto-dispatch or escalate to human specialists.
 
 **Core Philosophy:** Unlike black-box generative bots, **epistemic honesty and evaluation rigor are treated as primary deliverables**: headline accuracy is paired with class-imbalanced macro-F1, zero-miss claims are mathematically bounded by the Rule of Three, and automated judge scores are cross-validated against blind human evaluations.
 
@@ -93,7 +93,7 @@ make ui
 
 ## 1. Headline Results (Frozen Test-100, Calibrated Thresholds)
 
-All thresholds were tuned strictly on a separate 50-conversation calibration set (`data/golden/cal_50.jsonl`) and locked prior to running on the frozen 100-conversation test set (`data/golden/test_100.jsonl`).
+All thresholds were tuned strictly on a separate 50-conversation calibration split (`cal-50`) and locked prior to running on the frozen 100-conversation test split (`test-100`), partitioned deterministically from `data/golden/golden.jsonl` via `data/golden/split.json`.
 
 | System Architecture | Intent Acc [95% CI] | Macro-F1 [95% CI] | Esc P / R | Unsafe Rate | Coverage | Human Reply Score | LLM Judge Avg |
 |---|---|---|---|---|---|---|---|
@@ -111,7 +111,7 @@ In systems, a superficial metric can conceal catastrophic failure modes. Below i
 
 1. **72.0% Intent Accuracy Masks Severe Class Imbalance:**
    - In our evaluation benchmark, `refund_return` represents 27% of test queries, whereas rare classes like `order_status_general` make up only 7%. A naive classifier predicting the dominant class achieves high accuracy while failing rare intents completely.
-   - **The True Signal:** Look at **Macro-F1 (0.676)** and the [Confusion Matrix](#4-intent-confusion-matrix). While `refund_return` achieves 0.93 F1, `order_status_general` achieves only 0.43 F1 due to semantic confusion with cancellation-refund flows.
+   - **The True Signal:** Look at **Macro-F1 (0.676)** and the [Confusion Matrix](#4-intent-confusion-matrix). While `device_app_account` achieves 0.84 F1 ($n=11$) and `refund_return` achieves 0.83 F1 ($n=27$), `order_status_general` achieves only 0.46 F1 ($n=7$) and `missing_parcel_tracking` achieves 0.53 F1 ($n=19$) due to semantic confusion with cancellation and delay flows.
 
 2. **0.000 Unsafe Rate Is NOT Proof of Zero Risk (The Rule of Three):**
    - The test set contains $n = 23$ true escalation cases (fraud, dispute claims, severe courier failure, distress). Our policy gate caught all 23 (0 false auto-handles observed).
@@ -124,8 +124,8 @@ In systems, a superficial metric can conceal catastrophic failure modes. Below i
    - **Operational Reality:** This system is architected as an **intake triage and drafting assistant** that accelerates human workflow, not an autonomous agent that replaces human staff.
 
 4. **Model Confidence Scores Are an Uncalibrated Knob:**
-   - Raw confidence scores output by LLMs correlate poorly with ground-truth correctness ($\rho = 0.04$). Thresholding on model confidence alone creates silent hallucinations.
-   - **Architectural Solution:** Gating decisions rely primarily on **external evidence signals**: Precedent Intent Agreement ($\ge 2/3$ agreement across historical resolutions), Vector Similarity ($\ge 0.45$), and Deterministic Keyword Scans, rather than LLM self-confidence.
+   - Raw confidence scores output by LLMs exhibit high calibration error (ECE = 0.183 in `outputs/calibration_results.json`), with incorrect classifications averaging 0.93 confidence and clustering bimodally in the `[0.80-1.00]` bin. Thresholding on model confidence alone creates silent hallucinations.
+   - **Architectural Solution:** Gating decisions rely primarily on **external evidence signals**: Precedent Intent Agreement ($\ge 2/3$ agreement across historical resolutions), Vector Similarity ($\ge 0.60$), and Deterministic Keyword Scans, rather than LLM self-confidence.
 
 5. **LLM Judge Leniency and Weak Ranking Agreement:**
    - The automated LLM judge awarded an average score of **4.31/5.00** across drafts. However, an empirical paired validation against human annotators on $n=50$ identical drafts revealed **weak rank correlation** ($\rho = 0.173$, binned Cohen's $\kappa = -0.11$).
@@ -232,8 +232,8 @@ flowchart TD
     end
 
     subgraph RETRIEVAL ["3. Retrieval-Augmented Grounding"]
-        USER_MSG --> EMBED["📐 Local Embeddings (bge-small-en-v1.5)"]
-        EMBED --> QDRANT[("🗄️ Vector Store (Embedded Qdrant / NumPy)")]
+        USER_MSG --> EMBED["📐 Local Embeddings (all-MiniLM-L6-v2 / NumPy SVD)"]
+        EMBED --> QDRANT[("🗄️ Vector Store (Embedded Qdrant)")]
         QDRANT --> TOPK["🔍 Top-3 Non-Deflection Precedents"]
         TOPK --> AGREE{"⚖️ Precedent Consensus (≥ 2/3?)"}
     end

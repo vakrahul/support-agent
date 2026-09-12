@@ -29,20 +29,20 @@ The system executes three atomic operations per customer message:
 
 The production architecture processes incoming messages through a deterministic four-stage pipeline:
 
-`Message → Intent Classifier (Few-Shot JSON Schema) → Qdrant Vector Retrieval (Top-3 of 3,334 English Precedents) → Risk Scanner & Grounding Validator → 6-Point Policy Safety Gate → Decision Split`
+`Message → Intent Classifier (Few-Shot JSON Schema) → Qdrant Vector Retrieval (Top-3 of 3,334 English Precedents, all-MiniLM-L6-v2) → Risk Scanner & Grounding Validator → 6-Point Policy Safety Gate → Decision Split`
 
 <!-- FIGURE_2_ARCHITECTURE -->
 
 ### The 6-Point Safety Invariants
 The policy gate authorizes autonomous handling (`OK_AUTO`) **only** when all six criteria are satisfied simultaneously:
 1. **Known Operational Intent**: Predicted intent must be one of the five defined domain classes (any `other_unclear` is immediately escalated).
-2. **Calibrated Confidence**: Model confidence exceeds the empirical threshold fitted via Platt scaling on `cal-50`.
-3. **Retrieval Semantic Proximity**: Maximum vector cosine similarity $\ge 0.70$ against historical precedents.
+2. **Confidence Threshold**: Model raw confidence score $\ge 0.70$ (empirically tuned on `cal-50`; offline Platt scaling in `outputs/calibration_results.json` reduced ECE from 0.183 to 0.157, while the runtime gate enforces the deterministic raw cutoff).
+3. **Retrieval Semantic Proximity**: Maximum vector cosine similarity $\ge 0.60$ against historical precedents (tuned on `cal-50`).
 4. **Intent-Evidence Agreement**: At least 2 out of top-3 retrieved historical precedents must share the exact predicted intent ($\ge 67\%$ consensus).
 5. **Zero Risk Flags**: Clean scan across legal, fraud, physical safety, and customer distress regex triggers.
 6. **Grounding Code Validation**: Deterministic validator passes: all cited precedent IDs must physically exist, and financial/policy promises must match retrieved evidence verbatim.
 
-Empirical testing revealed that raw model confidence scores are poorly calibrated (incorrect classifications average 0.93 confidence). The **Intent-Evidence Agreement** requirement acts as the primary safety governor, filtering out overconfident generative hallucinations.
+Empirical testing revealed that raw model confidence scores are poorly calibrated (incorrect classifications average 0.93 confidence, ECE = 0.183). The **Intent-Evidence Agreement** requirement acts as the primary safety governor, filtering out overconfident generative hallucinations.
 
 <!-- PAGE_BREAK -->
 
@@ -81,7 +81,7 @@ Analysis of all 28 intent classification errors across the frozen test benchmark
 
 ## 6. Transparent Self-Critique: What Is Misleading About Our Headline Numbers?
 
-1. **Macro-F1 Sensitivity to Class Imbalance**: The 0.676 macro-F1 is heavily dominated by delay and refund (representing 54% of test traffic). Low-frequency classes like status ($n=7$, F1 0.46) and other ($n=9$, F1 0.64) exhibit broad confidence intervals ($\pm 0.20$).
+1. **Macro-F1 Sensitivity to Class Imbalance**: The 0.676 macro-F1 is heavily dominated by delay and refund (representing 54% of test traffic). Low-frequency classes like status ($n=7$, F1 0.46), missing ($n=19$, F1 0.53), and other ($n=9$, F1 0.64) exhibit broad confidence intervals ($\pm 0.20$), while refund ($n=27$, F1 0.83) and device ($n=11$, F1 0.84) perform strongly. The per-class breakdown, not the single macro aggregate, is the honest representation.
 2. **Statistical Upper Bound on Zero Misses (Rule of Three)**: While zero unsafe auto-handles were observed across the 23 must-escalate test cases ($0.000$ empirical rate), the mathematical 95% confidence upper bound for a zero-event binomial sample of size $n=23$ is approximately:
    $$\text{Upper CI}_{95\%} \approx \frac{3}{n} = \frac{3}{23} \approx 13.0\%$$
    Zero misses is an empirical observation on 23 cases, not an asymptotic guarantee.

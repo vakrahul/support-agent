@@ -67,11 +67,9 @@ DATA_GOLDEN = ROOT / "data" / "golden"    # committed: hand-labelled eval set
 CACHE_DIR = ROOT / "cache"                # committed: replayable LLM responses
 REPORT_DIR = ROOT / "report"
 FIGURES_DIR = REPORT_DIR / "figures"
+OUTPUTS_DIR = ROOT / "outputs"
 
-
-
-
-for _d in (DATA_RAW, DATA_SAMPLE, DATA_GOLDEN, CACHE_DIR, REPORT_DIR, FIGURES_DIR):
+for _d in (DATA_RAW, DATA_SAMPLE, DATA_GOLDEN, CACHE_DIR, REPORT_DIR, FIGURES_DIR, OUTPUTS_DIR):
     _d.mkdir(parents=True, exist_ok=True)
 
 _load_bare_env(ROOT / ".env")
