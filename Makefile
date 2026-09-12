@@ -1,4 +1,4 @@
-.PHONY: help setup fixture test eda eda-fixture eval eval-live leakage human-pack agreement architecture demo-image ui demo bank-judges pair-agreement clean
+.PHONY: help setup fixture test eda eda-fixture eval eval-live leakage human-pack agreement architecture demo-image ui demo bank-judges pair-agreement report integrations clean
 
 PY ?= python3
 
@@ -11,12 +11,14 @@ help:
 	@echo "  make eval         headline results (replay mode: cached LLM, \$$0)"
 	@echo "  make eval-live    re-run against the Gemini API (needs GEMINI_API_KEY)"
 	@echo "  make architecture build report/figures/architecture.png"
+	@echo "  make demo-image   render white-and-white real-run demo PNG (report/figures)"
+	@echo "  make integrations build report/figures/integrations.png"
+	@echo "  make report       compile report/REPORT.md to report/REPORT.pdf (Edge headless)"
 	@echo "  make human-pack   emit blank human-scoring CSVs (fill by hand, no fakes)"
 	@echo "  make agreement    score filled human CSVs (fails loudly if empty)"
 	@echo "  make bank-judges  bank cached judge verdicts into eval results (no net)"
 	@echo "  make pair-agreement compute paired judge-vs-human kappa/rho"
 	@echo "  make demo         run diagnostic pipeline on 4 unique customer queries"
-	@echo "  make demo-image   render colorful real-run demo PNG (report/figures)"
 	@echo "  make ui           real-time web UI on http://localhost:8000"
 
 setup:
@@ -49,6 +51,12 @@ leakage:
 
 architecture:
 	$(PY) scripts/make_architecture_png.py
+
+integrations:
+	$(PY) scripts/make_integrations_png.py
+
+report:
+	$(PY) scripts/make_pdf_report.py
 
 human-pack:
 	$(PY) scripts/make_human_scoring_pack.py
