@@ -2,36 +2,36 @@
 
 ## 1. Problem framing: what "good" means
 
-Good = **safe automation, not maximum automation**. In enterprise e-commerce customer support (specifically AmazonHelp on Twitter/X), an incorrect auto-handled reply—such as an invented refund commitment, incorrect device troubleshooting, or an unflagged credit card fraud claim—imposes severe brand damage and legal liability that far exceeds the modest operational cost of a human agent review. Consequently, our primary performance metric is not raw classification accuracy, but the **coverage-versus-unsafe curve**: maximizing the volume of routine customer inquiries safely automated while maintaining a provably zero (or near-zero) false auto-handle rate on sensitive or high-risk cases.
+Good = **safe automation, not maximum automation**. In enterprise customer support (specifically AmazonHelp on Twitter/X), an incorrect auto-handled reply—such as an invented refund commitment, wrong device troubleshooting, or an unflagged credit card fraud claim—imposes severe brand damage and legal liability that far exceeds the modest operational cost of human agent review. Consequently, our primary metric is not raw classification accuracy, but the **coverage-versus-unsafe curve**: maximizing routine customer inquiries safely automated while maintaining a provably zero (or near-zero) false auto-handle rate on sensitive or high-risk cases.
 
-The system performs three atomic operations per incoming customer message:
-1. **Intent Classification**: Classifies customer utterances into five operational domain intents (`delay`, `missing`, `refund`, `device`, `status`) plus an explicit fallback class (`other_unclear`).
+The system executes three atomic operations per customer message:
+1. **Intent Classification**: Classifies utterances into five operational domain intents (`delay`, `missing`, `refund`, `device`, `status`) plus fallback (`other_unclear`).
 2. **Precedent Retrieval & Grounded Drafting**: Retrieves historical, verified AmazonHelp resolutions from vector storage and drafts responses constrained strictly to retrieved factual evidence.
-3. **Deterministic Policy Safety Gating**: Evaluates a 6-point verification policy, emitting either an automated dispatch decision (`OK_AUTO`) or an escalation decision (`ESCALATE`) paired with a machine-readable audit reason code.
+3. **Deterministic Policy Safety Gating**: Evaluates a 6-point verification policy, emitting an automated dispatch decision (`OK_AUTO`) or an escalation decision (`ESCALATE`) paired with a machine-readable audit reason code.
 
-**Explicit Non-Goals:** Multi-turn conversational memory (evaluating turn-1 triage); parameter fine-tuning (using frozen models to ensure zero-cost reproduction); multilingual handling (filtering to English-only); cross-brand generalization (single brand, deep domain grounding); unmonitored live posting; and external cloud vector DB dependencies in the evaluation path.
+**Explicit Non-Goals:** Multi-turn conversational memory (turn-1 triage); parameter fine-tuning (frozen models for $0 reproduction); multilingual handling (English-only filter); cross-brand generalization (single brand, deep domain grounding); unmonitored live posting; and cloud vector DB dependencies in eval.
 
 ## 2. Data & brand selection
 
-**Dataset Foundation:** Ingested `twcs.csv` (~3M customer support tweets). Reconstructed customer-to-brand dialogue pairs with complete conversational context: 510,927 paired threads across 108 distinct global brands from a 1.2M-row initial scan. The dedicated working corpus comprises 6,000 AmazonHelp conversation pairs.
+**Dataset Foundation:** Ingested `twcs.csv` (~3M customer support tweets). Reconstructed customer-to-brand dialogue pairs with complete conversational context: 510,927 paired threads across 108 distinct global brands from a 1.2M-row initial scan. Dedicated working corpus: 6,000 AmazonHelp conversation pairs.
 
-`report/figures/brand_selection.png`
+**Empirical Selection Rationale:** AmazonHelp was selected after empirical profiling across all 108 brands (`docs/brand_selection.md`). While ranking #14 in nominal resolution rate (70.1% resolution, 29.9% deflection rate, 19% non-English tweets), AmazonHelp ranks **#1 in absolute groundable resolution volume** with 48.6k clean, substantive problem-solving pairs—providing the industry's richest evidence retrieval pool for RAG grounding.
 
-**Empirical Selection Rationale:** AmazonHelp was selected after comprehensive empirical profiling across all 108 brands (documented in `docs/brand_selection.md`). While ranking #14 in nominal resolution rate (70.1% resolution, 29.9% deflection rate, 19% non-English tweets), AmazonHelp ranks **#1 in absolute groundable resolution volume** with 48.6k clean, substantive problem-solving pairs—providing the industry's richest evidence retrieval pool for RAG grounding.
+**The Deflection Trap:** Systematic auditing revealed that most high-volume brands achieve superficial "resolutions" by dispatching generic deflections (*"Please DM us your order number"*). A retrieval database populated with deflections conditions the generator to regurgitate evasive boilerplate while scoring spuriously high on groundedness. We engineered data-mined deflection filters (URL-aware classifiers, self-service overrides, regex heuristics) to purge all deflection boilerplate from the vector corpus. Deflection filtering was executed strictly over English pairs, preventing false positive matches from foreign dialogues.
 
-**The Deflection Trap:** Systematic data auditing revealed that most high-volume brands achieve superficial "resolutions" by dispatching generic deflections (e.g., *"Please DM us your order number"*). If ingested uncritically, a retrieval database populated with deflections conditions the generative drafter to regurgitate evasive boilerplate while scoring spuriously high on groundedness metrics. We engineered data-mined deflection filters (URL-aware classifiers, self-service overrides, and regex heuristics) to purge all deflection boilerplate from the vector retrieval corpus. Crucially, deflection filtering was executed strictly over English pairs, preventing false positive matches from foreign-language dialogues.
+**Gratitude Signal Diagnostic & Leakage Protocol:** Follow-up "thank you" tweets showed near-zero lift over substantive resolutions (customers frequently thank brands even after generic deflections), confirming gratitude is social politeness rather than ground-truth resolution. To ensure benchmark integrity, all 150 golden evaluation items (IDs and exact text matches) were rigorously scrubbed from both the 3,334-case vector retrieval corpus and baseline training pools (`scripts/check_leakage.py` enforces 0 exact, 0 near-dupe, 0 train overlap). Pre-fix leakage caused baseline B1's macro-F1 to collapse from 0.644 to 0.354 after sanitization—reported, not hidden.
 
-**Gratitude Signal Diagnostic:** An empirical audit of customer "thank you" follow-up tweets revealed near-zero lift over substantive resolutions (+compliant customers frequently thank brands even after generic deflections). Consequently, customer gratitude was classified as social politeness rather than ground-truth resolution confirmation and was retained strictly as an auxiliary diagnostic.
+<!-- FIGURE_1_BRAND_SELECTION -->
 
-**Leakage Elimination Protocol:** To ensure complete benchmark integrity, all 150 golden evaluation items (IDs and exact text matches) were rigorously scrubbed from both the 3,334-case vector retrieval corpus and the baseline training pools. An automated pre-commit audit (`scripts/check_leakage.py`) enforces zero exact matches, zero near-duplicates, and zero weak-train overlaps. During development, this audit uncovered a legacy artifact where 100/150 golden items were present in the retrieval corpus and 108/150 in the TF-IDF training set; after sanitization, baseline B1's macro-F1 dropped from 0.644 to 0.354. That performance correction is transparently disclosed.
+<!-- PAGE_BREAK -->
 
 ## 3. System Architecture & 6-Point Policy Safety Gate
 
 The production architecture processes incoming messages through a deterministic four-stage pipeline:
 
-`report/figures/architecture.png`
-
 `Message → Intent Classifier (Few-Shot JSON Schema) → Qdrant Vector Retrieval (Top-3 of 3,334 English Precedents) → Risk Scanner & Grounding Validator → 6-Point Policy Safety Gate → Decision Split`
+
+<!-- FIGURE_2_ARCHITECTURE -->
 
 ### The 6-Point Safety Invariants
 The policy gate authorizes autonomous handling (`OK_AUTO`) **only** when all six criteria are satisfied simultaneously:
@@ -43,6 +43,8 @@ The policy gate authorizes autonomous handling (`OK_AUTO`) **only** when all six
 6. **Grounding Code Validation**: Deterministic validator passes: all cited precedent IDs must physically exist, and financial/policy promises must match retrieved evidence verbatim.
 
 Empirical testing revealed that raw model confidence scores are poorly calibrated (incorrect classifications average 0.93 confidence). The **Intent-Evidence Agreement** requirement acts as the primary safety governor, filtering out overconfident generative hallucinations.
+
+<!-- PAGE_BREAK -->
 
 ## 4. Empirical Evaluation vs. Baselines
 
@@ -62,9 +64,11 @@ All systems were evaluated on the frozen, held-out `test-100` benchmark using op
 - **Response Quality Assessment**: On human evaluation ($n=50$, 1–5 groundedness rubric), our RAG drafts scored **4.16 / 5.0**, substantially outperforming B1 verbatim retrieval (2.45) and B0 canned boilerplate (2.70). An automated cross-model LLM judge scored our drafts at 4.314 ($n=98$). Paired agreement analysis against human labels ($n=50$) revealed weak rank correlation ($\rho=0.173, \kappa=-0.11$), primarily due to judge generosity on borderline drafts. Consequently, human scoring remains our primary ground-truth anchor.
 - **Inference Efficiency & Cost**: 100% reproducible via local replay cache at **$0.00 spend**. Vector retrieval latency achieves $p50 = 32\text{ms}$ and $p95 = 39\text{ms}$ running locally on CPU.
 
+<!-- PAGE_BREAK -->
+
 ## 5. Real Customer Executions & Failure Mode Taxonomy
 
-`report/figures/demo_run.png`
+<!-- FIGURE_3_DEMO_RUN -->
 
 Analysis of all 28 intent classification errors across the frozen test benchmark categorizes the failure modes into five operational clusters:
 1. **Delay vs. Missing Ambiguity (9/28, 32%)**: Customer statements describing severe courier delays share extensive semantic overlap with lost package inquiries (e.g., `amz-012`, `amz-082`). *Remediation: Introduce an explicit intermediate "failed attempt / shipment stalled" intent state.*
@@ -72,6 +76,8 @@ Analysis of all 28 intent classification errors across the frozen test benchmark
 3. **Unstructured Customer Rants (5/28, 18%)**: Emotional, multi-sentence rants lacking explicit transaction identifiers were categorized as `other_unclear`. While safely escalated to humans, intent recall was penalized. *Remediation: Augment few-shot exemplars with noisy, unstructured complaints.*
 4. **Tracking and Carrier Return Divergence (4/28, 14%)**: Edge cases involving return-to-sender and third-party courier tracking straddled device, missing, and delay classifications.
 5. **Residual Complex Inquiries (7/28, 25%)**: Complex compound questions (e.g., `amz-142` "When is my Echo arriving?" combining hardware device and courier delay). The prior short-text vulnerability (`amz-102`, "No tracking???", 12 chars) was resolved by the ultra-short character floor.
+
+<!-- PAGE_BREAK -->
 
 ## 6. Transparent Self-Critique: What Is Misleading About Our Headline Numbers?
 
@@ -87,7 +93,9 @@ Analysis of all 28 intent classification errors across the frozen test benchmark
 
 To bridge this validated decision core into live enterprise environments, the immediate engineering roadmap focuses on two high-leverage architectural integrations:
 
-`report/figures/integrations.png`
+<!-- FIGURE_4_INTEGRATIONS -->
+
+<!-- PAGE_BREAK -->
 
 ### Track A: Production Twitter / X Webhook Bot Integration
 - **Account Activity API Ingestion**: Deploy an asynchronous webhook listener subscribing to real-time Twitter/X Account Activity API streams. Incoming @AmazonHelp customer mentions and direct messages (DMs) are ingested into an event queue.
@@ -105,26 +113,11 @@ To bridge this validated decision core into live enterprise environments, the im
   4. `evaluate_policy_gate(draft: str, intent: str, precedents: list)`: Executes the full 6-point deterministic safety audit, verifying citations, scanning risk keywords, and returning an enforceable `OK_AUTO` or `ESCALATE` mandate.
 - **Safe Agent Orchestration**: This decoupling enables external AI agents to leverage verified enterprise support domain knowledge while guaranteeing strict adherence to deterministic safety policies.
 
-### Track C: Algorithmic Refinements
-- **Inter-Rater Agreement ($\kappa$)**: Conduct double-blind adjudication of 30 flagged boundary cases with a second domain annotator to calculate Cohen’s $\kappa$ and expand the golden benchmark to 250 verified items.
+### Track C: Algorithmic Refinements & Decision Log
+- **Inter-Rater Agreement ($\kappa$)**: Double-blind adjudication of 30 flagged boundary cases with a second domain annotator to calculate Cohen’s $\kappa$ and expand the golden benchmark to 250 verified items.
 - **Three-State "Failed Attempt" Intent**: Decouple routine transit delays from lost shipments to eliminate the top source of classification confusion (32% of errors).
 - **NLI-Based Grounding Validator**: Replace strict regex checks with a local natural language inference (NLI) model to verify premise-hypothesis entailment for complex policy claims without false regex trips.
 
-## 8. Architectural Decision Log
+## 8. Architectural Decision Log (15 Core Decisions)
 
-The system design reflects 15 core architectural decisions documented in `DECISIONS.md`:
-1. Brand selection prioritized groundable volume over superficial resolution rate (deflection filtering was essential).
-2. Evaluation metrics were implemented directly in NumPy to guarantee complete mathematical transparency and trivial auditability.
-3. The coverage-vs-unsafe curve was chosen as the primary evaluation claim rather than raw accuracy.
-4. The policy gate was explicitly optimized for recall on must-escalate cases, accepting lower precision as the operational cost of customer safety.
-5. Human evaluation was established as the primary ground truth, with LLM judges demoted to secondary regression monitors following empirical agreement validation.
-6. Vector retrieval utilized local embeddings and embedded Qdrant storage to ensure 100% offline, zero-network reproducibility ($0 spend).
-7. Direct LLM API invocations with versioned cache keys were utilized rather than heavyweight orchestration frameworks.
-8. Replay cache misses were treated as fatal runtime errors to prevent unmonitored evaluation drift.
-9. Pluggable embedding architectures were implemented with local SVD fallbacks to eliminate cloud dependencies.
-10. Intent taxonomy boundaries were restricted to an operational band ($k \in [4, 9]$) to prevent uninterpretable cluster fragmentation.
-11. Intent taxonomy was frozen to five core domains plus `other_unclear`, with retrieval performance validated by cross-intent consistency.
-12. The evaluation benchmark was frozen into immutable calibration and test splits following structured adjudication passes.
-13. Escalation keyword lists were narrowed through empirical failure analysis rather than intuitive over-filtering.
-14. An intent-evidence agreement threshold ($\ge 2/3$) was introduced as the primary safeguard against uncalibrated model overconfidence.
-15. Quota constraints and model deprecations were treated as engineering realities and managed via deterministic replay caching.
+Documented in `DECISIONS.md`: (1) Brand selected by groundable volume, deflections filtered; (2) Evaluation metrics hand-implemented in NumPy; (3) Coverage-vs-unsafe curve as headline result; (4) Escalation tuned for recall on must-escalate; (5) Human evaluation primary, LLM judge secondary cross-check; (6) Local embeddings and embedded Qdrant for $0 replay; (7) Synthetic fixture and direct SDK invocations; (8) Cache miss in replay treated as hard error; (9) Pluggable embeddings with NumPy SVD fallback; (10) Operational intent band $k \in [4, 9]$; (11) Frozen 5+other taxonomy; (12) Stratified golden benchmark locked across 4 passes; (13) NaN-hardened detectors and focused escalation keywords; (14) Intent-evidence agreement ($\ge 2/3$) gating; (15) Quota and model lifecycle managed via deterministic replay caching.

@@ -1,5 +1,5 @@
-"""Generate a polished, publication-grade PDF report using Python-Markdown and headless Edge.
-Pure white-and-white theme, verified 4-figure embedding, clean pagination.
+"""Generate a publication-grade PDF report using Python-Markdown and headless Edge.
+Strict 6-page layout, zero double-replacement artifacts, pure white styling.
 """
 from __future__ import annotations
 
@@ -18,19 +18,19 @@ CSS = """
 
 @page {
     size: A4;
-    margin: 14mm 14mm 14mm 14mm;
+    margin: 10mm 12mm 10mm 12mm;
     @bottom-right {
         content: counter(page) " / " counter(pages);
         font-family: 'Inter', sans-serif;
-        font-size: 7.5pt;
+        font-size: 7.2pt;
         color: #64748b;
     }
 }
 
 body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-    font-size: 8.8pt;
-    line-height: 1.40;
+    font-size: 8.3pt;
+    line-height: 1.34;
     color: #0f172a;
     background-color: #ffffff;
     margin: 0;
@@ -38,20 +38,20 @@ body {
 }
 
 h1 {
-    font-size: 15.5pt;
+    font-size: 14.5pt;
     font-weight: 700;
     color: #0f172a;
     margin-top: 0;
-    margin-bottom: 4px;
-    padding-bottom: 6px;
+    margin-bottom: 3px;
+    padding-bottom: 4px;
     border-bottom: 2px solid #2563eb;
     letter-spacing: -0.02em;
 }
 
 .subtitle {
-    font-size: 8.5pt;
+    font-size: 8.0pt;
     color: #475569;
-    margin-bottom: 12px;
+    margin-bottom: 8px;
     font-weight: 500;
 }
 
@@ -60,42 +60,42 @@ h1 {
     background: #f8fafc;
     border: 1px solid #cbd5e1;
     border-radius: 4px;
-    padding: 2px 7px;
-    font-size: 7.5pt;
+    padding: 1px 6px;
+    font-size: 7.2pt;
     font-weight: 600;
     color: #334155;
-    margin-right: 5px;
+    margin-right: 4px;
 }
 
 h2 {
-    font-size: 11.0pt;
+    font-size: 10.5pt;
     font-weight: 700;
     color: #1e293b;
-    margin-top: 13px;
-    margin-bottom: 4px;
+    margin-top: 9px;
+    margin-bottom: 3px;
     padding-bottom: 2px;
     border-bottom: 1px solid #e2e8f0;
     letter-spacing: -0.01em;
 }
 
 h3 {
-    font-size: 9.5pt;
+    font-size: 9.0pt;
     font-weight: 600;
     color: #334155;
-    margin-top: 9px;
-    margin-bottom: 3px;
+    margin-top: 7px;
+    margin-bottom: 2px;
 }
 
 p {
     margin-top: 0;
-    margin-bottom: 6px;
+    margin-bottom: 4px;
     text-align: justify;
 }
 
 ul, ol {
-    margin-top: 2px;
-    margin-bottom: 6px;
-    padding-left: 18px;
+    margin-top: 1px;
+    margin-bottom: 4px;
+    padding-left: 16px;
 }
 
 li {
@@ -105,13 +105,13 @@ li {
 table {
     width: 100%;
     border-collapse: collapse;
-    margin: 8px 0 10px 0;
-    font-size: 8.0pt;
+    margin: 5px 0 7px 0;
+    font-size: 7.6pt;
     page-break-inside: avoid;
 }
 
 th, td {
-    padding: 4px 6px;
+    padding: 3px 5px;
     text-align: left;
     border: 1px solid #cbd5e1;
 }
@@ -128,7 +128,7 @@ tr:nth-child(even) td {
 
 code {
     font-family: 'JetBrains Mono', monospace;
-    font-size: 8.0pt;
+    font-size: 7.6pt;
     background: #f1f5f9;
     padding: 1px 3px;
     border-radius: 3px;
@@ -140,11 +140,11 @@ pre {
     background: #f8fafc;
     border: 1px solid #e2e8f0;
     border-radius: 4px;
-    padding: 6px;
-    font-size: 7.5pt;
-    line-height: 1.30;
+    padding: 4px;
+    font-size: 7.0pt;
+    line-height: 1.20;
     overflow-x: auto;
-    margin: 6px 0;
+    margin: 4px 0;
 }
 
 pre code {
@@ -156,21 +156,21 @@ pre code {
 blockquote {
     border-left: 3px solid #2563eb;
     background: #eff6ff;
-    padding: 4px 10px;
-    margin: 6px 0;
-    font-size: 8.2pt;
+    padding: 3px 8px;
+    margin: 4px 0;
+    font-size: 7.8pt;
     color: #1e40af;
 }
 
 .figure-container {
     text-align: center;
-    margin: 8px 0 10px 0;
+    margin: 5px 0 6px 0;
     page-break-inside: avoid;
 }
 
 .figure-container img {
     max-width: 100%;
-    max-height: 105mm;
+    max-height: 70mm;
     height: auto;
     display: block;
     margin: 0 auto;
@@ -181,15 +181,20 @@ blockquote {
 }
 
 .figure-caption {
-    font-size: 7.5pt;
+    font-size: 7.2pt;
     color: #475569;
-    margin-top: 4px;
+    margin-top: 3px;
     font-weight: 600;
     letter-spacing: 0.01em;
 }
 
 .page-break {
     page-break-before: always;
+    break-before: page;
+    clear: both;
+    height: 0;
+    margin: 0;
+    padding: 0;
 }
 """
 
@@ -203,17 +208,37 @@ def build_report_html():
     demo_img = (ROOT / "report" / "figures" / "demo_run.png").as_posix()
     integrations_img = (ROOT / "report" / "figures" / "integrations.png").as_posix()
 
-    fig_map = [
-        ("report/figures/brand_selection.png", brand_img, "Empirical Brand Selection Across 108 Brands (Volume vs. Resolution Rate)", "Figure 1: Empirical Brand Selection Across 108 Brands (Volume vs. Resolution Rate)"),
-        ("report/figures/architecture.png", arch_img, "End-to-End System Pipeline & 6-Point Policy Safety Gate Architecture", "Figure 2: End-to-End System Pipeline & 6-Point Policy Safety Gate Architecture"),
-        ("report/figures/demo_run.png", demo_img, "Real Execution Demonstrations: Safe Routine Automation (amz-003) vs. Policy Gate Intercept (amz-000)", "Figure 3: Real Execution Demonstrations: Safe Routine Automation (amz-003) vs. Policy Gate Intercept (amz-000)"),
-        ("report/figures/integrations.png", integrations_img, "Integration Roadmap: Production Twitter/X Webhook Bot & Model Context Protocol (MCP) Server", "Figure 4: Integration Roadmap: Production Twitter/X Webhook Bot & Model Context Protocol (MCP) Server"),
-    ]
+    # Anchor mappings with exact replacements (no double-substring collisions)
+    replacements = {
+        "<!-- FIGURE_1_BRAND_SELECTION -->": (
+            f'<div class="figure-container">'
+            f'<img src="{brand_img}" alt="Empirical Brand Selection Across 108 Brands">'
+            f'<div class="figure-caption">Figure 1: Empirical Brand Selection Across 108 Brands (Volume vs. Resolution Rate)</div>'
+            f'</div>'
+        ),
+        "<!-- FIGURE_2_ARCHITECTURE -->": (
+            f'<div class="figure-container">'
+            f'<img src="{arch_img}" alt="System Architecture & Policy Gate">'
+            f'<div class="figure-caption">Figure 2: End-to-End System Pipeline & 6-Point Policy Safety Gate Architecture</div>'
+            f'</div>'
+        ),
+        "<!-- FIGURE_3_DEMO_RUN -->": (
+            f'<div class="figure-container">'
+            f'<img src="{demo_img}" alt="Real Customer Query Execution Demonstrations">'
+            f'<div class="figure-caption">Figure 3: Real Customer Executions: Safe Routine Automation (amz-003) vs. Policy Gate Intercept (amz-000)</div>'
+            f'</div>'
+        ),
+        "<!-- FIGURE_4_INTEGRATIONS -->": (
+            f'<div class="figure-container">'
+            f'<img src="{integrations_img}" alt="Integration Roadmap">'
+            f'<div class="figure-caption">Figure 4: Integration Roadmap: Production Twitter/X Webhook Bot & Model Context Protocol (MCP) Server</div>'
+            f'</div>'
+        ),
+        "<!-- PAGE_BREAK -->": '<div class="page-break"></div>',
+    }
 
-    for key, path, alt, caption in fig_map:
-        html_fig = f'<div class="figure-container"><img src="{path}" alt="{alt}"><div class="figure-caption">{caption}</div></div>'
-        raw_md = raw_md.replace(f"`{key}`", html_fig)
-        raw_md = raw_md.replace(key, html_fig)
+    for anchor, html_replacement in replacements.items():
+        raw_md = raw_md.replace(anchor, html_replacement)
 
     html_content = markdown.markdown(
         raw_md,

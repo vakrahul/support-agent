@@ -3,8 +3,12 @@
 > **Status: Verified & Reproducible End-to-End.** Locked test-100 headline results below, reproducible in replay mode with zero API key requirement and zero network calls.
 
 [![Eval](https://github.com/vakrahul/support-agent/actions/workflows/eval.yml/badge.svg)](https://github.com/vakrahul/support-agent/actions/workflows/eval.yml)
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![Python 3.12](https://img.shields.io/badge/Python-3.12-green.svg)](https://www.python.org/)
+[![Technical Report PDF](https://img.shields.io/badge/Technical_Report-PDF_(6_pages)-red?logo=adobeacrobatreader)](https://github.com/vakrahul/support-agent/blob/main/report/REPORT.pdf)
+[![Report Markdown](https://img.shields.io/badge/Report-Markdown-blue)](report/REPORT.md)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![Python 3.12](https://img.shields.io/badge/Python-3.12-blue.svg)](https://www.python.org/)
+
+> 📄 **[Read the Full Engineering Technical Report (REPORT.pdf)](https://github.com/vakrahul/support-agent/blob/main/report/REPORT.pdf)** — 6-page publication-grade PDF covering problem framing, empirical brand selection, end-to-end architecture, baseline evaluation with bootstrap CIs, real failure analysis, transparent self-critique, and the upcoming Twitter Bot & MCP Server integrations. Direct link: [`report/REPORT.pdf`](report/REPORT.pdf).
 
 ---
 
@@ -272,7 +276,8 @@ Every component, script, and documentation artifact is linked and traceable:
 | Document / Asset | Path | Description |
 |---|---|---|
 | **Architecture Records** | [`DECISIONS.md`](DECISIONS.md) | Log of all major architectural and engineering decisions and non-obvious calls. |
-| **Comprehensive Report** | [`report/REPORT.md`](report/REPORT.md) | Full technical report detailing methodology, baselines, and findings. |
+| **Technical Report (PDF)** | [`report/REPORT.pdf`](report/REPORT.pdf) | Publication-grade 6-page PDF report with embedded white-theme figures. |
+| **Technical Report (MD)** | [`report/REPORT.md`](report/REPORT.md) | Markdown source of technical report detailing methodology, baselines, and findings. |
 | **Failure Analysis** | [`results/failure_analysis.md`](results/failure_analysis.md) | Deep-dive error audit into the 28 misclassified or failed test cases. |
 | **Brand Selection** | [`docs/brand_selection.md`](docs/brand_selection.md) | Empirical deflection and resolution rate profiling across 108 brands. |
 | **Golden Benchmark** | [`docs/golden_set.md`](docs/golden_set.md) | Description of the 150 golden samples and 4-pass verification methodology. |

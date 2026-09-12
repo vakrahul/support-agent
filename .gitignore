@@ -33,3 +33,6 @@ qdrant_storage/
 # OS
 .DS_Store
 Thumbs.db
+
+# Build artifacts
+report/*.html
